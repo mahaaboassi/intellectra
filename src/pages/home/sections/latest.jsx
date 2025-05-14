@@ -31,7 +31,7 @@ const Latest = ()=>{
             author: "INTELLECTRA admin",
             hashtag: ["#CloudComputing"]
         },
-        {
+        { 
             id: 3,
             title: "Technology Services: Why Businesses Need Digital Transformation",
             description: "In today's competitive market, technology services play a crucial role in digital transformation. From cybersecurity to IT consulting, explore why businesses must adapt to modern technology solutions.",
