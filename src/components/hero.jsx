@@ -24,7 +24,7 @@ const Hero = () => {
         variants={container}
         initial="hidden"
         animate="visible"
-        className="flex flex-wrap gap-2"
+        className="flex flex-wrap gap-2 justify-center"
       >
         {words.map((word, index) => (
           <motion.span key={index} variants={wordAnim}>

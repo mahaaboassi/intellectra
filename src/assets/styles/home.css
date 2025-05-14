@@ -189,6 +189,8 @@ button:hover{
     font-size: var(--font-size-s);
     font-weight: 500;
     color: var(--blue_1);
+    cursor: pointer;
+    background-color: unset !important;
 }
 /* Video Container */
 .video-container{
@@ -257,6 +259,29 @@ button:hover{
     animation-delay: 1s;
 }
 
+.popup{
+    position: fixed;
+    background: var(--light);
+    inset: 0;
+    background-color: rgba(88, 87, 87, 0.027);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 110;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-icon{
+    position: fixed;
+    z-index: 120;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+}
+.close-icon path{
+    fill: var(--dark);
+}
 
 /* Latest */
 .latest{
@@ -355,7 +380,7 @@ button:hover{
 }
 /* Footer */
 footer{
-    background : url("../images/cubes.png");
+    background : url("../images/cubes.png"),rgba(255, 255, 255, 0.692);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -364,7 +389,7 @@ footer{
 }
 .footer{
     position: absolute;
-     background: linear-gradient(to left, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0));
     inset: 0;
     z-index: 2;
     display: flex; 
@@ -460,6 +485,7 @@ footer button:hover{
     .intro {
         flex-direction: column;
     }
+
 }
 @media (max-width: 800px) {
 
@@ -472,6 +498,10 @@ footer button:hover{
         font-size: 2rem;
         line-height: 2.1rem;
     }
+    .popup iframe{
+        width: 400px;
+    }
+
 }
 @media (max-width: 600px) {
     .intro h2{
@@ -488,7 +518,9 @@ footer button:hover{
     }
 }
 @media (max-width: 500px) {
-    
+    .popup iframe{
+        width: 350px;
+    }
 }
 @media (max-width: 450px) {
     
@@ -496,5 +528,8 @@ footer button:hover{
 @media (max-width: 340px) {
     .second-col{
         flex-direction: column;
+    }
+    .popup iframe{
+        width: 100vw;
     }
 }

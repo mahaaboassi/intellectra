@@ -1,0 +1,102 @@
+.overlay-lottie{
+    position: fixed;
+    /* height: 400px; */
+    overflow: hidden;
+    z-index: -1;
+    
+}
+.overlay-lottie::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-color: rgba(255, 255, 255, 0.682);
+}
+.about{
+  
+
+}
+.content-about{
+    animation: upDiv 1s forwards linear;
+    transform: translateY(150px);
+}
+.content-about, .card-about div:nth-child(1),.card-about div:nth-child(2),.card-about div:nth-child(3),.card-about div:nth-child(4){
+    background-color: rgba(255, 255, 255, 0.152);
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+.content-about h1{
+    font-size: var(--font-size-xxl);
+    font-weight: 600;
+    color: var(--blue_1);
+    text-transform: uppercase;
+}
+.content-about h3{
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+}
+.content-about p,.card-about p{
+    font-size: var(--font-size-xs);
+}
+.card-about h3{
+    font-size: var(--font-size-l);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.container-cards{
+    display: flex;
+}
+.card-about{
+    width: 50%;
+    animation: upDiv 1s forwards linear;
+}
+@keyframes upDiv {
+    from{
+        transform: translateY(150px);
+    }to{
+        transform: translateY(0);
+    }
+}
+
+/* @ Media */
+@media (max-width: 1200px) {
+    .intro h2{
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1000px) {
+
+}
+@media (max-width: 900px) {
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-about{
+        width: 100%;
+    }
+}
+@media (max-width: 800px) {
+
+}
+@media (max-width: 700px) {
+
+}
+@media (max-width: 600px) {
+
+}
+@media (max-width: 500px) {
+    
+}
+@media (max-width: 450px) {
+    
+}
+@media (max-width: 340px) {
+
+}

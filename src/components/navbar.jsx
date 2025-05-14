@@ -7,7 +7,7 @@ const Navbar = ()=>{
         link : '/'
     },{
         name : "About",
-        link : '/'
+        link : '/about'
     },{
         name : "Industry",
         link : '/'
@@ -20,7 +20,8 @@ const Navbar = ()=>{
     }]
     return(<div className="navbar px-5 sm:px-16 md:px-32">
         <div>
-            <img src={logo} alt="logo" />
+            <Link to="/"><img src={logo} alt="logo" /> </Link>
+            
         </div>
         <div>
             <ul className="gap-5">

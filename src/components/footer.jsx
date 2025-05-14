@@ -72,24 +72,24 @@ const Footer = ()=>{
                 <div className="second-col gap-6 flex ">
                     <div className="w-full flex flex-col gap-4">
                         <h4>Pages</h4>
-                        {pages.map((ele,child)=>(<div className="menu">
+                        {pages.map((ele,idx)=>(<div key={`Pages_${ele.name}_${idx}`} className="menu">
                             {ele.name}
                         </div>))}
                     </div>
                     <div className="w-full flex flex-col gap-4">
                         <h4>Solutions</h4>
-                        {solutions.map((ele,child)=>(<div className="menu">
+                        {solutions.map((ele,idx)=>(<div key={`Solutions_${ele.name}_${idx}`} className="menu">
                             {ele.name}
                         </div>))}
                     </div>
                     <div className="w-full flex flex-col gap-4 menu">
                         <h4>Support</h4>
-                        {support.map((ele,child)=>(<div>
+                        {support.map((ele,idx)=>(<div key={`Support_${ele.name}_${idx}`}>
                             {ele.name}
                         </div>))}
                     </div>
                 </div>
-                <div className="third-col h-full py-6 flex flex-col justify-between">
+                <div className="third-col h-3/4 flex flex-col justify-between">
                     <div className=" flex flex-col gap-2">
                         <h4>Keeping you informed</h4>
                         <button>Subscribe</button>
