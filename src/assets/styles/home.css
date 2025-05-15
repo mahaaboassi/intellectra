@@ -413,7 +413,7 @@ footer h4{
 }
 .third-col{
     width: 20%;
-    height: 63%;
+    height: 56%;
 }
 footer button{
     background-color: var(--blue_4);
@@ -429,9 +429,14 @@ footer button:hover{
 }
 /* Banner Contact */
 .contact-banner{
-    background: linear-gradient(var(--blue_4), var(--light));
+    background-color: rgba(255, 255, 255, 0.152);
+    backdrop-filter: blur(20px); 
     border-top-left-radius: 30%;
     position: relative;
+}
+.contact-banner::after{
+    content: "";
+    /* background-color:  ; */
 }
 .view-banner{
     position: absolute;
@@ -444,17 +449,7 @@ footer button:hover{
     font-size: var(--font-size-l);
     font-weight: 600;
 }
-.contact-banner::after{
-    content: "";
-    background: linear-gradient(var(--blue_4), var(--light));
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 30%;
-    position: absolute;
-    border-top-left-radius: 30%;
-    z-index: 2;
-}
+
 /* @ Media */
 @media (max-width: 1200px) {
     .intro h2{
@@ -563,10 +558,7 @@ footer button:hover{
     .view-banner{
         top: -60px;
     }
-    .contact-banner::after{
-        width: 20%;
-        border-top-left-radius: 30%;
-    }
+
     .contact-banner{
         border-top-left-radius: 20%;
     }

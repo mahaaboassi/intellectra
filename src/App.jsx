@@ -7,6 +7,8 @@ import Industry from './pages/industry/industry'
 import Solutions from './pages/solutions/solutions'
 import SubIndustry from './pages/subIndustry/subIndustry'
 import SubSolution from './pages/subSolution/subSolution'
+import ESG from './pages/esg/esg'
+import Innovation from './pages/innovation/innovation'
 
 function App() {
 
@@ -17,6 +19,8 @@ function App() {
           <Route path="about" element={<About/>} />
           <Route path="industry" element={<Industry/>} />
           <Route path="solutions" element={<Solutions/>} />
+          <Route path="esg" element={<ESG/>} />
+          <Route path="innovation" element={<Innovation/>} />
           <Route path="industry/:name" element={<SubIndustry/>} />
           <Route path="solutions/:name" element={<SubSolution/>} />
        </Route>

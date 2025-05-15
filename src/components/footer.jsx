@@ -29,7 +29,7 @@ const Footer = ()=>{
         link : "/aboutUs/solutions"
     }]
     const support = [{
-        name : "Cookie Management Center",
+        name : "Cookie Center",
         link : "/cookies"
     },{
         name : "FAQs",
@@ -94,14 +94,14 @@ const Footer = ()=>{
                         <h4>Keeping you informed</h4>
                         <button>Subscribe</button>
                     </div>
-                    <div className=" flex flex-col gap-2">
+                    {/* <div className=" flex flex-col gap-2">
                         <h4>Follow us</h4>
                         <div className="flex gap-4 items-center">
                             {icons.map((icon,i)=>(<Link key={`Icons_${icon.name}_${i}`} to={icon.link}>
                             <div>{icon.icon}</div>
                             </Link>))}
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>)

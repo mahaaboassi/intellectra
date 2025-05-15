@@ -1,23 +1,24 @@
 import { useEffect } from "react"
 import LottieHero from "../../components/heroAnimation"
+import { Link } from "react-router-dom"
 
 const About = ()=>{
     const data = [{
         title : "Innovation at the Core",
         description : "Success in today’s fast-changing digital world requires constant reinvention, agility, and bold innovation. At INTELLECTRA, we help organizations stay ahead by transforming ideas into actionable, scalable solutions through our idea-to-solution framework. Whether through AI, automation, cybersecurity, or cloud solutions, we enable businesses to embrace innovation that fuels sustainable growth.",
-        link : ""
+        link : "/innovation"
     },{
         title : "Our Commitment to ESG",
         description : "Sustainability and ethical responsibility are not just corporate values—they are fundamental to the way we do business. We are deeply committed to environmental stewardship, social impact, and governance excellence. Our ESG initiatives are integrated into our business operations, partnerships, and community-driven projects, ensuring that we contribute to a more sustainable and inclusive world.",
-        link : ""
+        link : "/esg"
     },{
         title : "Industry Expertise",
         description : "With deep experience across multiple industries, our engineers and consultants help businesses navigate complexity with precision and confidence. We map your industry’s architecture to tailored technology solutions, ensuring that every implementation is purpose-built to meet your unique operational challenges. As industries continue to evolve and boundaries blur, we leverage insights from cross-industry collaborations to introduce breakthrough solutions that redefine business potential.",
-        link : ""
+        link : "/industry"
     },{
         title : "Solutions",
         description : "In today’s fast-evolving digital landscape, transformation is no longer optional—it’s essential. At INTELLECTRA, we empower businesses to adapt, accelerate, and thrive with secure, flexible, and future-ready ICT solutions. Our end-to-end services enable organizations to enhance digital agility, strengthen cybersecurity resilience, scale seamlessly with cloud and AI-driven technologies, and optimize workflows through intelligent automation—all designed to drive efficiency, innovation, and long-term success.",
-        link : ""
+        link : "/solutions"
     }]
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div>
@@ -39,7 +40,7 @@ const About = ()=>{
                     <div className="p-4 blur-bg content-card radius-border sm:p-6 md:p-10 lg:p-16 flex flex-col gap-4">
                         <h3>{ele.title}</h3>
                         <p>{ele.description}</p>
-                        <div><span className="learn">See More</span> </div>
+                        <div><Link to={ele.link}><span className="learn">See More</span> </Link></div>
                     </div>
                 </div>))}
 
