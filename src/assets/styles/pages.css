@@ -54,6 +54,22 @@
 .sub-title{
     color: var(--grey_1);
 }
+.card li{
+    position: relative;
+    padding-left: 20px;
+    font-size: var(--font-size-xxs);
+}
+.card li::before{
+    content: "✔"; /* Unicode checkmark */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    font-size: 14px;
+    color: var(--blue_2);
+    
+}
+
 /* Pages */
 .pages svg{
     width: 50px;

@@ -24,6 +24,7 @@ const ESG = ()=>{
                                                              description={ele.description}
                                                              title={ele.title}
                                                              type="esg"
+                                                             content={ele.content}
                                                              subTitle={ele.subTitle} />))}
 
             </div>
