@@ -1,4 +1,11 @@
 /* For cards */
+.pages h1{
+    font-size: var(--font-size-xxl) !important;
+    font-weight: 600;
+    color: var(--blue_1);
+    line-height: 2.5rem;
+}
+
 .card p{
     font-size: var(--font-size-xs);
 }
@@ -187,7 +194,10 @@
     }
 }
 @media (max-width: 450px) {
-    
+    .pages h1{
+        font-size: 1.7rem !important;
+        line-height: 2rem;
+    }
 }
 @media (max-width: 340px) {
 
