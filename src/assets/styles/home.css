@@ -429,21 +429,19 @@ footer button:hover{
 }
 /* Banner Contact */
 .contact-banner{
+    border-top-left-radius: 25%;
     background-color: rgba(255, 255, 255, 0.152);
     backdrop-filter: blur(20px); 
-    border-top-left-radius: 30%;
     position: relative;
 }
-.contact-banner::after{
-    content: "";
-    /* background-color:  ; */
-}
+
 .view-banner{
     position: absolute;
     top: -40px;
     left: 0;
     width: 150px;
     z-index: 3;
+
 }
 .contact-banner h2{
     font-size: var(--font-size-l);
@@ -478,6 +476,9 @@ footer button:hover{
         height: 100%;
         padding-bottom: 20px;
     }
+    .contact-banner img{
+        height: 150px;
+        }
 }
 @media (max-width: 1000px) {
     .hero h2{

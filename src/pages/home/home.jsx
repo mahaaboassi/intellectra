@@ -4,15 +4,19 @@ import Intro from "./sections/intro"
 import Latest from "./sections/latest"
 import Services from "./sections/services"
 import Video from "./sections/video"
+import LottieHero from "../../components/heroAnimation"
 
 const Home = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div>
-        <Hero/>
-        <Services/>
-        <Intro/>
-        <Video/>
-        <Latest/>
+        <LottieHero/>
+        <div style={{background:"white"}}>
+            <Hero/>
+            <Services/>
+            <Intro/>
+            <Video/>
+            <Latest/>
+        </div>
     </div>)
 }
 

@@ -1,5 +1,6 @@
 import { useLottie } from "lottie-react";
 import animationData from "../data/moveCube.json"; // or use a URL
+import img from "../assets/images/cubes.png"
 
 const ContactBanner = ()=>{
     const options = {
@@ -11,7 +12,6 @@ const ContactBanner = ()=>{
   const { View } = useLottie(options);
 
     return(<div className="contact-banner py-10">
-        
         <div className="view-banner">
             {View}
         </div>
