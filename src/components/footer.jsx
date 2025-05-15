@@ -89,7 +89,7 @@ const Footer = ()=>{
                         </div>))}
                     </div>
                 </div>
-                <div className="third-col h-3/4 flex flex-col justify-between">
+                <div className="third-col flex flex-col justify-between">
                     <div className=" flex flex-col gap-2">
                         <h4>Keeping you informed</h4>
                         <button>Subscribe</button>

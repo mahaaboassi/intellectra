@@ -70,13 +70,16 @@ button:hover{
     margin-top: -50px;
     animation: moveup 0.5s forwards linear;
     animation-delay: 1.5s;
+    opacity: 0;
     transform: translateY(200px);
 }
 @keyframes moveup {
     from{
         transform: translateY(200px);
+        opacity: 0;
     }to{
         transform: translateY(0px);
+        opacity: 1;
     }
 }
 .services-container{
@@ -380,7 +383,7 @@ button:hover{
 }
 /* Footer */
 footer{
-    background : url("../images/cubes.png"),rgba(255, 255, 255, 0.692);
+    background : url("../images/cubes.png"),rgba(255, 255, 255, 0.937);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -389,7 +392,7 @@ footer{
 }
 .footer{
     position: absolute;
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0));
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.767) 50%, rgba(255, 255, 255, 0));
     inset: 0;
     z-index: 2;
     display: flex; 
@@ -410,6 +413,7 @@ footer h4{
 }
 .third-col{
     width: 20%;
+    height: 63%;
 }
 footer button{
     background-color: var(--blue_4);
@@ -422,6 +426,34 @@ footer button:hover{
 }
 .menu, footer p{
     font-size: var(--font-size-xs);
+}
+/* Banner Contact */
+.contact-banner{
+    background: linear-gradient(var(--blue_4), var(--light));
+    border-top-left-radius: 30%;
+    position: relative;
+}
+.view-banner{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 150px;
+    z-index: 3;
+}
+.contact-banner h2{
+    font-size: var(--font-size-l);
+    font-weight: 600;
+}
+.contact-banner::after{
+    content: "";
+    background: linear-gradient(var(--blue_4), var(--light));
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    position: absolute;
+    border-top-left-radius: 30%;
+    z-index: 2;
 }
 /* @ Media */
 @media (max-width: 1200px) {
@@ -448,6 +480,8 @@ footer button:hover{
     .third-col{
         width: 100%;
         flex-direction: row;
+        height: 100%;
+        padding-bottom: 20px;
     }
 }
 @media (max-width: 1000px) {
@@ -521,9 +555,21 @@ footer button:hover{
     .popup iframe{
         width: 350px;
     }
+    .view-banner{
+        width: 120px;
+    }
 }
 @media (max-width: 450px) {
-    
+    .view-banner{
+        top: -60px;
+    }
+    .contact-banner::after{
+        width: 20%;
+        border-top-left-radius: 30%;
+    }
+    .contact-banner{
+        border-top-left-radius: 20%;
+    }
 }
 @media (max-width: 340px) {
     .second-col{
@@ -532,4 +578,5 @@ footer button:hover{
     .popup iframe{
         width: 100vw;
     }
+
 }

@@ -23,7 +23,7 @@ const About = ()=>{
     return(<div>
         <LottieHero/>
         <div className="about pt-32 px-5 sm:px-16 md:px-32">
-           <div className="content-about p-4 sm:p-6 md:p-10 lg:p-16 flex flex-col gap-3">
+        <div className="content-about blur-bg p-4 sm:p-6 md:p-10 lg:p-16 flex flex-col gap-3">
                 <h1>About Us</h1>
                 <h3>
                     For over 30 years, we have built a reputation for excellence, reliability, and trust. The continued confidence of our clients is a testament to our technical expertise, forward-thinking strategies, and unwavering commitment to delivering transformative solutions. At INTELLECTRA, technology is not just an enabler—it’s a catalyst for progress.
@@ -32,11 +32,11 @@ const About = ()=>{
                 <p>With a presence across multiple industries and global markets, we provide scalable, sustainable, and future-ready ICT services that combine global best practices with localized expertise. Our approach is insights-driven and outcome-focused, ensuring that every solution we implement contributes to long-term business success.</p>
                 <p>As your trusted technology partner, we collaborate closely with clients to ensure that technology serves as a driving force behind business growth, efficiency, and societal impact. By embedding ourselves within local markets, we foster lasting relationships built on trust, expertise, and shared success.</p>
                 <p>Our global network of skilled professionals brings together the right talent, innovation, and strategic insights to every engagement, ensuring that businesses thrive in an ever-evolving digital landscape. Using a consultative and collaborative approach, we help organizations achieve measurable business outcomes, enhance mission-critical operations, and drive meaningful impact.</p>
-           </div>
+        </div>
         </div>
         <div className="px-5 sm:px-16 md:px-32 container-cards flex-wrap py-10   justify-between">
-            {data.map((ele,idx)=>(<div className="card-about p-2" key={`Services_Card_${ele.title}_${idx}`}>
-                    <div className="p-4 sm:p-6 md:p-10 lg:p-16 flex flex-col gap-4">
+            {data.map((ele,idx)=>(<div className="card p-2" key={`Services_Card_${ele.title}_${idx}`}>
+                    <div className="p-4 blur-bg content-card radius-border sm:p-6 md:p-10 lg:p-16 flex flex-col gap-4">
                         <h3>{ele.title}</h3>
                         <p>{ele.description}</p>
                         <div><span className="learn">See More</span> </div>

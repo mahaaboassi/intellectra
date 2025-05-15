@@ -10,10 +10,10 @@ const Navbar = ()=>{
         link : '/about'
     },{
         name : "Industry",
-        link : '/'
+        link : '/industry'
     },{
         name : "Solution",
-        link : '/'
+        link : '/solutions'
     },{
         name : "Contact",
         link : '/'

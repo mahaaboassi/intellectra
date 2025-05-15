@@ -20,12 +20,7 @@
     animation: upDiv 1s forwards linear;
     transform: translateY(150px);
 }
-.content-about, .card-about div:nth-child(1),.card-about div:nth-child(2),.card-about div:nth-child(3),.card-about div:nth-child(4){
-    background-color: rgba(255, 255, 255, 0.152);
-    backdrop-filter: blur(20px); 
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 20px;
-}
+
 .content-about h1{
     font-size: var(--font-size-xxl);
     font-weight: 600;
@@ -36,20 +31,8 @@
     font-size: var(--font-size-xs);
     font-weight: 600;
 }
-.content-about p,.card-about p{
+.content-about p{
     font-size: var(--font-size-xs);
-}
-.card-about h3{
-    font-size: var(--font-size-l);
-    font-weight: 600;
-    text-transform: capitalize;
-}
-.container-cards{
-    display: flex;
-}
-.card-about{
-    width: 50%;
-    animation: upDiv 1s forwards linear;
 }
 @keyframes upDiv {
     from{
@@ -74,13 +57,7 @@
 
 }
 @media (max-width: 900px) {
-    .container-cards{
-        display: flex;
-        flex-direction: column;
-    }
-    .card-about{
-        width: 100%;
-    }
+
 }
 @media (max-width: 800px) {
 
