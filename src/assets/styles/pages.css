@@ -61,7 +61,7 @@
 /* Robot Card */
 .robot-card{
     position: relative;
-    height: 700px;
+    height: 800px;
 }
 .robot-card img{
     position: absolute;
@@ -91,6 +91,21 @@
 .robot-card .des{
     width: 70%;
     font-size: var(--font-size-s);
+}
+.des li{
+    position: relative;
+    padding-left: 30px;
+    font-size: var(--font-size-s);
+}
+.des li::before{
+    content: "✔"; /* Unicode checkmark */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    font-size: 25px;
+    color: var(--blue_2);
+    
 }
 .path{
     position: relative;

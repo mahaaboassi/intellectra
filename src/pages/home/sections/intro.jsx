@@ -1,7 +1,9 @@
 import img_1 from "../../../assets/images/intelligent.webp"
 import img_2 from "../../../assets/images/digital.webp"
+import { Link } from "react-router-dom"
 
 const Intro = ()=>{
+
     return(<div className="intro gap-5 px-5 sm:px-16 md:px-32 py-20">
             <div style={{position:"relative"}} className="w-full flex ">
                 <div  className="card-image-1 w-full" >
@@ -10,7 +12,8 @@ const Intro = ()=>{
                 <div className="card-image-2 w-full">
                     <img src={img_2} alt="digital" />
                 </div>
-                <div className="icon-center">
+                <Link to="/about"><div className="icon-center cursor-pointer">
+                      
                        <div>
                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 68 68" fill="none">
                             <g clipPath="url(#clip0_313_546)">
@@ -23,12 +26,14 @@ const Intro = ()=>{
                             </defs>
                         </svg>
                        </div>
-                    </div>
+                       </div>
+                      </Link>
+                    
             </div>
             <div className="w-full flex flex-col gap-5">
                     <h2>Driving Digital Transformation with Innovation & Expertise</h2>
                     <p>At INTELLECTRA, we empower businesses to adapt, accelerate, and achieve their goals with cutting-edge ICT solutions. As your trusted technology partner, we provide tailored digital strategies, technical expertise, and scalable solutions to optimize business performance. Our approach ensures that complex systems, architectures, and mission-critical transformations are seamlessly integrated to maximize efficiency and growth.</p>
-                    <div><span className="learn">Learn More</span></div>
+                    <div><Link to="about"><span className="learn">Learn More</span></Link></div>
             </div>
     </div>)
 }

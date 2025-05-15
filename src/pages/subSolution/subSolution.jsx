@@ -23,9 +23,13 @@ const SubSolution = ()=>{
                 <div className="flex  flex-col gap-2">
                     <h1>{data.title}</h1>
                     <p>{data.subTitle}</p>
-                    <div className="des">
+                    <div className="des flex flex-col gap-2">
                         {data.description}
+                        <ul className="flex flex-col gap-1 ">
+                            {data && "content" in data && data.content.map((e,idx)=>(<li key={`Content_Solution_${e}_${idx}`}>{e}</li>))}
+                        </ul>
                     </div>
+                    
                 </div>
                 <img src={robot} alt="Robot" />
             </div>

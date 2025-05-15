@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Services = ()=>{
 
     const data = [{
@@ -53,7 +55,7 @@ const Services = ()=>{
                 value: "transportation",
                 link: "/aboutUs/industry/transportation-&-logistics"
                 }],
-        link: "/aboutUs/industry"
+        link: "/industry"
     },
     { 
         icon : <svg xmlns="http://www.w3.org/2000/svg" width="69" height="60" viewBox="0 0 79 70" fill="none">
@@ -118,7 +120,7 @@ const Services = ()=>{
                     value: "workplace-modernization",
                     link: "/aboutUs/solutions/workplace-modernization"
                 }],
-        link: "/aboutUs/solutions"
+        link: "/solutions"
     }]
     return(<div className={`px-5 sm:px-16 md:px-32 services`}>
         <div className="services-container gap-5">
@@ -133,10 +135,8 @@ const Services = ()=>{
                         {key.label}
                     </div>))}
                 </div>
-                <div><span className="learn" >See More</span></div>
+                <div><Link to={ele.link}><span className="learn" >See More</span></Link></div>
             </div>))}
-
-            
         </div>
         
     </div>)
