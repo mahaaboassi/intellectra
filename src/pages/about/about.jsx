@@ -25,7 +25,7 @@ const About = ()=>{
     return(<div>
         <LottieHero/>
         <div className="about pt-32 px-5 sm:px-16 md:px-32">
-        <div className="content-about blur-bg p-4 sm:p-6 md:p-10 lg:p-16 flex flex-col gap-3">
+        <div className="content-about radius-border blur-bg p-4 sm:p-6 md:p-10 lg:p-16 flex flex-col gap-3">
                 <Path first={"Home"} second={"About"} link={"/"} />
                 <h1>About Us</h1>
                 <h3>

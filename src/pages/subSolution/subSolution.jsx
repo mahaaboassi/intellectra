@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import robot from "../../assets/images/robot.webp"
+import robot from "../../assets/images/robot (6).webp"
 import LottieHero from "../../components/heroAnimation"
 import { useEffect, useState } from "react"
 import { solutionData } from "../../data/data"
@@ -15,7 +15,7 @@ const SubSolution = ()=>{
     return(<div>
         <LottieHero/>
         <div className="robot-card pt-32 px-5 sm:px-16 md:px-32  pb-10">
-            <div className="blur-bg flex gap-10 flex-col robot-card p-4 sm:p-6  md:p-10 lg:p-16 ">
+            <div className="blur-bg radius-border flex gap-3 flex-col robot-card p-4 sm:p-6  md:p-10 lg:p-16 ">
                 <Path first={"Solution"} second={data.title} link={"/solutions"}/>
                 <div className="flex  flex-col gap-2">
                     <h1>{data.title}</h1>
@@ -28,7 +28,9 @@ const SubSolution = ()=>{
                     </div>
                     
                 </div>
-                <img src={robot} alt="Robot" />
+                <div className="container-image-abs">
+                    <img src={robot} alt="Robot" />
+                </div>
             </div>
             
         </div>

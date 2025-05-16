@@ -12,7 +12,7 @@ const Industry = ()=>{
             <div className="blur-bg flex flex-col gap-3 radius-border content-about p-4 sm:p-6  md:p-10 lg:p-16">
                 <Path first={"About"} second={"Industry"} link={"/about"} />
                 <h1>Industry</h1>
-                <div className="des-pages" >{industryData.description}</div>
+                <h3 className="des-pages" >{industryData.description}</h3>
             </div>
            <div className=" container-cards flex-wrap py-10 justify-between">
                 {industryData.children.map((ele,idx)=>(<Card key={`industry_Card_${ele.title}_${idx}`} 

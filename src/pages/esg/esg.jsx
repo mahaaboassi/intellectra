@@ -13,7 +13,7 @@ const ESG = ()=>{
 
                 <Path first={"About"} second={"ESG"} link={"/about"} />
                 <h1>Our Commitment to ESG</h1>
-                <div className="des-pages" >{esgData.description}</div>
+                <h3 className="des-pages" >{esgData.description}</h3>
             </div>
            <div className="container-cards flex-wrap py-10 justify-between">
                 {esgData.children.map((ele,idx)=>(<Card key={`ESG_Card_${ele.title}_${idx}`} 

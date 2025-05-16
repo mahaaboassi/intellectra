@@ -12,7 +12,7 @@ const Innovation = ()=>{
             <div className="blur-bg radius-border flex flex-col gap-3 content-about p-4 sm:p-6  md:p-10 lg:p-16">
                 <Path first={"About"} link={"/about"} second={"Innovation"} />
                 <h1>Innovation at the Core</h1>
-                <div className="des-pages" >{innovationData.description}</div>
+                <h3 className="des-pages" >{innovationData.description}</h3>
             </div>
            <div className="container-cards flex-wrap py-10 justify-between">
                 {innovationData.children.map((ele,idx)=>(<Card key={`ESG_Card_${ele.title}_${idx}`} 

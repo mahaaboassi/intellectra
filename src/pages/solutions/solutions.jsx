@@ -13,7 +13,7 @@ const Solutions = ()=>{
             <div className="blur-bg radius-border flex flex-col gap-3 content-about p-4 sm:p-6  md:p-10 lg:p-16">
                 <Path first={"About"} link={"/about"} second={"Solutions"} />
                 <h1>Solutions</h1>
-                <div className="des-pages" >{solutionData.description}</div>
+                <h3 className="des-pages" >{solutionData.description}</h3>
             </div>
            <div className=" container-cards flex-wrap py-10 justify-between">
                 {solutionData.children.map((ele,idx)=>(<Card key={`solutions_Card_${ele.title}_${idx}`} 

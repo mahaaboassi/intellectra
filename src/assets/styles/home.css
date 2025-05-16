@@ -21,6 +21,12 @@
     font-size: var(--font-size-s);
     font-weight: 600;
 }
+.navbar ul li{
+    transition: 0.3s;
+}
+.navbar ul li:hover{
+    color:  var(--grey_2);
+}
 .navbar img{
     width: 250px;
 }
