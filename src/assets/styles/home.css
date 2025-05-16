@@ -24,6 +24,9 @@
 .navbar img{
     width: 250px;
 }
+.menu-icon{
+    display: none;
+}
 /* Hero Section */
 .hero{
     background : url("../images/banner.png");
@@ -567,6 +570,56 @@ footer a:hover::before{
 @media (max-width: 700px) {
     .navbar ul{
         display: none;
+    }
+    .menu-icon{
+        display: flex;
+    }
+    .close-icon{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 401;
+        cursor: pointer;
+        }
+    .navbar ul.fixed-menu{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 400;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(255 255 255 / 87%);
+        backdrop-filter: blur(5px); 
+        -webkit-backdrop-filter: blur(5px);
+        justify-content: center;
+        padding: 40px 30px;
+        animation: come 0.3s forwards linear;
+        overflow: hidden;
+    }
+    .navbar ul.fixed-menu li{
+        animation: appeareLi 0.3s forwards linear;
+        animation-delay: 0.3s;
+        opacity: 0;
+        width: 100%;
+    }
+    .navbar ul.fixed-menu li a{
+        width: 100%;
+        display: flex;
+    }
+    @keyframes come {
+        from{
+        height: 0;
+        }to{
+        height: 250px;
+        }
+    }
+    @keyframes appeareLi {
+        from{
+        opacity: 0;
+        }to{
+        opacity: 1;
+        }
     }
     .hero h2{
         font-size: 2rem;
