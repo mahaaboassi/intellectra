@@ -78,7 +78,7 @@ const Footer = ()=>{
                 </div>
                 <div className="second-col gap-6 flex ">
                     <div className="w-full flex flex-col gap-4">
-                        <h4>Pages</h4>
+                        <h4>Company</h4>
                         {pages.map((ele,idx)=>(<Link key={`Pages_${ele.name}_${idx}`} to={ele.link}>
                             <div className="menu">
                                 {ele.name}
