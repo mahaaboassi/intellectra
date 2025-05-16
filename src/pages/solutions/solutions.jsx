@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import Card from "../../components/card"
 import LottieHero from "../../components/heroAnimation"
 import { solutionData } from "../../data/data"
-import { Link } from "react-router-dom"
+import Path from "../../components/path"
 
 
 const Solutions = ()=>{
@@ -11,11 +11,7 @@ const Solutions = ()=>{
         <LottieHero/>
         <div className="pt-32 px-5 sm:px-16 md:px-32 ">
             <div className="blur-bg radius-border flex flex-col gap-3 content-about p-4 sm:p-6  md:p-10 lg:p-16">
-                <div className="flex items-center path gap-2  mb-5">
-                    <div className="first-path"><Link to="/about">About</Link></div>
-                    <div>/</div>
-                    <div className="second-path">Solutions</div>
-                </div>
+                <Path first={"About"} link={"/about"} second={"Solutions"} />
                 <h1>Solutions</h1>
                 <div className="des-pages" >{solutionData.description}</div>
             </div>

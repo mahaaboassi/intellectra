@@ -16,7 +16,7 @@ const Navbar = ()=>{
         link : '/solutions'
     },{
         name : "Contact",
-        link : '/'
+        link : '/contact'
     }]
     return(<div className="navbar px-5 sm:px-16 md:px-32">
         <div>

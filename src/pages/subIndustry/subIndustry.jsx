@@ -1,8 +1,9 @@
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import robot from "../../assets/images/robot.webp"
 import LottieHero from "../../components/heroAnimation"
 import { useEffect, useState } from "react"
 import { industryData } from "../../data/data"
+import Path from "../../components/path"
 
 const SubIndustry = ()=>{
     const { name } = useParams()
@@ -15,11 +16,7 @@ const SubIndustry = ()=>{
         <LottieHero/>
         <div className="robot-card pt-32 px-5 sm:px-16 md:px-32  pb-10">
             <div className="blur-bg flex gap-10 flex-col robot-card p-4 sm:p-6  md:p-10 lg:p-16 ">
-                <div className="flex items-center path gap-2">
-                    <div className="first-path"><Link to="/industry">Industry</Link></div>
-                    <div>/</div>
-                    <div className="second-path">{data.title}</div>
-                </div>
+                <Path first={"Industry"} second={data.title} link={"/industry"} />
                 <div className="flex  flex-col gap-2">
                     <h1>{data.title}</h1>
                     <p>{data.subTitle}</p>

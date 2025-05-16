@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import LottieHero from "../../components/heroAnimation"
 import { Link } from "react-router-dom"
+import Path from "../../components/path"
 
 const About = ()=>{
     const data = [{
@@ -25,6 +26,7 @@ const About = ()=>{
         <LottieHero/>
         <div className="about pt-32 px-5 sm:px-16 md:px-32">
         <div className="content-about blur-bg p-4 sm:p-6 md:p-10 lg:p-16 flex flex-col gap-3">
+                <Path first={"Home"} second={"About"} link={"/"} />
                 <h1>About Us</h1>
                 <h3>
                     For over 30 years, we have built a reputation for excellence, reliability, and trust. The continued confidence of our clients is a testament to our technical expertise, forward-thinking strategies, and unwavering commitment to delivering transformative solutions. At INTELLECTRA, technology is not just an enabler—it’s a catalyst for progress.

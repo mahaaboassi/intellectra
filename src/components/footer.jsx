@@ -1,45 +1,37 @@
 import { Link } from "react-router-dom"
 import logo from "../assets/images/logo.png"
+import { useEffect, useState } from "react"
+import { solutionData } from "../data/data"
 
 const Footer = ()=>{
      const pages = [{
         name : "About Us",
-        link : "/aboutUs"
+        link : "/about"
     },{
-        name : "Insights",
-        link : "/aboutUs/industry"
+        name : "Industry",
+        link : "/industry"
     },{
         name : "Solution",
-        link : "/aboutUs/solutions"
+        link : "/solutions"
     },{
         name : "Conatct Us",
-        link : "/contactUs"
+        link : "/contact"
     }]
-    const solutions = [{
-        name : "Augmented Reality (AR)",
-        link : "/aboutUs/solutions/augmented-reality-(ar)"
-    },{
-        name : "Cybersecurity",
-        link : "/aboutUs/solutions/cybersecurity"
-    },{
-        name : "Data Center",
-        link : "/aboutUs/solutions/data-center"
-    },{
-        name : "See More",
-        link : "/aboutUs/solutions"
-    }]
+    
     const support = [{
         name : "Cookie Center",
-        link : "/cookies"
-    },{
-        name : "FAQs",
-        link : "/FAQs"
-    },{
+        link : "/cookies-center"
+    },
+    // {
+    //     name : "FAQs",
+    //     link : "/FAQs"
+    // },
+    {
         name : "Privacy Policy",
-        link : "/privacyPolicy"
+        link : "/privacy-policy"
     },{
         name : "Terms & Conditions",
-        link : "/termsAndConditions"
+        link : "/terms-&-conditions"
     }]
     const  icons = [{
         name : "linkedin",
@@ -55,7 +47,22 @@ const Footer = ()=>{
         </svg>,
         link : "https://www.youtube.com/watch?v=rdIkAgsAtO8&t=2s"
     }]
-    return(<footer className="py-42 ">
+    const [solutions, setSolutions] = useState([])
+    useEffect(()=>{
+        const temp = solutionData.children;
+
+        const getThreeUniqueItems = (array) => {
+        if (!Array.isArray(array)) return [];
+
+        const shuffled = [...array].sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, 3);
+        };
+
+        const threeItems = getThreeUniqueItems(temp);
+        setSolutions(threeItems);
+
+    },[])
+    return(<footer >
             <div className="footer gap-6 items-center px-5 sm:px-16 md:px-32">
                 <div className="first-col flex flex-col gap-4">
                     <div>
@@ -64,29 +71,41 @@ const Footer = ()=>{
                     <p>
                         We empower businesses with innovative ICT solutions, combining expertise and technology to drive efficiency, innovation, and maximize ROI
                     </p>
-                    <p>Learn more about At INTELLECTRA</p>
+                    <p>Learn more about <Link to="/about">At INTELLECTRA</Link></p>
                     <div className="final-footer">
-                        © 2025 by ArizGlobal
+                        © 2025 by <Link target="_blank" to="https://arizglobal.com">ArizGlobal</Link>
                     </div>
                 </div>
                 <div className="second-col gap-6 flex ">
                     <div className="w-full flex flex-col gap-4">
                         <h4>Pages</h4>
-                        {pages.map((ele,idx)=>(<div key={`Pages_${ele.name}_${idx}`} className="menu">
-                            {ele.name}
-                        </div>))}
+                        {pages.map((ele,idx)=>(<Link key={`Pages_${ele.name}_${idx}`} to={ele.link}>
+                            <div className="menu">
+                                {ele.name}
+                            </div>
+                        </Link>))}
                     </div>
                     <div className="w-full flex flex-col gap-4">
-                        <h4>Solutions</h4>
-                        {solutions.map((ele,idx)=>(<div key={`Solutions_${ele.name}_${idx}`} className="menu">
-                            {ele.name}
-                        </div>))}
+                        <h4 onClick={()=>{console.log(solutions);
+                        }}>Solutions</h4>
+                        {solutions.length > 0 && solutions.map((ele,idx)=>(<Link key={`Solutions_${ele.title}_${idx}`}  to={ele.link}>
+                            <div className="menu">
+                                {ele.title}
+                            </div>
+                            </Link>))}
+                        <Link to={"/solutions"}>
+                            <div className="menu">
+                                See More
+                            </div>
+                        </Link>
                     </div>
                     <div className="w-full flex flex-col gap-4 menu">
                         <h4>Support</h4>
-                        {support.map((ele,idx)=>(<div key={`Support_${ele.name}_${idx}`}>
+                        {support.map((ele,idx)=>(<Link to={ele.link} key={`Support_${ele.name}_${idx}`}>
+                        <div >
                             {ele.name}
-                        </div>))}
+                        </div>
+                        </Link>))}
                     </div>
                 </div>
                 <div className="third-col flex flex-col justify-between">

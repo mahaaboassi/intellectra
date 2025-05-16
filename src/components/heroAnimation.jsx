@@ -1,5 +1,5 @@
 import { useLottie } from "lottie-react";
-import animationData from "../data/cubes.json"; // or use a URL
+import animationData from "../data/cubes_moreHeight.json"; // or use a URL
 
 const LottieHero = () => {
 

@@ -104,6 +104,24 @@ button:hover{
     border: 1px solid var(--blue_1);
     border-radius: 10px;
     font-size: var(--font-size-xxs);
+    position: relative;
+    background-color: var(--light);
+}
+.container-keywords .content::before{
+    content : "";
+    background: var(--blue_3);
+    top: -2px;
+    bottom: -2px;
+    width: 0;
+    left : 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: -1;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.container-keywords .content:hover::before{
+    width: 100%;
 }
 /* into */
 .intro{
@@ -383,11 +401,12 @@ button:hover{
 }
 /* Footer */
 footer{
-    background : url("../images/cubes.png"),rgba(255, 255, 255, 0.937);
+    background : url("../images/cubes.png"),white;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
+    height: 350px;
 
 }
 .footer{
@@ -427,6 +446,26 @@ footer button:hover{
 .menu, footer p{
     font-size: var(--font-size-xs);
 }
+footer a{
+    position: relative;
+    transition: 0.3s;
+}
+footer a::before{
+    content : "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--blue_4);
+    width: 0;
+    transition: 0.3s;
+}
+footer a:hover{
+    color: var(--grey_2);
+}
+footer a:hover::before{
+    width: 30%;
+}
 /* Banner Contact */
 .contact-banner{
     border-top-left-radius: 25%;
@@ -461,11 +500,16 @@ footer button:hover{
         font-size: 4rem;
         line-height: 4.1rem;
     }
+    footer{
+        height: 480px
+    }
     .footer{
         flex-direction: column;
+
     }
     .first-col{
         width: 100%;
+        margin-top: 20px;
     }
     .second-col{
         width: 100%;

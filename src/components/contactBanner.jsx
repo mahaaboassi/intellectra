@@ -1,6 +1,6 @@
 import { useLottie } from "lottie-react";
 import animationData from "../data/moveCube.json"; // or use a URL
-import img from "../assets/images/cubes.png"
+import { Link } from "react-router-dom";
 
 const ContactBanner = ()=>{
     const options = {
@@ -17,7 +17,7 @@ const ContactBanner = ()=>{
         </div>
         <div className="flex flex-col justify-center items-center gap-5">
             <h2>How can we help?</h2>
-            <button>Contact us</button>
+            <Link to={"/contact"}><button>Contact us</button> </Link>
         </div>
     </div>)
 }

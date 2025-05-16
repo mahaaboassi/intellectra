@@ -9,6 +9,11 @@ import SubIndustry from './pages/subIndustry/subIndustry'
 import SubSolution from './pages/subSolution/subSolution'
 import ESG from './pages/esg/esg'
 import Innovation from './pages/innovation/innovation'
+import Contact from './pages/contact/contact'
+import FAQs from './pages/FAQs/faqs'
+import PrivacyPolicy from './pages/privacyPolicy/privacy'
+import Cookies from './pages/cookies/cookies'
+import TermsAndConditions from './pages/terms&conditions/terms&conditions'
 
 function App() {
 
@@ -23,6 +28,11 @@ function App() {
           <Route path="innovation" element={<Innovation/>} />
           <Route path="industry/:name" element={<SubIndustry/>} />
           <Route path="solutions/:name" element={<SubSolution/>} />
+          <Route path="contact" element={<Contact/>} />
+          <Route path="FAQs" element={<FAQs/>} />
+          <Route path="privacy-policy" element={<PrivacyPolicy/>} />
+          <Route path="cookies-center" element={<Cookies/>} />
+          <Route path="terms-&-conditions" element={<TermsAndConditions/>} />
        </Route>
     </Routes>
   </BrowserRouter>

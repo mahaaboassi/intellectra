@@ -18,42 +18,42 @@ const Services = ()=>{
         keywords: [  {
                 label: "Banking",
                 value: "banking",
-                link: "/aboutUs/industry/banking"
+                link: "/industry/banking"
                 },
                 {
                 label: "Communications",
                 value: "communications",
-                link: "/aboutUs/industry/communications"
+                link: "/industry/communications"
                 },
                 {
                 label: "Energy",
                 value: "energy",
-                link: "/aboutUs/industry/energy"
+                link: "/industry/energy"
                 },
                 {
                 label: "Government",
                 value: "government",
-                link: "/aboutUs/industry/government"
+                link: "/industry/government"
                 },
                 {
                 label: "Healthcare",
                 value: "healthcare",
-                link: "/aboutUs/industry/healthcare"
+                link: "/industry/healthcare"
                 },
                 {
                 label: "Manufacturing",
                 value: "manufacturing",
-                link: "/aboutUs/industry/manufacturing"
+                link: "/industry/manufacturing"
                 },
                 {
                 label: "Retail",
                 value: "retail",
-                link: "/aboutUs/industry/retail"
+                link: "/industry/retail"
                 },
                 {
                 label: "Transportation",
                 value: "transportation",
-                link: "/aboutUs/industry/transportation-&-logistics"
+                link: "/industry/transportation-&-logistics"
                 }],
         link: "/industry"
     },
@@ -73,52 +73,52 @@ const Services = ()=>{
         keywords: [  {
                     label: "AI",
                     value: "ai",
-                    link: "/aboutUs/solutions/artificial-intelligence-(ai)"
+                    link: "/solutions/artificial-intelligence-(ai)"
                 },
                 {
                     label: "Augmented Reality",
                     value: "augmented-reality",
-                    link: "/aboutUs/solutions/augmented-reality-(ar)"
+                    link: "/solutions/augmented-reality-(ar)"
                 },
                 {
                     label: "Cloud & Hybrid IT",
                     value: "cloud-hybrid-it",
-                    link: "/aboutUs/solutions/cloud-&-hybrid-it"
+                    link: "/solutions/cloud-&-hybrid-it"
                 },
                 {
                     label: "Cybersecurity",
                     value: "cybersecurity",
-                    link: "/aboutUs/solutions/cybersecurity"
+                    link: "/solutions/cybersecurity"
                 },
                 {
                     label: "Data Center",
                     value: "data-center",
-                    link: "/aboutUs/solutions/data-center"
+                    link: "/solutions/data-center"
                 },
                 {
                     label: "Digital Transformation",
                     value: "digital-transformation",
-                    link: "/aboutUs/solutions/digital-transformation"
+                    link: "/solutions/digital-transformation"
                 },
                 {
                     label: "IoT",
                     value: "iot",
-                    link: "/aboutUs/solutions/internet-of-things-(iot)"
+                    link: "/solutions/internet-of-things-(iot)"
                 },
                 {
                     label: "Infrastructure",
                     value: "infrastructure",
-                    link: "/aboutUs/solutions/infrastructure"
+                    link: "/solutions/infrastructure"
                 },
                 {
                     label: "Intelligent Automation",
                     value: "intelligent-automation",
-                    link: "/aboutUs/solutions/intelligent-automation"
+                    link: "/solutions/intelligent-automation"
                 },
                 {
                     label: "Workplace Modernization",
                     value: "workplace-modernization",
-                    link: "/aboutUs/solutions/workplace-modernization"
+                    link: "/solutions/workplace-modernization"
                 }],
         link: "/solutions"
     }]
@@ -130,12 +130,14 @@ const Services = ()=>{
                     <h3>{ele.title}</h3>
                 </div>
                 <p>{ele.description}</p>
-                <div className="container-keywords gap-2">
-                    {ele.keywords.map((key,i)=>(<div className="content p-2" key={`keywords_${ele.title}_${key.label}_${i}`}>
+                <div className="container-keywords gap-3">
+                    {ele.keywords.map((key,i)=>(<Link key={`keywords_${ele.title}_${key.label}_${i}`} to={key.link}>
+                    <div className="content p-2" >
                         {key.label}
-                    </div>))}
+                    </div>
+                    </Link>))}
                 </div>
-                <div><Link to={ele.link}><span className="learn" >See More</span></Link></div>
+                <div className="see-animation"><Link to={ele.link}><span className="learn" >See More</span></Link></div>
             </div>))}
         </div>
         

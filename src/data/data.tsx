@@ -369,95 +369,257 @@ export const industryData = {
     
 ]
 }
-
-
 export const termsAndConsitionData = {
-    title : "TERMS AND CONDITIONS",
-    lastUpdated : "03-March-2025",
-    finalDes : "",
-    children : [{
-        title : "Introduction",
-        description : "Welcome to INTELLECTRA. By accessing our website, you agree to be bound by these terms and conditions. If you do not agree, please do not use our services.",
-        content : []
-    },{
-        title : "Intellectual Property",
-        description : "All content on this website, including text, graphics, logos, and software, is the property of INTELLECTRA or its content suppliers and is protected by intellectual property laws.",
-        content : []
-    },{
-        title : "Use of Services",
-        description : "You agree to use our services only for lawful purposes and in accordance with these terms.",
-        content : []
-    },{
-        title : "Limitation of Liability",
-        description : "INTELLECTRA is not liable for any damages arising from the use or inability to use our website or services.",
-        content : []
-    },{
-        title : "Changes to Terms",
-        description : "We reserve the right to update these terms at any time without notice. Your continued use of the site will constitute acceptance of the new terms.",
-        content : []
-    },{
-        title : "Governing Law",
-        description : "These terms are governed by the laws of the United Arab Emirates.",
-        content : []
-    }]
-}
+  title: "TERMS AND CONDITIONS",
+  lastUpdated: "03-March-2025",
+  finalDes: "By using INTELLECTRA’s digital products, services, or platform, you agree to comply with the terms outlined below. These Terms and Conditions are intended to protect both our users and our intellectual assets. Please read them carefully.",
+  children: [
+    {
+      title: "1. Introduction",
+      description:
+        "Welcome to INTELLECTRA. These Terms and Conditions govern your use of our website, services, and products. By accessing this site, you acknowledge that you have read, understood, and agreed to be legally bound by them. If you disagree with any part, please refrain from using our services.",
+      content: []
+    },
+    {
+      title: "2. Eligibility",
+      description:
+        "You must be at least 18 years old or accessing the site under the supervision of a legal guardian to use our services. By using the site, you represent and warrant that you meet this requirement.",
+      content: []
+    },
+    {
+      title: "3. Intellectual Property",
+      description:
+        "All materials on this website—including but not limited to text, logos, design elements, images, code, and digital assets—are the intellectual property of INTELLECTRA or its content providers. Unauthorized reproduction, copying, or redistribution for commercial purposes is strictly prohibited.",
+      content: []
+    },
+    {
+      title: "4. User Conduct",
+      description:
+        "You agree to use the website only for lawful purposes. You must not engage in any activity that could harm the platform, its users, or its operations. This includes, but is not limited to, unauthorized access, data mining, transmitting malicious code, or attempting to interfere with our servers or services.",
+      content: []
+    },
+    {
+      title: "5. Account Responsibility",
+      description:
+        "If you create an account on our website, you are responsible for maintaining the confidentiality of your login credentials and for all activities that occur under your account.",
+      content: []
+    },
+    {
+      title: "6. Third-Party Links",
+      description:
+        "Our website may contain links to third-party websites or services. We are not responsible for the content or practices of any third party and encourage you to read their terms before interacting with them.",
+      content: []
+    },
+    {
+      title: "7. Limitation of Liability",
+      description:
+        "INTELLECTRA and its affiliates are not liable for any indirect, incidental, or consequential damages arising from your use of the website, including data loss, service interruption, or system failure.",
+      content: []
+    },
+    {
+      title: "8. Indemnification",
+      description:
+        "You agree to indemnify and hold harmless INTELLECTRA, its employees, and affiliates from any claims, damages, or expenses arising from your use of the platform or violation of these terms.",
+      content: []
+    },
+    {
+      title: "9. Changes to Terms",
+      description:
+        "INTELLECTRA reserves the right to revise or update these terms at any time without notice. It is your responsibility to review this page periodically. Continued use of the platform implies your acceptance of the revised terms.",
+      content: []
+    },
+    {
+      title: "10. Governing Law",
+      description:
+        "These terms shall be governed and interpreted according to the laws of the United Arab Emirates. Any disputes arising from or related to these terms shall be subject to the exclusive jurisdiction of the courts in the UAE.",
+      content: []
+    },
+    {
+      title: "11. Contact Information",
+      description:
+        "For any inquiries regarding these Terms and Conditions, please contact us at support@intellectra.com.",
+      content: []
+    }
+  ]
+};  
+
+// export const termsAndConsitionData = {
+//     title : "TERMS AND CONDITIONS",
+//     lastUpdated : "03-March-2025",
+//     finalDes : "",
+//     children : [{
+//         title : "Introduction",
+//         description : "Welcome to INTELLECTRA. By accessing our website, you agree to be bound by these terms and conditions. If you do not agree, please do not use our services.",
+//         content : []
+//     },{
+//         title : "Intellectual Property",
+//         description : "All content on this website, including text, graphics, logos, and software, is the property of INTELLECTRA or its content suppliers and is protected by intellectual property laws.",
+//         content : []
+//     },{
+//         title : "Use of Services",
+//         description : "You agree to use our services only for lawful purposes and in accordance with these terms.",
+//         content : []
+//     },{
+//         title : "Limitation of Liability",
+//         description : "INTELLECTRA is not liable for any damages arising from the use or inability to use our website or services.",
+//         content : []
+//     },{
+//         title : "Changes to Terms",
+//         description : "We reserve the right to update these terms at any time without notice. Your continued use of the site will constitute acceptance of the new terms.",
+//         content : []
+//     },{
+//         title : "Governing Law",
+//         description : "These terms are governed by the laws of the United Arab Emirates.",
+//         content : []
+//     }]
+// }
+// export const privacyPolicy = {
+//     title : "Privacy Policy",
+//     lastUpdated : "03-March-2025",
+//     finalDes : "",
+//     children : [{
+//         title : "Introduction",
+//         description :  "INTELLECTRA is committed to protecting your privacy. This policy explains how we collect, use, and protect your personal information.",
+//         content : []
+//     },{
+//         title : "Information We Collect",
+//         description :  "We collect information you provide directly to us, such as your name, email address, and phone number. We may also collect data automatically through cookies and analytics tools.",
+//         content : []
+//     },{
+//         title : "How We Use Your Information",
+//         description :  "",
+//         content : ["To provide and improve our services.","To communicate with you.","To comply with legal obligations.","To enhance user experience and offer personalized content."]
+//     },{
+//         title : "Sharing Your Information ",
+//         description :  "We do not sell or rent your personal data to third parties. We may share information with trusted partners to provide our services.",
+//         content : []
+//     },{
+//         title : "Data Security",
+//         description : "We implement appropriate technical and organizational measures to protect your information.",
+//         content : []
+//     },{
+//         title : "Your Rights",
+//         description :  "You have the right to access, correct, or delete your personal information. Requests can be sent via email to info@kodeks.ae",
+//         content : []
+//     },
+// ]
+// }
 export const privacyPolicy = {
-    title : "Privacy Policy",
-    lastUpdated : "03-March-2025",
-    finalDes : "",
-    children : [{
-        title : "Introduction",
-        description :  "INTELLECTRA is committed to protecting your privacy. This policy explains how we collect, use, and protect your personal information.",
-        content : []
-    },{
-        title : "Information We Collect",
-        description :  "We collect information you provide directly to us, such as your name, email address, and phone number. We may also collect data automatically through cookies and analytics tools.",
-        content : []
-    },{
-        title : "How We Use Your Information",
-        description :  "",
-        content : ["To provide and improve our services.","To communicate with you.","To comply with legal obligations.","To enhance user experience and offer personalized content."]
-    },{
-        title : "Sharing Your Information ",
-        description :  "We do not sell or rent your personal data to third parties. We may share information with trusted partners to provide our services.",
-        content : []
-    },{
-        title : "Data Security",
-        description : "We implement appropriate technical and organizational measures to protect your information.",
-        content : []
-    },{
-        title : "Your Rights",
-        description :  "You have the right to access, correct, or delete your personal information. Requests can be sent via email to info@kodeks.ae",
-        content : []
+  title: "Privacy Policy",
+  lastUpdated: "03 March 2025",
+  finalDes:
+    "At INTELLECTRA, your privacy is our priority. This policy details how we collect, use, and protect your personal data when you visit our website or use our services. We are committed to transparency and your rights.",
+  children: [
+    {
+      title: "1. Introduction",
+      description:
+        "INTELLECTRA is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information to ensure a safe and trustworthy experience.",
+      content: []
     },
-]
-}
+    {
+      title: "2. Information We Collect",
+      description:
+        "We collect information you provide directly, such as your name, email address, and phone number. Additionally, we gather data automatically using cookies and analytics tools to better understand how our services are used.",
+      content: []
+    },
+    {
+      title: "3. How We Use Your Information",
+      description:
+        "We use your information responsibly to:",
+      content: [
+        "Provide, operate, and maintain our services effectively.",
+        "Communicate important updates, respond to inquiries, and provide customer support.",
+        "Comply with applicable laws and regulations.",
+        "Enhance user experience by personalizing content and improving our website."
+      ]
+    },
+    {
+      title: "4. Sharing Your Information",
+      description:
+        "We do not sell, trade, or rent your personal data to third parties. We may share information with trusted partners who assist us in delivering our services, under strict confidentiality agreements.",
+      content: []
+    },
+    {
+      title: "5. Data Security",
+      description:
+        "We employ advanced technical and organizational measures to protect your data against unauthorized access, alteration, disclosure, or destruction.",
+      content: []
+    },
+    {
+      title: "6. Your Rights",
+      description:
+        "You have the right to access, update, or delete your personal information at any time. To exercise these rights or for any privacy-related inquiries, please contact us at info@kodeks.ae.",
+      content: []
+    }
+  ]
+};
+// export const cookiesData = {
+//     title : "Cookies Management",
+//     lastUpdated : "03-March-2025",
+//     finalDes : "",
+//     children : [{
+//         title : "What are Cookies?",
+//         description : "Cookies are small text files stored on your device to enhance user experience and provide analytical data.",
+//         content : []
+//     },{
+//         title : "How We Use Cookies?",
+//         description : "",
+//         content : ["To improve website functionality","To analyze website traffic and usage patterns","To remember your preferences"]
+//     },{
+//         title : "Managing Cookies :",
+//         description : "You can manage cookies through your browser settings. However, disabling cookies may affect your experience on our website.",
+//         content : []
+//     },{
+//         title : "Third-Party Cookies :",
+//         description : "We may use third-party services such as Google Analytics that use cookies to provide insights into website performance.",
+//         content : []
+//     },{
+//         title : "Changes to this Policy :",
+//         description : "We may update this policy from time to time. Please review it periodically for any changes.",
+//         content : []
+//     },
+// ]}
 export const cookiesData = {
-    title : "Cookies Management",
-    lastUpdated : "03-March-2025",
-    finalDes : "",
-    children : [{
-        title : "What are Cookies?",
-        description : "Cookies are small text files stored on your device to enhance user experience and provide analytical data.",
-        content : []
-    },{
-        title : "How We Use Cookies?",
-        description : "",
-        content : ["To improve website functionality","To analyze website traffic and usage patterns","To remember your preferences"]
-    },{
-        title : "Managing Cookies :",
-        description : "You can manage cookies through your browser settings. However, disabling cookies may affect your experience on our website.",
-        content : []
-    },{
-        title : "Third-Party Cookies :",
-        description : "We may use third-party services such as Google Analytics that use cookies to provide insights into website performance.",
-        content : []
-    },{
-        title : "Changes to this Policy :",
-        description : "We may update this policy from time to time. Please review it periodically for any changes.",
-        content : []
+  title: "Cookies Management",
+  lastUpdated: "03 March 2025",
+  finalDes:
+    "This Cookies Management policy explains what cookies are, how we use them, and how you can control them while using our website.",
+  children: [
+    {
+      title: "1. What are Cookies?",
+      description:
+        "Cookies are small text files stored on your device that help enhance your browsing experience and collect analytical data to improve our services.",
+      content: []
     },
-]}
+    {
+      title: "2. How We Use Cookies",
+      description: "We use cookies for the following purposes:",
+      content: [
+        "To improve website functionality and performance.",
+        "To analyze website traffic and user behavior.",
+        "To remember your preferences and settings."
+      ]
+    },
+    {
+      title: "3. Managing Cookies",
+      description:
+        "You can manage or disable cookies through your browser settings. Please note that disabling cookies may affect your experience and some features of our website.",
+      content: []
+    },
+    {
+      title: "4. Third-Party Cookies",
+      description:
+        "We may use third-party services like Google Analytics that use cookies to collect data on website usage and performance, helping us improve our offerings.",
+      content: []
+    },
+    {
+      title: "5. Changes to this Policy",
+      description:
+        "We reserve the right to update this Cookies Management policy from time to time. Please review this page periodically for any updates.",
+      content: []
+    }
+  ]
+};
 export const FAQsData = {
     title : "FAQs",
     lastUpdated : "",

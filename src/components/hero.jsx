@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const words = ["Intelligence.", "Innovation.", "Impact"];
 
@@ -41,7 +42,7 @@ const Hero = () => {
         We craft smart tech solutions that boost efficiency and fuel business growth.
       </motion.p>
 
-      <motion.button
+      <Link to={"/about"}><motion.button
         className="mt-5"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
@@ -50,7 +51,7 @@ const Hero = () => {
         transition={{ delay: 1.8, duration: 0.8 }}
       >
         LEARN MORE
-      </motion.button>
+      </motion.button></Link>
     </div>
   );
 };
