@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import robot from "../../assets/images/robot (6).webp"
+import robot from "../../assets/images/robot (8).webp"
 import LottieHero from "../../components/heroAnimation"
 import { useEffect, useState } from "react"
 import { solutionData } from "../../data/data"
