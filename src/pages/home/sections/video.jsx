@@ -26,12 +26,14 @@ const Video = ()=>{
                      allowFullScreen ></iframe>
                 </div> 
         </div>}
-        <div className="video-container gap-5">
-            <h2 className="text-center">EMPOWERING BUSINESSES WITH TECHNOLOGY</h2>
-            <div className="img">
-                <img src={img} alt="video" />
-                <div onClick={()=>setIsPopup(true)} className="cursor-pointer">
-                    {svg}
+        <div className="video-container ">
+            <div className="video-content gap-5">
+                <h2 className="text-center">EMPOWERING BUSINESSES WITH TECHNOLOGY</h2>
+                <div className="img">
+                    <img src={img} alt="video" />
+                    <div onClick={()=>setIsPopup(true)} className="cursor-pointer">
+                        {svg}
+                    </div>
                 </div>
             </div>
         </div>

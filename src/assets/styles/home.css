@@ -229,17 +229,18 @@ button:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
     height: 550px;
     border-radius: 10px;
     box-shadow: var(--shadow-box);
     position: relative;
 }
-.video-container::before{
-    content: "";
+
+.video-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.529);
     inset: 0;
