@@ -7,7 +7,7 @@ const Contact = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div className="contact pages">
         <LottieHero/>
-        <div className="pt-32 px-5 pb-14 sm:px-16 md:px-32 ">
+        <div className="pt-32 px-5 pb-14 sm:px-16 md:px-32">
             <div className="blur-bg radius-border flex flex-col gap-3 content-about p-4 sm:p-6  md:p-10 lg:p-16">
                 <Path first={"Home"} link={"/"} second={"Contact"} />
                 <h1>Contact Us </h1>

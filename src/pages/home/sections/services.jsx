@@ -124,7 +124,7 @@ const Services = ()=>{
     }]
     return(<div className={`px-5 sm:px-16 md:px-32 services`}>
         <div className="services-container gap-5">
-            {data.map((ele,idx)=>(<div className="flex flex-col gap-4" key={`Services_${ele.title}_${idx}`}>
+            {data.map((ele,idx)=>(<div className="flex w-full flex-col gap-4" key={`Services_${ele.title}_${idx}`}>
                 <div className="flex gap-5 items-center">
                     <div>{ele.icon}</div>
                     <h3>{ele.title}</h3>

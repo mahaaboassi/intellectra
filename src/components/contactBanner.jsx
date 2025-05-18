@@ -11,7 +11,7 @@ const ContactBanner = ()=>{
 
   const { View } = useLottie(options);
 
-    return(<div className="contact-banner py-10">
+    return(<div className="contact-banner py-10 ">
         <div className="view-banner">
             {View}
         </div>

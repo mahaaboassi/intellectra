@@ -16,7 +16,7 @@ const Video = ()=>{
     </clipPath>
     </defs>
     </svg>
-    return(<div className="px-5 sm:px-16 md:px-32 py-10 lg:py-20">
+    return(<div className="px-5 sm:px-16 md:px-32 py-5 lg:py-10 lg:py-20">
         {isPopup && <div className="popup">
             <div onClick={()=>setIsPopup(false)} className="close-icon">{close}</div>
             <div className="popup-content">
