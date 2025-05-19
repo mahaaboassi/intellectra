@@ -351,16 +351,8 @@ button:hover{
     object-fit: cover;
     transition: 1s;
 }
-.blog:hover .hastag{
-    animation: move 1s linear forwards;
-}
-@keyframes move {
-    from{
-        transform: translateY(10px)
-    }to{
-        transform: translateY(0px)
-    }
-}
+
+
 .hastag{
     background-color: var(--blue_4);
     color: var(--light);

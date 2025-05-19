@@ -14,6 +14,7 @@ import FAQs from './pages/FAQs/faqs'
 import PrivacyPolicy from './pages/privacyPolicy/privacy'
 import Cookies from './pages/cookies/cookies'
 import TermsAndConditions from './pages/terms&conditions/terms&conditions'
+import Blog from './pages/blog/blog'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="innovation" element={<Innovation/>} />
           <Route path="industry/:name" element={<SubIndustry/>} />
           <Route path="solutions/:name" element={<SubSolution/>} />
+          <Route path="news/:title" element={<Blog/>} />
           <Route path="contact" element={<Contact/>} />
           <Route path="FAQs" element={<FAQs/>} />
           <Route path="privacy-policy" element={<PrivacyPolicy/>} />

@@ -1,3 +1,10 @@
+// Images
+import img_1 from "../assets/images/ai.webp"
+import img_2 from "../assets/images/700x600.png"
+import img_3 from "../assets/images/cloud.jpg"
+import img_4 from "../assets/images/5x5c.png"
+import img_5 from "../assets/images/solutionSection.jpg"
+
 export const solutionData = {
     title : "",
     description : <div>We empower businesses to adapt, accelerate, and achieve their goals with cutting-edge ICT solutions. As your trusted technology partner, we provide tailored digital strategies, technical expertise, and scalable solutions to optimize business performance. Our approach ensures that complex systems, architectures, and mission-critical transformations are seamlessly integrated to maximize efficiency and growth.</div>,
@@ -641,3 +648,55 @@ export const FAQsData = {
         answer : "You can fill out the inquiry form on our website or contact us directly."
     },
 ]}
+export const dataBlog = [
+        {
+            id: 1,
+            title: "How AI is Revolutionizing Business Operations",
+            link: "how-AI-is-revolutionizing-business-operations",
+            description: "Artificial Intelligence is transforming industries by automating tasks, enhancing decision-making, and personalizing customer experiences. Learn how businesses are leveraging AI for growth and efficiency.",
+            image: img_1,
+            date: "2025-02-25",
+            author: "INTELLECTRA admin",
+            hashtag: ["#AI" ,"#Business"]
+        },
+        {
+            id: 2,
+            title: "The Future of Cloud Computing: Trends to Watch",
+            link : "the-future-of-cloud-computing-trends-to-Watch",
+            description: "Cloud computing is evolving rapidly, with trends like multi-cloud strategies, serverless computing, and AI-driven cloud services shaping the industry. Discover what the future holds for cloud technology.",
+            image: img_3,
+            date: "2025-02-25",
+            author: "INTELLECTRA admin",
+            hashtag: ["#CloudComputing"]
+        },
+        { 
+            id: 3,
+            title: "Technology Services: Why Businesses Need Digital Transformation",
+            link : "technology-services-why-businesses-need-digital-transformation",
+            description: "In today's competitive market, technology services play a crucial role in digital transformation. From cybersecurity to IT consulting, explore why businesses must adapt to modern technology solutions.",
+            image: img_2,
+            date: "2025-02-25",
+            author: "INTELLECTRA admin",
+            hashtag: ["#Technology", "#DigitalTransformation"]
+        },
+        {
+            id: 4,
+            title: "Cybersecurity in the Age of Remote Work",
+            link : "cybersecurit-i-the-age-of-remote-work",
+            description: "As remote work becomes the norm, cybersecurity threats are on the rise. Learn how companies are protecting their data and infrastructure in this new work environment.",
+            image: img_4,
+            date: "2025-02-26",
+            author: "INTELLECTRA admin",
+            hashtag: ["#Cybersecurity"]
+        },
+        {
+            id: 5,
+            title: "Harnessing Big Data for Business Insights",
+            link : "harnessing-big-data-for-business-insights",
+            description: "Big Data is more than just a buzzword—it's a powerful tool for gaining insights, predicting trends, and making data-driven decisions. See how organizations are capitalizing on data analytics.",
+            image: img_5,
+            date: "2025-02-27",
+            author: "INTELLECTRA admin",
+            hashtag: ["#BigData", "#Analytics"]
+        }
+    ];
