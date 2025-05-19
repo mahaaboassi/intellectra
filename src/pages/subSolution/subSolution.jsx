@@ -22,8 +22,8 @@ const SubSolution = ()=>{
                     <p>{data.subTitle}</p>
                     <div className="des flex flex-col gap-2">
                         {data.description}
-                        <ul className="flex flex-col gap-1 ">
-                            {data && "content" in data && data.content.map((e,idx)=>(<li key={`Content_Solution_${e}_${idx}`}>{e}</li>))}
+                        <ul className="flex flex-wrap gap-10 mt-10">
+                            {data && "content" in data && data.content.map((e,idx)=>(<li className="!p-5 justify-center items-center text-center flex w-full" key={`Content_Solution_${e}_${idx}`}>{e}</li>))}
                         </ul>
                     </div>
                     

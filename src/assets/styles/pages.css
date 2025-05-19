@@ -103,6 +103,40 @@
     font-size: var(--font-size-xs);
     color: var(--grey_2);
 }
+.robot-card li{
+    position: relative;
+    padding-left: 0 !important;
+    width: 200px;
+    color: var(--blue_1); 
+    font-weight: 500;
+
+}
+.robot-card li::before {
+  content: "" !important;
+  position: absolute;
+  left: 0 !important;
+  top: 0 !important;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--light), var(--grey_4));
+  border-radius: 10px;
+  z-index: -1;
+  opacity: 0.8;
+  filter: blur(3px);
+  animation: loopGlow 0.5s forwards ease-in-out;
+}
+
+@keyframes loopGlow {
+  0% {
+    transform: scale(0.5) ;
+    /* opacity: 0; */
+  }
+  100% {
+    transform: scale(1);
+    /* opacity: 0; */
+  }
+}
 .robot-card h1{
     font-size: var(--font-size-3xl);
     font-weight: 600;
@@ -152,9 +186,7 @@
     bottom: -10px;
 }
 /* @ Media */
-@media (max-width: 1200px) {
 
-}
 @media (max-width: 1200px) {
 
 }
@@ -164,6 +196,9 @@
         right: -100px;
         bottom: -100px;
         height: 400px;
+    }
+    .robot-card li{
+        width: 100%;
     }
 }
 @media (max-width: 900px) {
@@ -193,6 +228,7 @@
     .robot-card ul{
         width: 90%;
     }
+
 }
 @media (max-width: 600px) {
     .robot-card h1{
