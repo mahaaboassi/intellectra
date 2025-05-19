@@ -1,5 +1,6 @@
 import { useState } from "react"
 import img from "../../../assets/images/bg-video.webp"
+import video from "../../../assets/videos/intellectra.mp4"
 
 const svg = <svg xmlns="http://www.w3.org/2000/svg" width="34" height="42" viewBox="0 0 54 62" fill="none">
 <path d="M0 62V0L54 31L0 62Z" fill="#FEFEFE"/>
@@ -20,10 +21,14 @@ const Video = ()=>{
         {isPopup && <div className="popup">
             <div onClick={()=>setIsPopup(false)} className="close-icon">{close}</div>
             <div className="popup-content">
-                    <iframe  width="660" height="415" src="https://www.youtube.com/embed/rdIkAgsAtO8?si=vwiygo0CcJvQ12m7"
+                 <video autoPlay controls height="615" width="700">
+                    <source src={video} type="video/mp4"/>
+                    Your browser does not support the video tag.
+                </video>
+                    {/* <iframe  width="660" height="415" src="https://www.youtube.com/embed/rdIkAgsAtO8?si=vwiygo0CcJvQ12m7"
                      title="YouTube video player"
                      allow="autoplay; encrypted-media"
-                     allowFullScreen ></iframe>
+                     allowFullScreen ></iframe> */}
                 </div> 
         </div>}
         <div className="video-container ">

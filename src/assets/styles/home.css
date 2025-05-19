@@ -644,7 +644,7 @@ footer a:hover::before{
         font-size: 2rem;
         line-height: 2.1rem;
     }
-    .popup iframe{
+    .popup iframe, .popup video{
         width: 400px;
     }
 
@@ -664,7 +664,7 @@ footer a:hover::before{
     }
 }
 @media (max-width: 500px) {
-    .popup iframe{
+    .popup iframe, .popup video{
         width: 350px;
     }
     .view-banner{
@@ -684,7 +684,7 @@ footer a:hover::before{
     .second-col{
         flex-direction: column;
     }
-    .popup iframe{
+    .popup iframe, .popup video{
         width: 100vw;
     }
 
