@@ -33,13 +33,13 @@ const Navbar = ()=>{
     return(<div className="navbar px-5 sm:px-16 md:px-32">
           {isOpen && <div  onClick={()=>setIsOpen(false)}  className="close-icon">{close}</div>}
         <div>
-            <Link to="/"><img src={logo} alt="logo" /> </Link>
+            <Link aria-label="Logo Intellectra" to="/"><img src={logo} alt="logo" /> </Link>
             
         </div>
         <div>
             <ul className={`gap-5 ${isOpen?"fixed-menu":""}`}>
                 {data.map((ele,idx)=>(<li onClick={() => setIsOpen(false)} key={`Menu_Navbar_${ele.name}_${idx}`}>
-                        <Link to={ele.link} >{ele.name}</Link>
+                        <Link aria-label={ele.name} to={ele.link} >{ele.name}</Link>
                 </li>))}
             </ul>
         </div>
