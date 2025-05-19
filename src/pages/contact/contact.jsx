@@ -1,11 +1,17 @@
 import { useEffect } from "react"
 import LottieHero from "../../components/heroAnimation"
 import Path from "../../components/path"
+import { Helmet } from "react-helmet-async"
+import { hostCanonical } from "../../data/data"
 
 
 const Contact = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div className="contact pages">
+         <Helmet>
+            <title>Contact Us | Intellectra</title>
+            <link rel="canonical" href={`${hostCanonical}/contact`} />
+        </Helmet>
         <LottieHero/>
         <div className="pt-32 px-5 pb-14 sm:px-16 md:px-32">
             <div className="blur-bg radius-border flex flex-col gap-3 content-about p-4 sm:p-6  md:p-10 lg:p-16">

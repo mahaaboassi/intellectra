@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
-import { dataBlog } from "../../data/data"
+import { dataBlog, hostCanonical } from "../../data/data"
 import LottieHero from "../../components/heroAnimation"
 import Path from "../../components/path"
 import Latest from "../home/sections/latest"
+import { Helmet } from "react-helmet-async"
 
 const Blog = ()=>{
     const { title } = useParams()
@@ -27,6 +28,10 @@ const Blog = ()=>{
         </defs>
         </svg>
     return(<div className="">
+        <Helmet>
+            <title>Latest News | Intellectra</title>
+            <link rel="canonical" href={`${hostCanonical}/news/${"link" in data && data.link}`} />
+        </Helmet>
         <LottieHero/>
         <div className="pt-32 px-5  pb-14 sm:px-16 md:px-32">
             <div className="flex gap-2 blog-details w-full">

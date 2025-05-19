@@ -2,6 +2,8 @@ import { useEffect } from "react"
 import LottieHero from "../../components/heroAnimation"
 import { Link } from "react-router-dom"
 import Path from "../../components/path"
+import { Helmet } from "react-helmet-async"
+import { hostCanonical } from "../../data/data"
 
 const About = ()=>{
     const data = [{
@@ -23,6 +25,10 @@ const About = ()=>{
     }]
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div>
+        <Helmet>
+            <title>About | Intellectra</title>
+            <link rel="canonical" href={`${hostCanonical}/about`} />
+        </Helmet>
         <LottieHero/>
         <div className="about pt-32 px-5 sm:px-16 md:px-32">
         <div className="content-about radius-border blur-bg p-4 sm:p-6 md:p-10 lg:p-16 flex flex-col gap-3">

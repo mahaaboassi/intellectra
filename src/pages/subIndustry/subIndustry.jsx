@@ -2,9 +2,10 @@ import { useParams } from "react-router-dom"
 import robot from "../../assets/images/robot.webp"
 import LottieHero from "../../components/heroAnimation"
 import { useEffect, useState } from "react"
-import { industryData, solutionData } from "../../data/data"
+import { hostCanonical, industryData, solutionData } from "../../data/data"
 import Path from "../../components/path"
 import Card from "../../components/card"
+import { Helmet } from "react-helmet-async"
 
 const SubIndustry = ()=>{
     const { name } = useParams()
@@ -28,6 +29,10 @@ const SubIndustry = ()=>{
     },[name])
     return(<div>
         <LottieHero/>
+        <Helmet>
+            <title>{"title" in data? data.title:""} | Intellectra</title>
+            <link rel="canonical" href={`${hostCanonical}/${"link" in data && data.link}`} />
+        </Helmet>
         <div className="robot-card  pt-32 px-5 sm:px-16 md:px-32  ">
             <div className="blur-bg  radius-border flex gap-3 flex-col robot-card p-4 sm:p-6  md:p-10 lg:p-16 ">
                 <Path first={"Industry"} second={data.title} link={"/industry"} />

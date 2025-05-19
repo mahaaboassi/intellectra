@@ -5,6 +5,11 @@ import img_3 from "../assets/images/cloud.jpg"
 import img_4 from "../assets/images/5x5c.png"
 import img_5 from "../assets/images/solutionSection.jpg"
 
+
+
+export const hostCanonical = "https://intellectra-three.vercel.app"
+
+
 export const solutionData = {
     title : "",
     description : <div>We empower businesses to adapt, accelerate, and achieve their goals with cutting-edge ICT solutions. As your trusted technology partner, we provide tailored digital strategies, technical expertise, and scalable solutions to optimize business performance. Our approach ensures that complex systems, architectures, and mission-critical transformations are seamlessly integrated to maximize efficiency and growth.</div>,

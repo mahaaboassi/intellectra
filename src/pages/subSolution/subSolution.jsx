@@ -2,8 +2,9 @@ import { useParams } from "react-router-dom"
 import robot from "../../assets/images/robot (8).webp"
 import LottieHero from "../../components/heroAnimation"
 import { useEffect, useState } from "react"
-import { solutionData } from "../../data/data"
+import { hostCanonical, solutionData } from "../../data/data"
 import Path from "../../components/path"
+import { Helmet } from "react-helmet-async"
 
 const SubSolution = ()=>{
     const { name } = useParams()
@@ -14,6 +15,10 @@ const SubSolution = ()=>{
     },[name])
     return(<div>
         <LottieHero/>
+        <Helmet>
+            <title>{"title" in data? data.title:""} | Intellectra</title>
+            <link rel="canonical" href={`${hostCanonical}/${"link" in data && data.link}`} />
+        </Helmet>
         <div className="robot-card pt-32 px-5 sm:px-16 md:px-32  pb-10">
             <div className="blur-bg radius-border flex gap-3 flex-col robot-card p-4 sm:p-6  md:p-10 lg:p-16 ">
                 <Path first={"Solution"} second={data.title} link={"/solutions"}/>

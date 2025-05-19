@@ -1,12 +1,17 @@
 import Card from "../../components/card"
 import LottieHero from "../../components/heroAnimation"
-import { industryData } from "../../data/data"
+import { hostCanonical, industryData } from "../../data/data"
 import Path from "../../components/path"
 import { useEffect } from "react"
+import { Helmet } from "react-helmet-async"
 
 const Industry = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div className="industry pages">
+        <Helmet>
+            <title>Industry | Intellectra</title>
+            <link rel="canonical" href={`${hostCanonical}/industry`} />
+        </Helmet>
         <LottieHero/>
         <div className="pt-32 px-5 sm:px-16 md:px-32 ">
             <div className="blur-bg flex flex-col gap-3 radius-border content-about p-4 sm:p-6  md:p-10 lg:p-16">

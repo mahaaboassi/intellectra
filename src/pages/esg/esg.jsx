@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import Card from "../../components/card"
 import LottieHero from "../../components/heroAnimation"
-import { esgData } from "../../data/data"
+import { esgData, hostCanonical } from "../../data/data"
 import Path from "../../components/path"
 import { Helmet } from "react-helmet-async"
 
@@ -10,7 +10,7 @@ const ESG = ()=>{
     return(<div className="pages">
         <Helmet>
             <title>ESG | Intellectra</title>
-            {/* <link rel="canonical" href="https://www.tacobell.com/" /> */}
+            <link rel="canonical" href={`${hostCanonical}/esg`} />
         </Helmet>
         <LottieHero/>
         <div className="pt-32 px-5 sm:px-16 md:px-32 ">
