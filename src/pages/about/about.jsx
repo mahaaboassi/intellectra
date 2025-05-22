@@ -17,7 +17,7 @@ const About = ()=>{
     },{
         title : "Industry Expertise",
         description : "With deep experience across multiple industries, our engineers and consultants help businesses navigate complexity with precision and confidence. We map your industry’s architecture to tailored technology solutions, ensuring that every implementation is purpose-built to meet your unique operational challenges. As industries continue to evolve and boundaries blur, we leverage insights from cross-industry collaborations to introduce breakthrough solutions that redefine business potential.",
-        link : "/industry"
+        link : "/industries"
     },{
         title : "Solutions",
         description : "In today’s fast-evolving digital landscape, transformation is no longer optional—it’s essential. At INTELLECTRA, we empower businesses to adapt, accelerate, and thrive with secure, flexible, and future-ready ICT solutions. Our end-to-end services enable organizations to enhance digital agility, strengthen cybersecurity resilience, scale seamlessly with cloud and AI-driven technologies, and optimize workflows through intelligent automation—all designed to drive efficiency, innovation, and long-term success.",

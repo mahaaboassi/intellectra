@@ -1,31 +1,30 @@
 import { Link } from "react-router-dom"
 import logo from "../assets/images/logo.png"
 import { useEffect, useState } from "react"
-import { solutionData } from "../data/data"
+import { industryData, solutionData } from "../data/data"
 
 const Footer = ()=>{
      const pages = [{
         name : "About Us",
         link : "/about"
     },{
-        name : "Industry",
-        link : "/industry"
+        name : "ESG",
+        link : "/esg"
     },{
-        name : "Solution",
-        link : "/solutions"
+        name : "Innovation",
+        link : "/innovation"
     },{
-        name : "Conatct Us",
-        link : "/contact"
+        name : "Pluse",
+        link : "/"
     }]
     
-    const support = [{
+    const support = [   {
+        name : "Contact Us",
+        link : "/contact"
+    },{
         name : "Cookie Center",
         link : "/cookies-center"
     },
-    // {
-    //     name : "FAQs",
-    //     link : "/FAQs"
-    // },
     {
         name : "Privacy Policy",
         link : "/privacy-policy"
@@ -48,19 +47,19 @@ const Footer = ()=>{
         link : "https://www.youtube.com/watch?v=rdIkAgsAtO8&t=2s"
     }]
     const [solutions, setSolutions] = useState([])
+    const [industries, setIndustries ] = useState([])
     useEffect(()=>{
         const temp = solutionData.children;
-
+        const tempIndustry = industryData.children;
+        
         const getThreeUniqueItems = (array) => {
         if (!Array.isArray(array)) return [];
 
         const shuffled = [...array].sort(() => 0.5 - Math.random());
         return shuffled.slice(0, 3);
         };
-
-        const threeItems = getThreeUniqueItems(temp);
-        setSolutions(threeItems);
-
+        setSolutions(getThreeUniqueItems(temp));
+        setIndustries(getThreeUniqueItems(tempIndustry));
     },[])
     return(<footer >
             <div className="footer gap-6 items-center px-5 sm:px-16 md:px-32">
@@ -69,59 +68,76 @@ const Footer = ()=>{
                         <img src={logo} alt="intellectra" />
                     </div>
                     <p>
-                        We empower businesses with innovative ICT solutions, combining expertise and technology to drive efficiency, innovation, and maximize ROI
+                        We empower businesses to thrive in the digital age by delivering inventive ICT solutions that fuse deep expertise with future-ready technology, driving efficiency, sparking innovation, and maximizing ROI.
                     </p>
-                    <p>Learn more about <Link to="/about">At INTELLECTRA</Link></p>
+                    {/* <p>Learn more about <Link to="/about">At INTELLECTRA</Link></p> */}
                     <div className="final-footer">
-                        © 2025 by <Link target="_blank" to="https://arizglobal.com">ArizGlobal</Link>
+                        © 2025 INTELLECTRA
                     </div>
                 </div>
                 <div className="second-col gap-6 flex ">
-                    <div className="w-full flex flex-col gap-4">
-                        <h4>Company</h4>
-                        {pages.map((ele,idx)=>(<Link key={`Pages_${ele.name}_${idx}`} to={ele.link}>
-                            <div className="menu">
+                    <div className="second-content-col-1">
+                        <div className="w-full flex flex-col gap-4">
+                            <h4>Company</h4>
+                            {pages.map((ele,idx)=>(<Link key={`Pages_${ele.name}_${idx}`} to={ele.link}>
+                                <div className="menu">
+                                    {ele.name}
+                                </div>
+                            </Link>))}
+                        </div>
+                        <div className="w-full flex flex-col gap-4">
+                            <h4 >Solutions</h4>
+                            {solutions.length > 0 && solutions.map((ele,idx)=>(<Link key={`Solutions_${ele.title}_${idx}`}  to={ele.link}>
+                                <div className="menu">
+                                    {ele.title}
+                                </div>
+                                </Link>))}
+                            <Link to={"/solutions"}>
+                                <div className="menu">
+                                    See More
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="second-content-col-2">
+                        <div className="w-full flex flex-col gap-4">
+                            <h4>Industries</h4>
+                            {industries.length > 0 && industries.map((ele,idx)=>(<Link key={`Industries${ele.title}_${idx}`}  to={ele.link}>
+                                <div className="menu">
+                                    {ele.title}
+                                </div>
+                                </Link>))}
+                            <Link to={"/industries"}>
+                                <div className="menu">
+                                    See More
+                                </div>
+                            </Link>
+                        </div>
+                        <div className="w-full flex flex-col gap-4 menu">
+                            <h4>Support</h4>
+                            {support.map((ele,idx)=>(<Link to={ele.link} key={`Support_${ele.name}_${idx}`}>
+                            <div >
                                 {ele.name}
                             </div>
-                        </Link>))}
-                    </div>
-                    <div className="w-full flex flex-col gap-4">
-                        <h4 onClick={()=>{console.log(solutions);
-                        }}>Solutions</h4>
-                        {solutions.length > 0 && solutions.map((ele,idx)=>(<Link key={`Solutions_${ele.title}_${idx}`}  to={ele.link}>
-                            <div className="menu">
-                                {ele.title}
-                            </div>
                             </Link>))}
-                        <Link to={"/solutions"}>
-                            <div className="menu">
-                                See More
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="w-full flex flex-col gap-4 menu">
-                        <h4>Support</h4>
-                        {support.map((ele,idx)=>(<Link to={ele.link} key={`Support_${ele.name}_${idx}`}>
-                        <div >
-                            {ele.name}
                         </div>
-                        </Link>))}
                     </div>
                 </div>
-                <div className="third-col flex flex-col justify-between">
+            
+                {/* <div className="third-col flex flex-col justify-between">
                     <div className=" flex flex-col gap-2">
                         <h4>Keeping you informed</h4>
                         <button>Subscribe</button>
                     </div>
-                    {/* <div className=" flex flex-col gap-2">
+                    <div className=" flex flex-col gap-2">
                         <h4>Follow us</h4>
                         <div className="flex gap-4 items-center">
                             {icons.map((icon,i)=>(<Link key={`Icons_${icon.name}_${i}`} to={icon.link}>
                             <div>{icon.icon}</div>
                             </Link>))}
                         </div>
-                    </div> */}
-                </div>
+                    </div>
+                </div> */}
             </div>
         </footer>)
 }

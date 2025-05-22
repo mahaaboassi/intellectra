@@ -13,49 +13,75 @@ const Services = ()=>{
                             </clipPath>
                             </defs>
                         </svg>, 
-        title: "Industry",
+        title: "Industries",
         description: "We deliver globally recognized, technology-driven solutions that help businesses maximize their IT investments and business performance. Our expertise spans multiple industries, where we leverage cutting-edge digital solutions to drive innovation, optimize operations, and improve overall outcomes.",
         keywords: [  {
-                label: "Banking",
-                value: "banking",
-                link: "/industry/banking"
+                label: "Finance",
+                value: "finance",
+                link: "/industries/finance"
                 },
                 {
                 label: "Communications",
                 value: "communications",
-                link: "/industry/communications"
+                link: "/industries/communications"
                 },
                 {
                 label: "Energy",
                 value: "energy",
-                link: "/industry/energy"
+                link: "/industries/energy"
                 },
                 {
                 label: "Government",
                 value: "government",
-                link: "/industry/government"
+                link: "/industries/government"
                 },
                 {
                 label: "Healthcare",
                 value: "healthcare",
-                link: "/industry/healthcare"
+                link: "/industries/healthcare"
                 },
                 {
                 label: "Manufacturing",
                 value: "manufacturing",
-                link: "/industry/manufacturing"
+                link: "/industries/manufacturing"
                 },
                 {
                 label: "Retail",
                 value: "retail",
-                link: "/industry/retail"
+                link: "/industries/retail"
                 },
                 {
-                label: "Transportation",
+                label: "Logistics",
                 value: "transportation",
-                link: "/industry/transportation-&-logistics"
-                }],
-        link: "/industry"
+                link: "/industries/transportation-&-logistics"
+                },
+                {
+                label: "Education",
+                value: "transportation",
+                link: "/industries/transportation-&-logistics"
+                },
+                {
+                label: "Construction",
+                value: "transportation",
+                link: "/industries/transportation-&-logistics"
+                },
+                {
+                label: "Media",
+                value: "transportation",
+                link: "/industries/transportation-&-logistics"
+                },
+                {
+                label: "Agriculture",
+                value: "transportation",
+                link: "/industries/transportation-&-logistics"
+                },
+                {
+                label: "Hospitality",
+                value: "transportation",
+                link: "/industries/transportation-&-logistics"
+                },
+            ],
+        link: "/industries"
     },
     { 
         icon : <svg xmlns="http://www.w3.org/2000/svg" width="69" height="60" viewBox="0 0 79 70" fill="none">
@@ -69,7 +95,7 @@ const Services = ()=>{
                     </defs>
                     </svg> ,
         title: "Solutions",
-        description: "Digital transformation is essential in today’s world. At INTELLECTRA, we help businesses adapt, secure, and scale with AI-driven ICT solutions. Our services enhance agility, strengthen cybersecurity, and optimize workflows. Empower your growth with innovation and efficiency.",
+        description: "We help businesses adapt, secure, and scale with AI-driven ICT solutions that empower growth with innovation and efficiency. Understanding that digital transformation is essential in today’s world, our solutions focus on enhancing agility, strengthening cybersecurity, and optimizing workflows.",
         keywords: [  {
                     label: "AI",
                     value: "ai",
@@ -125,7 +151,7 @@ const Services = ()=>{
     return(<div className={`px-5 sm:px-16 md:px-32 services`}>
         <div className="services-container gap-5">
             {data.map((ele,idx)=>(<div className="flex w-full flex-col gap-4" key={`Services_${ele.title}_${idx}`}>
-                <div className="flex gap-5 items-center">
+                <div className="flex gap-5 h-20  items-center">
                     <div>{ele.icon}</div>
                     <h3>{ele.title}</h3>
                 </div>

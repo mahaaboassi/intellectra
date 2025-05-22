@@ -1,20 +1,20 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import logo from "../assets/images/logo.png"
 import { useState } from "react"
 
 const Navbar = ()=>{
     const data = [{
-        name : "Home",
-        link : '/'
-    },{
         name : "About",
         link : '/about'
     },{
-        name : "Industry",
-        link : '/industry'
+        name : "Industries",
+        link : '/industries'
     },{
-        name : "Solution",
+        name : "Solutions",
         link : '/solutions'
+    },{
+        name : "pulse",
+        link : '/'
     },{
         name : "Contact",
         link : '/contact'
@@ -38,8 +38,8 @@ const Navbar = ()=>{
         </div>
         <div>
             <ul className={`gap-5 ${isOpen?"fixed-menu":""}`}>
-                {data.map((ele,idx)=>(<li onClick={() => setIsOpen(false)} key={`Menu_Navbar_${ele.name}_${idx}`}>
-                        <Link aria-label={ele.name} to={ele.link} >{ele.name}</Link>
+                {data.map((ele,idx)=>(<li className="capitalize" onClick={() => setIsOpen(false)} key={`Menu_Navbar_${ele.name}_${idx}`}>
+                        <NavLink className={(({ isActive })=>isActive?"active":"")} aria-label={ele.name} to={ele.link} >{ele.name}</NavLink>
                 </li>))}
             </ul>
         </div>

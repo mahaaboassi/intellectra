@@ -23,11 +23,11 @@ function App() {
        <Route path="/*" element={<Layout/>} >
           <Route path="" element={<Home/>} />
           <Route path="about" element={<About/>} />
-          <Route path="industry" element={<Industry/>} />
+          <Route path="industries" element={<Industry/>} />
           <Route path="solutions" element={<Solutions/>} />
           <Route path="esg" element={<ESG/>} />
           <Route path="innovation" element={<Innovation/>} />
-          <Route path="industry/:name" element={<SubIndustry/>} />
+          <Route path="industries/:name" element={<SubIndustry/>} />
           <Route path="solutions/:name" element={<SubSolution/>} />
           <Route path="news/:title" element={<Blog/>} />
           <Route path="contact" element={<Contact/>} />

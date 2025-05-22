@@ -29,7 +29,7 @@ const Blog = ()=>{
         </svg>
     return(<div className="">
         <Helmet>
-            <title>Latest News | Intellectra</title>
+            <title> Pulse | Intellectra</title>
             <link rel="canonical" href={`${hostCanonical}/news/${"link" in data && data.link}`} />
         </Helmet>
         <LottieHero/>
