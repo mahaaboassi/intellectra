@@ -63,7 +63,7 @@ const Footer = ()=>{
     },[])
     return(<footer >
             <div className="footer gap-6 items-center px-5 sm:px-16 md:px-32">
-                <div className="first-col flex flex-col gap-4">
+                <div className="first-col flex flex-col gap-3">
                     <div>
                         <img src={logo} alt="intellectra" />
                     </div>
