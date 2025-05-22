@@ -15,72 +15,73 @@ const Services = ()=>{
                         </svg>, 
         title: "Industries",
         description: "We deliver globally recognized, technology-driven solutions that help businesses maximize their IT investments and business performance. Our expertise spans multiple industries, where we leverage cutting-edge digital solutions to drive innovation, optimize operations, and improve overall outcomes.",
-        keywords: [  {
-                label: "Finance",
-                value: "finance",
-                link: "/industries/finance"
+        keywords: [
+                {
+                    label: "Agriculture",
+                    value: "transportation",
+                    link: "/industries/transportation-&-logistics"
                 },
                 {
-                label: "Communications",
-                value: "communications",
-                link: "/industries/communications"
+                    label: "Communications",
+                    value: "communications",
+                    link: "/industries/communications"
                 },
                 {
-                label: "Energy",
-                value: "energy",
-                link: "/industries/energy"
+                    label: "Construction",
+                    value: "transportation",
+                    link: "/industries/transportation-&-logistics"
                 },
                 {
-                label: "Government",
-                value: "government",
-                link: "/industries/government"
+                    label: "Education",
+                    value: "transportation",
+                    link: "/industries/transportation-&-logistics"
                 },
                 {
-                label: "Healthcare",
-                value: "healthcare",
-                link: "/industries/healthcare"
+                    label: "Energy",
+                    value: "energy",
+                    link: "/industries/energy"
                 },
                 {
-                label: "Manufacturing",
-                value: "manufacturing",
-                link: "/industries/manufacturing"
+                    label: "Finance",
+                    value: "finance",
+                    link: "/industries/finance"
                 },
                 {
-                label: "Retail",
-                value: "retail",
-                link: "/industries/retail"
+                    label: "Government",
+                    value: "government",
+                    link: "/industries/government"
                 },
                 {
-                label: "Logistics",
-                value: "transportation",
-                link: "/industries/transportation-&-logistics"
+                    label: "Healthcare",
+                    value: "healthcare",
+                    link: "/industries/healthcare"
                 },
                 {
-                label: "Education",
-                value: "transportation",
-                link: "/industries/transportation-&-logistics"
+                    label: "Hospitality",
+                    value: "transportation",
+                    link: "/industries/transportation-&-logistics"
                 },
                 {
-                label: "Construction",
-                value: "transportation",
-                link: "/industries/transportation-&-logistics"
+                    label: "Logistics",
+                    value: "transportation",
+                    link: "/industries/transportation-&-logistics"
                 },
                 {
-                label: "Media",
-                value: "transportation",
-                link: "/industries/transportation-&-logistics"
+                    label: "Manufacturing",
+                    value: "manufacturing",
+                    link: "/industries/manufacturing"
                 },
                 {
-                label: "Agriculture",
-                value: "transportation",
-                link: "/industries/transportation-&-logistics"
+                    label: "Media",
+                    value: "transportation",
+                    link: "/industries/transportation-&-logistics"
                 },
                 {
-                label: "Hospitality",
-                value: "transportation",
-                link: "/industries/transportation-&-logistics"
-                },
-            ],
+                    label: "Retail",
+                    value: "retail",
+                    link: "/industries/retail"
+                }
+                ],
         link: "/industries"
     },
     { 
@@ -148,6 +149,7 @@ const Services = ()=>{
                 }],
         link: "/solutions"
     }]
+
     return(<div className={`px-5 sm:px-16 md:px-32 services`}>
         <div className="services-container gap-10">
             {data.map((ele,idx)=>(<div className="flex w-full flex-col gap-4" key={`Services_${ele.title}_${idx}`}>

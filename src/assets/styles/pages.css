@@ -223,6 +223,29 @@
 .side-blog:hover h2{
     color: var(--blue_1);
 }
+/* Layout */
+.layout h1{
+    color: var(--blue_1);
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.layout h2{
+    font-size: var(--font-size-l);
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+.container-about{
+    display: flex;
+}
+.container-about img{
+   border-radius: 10px;
+   height: 300px;
+   width: 100%;
+   object-fit: cover;
+}
 /* @ Media */
 
 @media (max-width: 1200px) {

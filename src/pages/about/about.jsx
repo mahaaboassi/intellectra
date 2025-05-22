@@ -1,27 +1,79 @@
 import { useEffect } from "react"
 import LottieHero from "../../components/heroAnimation"
-import { Link } from "react-router-dom"
-import Path from "../../components/path"
 import { Helmet } from "react-helmet-async"
 import { hostCanonical } from "../../data/data"
+import Card from "../../components/card"
+import { motion } from "framer-motion";
+// Images
+import img_1 from "../../assets/images/1.webp"
+import img_2 from "../../assets/images/2.webp"
+import img_3 from "../../assets/images/3.webp"
 
+const wordAnim = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },  
+};
 const About = ()=>{
     const data = [{
-        title : "Innovation at the Core",
-        description : "Success in today’s fast-changing digital world requires constant reinvention, agility, and bold innovation. At INTELLECTRA, we help organizations stay ahead by transforming ideas into actionable, scalable solutions through our idea-to-solution framework. Whether through AI, automation, cybersecurity, or cloud solutions, we enable businesses to embrace innovation that fuels sustainable growth.",
-        link : "/innovation"
+        title : "Innovation at Core",
+        subTitle : "Constant Reinvention and Agility",
+        description : "We help organizations stay ahead by transforming ideas into actionable, scalable solutions through our idea-to-solution framework. Whether through AI, automation, cybersecurity, or cloud solutions, we enable businesses to embrace innovation that fuels sustainable growth.",
+        link : "/innovation",
+        image : <svg xmlns="http://www.w3.org/2000/svg" width="55" height="63" viewBox="0 0 115 123" fill="none">
+                    <g clipPath="url(#clip0_415_555)">
+                    <path fillRule="evenodd" clipRule="evenodd" d="M75.84 27.1C79.0639 28.9973 81.9694 31.3899 84.45 34.19C86.8786 36.9296 88.8261 40.0605 90.21 43.45C90.9963 45.3937 91.6152 47.401 92.06 49.45C93.0921 54.0516 93.1738 58.8156 92.3 63.45C91.8262 65.9548 91.1061 68.4068 90.15 70.77L90.03 71.02C87.97 76.02 84.44 80.88 81.03 85.68C79.28 88.1 77.55 90.5 76.09 92.83C75.6316 93.5562 74.9826 94.1426 74.2137 94.5253C73.4449 94.9079 72.5857 95.0721 71.73 95L44.17 99.1C43.0413 99.2547 41.8949 98.9942 40.9439 98.3669C39.9929 97.7397 39.3021 96.7884 39 95.69C38.3081 93.686 37.4588 91.7399 36.46 89.87C35.626 88.2688 34.6201 86.7632 33.46 85.38C32.03 83.75 30.58 82.09 29.17 80.18C27.5512 78.012 26.1542 75.687 25 73.24C23.7899 70.6774 22.8482 67.9964 22.19 65.24C21.5391 62.471 21.2202 59.6344 21.24 56.79C21.2403 53.825 21.6132 50.8719 22.35 48C23.1495 44.9294 24.2969 41.9602 25.77 39.15L25.97 38.8C27.876 35.5648 30.2825 32.652 33.1 30.17C35.9092 27.7169 39.1059 25.7468 42.56 24.34L42.84 24.24C45.4138 23.2162 48.0988 22.4979 50.84 22.1C53.7456 21.693 56.6888 21.6259 59.61 21.9C62.4641 22.1607 65.281 22.7341 68.01 23.61C70.7282 24.4805 73.3409 25.651 75.8 27.1H75.84ZM71.84 114.36C70.3276 116.966 68.1634 119.133 65.56 120.65C63.3622 121.93 60.8977 122.683 58.36 122.85C55.823 123.004 53.2891 122.504 51 121.4C49.3496 120.587 47.8619 119.478 46.61 118.13L71.9 114.36H71.84ZM74.25 100.21V101.86V102.44C74.3301 103.522 74.3301 104.608 74.25 105.69L73.76 108.08L43.12 112.64L42.58 111.41L41.39 106.51V105.09L74.18 100.21H74.25ZM56.34 3.76997C56.3584 2.755 56.778 1.78862 57.5069 1.08215C58.2359 0.375669 59.2149 -0.0134169 60.23 -3.19617e-05H60.5C61.4671 0.0857933 62.3658 0.534765 63.0151 1.25652C63.6645 1.97827 64.0164 2.91921 64 3.88997C64.0052 3.95653 64.0052 4.02341 64 4.08997L63.79 12.3C63.7953 12.3866 63.7953 12.4734 63.79 12.56C63.714 13.5307 63.272 14.4364 62.5535 15.0936C61.835 15.7508 60.8937 16.1105 59.92 16.1H59.65C58.6793 16.0214 57.7746 15.577 57.1192 14.8566C56.4639 14.1363 56.1067 13.1938 56.12 12.22C56.1144 12.1568 56.1144 12.0932 56.12 12.03L56.32 3.77997L56.34 3.76997ZM14 18.15C13.4405 17.6338 13.047 16.9629 12.8696 16.2227C12.6922 15.4824 12.7388 14.7061 13.0035 13.9924C13.2682 13.2786 13.739 12.6597 14.3563 12.2141C14.9735 11.7686 15.7092 11.5165 16.47 11.49C16.9732 11.467 17.476 11.5434 17.9496 11.715C18.4232 11.8866 18.8583 12.15 19.23 12.49L25.39 18.22C26.1303 18.9202 26.5681 19.8818 26.61 20.9C26.6335 21.4032 26.5573 21.9062 26.3857 22.3799C26.2141 22.8535 25.9504 23.2886 25.61 23.66C24.9154 24.4024 23.9559 24.8408 22.94 24.88C22.4366 24.9046 21.9334 24.8289 21.4595 24.6572C20.9857 24.4856 20.5507 24.2213 20.18 23.88L14 18.15ZM3.91998 60.48C2.90804 60.4963 1.93018 60.1145 1.19698 59.4168C0.463793 58.7192 0.033933 57.7615 -2.10193e-05 56.75C-0.0214212 56.2415 0.0584554 55.7339 0.234966 55.2566C0.411476 54.7793 0.681099 54.3418 1.02816 53.9696C1.37523 53.5975 1.79281 53.298 2.25663 53.0886C2.72046 52.8792 3.22128 52.7641 3.72998 52.75L12.14 52.47C12.6476 52.4486 13.1544 52.5281 13.6311 52.704C14.1078 52.8799 14.5448 53.1486 14.9168 53.4946C15.2889 53.8406 15.5886 54.257 15.7985 54.7197C16.0085 55.1824 16.1246 55.6821 16.14 56.19V56.25V56.39C16.1224 57.3775 15.725 58.3202 15.0303 59.0223C14.3357 59.7244 13.3972 60.1318 12.41 60.16H12.26L3.95998 60.43L3.91998 60.48ZM109.92 48.56H110C110.963 48.5022 111.913 48.8093 112.66 49.42C113.053 49.7372 113.38 50.1296 113.62 50.5743C113.861 51.0189 114.01 51.507 114.06 52.01C114.066 52.0531 114.066 52.0968 114.06 52.14C114.122 53.13 113.799 54.1056 113.157 54.8624C112.516 55.6193 111.607 56.0986 110.62 56.2L102.25 57.09C101.749 57.1401 101.242 57.0907 100.76 56.9449C100.278 56.799 99.8294 56.5595 99.44 56.24C98.8513 55.7627 98.417 55.1219 98.1918 54.3983C97.9666 53.6747 97.9605 52.9006 98.1743 52.1736C98.3882 51.4466 98.8123 50.799 99.3935 50.3126C99.9746 49.8261 100.687 49.5225 101.44 49.44C104.23 49.13 107.04 48.81 109.84 48.54L109.92 48.56ZM93.33 15.09C93.6068 14.6681 93.9643 14.305 94.3819 14.0217C94.7996 13.7384 95.269 13.5404 95.7634 13.4391C96.2578 13.3378 96.7673 13.3352 97.2627 13.4315C97.758 13.5277 98.2295 13.7209 98.65 14C99.0725 14.2753 99.4348 14.6336 99.715 15.0529C99.9952 15.4723 100.187 15.9442 100.28 16.44C100.476 17.4389 100.267 18.4748 99.7 19.32L95.02 26.32C94.7465 26.7491 94.3896 27.1189 93.9704 27.4075C93.5513 27.6961 93.0785 27.8976 92.58 28C91.5824 28.1945 90.5483 27.9899 89.7 27.43C88.8596 26.8626 88.2718 25.9916 88.06 25C87.8639 24.001 88.0725 22.9651 88.64 22.12L93.33 15.12V15.09ZM38.23 80.87C35.3178 77.8143 32.8807 74.339 31 70.56C28.9559 66.3316 27.8929 61.6964 27.89 57C27.9919 51.9519 29.2981 47.0012 31.7 42.56C31.7206 42.5287 31.7374 42.4952 31.75 42.46C34.7953 37.1794 39.5089 33.0603 45.15 30.75C49.5655 28.9751 54.3434 28.2891 59.08 28.75C63.7749 29.1718 68.3193 30.6229 72.39 33C77.6033 36.0071 81.6829 40.6454 84 46.2C85.4728 49.724 86.2312 53.5055 86.2312 57.325C86.2312 61.1444 85.4728 64.9259 84 68.45C81.31 75 75.15 82 71.11 88.4C70.8889 88.3547 70.661 88.3547 70.44 88.4L44.36 92.25C43.0409 88.1089 40.9621 84.2498 38.23 80.87Z" fill="#4D75F4"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_415_555">
+                    <rect width="114.1" height="122.88" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
     },{
-        title : "Our Commitment to ESG",
-        description : "Sustainability and ethical responsibility are not just corporate values—they are fundamental to the way we do business. We are deeply committed to environmental stewardship, social impact, and governance excellence. Our ESG initiatives are integrated into our business operations, partnerships, and community-driven projects, ensuring that we contribute to a more sustainable and inclusive world.",
-        link : "/esg"
+        title : "Commitment to ESG",
+        subTitle : "Driven by Purpose and Responsibility",
+        description : "We are deeply committed to environmental stewardship, social impact, and governance excellence. Our ESG initiatives are integrated into our business operations, partnerships, and community-driven projects, ensuring that we contribute to a more sustainable and inclusive world.",
+        link : "/esg",
+        image : <svg xmlns="http://www.w3.org/2000/svg" width="78" height="37" viewBox="0 0 98 57" fill="none">
+                    <g clipPath="url(#clip0_415_558)">
+                    <path d="M78.038 11.6381C78.0221 11.7893 77.9742 11.9326 77.9025 12.0759C77.8227 12.4101 77.7828 12.7922 77.7828 13.214C77.7828 13.2538 77.7908 13.2936 77.7908 13.3334V40.9832C78.1417 41.8507 78.5724 42.5034 79.0908 42.9093C79.5693 43.2913 80.1595 43.4744 80.8772 43.4425C80.9251 43.4346 80.9809 43.4346 81.0288 43.4346H88.9721C88.9881 43.4346 89.012 43.4346 89.0359 43.4346C90.2721 43.4983 91.1653 43.164 91.7635 42.4795C92.4414 41.6995 92.8322 40.4499 92.9677 38.7706V38.7467L95.3842 13.803C95.3842 13.7632 95.3842 13.7234 95.3922 13.6836C95.5597 12.2669 95.2487 11.3436 94.5468 10.8024C93.7413 10.1816 92.4095 9.92691 90.6788 9.92691C90.639 9.92691 90.5991 9.93487 90.5592 9.93487H81.611V9.92691C80.2472 9.92691 79.2423 10.1975 78.6282 10.7547C78.373 10.9855 78.1816 11.2799 78.038 11.6381ZM69.2812 42.2248C69.0898 42.0417 68.9542 41.803 68.8984 41.5403L56.138 18.6182C54.7184 16.2544 53.4423 16.1987 52.2062 16.9309C51.3289 17.4482 50.4038 18.2919 49.4786 19.1355C48.9204 19.6449 48.3621 20.1543 47.8916 20.5443L45.6984 22.351L45.6824 22.359C44.0874 23.6404 42.285 24.3328 40.5782 24.4681C39.4537 24.5636 38.3691 24.4204 37.3802 24.0463C36.3673 23.6643 35.4741 23.0514 34.8042 22.2157C34.0784 21.3163 33.5999 20.1702 33.4882 18.8172H33.4962C33.4723 18.4909 33.568 18.1645 33.7913 17.8939L40.7617 9.6165C39.2942 9.59263 37.9943 9.7916 36.774 10.1736C34.9158 10.7547 33.1772 11.7575 31.2791 13.0548C31.0638 13.222 30.7846 13.3254 30.4895 13.3254H22.4585V28.4715L22.4904 38.1577H27.1639C27.6105 38.1577 28.0411 38.3885 28.2724 38.8024L34.0784 48.9025C34.9238 50.3749 35.6735 51.6483 36.6066 52.484C37.4838 53.272 38.6323 53.7575 40.4028 53.8052C41.0647 53.8212 41.7028 53.7097 42.3009 53.463C42.6678 53.3118 43.0346 53.1049 43.3935 52.8422L39.6292 45.8223C39.2942 45.2015 39.5335 44.4295 40.1556 44.1031C40.7776 43.7689 41.5512 44.0076 41.8782 44.6284L45.9695 52.2612C47.4928 53.0332 48.8725 53.272 50.1087 53.0093C51.2412 52.7626 52.3099 52.0861 53.3147 50.9877L47.421 41.7552C47.0462 41.1662 47.2137 40.3783 47.8118 39.9963C48.402 39.6222 49.1915 39.7893 49.5743 40.3863L55.7791 50.1122C56.8717 50.5579 57.9165 50.6535 58.9134 50.3828C59.8624 50.1202 60.8195 49.5153 61.7685 48.5284L56.146 37.9587C55.811 37.3379 56.0503 36.5579 56.6803 36.2316C57.3024 35.8973 58.0839 36.1361 58.4109 36.7649L64.2329 47.7006C64.9905 48.1384 65.8678 48.2498 66.7052 48.1145C67.4389 47.9951 68.1487 47.6768 68.7309 47.2231C69.2892 46.7774 69.7278 46.2043 69.9352 45.5517C70.1665 44.8433 70.1425 44.0156 69.7677 43.1162L69.2812 42.2248ZM70.972 40.0122H75.2308V13.3334C75.2308 13.3016 75.2308 13.2618 75.2387 13.2299C75.2387 12.816 75.2627 12.4181 75.3185 12.044L70.9799 9.1708C70.956 9.15488 70.9321 9.13896 70.9082 9.12304C70.3419 8.74897 69.664 8.27142 68.9861 7.79388C66.5218 6.07472 63.9936 4.29985 61.2581 3.58353C59.7827 3.19354 58.076 2.93885 56.3374 2.90701C54.8141 2.87517 53.2669 3.01844 51.8074 3.40047C50.9381 3.62333 50.0927 3.93373 49.3112 4.3476C48.6173 4.71372 47.9713 5.15943 47.3971 5.70064L44.4941 9.14692C44.4064 9.32202 44.2788 9.46528 44.1272 9.58467L36.1201 19.1037C36.2397 19.7086 36.479 20.218 36.8059 20.6319C37.1888 21.1014 37.6992 21.4516 38.2814 21.6745C38.9034 21.9053 39.6212 21.9929 40.3709 21.9292C41.5911 21.8257 42.899 21.3243 44.0714 20.3851L46.2646 18.5784C46.8229 18.1168 47.2934 17.687 47.764 17.2652C48.7928 16.326 49.8136 15.3948 50.8982 14.7501C53.3945 13.2618 55.8828 13.214 58.3392 17.3288L58.3631 17.3686L70.972 40.0122ZM75.7093 42.567H72.3038C72.7664 43.9121 72.7425 45.1856 72.3756 46.3158C72.0008 47.4778 71.267 48.4647 70.326 49.2129C69.4088 49.9371 68.2923 50.4386 67.1199 50.6296C65.9795 50.8206 64.7832 50.7171 63.6666 50.2555C62.3746 51.6006 61.0109 52.4522 59.5913 52.8422C58.1637 53.2322 56.7202 53.1526 55.2607 52.6432C53.873 54.1793 52.3418 55.1424 50.651 55.5005C48.9283 55.8746 47.102 55.612 45.164 54.7046C44.5579 55.1742 43.9279 55.5483 43.2659 55.8189C42.3328 56.2089 41.3518 56.384 40.323 56.3521C37.8667 56.2805 36.2158 55.5562 34.8999 54.3783C33.6398 53.2561 32.8024 51.8234 31.8453 50.168L26.4142 40.7126H22.2032C21.956 41.9303 21.5333 42.965 20.8953 43.7927C19.8186 45.1776 18.2475 45.9098 16.0623 45.8621C16.0384 45.8621 16.0144 45.8621 15.9905 45.8621H8.77291C6.95455 46.1566 5.39937 45.7109 4.17916 44.3021C3.09452 43.0525 2.3608 41.023 2.04179 38.0463C2.03381 38.0145 2.03381 37.9747 2.02584 37.9349L0.127725 14.4556C-0.247112 11.9246 0.167601 10.1338 1.18843 8.90815C2.21724 7.67449 3.77242 7.11736 5.67851 7.02981C5.73433 7.02185 5.78218 7.02185 5.83801 7.02185H15.5599V7.02981C17.3942 7.00593 18.9733 7.31633 20.1696 8.08836C21.1346 8.70917 21.8284 9.58467 22.1793 10.7785H30.0988C32.0926 9.4414 33.9508 8.39081 36.0084 7.74612C38.0341 7.11736 40.1954 6.8945 42.7874 7.20491L45.4591 4.05312C45.507 3.98944 45.5548 3.93373 45.6186 3.87802C46.3763 3.1617 47.2216 2.57273 48.1308 2.09518C49.0878 1.59376 50.1087 1.21173 51.1774 0.933161C52.8681 0.495412 54.6466 0.328271 56.3852 0.360108C58.3551 0.399903 60.2692 0.686429 61.92 1.11622C65.0782 1.95192 67.8058 3.85414 70.4536 5.7086C71.0437 6.12247 71.6339 6.53634 72.3357 6.99797C72.3597 7.01389 72.3836 7.02981 72.4075 7.04572L76.2516 9.60854C76.443 9.33794 76.6663 9.0912 76.9215 8.86835C78.0221 7.88143 79.5932 7.39592 81.6189 7.39592V7.38796H90.5672C90.5991 7.38796 90.639 7.38796 90.6709 7.39592C92.9598 7.38796 94.826 7.80184 96.118 8.79672C97.5535 9.90303 98.2314 11.5824 97.9443 13.994C97.9443 14.0179 97.9363 14.0338 97.9363 14.0577L95.5198 38.9775C95.3444 41.206 94.7462 42.9491 93.6935 44.1589C92.569 45.4482 91.0138 46.085 88.9721 45.9974H81.0288H81.0208C79.649 46.069 78.4767 45.695 77.4957 44.915C76.778 44.334 76.1798 43.554 75.7093 42.567ZM11.1655 32.8809C12.1225 32.8809 12.8961 33.6529 12.8961 34.608C12.8961 35.5631 12.1225 36.3351 11.1655 36.3351C10.2085 36.3351 9.43485 35.5631 9.43485 34.608C9.43485 33.6529 10.2085 32.8809 11.1655 32.8809ZM86.4918 32.8809C87.4489 32.8809 88.2225 33.6529 88.2225 34.608C88.2225 35.5631 87.4489 36.3351 86.4918 36.3351C85.5348 36.3351 84.7612 35.5631 84.7612 34.608C84.7612 33.6529 85.5348 32.8809 86.4918 32.8809ZM19.8984 25.5267L19.8505 12.052C19.8505 12.0281 19.8505 12.0042 19.8505 11.9724C19.715 11.1287 19.3481 10.5636 18.8058 10.2134C18.0641 9.73589 16.9555 9.55283 15.5918 9.56875H15.5758V9.57671H5.84599C5.83004 9.57671 5.81409 9.57671 5.79814 9.57671C4.59387 9.63242 3.67672 9.91895 3.15832 10.5398C2.60006 11.2004 2.40865 12.3465 2.67183 14.1213C2.67981 14.1611 2.67981 14.193 2.67981 14.2328L4.57792 37.7359V37.7757C4.83313 40.2112 5.3595 41.7711 6.1012 42.6307C6.69136 43.3152 7.49687 43.5062 8.46187 43.3311C8.53365 43.3152 8.6134 43.3072 8.68518 43.3072V43.2993H15.9825C16.0304 43.2993 16.0782 43.2993 16.1181 43.3072C17.4101 43.3311 18.3033 42.9491 18.8616 42.2248C19.5156 41.3811 19.8346 40.0599 19.8824 38.3567H19.8745V25.5267H19.8984Z" fill="#4D75F4"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_415_558">
+                    <rect width="98" height="56" fill="white" transform="translate(0 0.359985)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
     },{
         title : "Industry Expertise",
-        description : "With deep experience across multiple industries, our engineers and consultants help businesses navigate complexity with precision and confidence. We map your industry’s architecture to tailored technology solutions, ensuring that every implementation is purpose-built to meet your unique operational challenges. As industries continue to evolve and boundaries blur, we leverage insights from cross-industry collaborations to introduce breakthrough solutions that redefine business potential.",
-        link : "/industries"
+        subTitle : "Navigate Complexity with Precision",
+        description : "We map your industry’s architecture to tailored technology solutions, ensuring that every implementation is purpose-built to meet your unique operational challenges. As industries continue to evolve and boundaries blur, we leverage insights from cross-industry collaborations to introduce breakthrough solutions that redefine business potential.",
+        link : "/industries",
+        image : <svg xmlns="http://www.w3.org/2000/svg" width="65" height="33" viewBox="0 0 85 43" fill="none">
+                <g clipPath="url(#clip0_417_568)">
+                <path d="M32.7532 21.0238H36.2811C36.1499 20.6854 36.0785 20.3189 36.0785 19.9376V3.06376C36.0785 2.22189 36.4271 1.4543 36.9833 0.899651C37.5478 0.346654 38.3181 0 39.1598 0H57.7353C58.5836 0 59.3539 0.345004 59.9117 0.899651C60.4695 1.4543 60.8148 2.21859 60.8148 3.06376V19.9376C60.8148 20.3189 60.7435 20.6854 60.6123 21.0238H73.95C76.9897 21.0238 79.7539 22.2602 81.7561 24.2493C83.7565 26.2401 85 28.9886 85 32.0111C85 35.0336 83.7565 37.782 81.7544 39.7712C79.7539 41.762 76.9864 43 73.95 43H11.0517C8.01191 43 5.24775 41.7636 3.24395 39.7712C1.24346 37.782 0 35.0336 0 32.0111C0 28.9952 1.24512 26.2467 3.24893 24.2526C4.68164 22.8231 6.50781 21.7831 8.5498 21.3093C8.33265 20.8843 8.21946 20.4143 8.21943 19.9376V3.06376C8.21943 2.22189 8.56807 1.4543 9.12422 0.899651C9.68701 0.346654 10.459 0 11.299 0H29.8762C30.7245 0 31.4932 0.345004 32.051 0.899651C32.6088 1.4543 32.9558 2.21859 32.9558 3.06376V19.9376C32.9558 20.3189 32.8844 20.6854 32.7532 21.0238ZM72.4027 5.3781L78.7578 11.3455L72.1039 17.6166L70.0453 15.4657L72.6883 12.9764L64.7295 12.988V10.0216L72.9855 10.0101L70.3558 7.54056L72.4027 5.3781ZM17.4864 4.54613H23.7386L23.8432 12.1742L20.4863 10.1388L17.3354 12.1247L17.4864 4.54613ZM29.8762 2.60486H11.299C11.1729 2.60486 11.0566 2.65603 10.9736 2.73857C10.8884 2.82571 10.8402 2.94219 10.8392 3.06376V19.9376C10.8392 20.0647 10.889 20.1802 10.9703 20.2611C11.0583 20.3437 11.1729 20.3948 11.299 20.3948H29.8762C29.999 20.3948 30.1152 20.342 30.1999 20.2595C30.2829 20.1753 30.336 20.0597 30.336 19.9376V3.06376C30.336 2.93666 30.2846 2.82276 30.2016 2.74022C30.1186 2.65603 30.0023 2.60486 29.8762 2.60486ZM45.3438 4.54613H51.596L51.7006 12.1742L48.3438 10.1388L45.1911 12.1247L45.3438 4.54613ZM57.7353 2.60486H39.1598C39.0319 2.60486 38.9157 2.65603 38.8327 2.73857C38.7475 2.82571 38.6993 2.94219 38.6982 3.06376V19.9376C38.6982 20.0647 38.7497 20.1802 38.8294 20.2611C38.9174 20.3437 39.0319 20.3948 39.1598 20.3948H57.7353C57.8581 20.3948 57.9743 20.342 58.059 20.2595C58.142 20.1753 58.1951 20.0597 58.1951 19.9376V3.06376C58.1951 2.93666 58.1437 2.82276 58.0606 2.74022C57.9776 2.65603 57.8614 2.60486 57.7353 2.60486ZM67.9452 27.7819C70.2943 27.7819 72.2002 29.6753 72.2002 32.0111C72.2002 34.3468 70.2943 36.2419 67.9452 36.2419C65.5961 36.2419 63.6919 34.3468 63.6919 32.0111C63.6919 29.6753 65.5961 27.7819 67.9452 27.7819ZM50.9817 27.7819C53.3309 27.7819 55.2351 29.6753 55.2351 32.0111C55.2351 34.3468 53.3309 36.2419 50.9817 36.2419C48.631 36.2419 46.7268 34.3468 46.7268 32.0111C46.7268 29.6753 48.631 27.7819 50.9817 27.7819ZM34.0183 27.7819C36.3674 27.7819 38.2732 29.6753 38.2732 32.0111C38.2732 34.3468 36.3674 36.2419 34.0183 36.2419C31.6691 36.2419 29.7649 34.3468 29.7649 32.0111C29.7649 29.6753 31.6691 27.7819 34.0183 27.7819ZM17.0548 27.7819C19.4039 27.7819 21.3098 29.6753 21.3098 32.0111C21.3098 34.3468 19.4039 36.2419 17.0548 36.2419C14.7057 36.2419 12.7998 34.3468 12.7998 32.0111C12.7998 29.6753 14.7057 27.7819 17.0548 27.7819ZM73.95 24.3715H11.0517C8.93994 24.3715 7.01914 25.2331 5.62627 26.6181C4.23008 27.9981 3.36846 29.908 3.36846 32.0111C3.36846 34.1091 4.2334 36.0207 5.62627 37.404C7.01914 38.7906 8.9416 39.6507 11.0517 39.6507H73.95C76.0584 39.6507 77.9809 38.789 79.3737 37.404C80.7666 36.019 81.6332 34.1091 81.6332 32.0111C81.6332 29.913 80.7666 28.0031 79.3737 26.6181C77.9809 25.2331 76.0601 24.3715 73.95 24.3715Z" fill="#4D75F4"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_417_568">
+                <rect width="85" height="43" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
     },{
         title : "Solutions",
-        description : "In today’s fast-evolving digital landscape, transformation is no longer optional—it’s essential. At INTELLECTRA, we empower businesses to adapt, accelerate, and thrive with secure, flexible, and future-ready ICT solutions. Our end-to-end services enable organizations to enhance digital agility, strengthen cybersecurity resilience, scale seamlessly with cloud and AI-driven technologies, and optimize workflows through intelligent automation—all designed to drive efficiency, innovation, and long-term success.",
-        link : "/solutions"
+        subTitle : "Mission-critical Transformations ",
+        description : "We empower businesses to adapt, accelerate, and thrive with secure, flexible, and future-ready ICT solutions. Our solutions enable organizations to enhance digital agility, strengthen cybersecurity resilience, scale seamlessly with cloud and AI-driven technologies, and optimize workflows through intelligent automation, all designed to drive efficiency, innovation, and long-term success.",
+        link : "/solutions",
+        image : <svg xmlns="http://www.w3.org/2000/svg" width="45" height="37" viewBox="0 0 45 37" fill="none">
+            <g clipPath="url(#clip0_417_571)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.65356 21.6849V21.6812C8.65356 20.2093 9.7229 19.0156 11.0413 19.0156C11.51 19.0156 11.9495 19.1694 12.3193 19.433V19.4147C13.5974 20.5864 14.6448 20.4619 15.011 19.2207V15.1088C15.011 14.6474 15.3882 14.2667 15.8533 14.2667H19.6472C20.2222 14.4644 20.4236 14.717 20.4309 15.0136C20.4346 15.1491 20.3979 15.2919 20.332 15.4457C20.1526 15.8777 19.7791 16.3793 19.5667 16.9322C18.75 19.0522 20.8118 20.8684 22.9321 20.7475C23.4045 20.7219 23.8696 20.5315 24.3018 20.2459C25.957 19.1658 26.1108 17.562 25.1697 16.0205C24.6863 15.2333 24.3237 14.6072 25.459 14.2483L29.0442 14.2667C29.5056 14.2703 29.8865 14.6438 29.8865 15.1088V18.7117C30.1025 20.4107 31.2451 20.7329 32.6843 19.4184V19.4367C33.0542 19.1731 33.4937 19.0193 33.9624 19.0193C35.2808 19.0193 36.3501 20.2129 36.3501 21.6849V21.6885C36.3501 23.1568 35.2808 24.3541 33.9624 24.3541C33.4937 24.3541 33.0542 24.2003 32.6843 23.9367V23.955C31.2451 22.6369 30.0989 22.9591 29.8865 24.6617V28.2646C29.8865 28.726 29.5093 29.1068 29.0442 29.1068H25.2905C23.7451 28.8358 23.4924 27.7227 24.7632 26.3387H24.7449C25.0085 25.9688 25.1624 25.5295 25.1624 25.0608C25.1624 23.7426 23.9685 22.6735 22.5 22.6735C21.0315 22.6735 19.834 23.7426 19.834 25.0608C19.834 25.5295 19.9878 25.9688 20.2515 26.3387H20.1782C21.449 27.7264 21.1926 28.8395 19.6472 29.1068H15.8569C15.3955 29.1068 15.0146 28.7296 15.0146 28.2646V24.1454C14.6484 22.9042 13.6011 22.7833 12.323 23.9514V23.933C11.9531 24.1967 11.5137 24.3505 11.0449 24.3505C9.7229 24.3505 8.65356 23.1568 8.65356 21.6849ZM3.04687 0.319946H41.9531C43.6304 0.319946 45 1.68935 45 3.36633V33.2736C45 34.9469 43.6304 36.3199 41.9531 36.3199H3.04687C1.36963 36.3163 0 34.9469 0 33.2699V3.36633C0 1.68935 1.36963 0.319946 3.04687 0.319946ZM42.9602 8.84761H2.17896V33.3248C2.17896 33.5592 2.27051 33.7642 2.42432 33.9217C2.57812 34.0791 2.78687 34.167 3.02124 34.167H42.1033C42.3376 34.167 42.5427 34.0754 42.7002 33.9217C42.8577 33.7642 42.9456 33.5592 42.9456 33.3248V8.84761H42.9602ZM39.0527 3.74346C39.884 3.74346 40.5579 4.41718 40.5579 5.24834C40.5579 6.07951 39.884 6.75323 39.0527 6.75323C38.2214 6.75323 37.5476 6.07951 37.5476 5.24834C37.5513 4.41718 38.2251 3.74346 39.0527 3.74346ZM28.8574 3.74346C29.6887 3.74346 30.3626 4.41718 30.3626 5.24834C30.3626 6.07951 29.6887 6.75323 28.8574 6.75323C28.0261 6.75323 27.3523 6.07951 27.3523 5.24834C27.3523 4.41718 28.0261 3.74346 28.8574 3.74346ZM33.9551 3.74346C34.7864 3.74346 35.4602 4.41718 35.4602 5.24834C35.4602 6.07951 34.7864 6.75323 33.9551 6.75323C33.1238 6.75323 32.45 6.07951 32.45 5.24834C32.45 4.41718 33.1238 3.74346 33.9551 3.74346Z" fill="#4D75F4"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_417_571">
+            <rect width="45" height="36" fill="white" transform="translate(0 0.319946)"/>
+            </clipPath>
+            </defs>
+            </svg>
     }]
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div>
@@ -30,28 +82,47 @@ const About = ()=>{
             <link rel="canonical" href={`${hostCanonical}/about`} />
         </Helmet>
         <LottieHero/>
-        <div className="about pt-32 px-5 sm:px-16 md:px-32">
-        <div className="content-about radius-border blur-bg p-4 sm:p-6 md:p-10 lg:p-16 flex flex-col gap-3">
-                <Path first={"Home"} second={"About"} link={"/"} />
-                <h1>About Us</h1>
-                <h3>
-                    For over 30 years, we have built a reputation for excellence, reliability, and trust. The continued confidence of our clients is a testament to our technical expertise, forward-thinking strategies, and unwavering commitment to delivering transformative solutions. At INTELLECTRA, technology is not just an enabler—it’s a catalyst for progress.
-                </h3>
-                <p>At INTELLECTRA, we empower businesses with cutting-edge Information & Communication Technologies (ICT) solutions, blending human expertise with the limitless possibilities of technology. Our focus is on delivering results-driven digital transformation that enhances operational efficiency, drives innovation, and maximizes return on investment (ROI).</p>
-                <p>With a presence across multiple industries and global markets, we provide scalable, sustainable, and future-ready ICT services that combine global best practices with localized expertise. Our approach is insights-driven and outcome-focused, ensuring that every solution we implement contributes to long-term business success.</p>
-                <p>As your trusted technology partner, we collaborate closely with clients to ensure that technology serves as a driving force behind business growth, efficiency, and societal impact. By embedding ourselves within local markets, we foster lasting relationships built on trust, expertise, and shared success.</p>
-                <p>Our global network of skilled professionals brings together the right talent, innovation, and strategic insights to every engagement, ensuring that businesses thrive in an ever-evolving digital landscape. Using a consultative and collaborative approach, we help organizations achieve measurable business outcomes, enhance mission-critical operations, and drive meaningful impact.</p>
-        </div>
+        <div className="layout pt-32 px-5 sm:px-16 md:px-32">
+            <div className=" radius-border blur-bg p-4 sm:p-6 md:p-10 lg:p-16 flex flex-col gap-3">
+                    <motion.h1
+                            variants={wordAnim}
+                            initial="hidden"
+                            animate="visible"
+                            className="flex justify-center"
+                            transition={{ duration: 0.5 }}
+                        >
+                        Transforming Complexity into Clarity 
+                        </motion.h1>
+                        <motion.h2
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            className="flex justify-center"
+                            transition={{ delay: 0.5, duration: 1 }}
+                        >
+                        Driving Innovation, Resilience, and Long-term Success
+                    </motion.h2>
+                    <p>
+                        We empower forward-thinking organizations with transformative ICT solutions that blend deep human expertise with the exponential power of innovation. From Artificial Intelligence and Augmented Reality to Intelligent Automation, Cloud & Hybrid IT, Cybersecurity, IoT, and Modern Workplace solutions, our approach is rooted in delivering measurable outcomes that enhance agility, operational efficiency, and competitive advantage.
+                    </p>
+                    <div className="container-about gap-10 py-10">
+                        <div className="w-full"><img src={img_1} alt="image" /></div>
+                        <div className="flex flex-col justify-between w-full">
+                            <p>With a presence across diverse industries and global markets, we offer scalable and sustainable digital solutions that are designed with foresight and delivered with precision. Our strength lies in combining global best practices with localized insights, ensuring each solution is contextually relevant, future-ready, and aligned with your business goals.</p>
+                            <p>As trusted advisors and strategic partners, we leverage a global network of experts and cutting-edge alliances to design, implement, and manage intelligent digital ecosystems. Whether it’s building secure cloud architectures, enabling data-driven decision-making through AI, or modernizing infrastructure for the workplace of tomorrow, we bring clarity to complexity and innovation to execution.</p>
+                        </div>
+
+                    </div>
+                    <p>Our reputation for excellence is built on trust, transparency, and a relentless commitment to innovation. The enduring confidence of our clients reflects our ability to not only deliver, but to lead, driving business transformation that is resilient, adaptive, and visionary.</p>
+                    <div className="container-about gap-10 py-10">
+                        <div className="w-full"><img src={img_2} alt="image" /></div>
+                        <div className="w-full"><img src={img_3} alt="image" /></div>
+
+                    </div>
+                    <p>By embedding ourselves in local markets and aligning closely with client objectives, we create meaningful partnerships that drive value beyond implementation, delivering intelligent, secure, and agile digital solutions that empower organizations to lead in a rapidly evolving world.</p>
+            </div>
         </div>
         <div className="px-5 sm:px-16 md:px-32 container-cards flex-wrap py-10   justify-between">
-            {data.map((ele,idx)=>(<div className="card p-2" key={`Services_Card_${ele.title}_${idx}`}>
-                    <div className="p-4 blur-bg content-card radius-border sm:p-6 md:p-10 lg:p-16 flex flex-col gap-4">
-                        <h3>{ele.title}</h3>
-                        <p>{ele.description}</p>
-                        <div><Link to={ele.link}><span className="learn">See More</span> </Link></div>
-                    </div>
-                </div>))}
-
+            {data.map((ele,idx)=>(<Card img={ele.image} key={`Services_Card_${ele.title}_${idx}`} link={ele.link} description={ele.description}  subTitle={ele.subTitle} title={ele.title} />))}
         </div>
     </div>)
 }
