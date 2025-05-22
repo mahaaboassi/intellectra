@@ -15,6 +15,7 @@ import PrivacyPolicy from './pages/privacyPolicy/privacy'
 import Cookies from './pages/cookies/cookies'
 import TermsAndConditions from './pages/terms&conditions/terms&conditions'
 import Blog from './pages/blog/blog'
+import Pulse from './pages/pulse/pulse'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="FAQs" element={<FAQs/>} />
           <Route path="privacy-policy" element={<PrivacyPolicy/>} />
           <Route path="cookies-center" element={<Cookies/>} />
+          <Route path="pulse" element={<Pulse/>} />
           <Route path="terms-&-conditions" element={<TermsAndConditions/>} />
        </Route>
     </Routes>

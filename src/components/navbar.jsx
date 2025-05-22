@@ -14,7 +14,7 @@ const Navbar = ()=>{
         link : '/solutions'
     },{
         name : "pulse",
-        link : '/'
+        link : '/pulse'
     },{
         name : "Contact",
         link : '/contact'

@@ -38,7 +38,7 @@ const Hero = () => {
           return prev + 1
         }
       })
-    },5000)
+    },6000)
     return()=> clearInterval(idInterval)
   },[])
   return (

@@ -49,16 +49,10 @@ const Intro = ()=>{
     return(<>
     <div className="intro gap-5 px-5  sm:px-16 md:px-32 py-5 md:py-10 lg:py-20">
             <div ref={targetRef} style={{position:"relative",height:"400px"}} className="w-full flex  ">
-                <div style={{
-                    animation : isTrigger ? "drawImg 0.6s forwards linear":"",
-                    opacity: 0
-                }} className={`card-image-1 w-full `} >
+                <div className={`card-image-1 w-full `} >
                     <img src={img_1} alt="intelligent" />
                 </div>
-                <div style={{
-                    animation : isTrigger ? "drawImg 0.6s forwards linear":"",
-                    opacity: 0
-                }} className={`card-image-2 w-full `}>
+                <div className={`card-image-2 w-full `}>
                     <img src={img_2} alt="digital" />
                 </div>
                 <Link to="/solutions/digital-transformation"><div className={`icon-center ${isTrigger?"animate-icon":""} cursor-pointer`}>    
