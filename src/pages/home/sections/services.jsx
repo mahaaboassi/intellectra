@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { industryData, solutionData } from "../../../data/data"
 
 const Services = ()=>{
 
@@ -15,73 +16,7 @@ const Services = ()=>{
                         </svg>, 
         title: "Industries",
         description: "We deliver globally recognized, technology-driven solutions that help businesses maximize their IT investments and business performance. Our expertise spans multiple industries, where we leverage cutting-edge digital solutions to drive innovation, optimize operations, and improve overall outcomes.",
-        keywords: [
-                {
-                    label: "Agriculture",
-                    value: "transportation",
-                    link: "/industries/transportation-&-logistics"
-                },
-                {
-                    label: "Communications",
-                    value: "communications",
-                    link: "/industries/communications"
-                },
-                {
-                    label: "Construction",
-                    value: "transportation",
-                    link: "/industries/transportation-&-logistics"
-                },
-                {
-                    label: "Education",
-                    value: "transportation",
-                    link: "/industries/transportation-&-logistics"
-                },
-                {
-                    label: "Energy",
-                    value: "energy",
-                    link: "/industries/energy"
-                },
-                {
-                    label: "Finance",
-                    value: "finance",
-                    link: "/industries/finance"
-                },
-                {
-                    label: "Government",
-                    value: "government",
-                    link: "/industries/government"
-                },
-                {
-                    label: "Healthcare",
-                    value: "healthcare",
-                    link: "/industries/healthcare"
-                },
-                {
-                    label: "Hospitality",
-                    value: "transportation",
-                    link: "/industries/transportation-&-logistics"
-                },
-                {
-                    label: "Logistics",
-                    value: "transportation",
-                    link: "/industries/transportation-&-logistics"
-                },
-                {
-                    label: "Manufacturing",
-                    value: "manufacturing",
-                    link: "/industries/manufacturing"
-                },
-                {
-                    label: "Media",
-                    value: "transportation",
-                    link: "/industries/transportation-&-logistics"
-                },
-                {
-                    label: "Retail",
-                    value: "retail",
-                    link: "/industries/retail"
-                }
-                ],
+        keywords:  industryData.children,
         link: "/industries"
     },
     { 
@@ -97,56 +32,7 @@ const Services = ()=>{
                     </svg> ,
         title: "Solutions",
         description: "We help businesses adapt, secure, and scale with AI-driven ICT solutions that empower growth with innovation and efficiency. Understanding that digital transformation is essential in today’s world, our solutions focus on enhancing agility, strengthening cybersecurity, and optimizing workflows.",
-        keywords: [  {
-                    label: "AI",
-                    value: "ai",
-                    link: "/solutions/artificial-intelligence-(ai)"
-                },
-                {
-                    label: "Augmented Reality",
-                    value: "augmented-reality",
-                    link: "/solutions/augmented-reality-(ar)"
-                },
-                {
-                    label: "Cloud & Hybrid IT",
-                    value: "cloud-hybrid-it",
-                    link: "/solutions/cloud-&-hybrid-it"
-                },
-                {
-                    label: "Cybersecurity",
-                    value: "cybersecurity",
-                    link: "/solutions/cybersecurity"
-                },
-                {
-                    label: "Data Center",
-                    value: "data-center",
-                    link: "/solutions/data-center"
-                },
-                {
-                    label: "Digital Transformation",
-                    value: "digital-transformation",
-                    link: "/solutions/digital-transformation"
-                },
-                {
-                    label: "IoT",
-                    value: "iot",
-                    link: "/solutions/internet-of-things-(iot)"
-                },
-                {
-                    label: "Infrastructure",
-                    value: "infrastructure",
-                    link: "/solutions/infrastructure"
-                },
-                {
-                    label: "Intelligent Automation",
-                    value: "intelligent-automation",
-                    link: "/solutions/intelligent-automation"
-                },
-                {
-                    label: "Workplace Modernization",
-                    value: "workplace-modernization",
-                    link: "/solutions/workplace-modernization"
-                }],
+        keywords: solutionData.children,
         link: "/solutions"
     }]
 
@@ -159,9 +45,9 @@ const Services = ()=>{
                 </div>
                 <p>{ele.description}</p>
                 <div className="container-keywords gap-3">
-                    {ele.keywords.map((key,i)=>(<Link key={`keywords_${ele.title}_${key.label}_${i}`} to={key.link}>
+                    {ele.keywords.map((key,i)=>(<Link key={`keywords_${ele.title}__${i}`} to={key.link}>
                     <div className="content p-2" >
-                        {key.label}
+                        {key.title}
                     </div>
                     </Link>))}
                 </div>

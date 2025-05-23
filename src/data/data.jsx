@@ -298,17 +298,25 @@ export const esgData = {
 export const industryData = {
     title : "",
     description : <div>We deliver globally recognized, technology-driven solutions that help businesses maximize their IT investments and business performance. Our expertise spans multiple industries, where we leverage cutting-edge digital solutions to drive innovation, optimize operations, and improve overall outcomes.</div>,
-    children :[{
-        title : "Finance",
+    children :[    {
+        title : "Agriculture",
         finalDescription : "",
         content :[],
-        img :<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 88.47 122.88" ><g><path d="M11.86,68.08L7.62,92.09c-0.07,0.33-0.2,0.63-0.4,0.86c-1.51,1.95-2.46,3.62-2.74,4.97c-0.2,1,0,1.8,0.67,2.43l16.56,16.56 c1.05,1.01,2.28,1.65,3.74,1.91c1.6,0.3,3.46,0.13,5.6-0.45c0.03,0,0.08-0.02,0.12-0.02c0.81-0.22,1.88-0.48,2.89-0.73 c4.44-1.08,8.31-2.03,11.91-5.29l4.62-4.82c0.05-0.08,0.12-0.15,0.18-0.22c0.07-0.07,0.52-0.52,1.13-1.1 c3.16-3.09,7.07-6.9,4.69-10.24l-1.85-1.85c-0.9,0.86-1.85,1.71-2.76,2.53c-0.83,0.73-1.61,1.41-2.33,2.13 c-0.76,0.76-2,0.76-2.76,0c-0.76-0.77-0.76-2,0-2.76c0.71-0.72,1.6-1.5,2.51-2.31c3.13-2.76,6.72-5.92,4.79-8.68l-1.83-1.83 c-0.1-0.1-0.18-0.22-0.27-0.33c-1.05,1.08-2.21,2.11-3.34,3.11c-0.83,0.73-1.61,1.41-2.33,2.13c-0.77,0.77-2,0.77-2.76,0 c-0.77-0.76-0.77-2,0-2.76c0.71-0.71,1.6-1.5,2.51-2.31c3.13-2.76,6.72-5.92,4.79-8.68l-1.83-1.83c-0.13-0.13-0.23-0.27-0.32-0.42 l-5.37,5.37c-0.77,0.76-2,0.76-2.76,0c-0.76-0.77-0.76-2,0-2.76l10.07-10.07c2.41-2.41,2.96-4.92,2.33-6.82 c-0.23-0.7-0.62-1.31-1.1-1.8c-0.25-0.25-0.53-0.47-0.84-0.66l-0.01,0c-0.15,0.07-0.26-0.08-0.4-0.22 c-0.17-0.08-0.36-0.16-0.54-0.22c-1.67-0.55-3.84-0.16-6.04,1.69c-0.03,0.03-0.06,0.06-0.09,0.08c-0.24,0.2-0.48,0.42-0.72,0.66 L22.44,78.27c-0.76,0.76-2,0.76-2.76,0c-0.7-0.7-0.76-1.78-0.18-2.55L11.86,68.08L11.86,68.08z M25.08,70.11l0.67-0.67l13.79-13.79 c-1.43-0.66-2.76-1.59-3.94-2.77c-5.25-5.25-5.25-13.73,0-18.98c5.25-5.25,13.73-5.25,18.98,0c5.25,5.25,5.25,13.73,0,18.98 c-0.04,0.04-0.09,0.09-0.13,0.13c0.1,0.09,0.21,0.19,0.31,0.29c0.43,0.43,0.8,0.9,1.13,1.4l17.1-17.1c-2.62-2.62-2.62-6.9,0-9.53 L60.25,15.33c-2.62,2.62-6.9,2.62-9.53,0L15.28,50.77c2.62,2.62,2.62,6.9,0,9.53L25.08,70.11L25.08,70.11z M55.14,65.57 c-0.46,0.64-0.99,1.28-1.62,1.9l-2,2l-0.02-0.05c0.15,0.08,0.28,0.18,0.42,0.32l1.91,1.91c0.1,0.1,0.2,0.23,0.28,0.35 c2.15,2.94,1.81,5.57,0.35,7.97c0.27,0.1,0.52,0.25,0.71,0.45l1.91,1.91c0.1,0.1,0.2,0.23,0.28,0.35c2.31,3.18,1.73,5.95,0,8.48 c0.08,0.05,0.15,0.12,0.23,0.2l1.91,1.91c0.1,0.1,0.2,0.23,0.28,0.35c4.44,6.07-0.85,11.22-5.1,15.38l-1.1,1.1l-4.74,4.97 l-0.15,0.15c-4.34,3.94-8.65,4.99-13.62,6.2c-0.83,0.2-1.68,0.42-2.84,0.71c-0.03,0-0.05,0.02-0.08,0.02 c-2.69,0.73-5.14,0.91-7.33,0.52c-2.23-0.4-4.16-1.4-5.77-2.98L2.52,103.15c-1.68-1.61-2.24-3.61-1.78-5.97 c0.37-1.9,1.46-3.99,3.19-6.25l4.42-25.04v-0.1c0.04-0.31,0.1-0.66,0.17-1.04L0,56.23L56.23,0l32.24,32.24L55.14,65.57L55.14,65.57 z"/></g></svg>,
-        subTitle : "Future-Proofing Financial Services",
-        link : "/industries/finance",
-        srcImg : "/bank.webp",
-        description : "As banking evolves in an increasingly digital world, INTELLECTRA helps financial institutions adapt, innovate, and outperform competitors by leveraging advanced AI, automation, cybersecurity, and cloud solutions. Our expertise in banking technology transformation ensures that financial services remain secure, customer-centric, and scalable. Through deep industry insights and strong local partnerships, we help banks enhance operational efficiency, strengthen regulatory compliance, and drive sustainable growth.",
-    },
-    {
+        img : <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 87" fill="none">
+              <g clipPath="url(#clip0_428_29)">
+              <path d="M39.1617 37.4551C42.4538 43.502 44.0087 50.0807 44.1908 56.6595C44.3169 61.2087 43.7916 65.7578 42.7269 70.125C45.0174 69.2922 47.1957 68.1864 49.3111 66.8216C51.0482 65.7018 52.7502 64.4211 54.4453 62.9723C51.7906 53.3771 59.2573 47.6662 72.8669 46.0075C74.1557 62.0975 65.3652 68.9072 55.4539 65.6528C53.913 66.9266 52.358 68.0744 50.768 69.0962C47.9522 70.9089 45.0244 72.3086 41.8654 73.2534C40.4225 77.9356 38.3772 82.3517 35.8836 86.264C35.4844 86.8939 34.6508 87.0758 34.0274 86.6769C33.397 86.278 33.2149 85.4452 33.6142 84.8223C38.6644 76.9137 41.7883 66.8286 41.5012 56.7435C41.284 49.1499 39.1267 41.5633 34.3917 34.9076C38.125 47.8481 35.0781 55.1058 28.564 59.7669C21.2374 52.9852 20.4319 44.0269 26.7849 31.8141C17.413 39.5477 8.69248 41.7523 0 35.9644C1.75811 27.272 10.2405 23.7166 24.9427 24.9834C15.0035 19.3005 9.92525 12.7777 13.5886 0.879883C21.6576 1.71973 28.571 6.93376 31.0225 21.701C35.0641 10.2021 41.6482 2.51058 50.9991 2.9165C52.9043 12.0708 50.5158 19.4894 36.9133 26.901C48.8838 26.866 57.5973 28.5667 59.6916 39.6807C52.365 43.8869 45.8089 42.5431 39.1617 37.4551Z" fill="#4D75F4"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_428_29">
+              <rect width="73" height="86" fill="white" transform="translate(0 0.879883)"/>
+              </clipPath>
+              </defs>
+              </svg> ,
+        subTitle : "Cultivating Smart Agro with Efficiency",
+        link : "/industries/agriculture",
+        srcImg : "/transportation.webp",
+        description : "As agriculture faces the dual challenge of feeding a growing population and ensuring sustainability, we support agribusinesses with intelligent, technology-enabled solutions. From IoT-powered precision farming and AI-driven crop analytics to automated supply chain tracking and cloud-based farm management platforms, we help agricultural enterprises enhance yield, optimize resource usage, and make data-informed decisions. Our digital strategies empower farmers and agritech companies to drive productivity, improve climate resilience, and embrace sustainable innovation.",
+    },{
         title : "Communications",
         finalDescription : "",
         content :[],
@@ -316,9 +324,46 @@ export const industryData = {
         subTitle : "Redefining the Digital Experience",
         link : "/industries/communications",
         srcImg : "/communications.webp",
-        description : "The telecommunications and media landscape is rapidly transforming. INTELLECTRA empowers businesses in this sector to optimize operations, create new revenue streams, and enhance customer experiences. With 5G, IoT, cloud computing, and intelligent automation, we help companies accelerate digital transformation and streamline network infrastructure, ensuring seamless connectivity and future-ready operations.",
-    },
-    {
+        description : "The communications industry is continuously challenged with modernizing legacy systems and managing exploding data volumes. We enable providers to overcome these challenges with agile, scalable, and intelligent solutions. From enabling seamless 5G rollouts and harnessing IoT data to integrating cloud-native architectures and automating complex workflows, we empower telecom businesses to transform their networks, unlock new revenue streams, and deliver exceptional customer experiences.",
+    },{
+        title : "Construction",
+        finalDescription : "",
+        content :[],
+        img : <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 71 69" fill="none">
+              <g clipPath="url(#clip0_428_19)">
+              <path d="M48.2289 19.4936H65.6958H68.3363C68.3537 19.4936 68.3768 19.4936 68.3999 19.4878L58.2422 3.22956C58.1671 3.11339 58.0746 2.94494 57.988 2.7823L57.9648 2.73584C57.9128 2.63128 57.8782 2.52673 57.8608 2.41636H13.116C13.0178 2.41636 13.116 2.59062 13.012 2.7823C12.9312 2.92752 12.8503 3.07273 12.752 3.22956L2.6001 19.4878C2.62321 19.4936 2.64632 19.4936 2.66366 19.4936H5.3042H48.2289ZM26.2668 29.525H44.739V39.4692H26.2668V29.525ZM31.0394 55.7855C31.5536 55.7855 31.9696 56.2037 31.9696 56.7207C31.9696 57.2376 31.5536 57.6559 31.0394 57.6559C30.5251 57.6559 30.1091 57.2376 30.1091 56.7207C30.1091 56.2037 30.5251 55.7855 31.0394 55.7855ZM31.2301 43.7153H39.7757C41.1971 43.7153 42.4914 44.302 43.4274 45.2429C44.3634 46.1839 44.947 47.4851 44.947 48.914V66.5836H64.494V21.9099H6.50602V66.5836H26.053V48.914C26.053 47.4851 26.6366 46.1839 27.5726 45.2429C28.5086 44.302 29.8029 43.7153 31.2301 43.7153ZM39.7699 46.1259H31.2301C30.4674 46.1259 29.774 46.4395 29.2713 46.9449C28.7686 47.4502 28.4566 48.1472 28.4566 48.914V66.5836H42.5434V48.914C42.5434 48.1472 42.2314 47.4502 41.7287 46.9449C41.226 46.4395 40.5326 46.1259 39.7699 46.1259ZM50.9504 46.2711H59.5076C60.172 46.2711 60.7094 46.8113 60.7094 47.4792V57.4235C60.7094 58.0915 60.172 58.6317 59.5076 58.6317H50.9504C50.2859 58.6317 49.7485 58.0915 49.7485 57.4235V47.4792C49.7485 46.8113 50.2859 46.2711 50.9504 46.2711ZM58.3057 48.6874H52.1522V56.2153H58.3115V48.6874H58.3057ZM50.9504 28.3226H59.5076C60.172 28.3226 60.7094 28.8628 60.7094 29.5308V39.475C60.7094 40.143 60.172 40.6832 59.5076 40.6832H50.9504C50.2859 40.6832 49.7485 40.143 49.7485 39.475V29.525C49.7485 28.8628 50.2859 28.3226 50.9504 28.3226ZM58.3057 30.7331H52.1522V38.2611H58.3115V30.7331H58.3057ZM11.4924 46.2711H20.0496C20.7141 46.2711 21.2515 46.8113 21.2515 47.4792V57.4235C21.2515 58.0915 20.7141 58.6317 20.0496 58.6317H11.4924C10.828 58.6317 10.2906 58.0915 10.2906 57.4235V47.4792C10.2906 46.8113 10.828 46.2711 11.4924 46.2711ZM18.8478 48.6874H12.6943V56.2153H18.8536V48.6874H18.8478ZM11.4924 28.3226H20.0496C20.7141 28.3226 21.2515 28.8628 21.2515 29.5308V39.475C21.2515 40.143 20.7141 40.6832 20.0496 40.6832H11.4924C10.828 40.6832 10.2906 40.143 10.2906 39.475V29.525C10.2906 28.8628 10.828 28.3226 11.4924 28.3226ZM18.8478 30.7331H12.6943V38.2611H18.8536V30.7331H18.8478ZM66.8976 21.9099V67.7918C66.8976 68.4598 66.3603 69 65.6958 69H43.7452H27.2548H5.3042C4.63973 69 4.10238 68.4598 4.10238 67.7918V21.9099H2.66366C2.14941 21.9099 1.58317 21.7241 1.12671 21.4394C0.849365 21.2652 0.595133 21.0386 0.40446 20.7831C0.150228 20.4404 0 20.0454 0 19.6272C0 19.3077 0.0866699 18.9882 0.277344 18.6804L10.7297 1.94587C10.7933 1.84713 10.8569 1.72515 10.9204 1.60897C11.3884 0.766731 11.8102 0 13.116 0H57.8782C59.184 0 59.6058 0.766731 60.0738 1.61478V1.62059C60.1258 1.71353 60.1778 1.81227 60.2645 1.95168L70.7169 18.6862C70.9076 18.994 70.9942 19.3135 70.9942 19.633C70.9942 20.057 70.844 20.4462 70.5898 20.7889C70.4222 21.0154 70.1969 21.2245 69.9484 21.393L69.8675 21.451C69.4111 21.7415 68.8448 21.9215 68.3306 21.9215H66.8976V21.9099Z" fill="#4D75F4"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_428_19">
+              <rect width="71" height="69" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg> ,
+        subTitle : "Enabling the Future of Smart Construction",
+        link : "/industries/construction",
+        srcImg : "/transportation.webp",
+        description : "The construction industry is embracing a new era of digital transformation to enhance project delivery, safety, and sustainability. We empower construction firms, contractors, and developers with AI-driven project planning, cloud-based collaboration platforms, IoT-enabled site monitoring, and digital twin technologies towards modernizing their IT infrastructure and embedding intelligent automation across the construction lifecycle.",
+    },{
+        title : "Education",
+        finalDescription : "",
+        content :[],
+        img : <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 86 70" fill="none">
+                <g clip-path="url(#clip0_428_9)">
+                <path fillRule="evenodd" clipRule="evenodd" d="M45.1277 0.713623H58.0193C59.314 0.713623 60.3709 1.76129 60.3709 3.04484V13.3411H42.7761V3.04484C42.7761 1.76129 43.8329 0.713623 45.1277 0.713623ZM60.3778 19.634V50.9875H42.7761V19.634H60.3778ZM60.3778 57.2874V66.862C60.3778 68.1456 59.321 69.1933 58.0263 69.1933H45.1277C43.8329 69.1933 42.7761 68.1456 42.7761 66.862V57.2874H60.3778Z" fill="#4D75F4"/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M70.7498 0.713623H83.6414C84.9361 0.713623 85.9929 1.76129 85.9929 3.04484V13.3411H85.9789H68.3982V3.04484C68.3982 1.76129 69.462 0.713623 70.7498 0.713623ZM85.9999 19.634V50.9875H68.3982V19.634H85.9859H85.9999ZM85.9999 57.2874V66.862C85.9999 68.1456 84.9431 69.1933 83.6484 69.1933H70.7568C69.462 69.1933 68.4052 68.1456 68.4052 66.862V57.2874H85.9999Z" fill="#4D75F4"/>
+                <path fillRule="evenodd" clipRule="evenodd" d="M25.1603 0.588706L37.2751 4.95975C38.4928 5.39685 39.1227 6.74285 38.6818 7.95009L35.1335 17.6219L18.5955 11.6551L22.1439 1.98328C22.5918 0.776036 23.9495 0.151602 25.1603 0.588706ZM32.9639 23.5401L22.1509 53.0065L5.61295 47.0397L16.4259 17.5803L32.9639 23.5401ZM19.9813 58.9248L16.6779 67.9166C16.237 69.1239 14.8792 69.7483 13.6615 69.3112L1.54671 64.9401C0.328937 64.503 -0.300946 63.157 0.139972 61.9498L3.44336 52.9579L19.9813 58.9248Z" fill="#4D75F4"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_428_9">
+                <rect width="86" height="69" fill="white" transform="translate(0 0.449951)"/>
+                </clipPath>
+                </defs>
+                </svg>,
+        subTitle : "Empowerment with Digital Innovation",
+        link : "/industries/education",
+        srcImg : "/transportation.webp",
+        description : "The education sector is rapidly evolving to meet the needs of a digital-native generation. We partner with academic institutions, training providers, and edtech platforms to drive digital transformation through AI-powered infrastructure, learning tools, cloud-based campus management, interactive virtual classrooms, and data-driven student insights. Our intelligent, scalable solutions enhance hybrid learning, streamline administration, and expand access through hybrid and remote models.",
+    },{
         title : "Energy",
         finalDescription : "",
         content :[],
@@ -326,7 +371,16 @@ export const industryData = {
         subTitle : "Powering a Sustainable Future",
         link : "/industries/energy",
         srcImg : "/energy.webp",
-        description : "The energy sector is undergoing a digital revolution, requiring smarter, more sustainable solutions. INTELLECTRA supports energy companies in modernizing their infrastructure, integrating intelligent automation, and leveraging IoT-powered insights to enhance efficiency and align with sustainability goals. By combining cloud-based solutions with predictive analytics, we help energy leaders adapt to industry shifts, improve asset management, and drive business growth.",
+        description : "The energy and utilities sector is at the forefront of transformation driven by the urgent need for sustainability. We enable energy leaders harness the power of IoT, AI, and cloud platforms, and implement intelligent automation that enhances performance and reliability. Our solutions support smarter grid management, predictive maintenance, and optimized resource utilization towards meeting evolving regulatory demands while accelerating our journey toward a greener future.",
+    },{
+        title : "Finance",
+        finalDescription : "",
+        content :[],
+        img :<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 88.47 122.88" ><g><path d="M11.86,68.08L7.62,92.09c-0.07,0.33-0.2,0.63-0.4,0.86c-1.51,1.95-2.46,3.62-2.74,4.97c-0.2,1,0,1.8,0.67,2.43l16.56,16.56 c1.05,1.01,2.28,1.65,3.74,1.91c1.6,0.3,3.46,0.13,5.6-0.45c0.03,0,0.08-0.02,0.12-0.02c0.81-0.22,1.88-0.48,2.89-0.73 c4.44-1.08,8.31-2.03,11.91-5.29l4.62-4.82c0.05-0.08,0.12-0.15,0.18-0.22c0.07-0.07,0.52-0.52,1.13-1.1 c3.16-3.09,7.07-6.9,4.69-10.24l-1.85-1.85c-0.9,0.86-1.85,1.71-2.76,2.53c-0.83,0.73-1.61,1.41-2.33,2.13 c-0.76,0.76-2,0.76-2.76,0c-0.76-0.77-0.76-2,0-2.76c0.71-0.72,1.6-1.5,2.51-2.31c3.13-2.76,6.72-5.92,4.79-8.68l-1.83-1.83 c-0.1-0.1-0.18-0.22-0.27-0.33c-1.05,1.08-2.21,2.11-3.34,3.11c-0.83,0.73-1.61,1.41-2.33,2.13c-0.77,0.77-2,0.77-2.76,0 c-0.77-0.76-0.77-2,0-2.76c0.71-0.71,1.6-1.5,2.51-2.31c3.13-2.76,6.72-5.92,4.79-8.68l-1.83-1.83c-0.13-0.13-0.23-0.27-0.32-0.42 l-5.37,5.37c-0.77,0.76-2,0.76-2.76,0c-0.76-0.77-0.76-2,0-2.76l10.07-10.07c2.41-2.41,2.96-4.92,2.33-6.82 c-0.23-0.7-0.62-1.31-1.1-1.8c-0.25-0.25-0.53-0.47-0.84-0.66l-0.01,0c-0.15,0.07-0.26-0.08-0.4-0.22 c-0.17-0.08-0.36-0.16-0.54-0.22c-1.67-0.55-3.84-0.16-6.04,1.69c-0.03,0.03-0.06,0.06-0.09,0.08c-0.24,0.2-0.48,0.42-0.72,0.66 L22.44,78.27c-0.76,0.76-2,0.76-2.76,0c-0.7-0.7-0.76-1.78-0.18-2.55L11.86,68.08L11.86,68.08z M25.08,70.11l0.67-0.67l13.79-13.79 c-1.43-0.66-2.76-1.59-3.94-2.77c-5.25-5.25-5.25-13.73,0-18.98c5.25-5.25,13.73-5.25,18.98,0c5.25,5.25,5.25,13.73,0,18.98 c-0.04,0.04-0.09,0.09-0.13,0.13c0.1,0.09,0.21,0.19,0.31,0.29c0.43,0.43,0.8,0.9,1.13,1.4l17.1-17.1c-2.62-2.62-2.62-6.9,0-9.53 L60.25,15.33c-2.62,2.62-6.9,2.62-9.53,0L15.28,50.77c2.62,2.62,2.62,6.9,0,9.53L25.08,70.11L25.08,70.11z M55.14,65.57 c-0.46,0.64-0.99,1.28-1.62,1.9l-2,2l-0.02-0.05c0.15,0.08,0.28,0.18,0.42,0.32l1.91,1.91c0.1,0.1,0.2,0.23,0.28,0.35 c2.15,2.94,1.81,5.57,0.35,7.97c0.27,0.1,0.52,0.25,0.71,0.45l1.91,1.91c0.1,0.1,0.2,0.23,0.28,0.35c2.31,3.18,1.73,5.95,0,8.48 c0.08,0.05,0.15,0.12,0.23,0.2l1.91,1.91c0.1,0.1,0.2,0.23,0.28,0.35c4.44,6.07-0.85,11.22-5.1,15.38l-1.1,1.1l-4.74,4.97 l-0.15,0.15c-4.34,3.94-8.65,4.99-13.62,6.2c-0.83,0.2-1.68,0.42-2.84,0.71c-0.03,0-0.05,0.02-0.08,0.02 c-2.69,0.73-5.14,0.91-7.33,0.52c-2.23-0.4-4.16-1.4-5.77-2.98L2.52,103.15c-1.68-1.61-2.24-3.61-1.78-5.97 c0.37-1.9,1.46-3.99,3.19-6.25l4.42-25.04v-0.1c0.04-0.31,0.1-0.66,0.17-1.04L0,56.23L56.23,0l32.24,32.24L55.14,65.57L55.14,65.57 z"/></g></svg>,
+        subTitle : "Future-Proofing Financial Services",
+        link : "/industries/finance",
+        srcImg : "/bank.webp",
+        description : "As the financial world evolves with digitalization, we help institutions adapt, innovate, and outperform competitors by leveraging advanced AI, automation, cybersecurity, and cloud solutions. Our expertise in technology transformation ensures that financial services remain secure, customer-centric, and scalable. Through deep industry insights and strong local partnerships, we help financial institutions enhance operational efficiency, strengthen regulatory compliance, and drive sustainable growth.",
     },
     {
         title : "Government",
@@ -336,7 +390,7 @@ export const industryData = {
         subTitle : "Transforming Public Services with Digital Solutions",
         link : "/industries/government",
         srcImg : "/government.webp",
-        description : "Governments worldwide are embracing digital transformation to improve citizen services and enhance efficiency. INTELLECTRA specializes in secure, scalable solutions that empower public sector organizations to streamline operations, enhance data security, and build robust digital ecosystems. Through AI, edge computing, and cybersecurity innovations, we help governments modernize infrastructure, improve regulatory processes, and foster digital inclusion.",
+        description : "Governments worldwide are embracing digital transformation to improve citizen services and enhance efficiency. We specialize in secure, scalable solutions that empower public sector organizations to streamline operations, enhance data security, and build robust digital ecosystems. Our future-ready IT solutions including AI, edge computing, and cybersecurity innovations, helps governments modernize infrastructure, improve regulatory processes, and foster digital inclusion.",
     },
     {
         title : "Healthcare",
@@ -346,9 +400,35 @@ export const industryData = {
         subTitle : "Enhancing Patient Care with Smart Technology",
         link : "/industries/healthcare",
         srcImg : "/healthycare.webp",
-        description : "INTELLECTRA enables healthcare providers, hospitals, and pharmaceutical companies to optimize digital strategies, streamline patient information management, and enhance healthcare delivery. By integrating AI, cloud computing, and intelligent automation, we help organizations improve patient outcomes, operational efficiency, and compliance with healthcare regulations. Our end-to-end solutions support telemedicine, medical record automation, and AI-driven diagnostics, enabling healthcare providers to focus on patient-centered care.",
-    },
-    {
+        description : "The healthcare industry faces rising demands for efficiency, accessibility, and patient-centered outcomes. We empower establishments embrace future-ready digital ecosystems. Through AI-driven diagnostics, cloud-enabled interoperability, intelligent automation, and secure telehealth platforms, we streamline clinical workflows, modernize health data management, and enhance care delivery. Our technology solutions not only improve patient outcomes but also ensure compliance, scalability, and resilience.",
+    },{
+        title : "Hospitality",
+        finalDescription : "",
+        content :[],
+        img :  <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 93 74" fill="none">
+                <g clipPath="url(#clip0_428_33)">
+                <path d="M48.7781 11.9974C58.9045 12.5743 68.0396 16.6501 74.7981 22.9497C82.1545 29.8034 86.7031 39.2757 86.7031 49.7498C86.7031 49.8333 86.6956 49.9243 86.688 50.0078C86.6653 51.374 85.5603 52.467 84.198 52.467V52.4746H8.36304C6.9856 52.4746 5.86548 51.3513 5.86548 49.9699L5.87305 49.7498H5.85791C5.85791 39.2757 10.4065 29.7958 17.7629 22.9497C24.5215 16.6577 33.6489 12.5819 43.7754 12.005V5.19686H38.3716C36.9941 5.19686 35.874 4.07355 35.874 2.69218C35.874 1.31081 36.9941 0.1875 38.3716 0.1875H46.2805H54.4771C55.8545 0.1875 56.9746 1.31081 56.9746 2.69218C56.9746 4.07355 55.8545 5.19686 54.4771 5.19686H48.7781V11.9974ZM2.49756 55.5409H90.4949C91.8723 55.5409 92.9924 56.6642 92.9924 58.0456V70.6752C92.9924 72.0566 91.8723 73.1799 90.4949 73.1799H2.49756C1.12012 73.1799 0 72.0566 0 70.6752V58.0456C0 56.6642 1.12012 55.5409 2.49756 55.5409ZM87.9973 60.5503H5.00269V68.163H88.0049V60.5503H87.9973ZM71.3999 26.6081C64.9819 20.6348 56.1043 16.9385 46.2805 16.9385C36.4568 16.9385 27.5791 20.6348 21.1611 26.6081C15.3335 32.0349 11.5417 39.344 10.9363 47.4576H81.6096C81.0117 39.344 77.22 32.0349 71.3999 26.6081Z" fill="#4C77F1"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_428_33">
+                <rect width="93" height="73" fill="white" transform="translate(0 0.179932)"/>
+                </clipPath>
+                </defs>
+                </svg>,
+        subTitle : "Redefining Guest Experiences",
+        link : "/industries/hospitality",
+        srcImg : "/transportation.webp",
+        description : "In a world where personalization and efficiency define guest satisfaction, we empower hotels, resorts, and hospitality groups with future-ready digital technologies. From AI-enhanced guest services and IoT-enabled smart rooms to cloud-based property management systems and real-time analytics, we deliver solutions that optimize operations and elevate the customer experience. Our technologies enable seamless check-ins, personalized stays, and data-driven decision-making, helping hospitality brands increase efficiency, boost loyalty, and stay competitive.",
+    },{
+        title : "Logistics",
+        finalDescription : "",
+        content :[],
+        img :  <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 122.88 78.78"><defs></defs><title>on-time-delivery</title><path className="cls-1" d="M90.53,24.33,82,24.27V12.8a6.21,6.21,0,0,0-6.19-6.19H50.72a30.05,30.05,0,0,1,2,3.36H75.85a2.86,2.86,0,0,1,2,.83,2.83,2.83,0,0,1,.83,2V65.34H69.22a1.68,1.68,0,1,0,0,3.35H80.36A1.67,1.67,0,0,0,82,67V65.11h6.78c.77-17.46,25.84-19.87,28.4,0h5.5c1.42-17-7-23.65-19.77-25.14a45.78,45.78,0,0,0-4.66-11.38c-2.36-4.36-2.91-4.18-7.76-4.26ZM16.27,20.05,20.74,20l.33.08a17.34,17.34,0,0,1,2.54,1.79,16.26,16.26,0,0,1,1.64,1.58,104.87,104.87,0,0,1,6.52-9,116,116,0,0,1,8.32-9.14l.44-.16H45.4l-1,1.09a162.08,162.08,0,0,0-10.29,13A141.12,141.12,0,0,0,26.06,32.2l-.61,1.18-.56-1.21a29.27,29.27,0,0,0-3.77-6.1,24.5,24.5,0,0,0-5.21-4.83l.36-1.19ZM35,39.26a1.6,1.6,0,1,1-2.77,1.6l-.87-1.5a1.6,1.6,0,1,1,2.77-1.6l.87,1.5ZM14.42,10.11a1.6,1.6,0,1,1,2.77-1.6l.87,1.5a1.6,1.6,0,1,1-2.77,1.6l-.87-1.5ZM40.86,32.18A1.6,1.6,0,1,1,39.26,35l-1.5-.87a1.6,1.6,0,1,1,1.6-2.77l1.5.87ZM8.51,17.2a1.6,1.6,0,0,1,1.6-2.78l1.5.87A1.6,1.6,0,1,1,10,18.06l-1.5-.86Zm33.93,5.88a1.61,1.61,0,1,1,0,3.21H40.7a1.61,1.61,0,0,1,0-3.21ZM6.93,26.29a1.61,1.61,0,1,1,0-3.21H8.66a1.61,1.61,0,1,1,0,3.21ZM10.11,35a1.6,1.6,0,1,1-1.6-2.77l1.5-.87a1.6,1.6,0,1,1,1.6,2.77l-1.5.87Zm7.08,5.91a1.6,1.6,0,1,1-2.77-1.6l.87-1.5a1.6,1.6,0,1,1,2.77,1.6l-.87,1.5ZM23.08,6.93a1.61,1.61,0,1,1,3.21,0V8.67a1.61,1.61,0,0,1-3.21,0V6.93Zm3.21,35.51a1.61,1.61,0,1,1-3.21,0V40.71a1.61,1.61,0,1,1,3.21,0v1.73ZM24.68,0A24.64,24.64,0,0,1,35.79,2.63c-.65.64-1.34,1.36-2,2.11A21.91,21.91,0,1,0,44,14.37c.63-.79,1.27-1.56,1.9-2.3A24.69,24.69,0,1,1,24.68,0Zm10,65.33a1.68,1.68,0,0,1,0,3.36H16.82a6.07,6.07,0,0,1-4.37-1.91,6.48,6.48,0,0,1-1.82-4.45V53.1A32.11,32.11,0,0,0,14,54.53v7.8a3.11,3.11,0,0,0,.88,2.14,2.72,2.72,0,0,0,1.95.87H34.65ZM51.72,56A11.37,11.37,0,1,0,63.08,67.41,11.37,11.37,0,0,0,51.72,56Zm0,7a4.37,4.37,0,1,0,4.37,4.37A4.38,4.38,0,0,0,51.72,63ZM103,54.37a11.37,11.37,0,1,0,11.37,11.37A11.37,11.37,0,0,0,103,54.37ZM98.61,65.74A4.37,4.37,0,1,0,103,61.37a4.37,4.37,0,0,0-4.37,4.37ZM91.35,29.18l-5.12-.09V40H97.08a42.13,42.13,0,0,0-5.73-10.8Z"/></svg>,
+        subTitle : "Enabling Smart, Sustainable Mobility",
+        link : "/industries/logistics",
+        srcImg : "/transportation.webp",
+        description : "In a fast-moving world where supply chains are under constant pressure, logistics providers must embrace innovation to stay competitive. We enable digital transformation across the industry, empowering logistics firms, airlines, and transportation networks with AI-powered analytics, IoT-enabled visibility, and cloud-native fleet and warehouse management systems. Our future-ready solutions streamline route optimization, enhance real-time tracking, ensure compliance, and reduce environmental impact.  ",
+    },{
         title : "Manufacturing",
         finalDescription : "",
         content :[],
@@ -356,7 +436,25 @@ export const industryData = {
         subTitle : "Driving Innovation and Operational Efficiency",
         link : "/industries/manufacturing",
         srcImg : "/manufacturing.webp",
-        description : "Manufacturers must balance innovation, cost reduction, and supply chain agility to remain competitive. INTELLECTRA helps manufacturers digitize operations, integrate AI-powered insights, and optimize workflows for improved efficiency. With Industry 4.0 solutions, IoT-driven automation, and smart supply chain technologies, we enable businesses to maximize productivity, reduce costs, and accelerate growth while maintaining quality and sustainability.",
+        description : "Manufacturers must balance innovation, cost reduction, and supply chain agility to remain competitive. We help manufacturers digitize operations, integrate AI-powered insights, and optimize workflows for improved efficiency. With Industry 4.0 solutions, IoT-driven automation, and smart supply chain technologies, we enable businesses to maximize productivity, reduce costs, and accelerate growth while maintaining quality and sustainability.",
+    },{
+        title : "Media",
+        finalDescription : "",
+        content :[],
+        img :  <svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 88 66" fill="none">
+              <g clipPath="url(#clip0_428_22)">
+              <path fillRule="evenodd" clip-rule="evenodd" d="M33.5586 0.815704H64.804L71.9225 13.4892H86.5892C87.3698 13.4892 88.0072 14.1479 88.0072 14.9069V64.3693C88.0072 65.1283 87.3555 65.7871 86.5892 65.7871H1.41797C0.658854 65.7799 0 65.1426 0 64.3693V14.9069C0 14.1265 0.63737 13.4892 1.41797 13.4892H8.01367V8.94249H16.1634V13.4892H25.015C26.8555 9.85184 28.696 6.22163 30.5365 2.58426C31.6536 0.371773 31.0378 0.815704 33.5586 0.815704ZM78.8262 19.7543C81.1608 19.7543 83.0514 21.6446 83.0514 23.9788C83.0514 26.3131 81.1608 28.2033 78.8262 28.2033C76.4915 28.2033 74.6009 26.3131 74.6009 23.9788C74.6081 21.6446 76.4987 19.7543 78.8262 19.7543ZM47.724 24.6734C54.7923 24.6734 60.5286 30.4087 60.5286 37.4758C60.5286 44.5428 54.7923 50.2781 47.724 50.2781C40.6556 50.2781 34.9193 44.5428 34.9193 37.4758C34.9193 30.4087 40.6556 24.6734 47.724 24.6734ZM47.724 16.3389C59.4043 16.3389 68.8717 25.8047 68.8717 37.4829C68.8717 49.154 59.4043 58.6269 47.724 58.6269C36.0508 58.6269 26.5762 49.154 26.5762 37.4829C26.5833 25.8047 36.0508 16.3389 47.724 16.3389Z" fill="#4D75F4"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_428_22">
+              <rect width="88" height="65" fill="white" transform="translate(0 0.780029)"/>
+              </clipPath>
+              </defs>
+              </svg>,
+        subTitle : "Empowering the Future of Content",
+        link : "/industries/media",
+        srcImg : "/transportation.webp",
+        description : "The media and entertainment industry is being reshaped by digital disruption, demanding real-time innovation. We help broadcasters and content creators leverage cloud-based production workflows, AI-driven content personalization, advanced analytics, and secure content delivery networks to meet evolving audience expectations. From streamlining media asset management to enabling immersive experiences and optimizing monetization strategies, our future-ready IT solutions empower media companies to enhance engagement and stay ahead in a content-driven world.",
     },
     {
         title : "Retail",
@@ -366,18 +464,9 @@ export const industryData = {
         subTitle : "Delivering Next-Generation Customer Experiences",
         link : "/industries/retail",
         srcImg : "/rentail.webp",
-        description : "Retailers today must leverage data-driven decision-making and digital technologies to stay ahead. INTELLECTRA helps retail businesses embrace AI, cloud computing, and omnichannel solutions to improve customer engagement, enhance supply chain agility, and optimize costs. Our tailored digital strategies ensure frictionless shopping experiences, intelligent demand forecasting, and advanced personalization, helping businesses drive revenue and customer loyalty.",
+        description : "Retailers today must leverage data-driven decision-making and digital technologies to stay ahead. We help retail businesses embrace AI, cloud computing, and omnichannel solutions to improve customer engagement, enhance supply chain agility, and optimize costs. Our tailored digital strategies ensure frictionless shopping experiences, intelligent demand forecasting, logistic automation, and advanced personalization, helping businesses drive revenue and customer loyalty.",
     },
-    {
-        title : "Transportation & Logistics",
-        finalDescription : "",
-        content :[],
-        img :  <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 122.88 78.78"><defs></defs><title>on-time-delivery</title><path className="cls-1" d="M90.53,24.33,82,24.27V12.8a6.21,6.21,0,0,0-6.19-6.19H50.72a30.05,30.05,0,0,1,2,3.36H75.85a2.86,2.86,0,0,1,2,.83,2.83,2.83,0,0,1,.83,2V65.34H69.22a1.68,1.68,0,1,0,0,3.35H80.36A1.67,1.67,0,0,0,82,67V65.11h6.78c.77-17.46,25.84-19.87,28.4,0h5.5c1.42-17-7-23.65-19.77-25.14a45.78,45.78,0,0,0-4.66-11.38c-2.36-4.36-2.91-4.18-7.76-4.26ZM16.27,20.05,20.74,20l.33.08a17.34,17.34,0,0,1,2.54,1.79,16.26,16.26,0,0,1,1.64,1.58,104.87,104.87,0,0,1,6.52-9,116,116,0,0,1,8.32-9.14l.44-.16H45.4l-1,1.09a162.08,162.08,0,0,0-10.29,13A141.12,141.12,0,0,0,26.06,32.2l-.61,1.18-.56-1.21a29.27,29.27,0,0,0-3.77-6.1,24.5,24.5,0,0,0-5.21-4.83l.36-1.19ZM35,39.26a1.6,1.6,0,1,1-2.77,1.6l-.87-1.5a1.6,1.6,0,1,1,2.77-1.6l.87,1.5ZM14.42,10.11a1.6,1.6,0,1,1,2.77-1.6l.87,1.5a1.6,1.6,0,1,1-2.77,1.6l-.87-1.5ZM40.86,32.18A1.6,1.6,0,1,1,39.26,35l-1.5-.87a1.6,1.6,0,1,1,1.6-2.77l1.5.87ZM8.51,17.2a1.6,1.6,0,0,1,1.6-2.78l1.5.87A1.6,1.6,0,1,1,10,18.06l-1.5-.86Zm33.93,5.88a1.61,1.61,0,1,1,0,3.21H40.7a1.61,1.61,0,0,1,0-3.21ZM6.93,26.29a1.61,1.61,0,1,1,0-3.21H8.66a1.61,1.61,0,1,1,0,3.21ZM10.11,35a1.6,1.6,0,1,1-1.6-2.77l1.5-.87a1.6,1.6,0,1,1,1.6,2.77l-1.5.87Zm7.08,5.91a1.6,1.6,0,1,1-2.77-1.6l.87-1.5a1.6,1.6,0,1,1,2.77,1.6l-.87,1.5ZM23.08,6.93a1.61,1.61,0,1,1,3.21,0V8.67a1.61,1.61,0,0,1-3.21,0V6.93Zm3.21,35.51a1.61,1.61,0,1,1-3.21,0V40.71a1.61,1.61,0,1,1,3.21,0v1.73ZM24.68,0A24.64,24.64,0,0,1,35.79,2.63c-.65.64-1.34,1.36-2,2.11A21.91,21.91,0,1,0,44,14.37c.63-.79,1.27-1.56,1.9-2.3A24.69,24.69,0,1,1,24.68,0Zm10,65.33a1.68,1.68,0,0,1,0,3.36H16.82a6.07,6.07,0,0,1-4.37-1.91,6.48,6.48,0,0,1-1.82-4.45V53.1A32.11,32.11,0,0,0,14,54.53v7.8a3.11,3.11,0,0,0,.88,2.14,2.72,2.72,0,0,0,1.95.87H34.65ZM51.72,56A11.37,11.37,0,1,0,63.08,67.41,11.37,11.37,0,0,0,51.72,56Zm0,7a4.37,4.37,0,1,0,4.37,4.37A4.38,4.38,0,0,0,51.72,63ZM103,54.37a11.37,11.37,0,1,0,11.37,11.37A11.37,11.37,0,0,0,103,54.37ZM98.61,65.74A4.37,4.37,0,1,0,103,61.37a4.37,4.37,0,0,0-4.37,4.37ZM91.35,29.18l-5.12-.09V40H97.08a42.13,42.13,0,0,0-5.73-10.8Z"/></svg>,
-        subTitle : "Enabling Smart, Sustainable Mobility",
-        link : "/industries/transportation-&-logistics",
-        srcImg : "/transportation.webp",
-        description : "As transportation and logistics evolve, digitization and automation are critical for efficiency. INTELLECTRA partners with logistics providers, airlines, and transportation companies to implement AI-powered analytics, cloud-based fleet management, and IoT-driven logistics solutions. Our smart digital solutions enhance tracking, optimize route planning, and ensure regulatory compliance, ultimately improving operational resilience and sustainability.",
-    },
+        
     
 ]
 }
