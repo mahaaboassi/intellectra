@@ -1,23 +1,26 @@
 import { useEffect } from "react"
+import Hero from "../../components/hero"
 import LottieHero from "../../components/heroAnimation"
-import Path from "../../components/path"
-import { hostCanonical, privacyPolicy } from "../../data/data"
 import { Helmet } from "react-helmet-async"
+import { hostCanonical, privacyPolicy } from "../../data/data"
 
 
 const PrivacyPolicy = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
-    return(<div className="contact pages">
+    return(<div>
+        <LottieHero/>
         <Helmet>
             <title>Privacy Policy | Intellectra</title>
             <link rel="canonical" href={`${hostCanonical}/privacy-policy`} />
         </Helmet>
-        <LottieHero/>
-        <div className="pt-32 pb-14 px-5 sm:px-16 md:px-32 ">
-            <div className="blur-bg radius-border flex flex-col gap-3 content-about p-4 sm:p-6  md:p-10 lg:p-16">
-                <Path first={"Home"} link={"/"} second={"Privacy Policy"} />
-                <h1>Privacy Policy </h1>
-                  <div className="des" >
+        <div className="pages" style={{background:"white"}}>
+            <Hero data={[{
+                    words : "Privacy Policy",
+                    des : "See how we protect your data. Read our policy"
+            }]} />
+            <div className="layout pt-32 px-5 sm:px-16 md:px-32 pb-16">
+                <div className="blur-bg radius-border flex flex-col gap-3">
+                <div className="des" >
                     {privacyPolicy.children.map((ele, idx)=>(<div className="mb-4" key={`Privacy${ele.title}_${idx}`}>
                             <h3>{ele.title}</h3>
                             <p>{ele.description}</p>
@@ -26,11 +29,13 @@ const PrivacyPolicy = ()=>{
                             </ul>
                     </div>))}
 
-                </div>
+                </div>          
+            </div>
+                
             </div>
 
         </div>
-
     </div>)
 }
+
 export default PrivacyPolicy

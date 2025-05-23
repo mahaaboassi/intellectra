@@ -10,13 +10,13 @@ import { hostCanonical } from "../../data/data"
 
 const Home = ()=>{
     const data = [{
-        words : "INTELLECT . ELECTRONICS . ADVANCEMENT",
+        words : "INTELLECT ELECTRONICS ADVANCEMENT",
         des : "Harnessing Intellect and Electronic Advancements"
       },{
-        words : "Intelligence . Innovation . Impact",
+        words : "Intelligence Innovation Impact",
         des : "We craft smart tech solutions that boost efficiency and fuel business growth"
       },{
-        words : "INTELLECT . AI . INSIGHT",
+        words : "INTELLECT AI INSIGHT",
         des : "Driven by AI and Defined by Intellect"
       }]
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])

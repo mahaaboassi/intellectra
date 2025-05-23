@@ -649,7 +649,7 @@ export const privacyPolicy = {
     {
       title: "6. Your Rights",
       description:
-        "You have the right to access, update, or delete your personal information at any time. To exercise these rights or for any privacy-related inquiries, please contact us at info@kodeks.ae.",
+        "You have the right to access, update, or delete your personal information at any time. To exercise these rights or for any privacy-related inquiries, please contact us at info@intellectra.ae.",
       content: []
     }
   ]

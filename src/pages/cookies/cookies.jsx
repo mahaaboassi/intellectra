@@ -1,35 +1,41 @@
 import { useEffect } from "react"
+import Hero from "../../components/hero"
 import LottieHero from "../../components/heroAnimation"
-import Path from "../../components/path"
-import { cookiesData, hostCanonical } from "../../data/data"
 import { Helmet } from "react-helmet-async"
+import { hostCanonical, cookiesData } from "../../data/data"
 
 
 const Cookies = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
-    return(<div className="contact pages">
+    return(<div>
+        <LottieHero/>
         <Helmet>
             <title>Cookies Center | Intellectra</title>
             <link rel="canonical" href={`${hostCanonical}/cookies-center`} />
         </Helmet>
-        <LottieHero/>
-        <div className="pt-32 pb-14 px-5 sm:px-16 md:px-32 ">
-            <div className="blur-bg radius-border flex flex-col gap-3 content-about p-4 sm:p-6  md:p-10 lg:p-16">
-                <Path first={"Home"} link={"/"} second={"Cookies Center"} />
-                <h1>Cookies Center </h1>
-                    <div className="des" >
-                        {cookiesData.children.map((ele, idx)=>(<div className="mb-4" key={`Privacy${ele.title}_${idx}`}>
-                                <h3>{ele.title}</h3>
-                                <p>{ele.description}</p>
-                                <ul className="mt-2">
-                                    {ele.content.map((e,i)=>(<li key={`Privacy${ele.title}_${i}_${e}`}>{e}</li>))}
-                                </ul>
-                        </div>))}
-    
-                    </div>          
-            </div>
-        </div>
+        <div className="pages" style={{background:"white"}}>
+            <Hero data={[{
+                    words : "Cookies Center",
+                    des : "Learn how we use cookies to enhance your experience"
+            }]} />
+            <div className="layout pt-32 px-5 sm:px-16 md:px-32 pb-16">
+                <div className="blur-bg radius-border flex flex-col gap-3">
+                <div className="des" >
+                    {cookiesData.children.map((ele, idx)=>(<div className="mb-4" key={`Privacy${ele.title}_${idx}`}>
+                            <h3>{ele.title}</h3>
+                            <p>{ele.description}</p>
+                            <ul className="mt-2">
+                                {ele.content.map((e,i)=>(<li key={`Privacy${ele.title}_${i}_${e}`}>{e}</li>))}
+                            </ul>
+                    </div>))}
 
+                </div>          
+            </div>
+                
+            </div>
+
+        </div>
     </div>)
 }
+
 export default Cookies
