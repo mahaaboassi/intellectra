@@ -80,19 +80,6 @@ button:hover{
 .services{
     position: relative;
     margin-top: -50px;
-    animation: moveup 0.5s forwards linear;
-    animation-delay: 1.5s;
-    opacity: 0;
-    transform: translateY(200px);
-}
-@keyframes moveup {
-    from{
-        transform: translateY(200px);
-        opacity: 0;
-    }to{
-        transform: translateY(0px);
-        opacity: 1;
-    }
 }
 .services-container{
     display: flex;
@@ -122,18 +109,24 @@ button:hover{
 .container-keywords .content::before{
     content : "";
     background: var(--blue_3);
-    top: -2px;
-    bottom: -2px;
+    top: -1px;
+    bottom: -1px;
     width: 0;
     left : 50%;
+    border-top: 2px solid var(--blue_1);
+    border-bottom: 2px solid var(--blue_1);
+    background-color: transparent;
     transform: translateX(-50%);
     position: absolute;
-    z-index: -1;
-    border-radius: 10px;
+    z-index: 1;
+    
     transition: 0.3s;
+    opacity: 0;
 }
 .container-keywords .content:hover::before{
     width: 100%;
+    opacity: 1;
+    border-radius: 10px;
 }
 /* into */
 .intro{
@@ -314,7 +307,7 @@ button:hover{
 }
 .video-container video{
     width: 100%;
-    height: 400px;
+    height: 100%;
     border-radius: 10px;
 }
 .video-container .img img{
@@ -395,6 +388,10 @@ button:hover{
     font-size: var(--font-size-xxl);
     text-transform: uppercase;
     
+}
+.latest .paragraph{
+    font-weight: 600;
+    font-size: var(--font-size-s);
 }
 .blog{
     width: 100%;
@@ -544,12 +541,14 @@ footer a::before{
 footer a:hover{
     color: var(--grey_2);
 }
+footer a:hover path{
+    fill: var(--grey_2);
+}
 footer a:hover::before{
     width: 10%;
 }
 /* Banner Contact */
 .contact-banner{
-    border-top-left-radius: 25%;
     background-color: rgba(255, 255, 255, 0.152);
     backdrop-filter: blur(20px); 
     position: relative;
@@ -566,6 +565,7 @@ footer a:hover::before{
 .contact-banner h2{
     font-size: var(--font-size-l);
     font-weight: 600;
+    color: var(--blue_1);
 }
 
 /* @ Media */
@@ -639,6 +639,9 @@ footer a:hover::before{
     }
     .intro {
         flex-direction: column;
+    }
+    .intro-second{
+        flex-direction: column-reverse !important;
     }
 
 }

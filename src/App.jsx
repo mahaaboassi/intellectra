@@ -16,6 +16,7 @@ import Cookies from './pages/cookies/cookies'
 import TermsAndConditions from './pages/terms&conditions/terms&conditions'
 import Blog from './pages/blog/blog'
 import Pulse from './pages/pulse/pulse'
+import LayoutTemplate from './pages/layout/page'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
        <Route path="/*" element={<Layout/>} >
           <Route path="" element={<Home/>} />
           <Route path="about" element={<About/>} />
+          <Route path="layout" element={<LayoutTemplate/>} />
           <Route path="industries" element={<Industry/>} />
           <Route path="solutions" element={<Solutions/>} />
           <Route path="esg" element={<ESG/>} />

@@ -86,21 +86,6 @@ const Footer = ()=>{
                             </Link>))}
                         </div>
                         <div className="w-full flex flex-col gap-4">
-                            <h4 >Solutions</h4>
-                            {solutions.length > 0 && solutions.map((ele,idx)=>(<Link key={`Solutions_${ele.title}_${idx}`}  to={ele.link}>
-                                <div className="menu">
-                                    {ele.title}
-                                </div>
-                                </Link>))}
-                            <Link to={"/solutions"}>
-                                <div className="menu">
-                                    See More
-                                </div>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="second-content-col-2">
-                        <div className="w-full flex flex-col gap-4">
                             <h4>Industries</h4>
                             {industries.length > 0 && industries.map((ele,idx)=>(<Link key={`Industries${ele.title}_${idx}`}  to={ele.link}>
                                 <div className="menu">
@@ -108,11 +93,37 @@ const Footer = ()=>{
                                 </div>
                                 </Link>))}
                             <Link to={"/industries"}>
-                                <div className="menu">
-                                    See More
+                                <div className="menu flex gap-2 items-center">
+                                    <div  className="flex items-center">See More</div>
+                                    <div  className="flex items-center md:pt-0.5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 8 12" fill="none">
+                                            <path d="M0.590088 10.59L5.17009 6L0.590088 1.41L2.00009 0L8.00009 6L2.00009 12L0.590088 10.59Z" fill="black"/>
+                                        </svg>
+                                    </div>
                                 </div>
                             </Link>
                         </div>
+                    </div>
+                    <div className="second-content-col-2">
+                        <div className="w-full flex flex-col gap-4">
+                            <h4 >Solutions</h4>
+                            {solutions.length > 0 && solutions.map((ele,idx)=>(<Link key={`Solutions_${ele.title}_${idx}`}  to={ele.link}>
+                                <div className="menu">
+                                    {ele.title}
+                                </div>
+                                </Link>))}
+                            <Link to={"/solutions"}>
+                                <div  className="menu flex gap-2 items-center">
+                                    <div  className="flex items-center">See More</div>
+                                    <div  className="flex items-center md:pt-0.5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 8 12" fill="none">
+                                            <path d="M0.590088 10.59L5.17009 6L0.590088 1.41L2.00009 0L8.00009 6L2.00009 12L0.590088 10.59Z" fill="black"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                        
                         <div className="w-full flex flex-col gap-4 menu">
                             <h4>Support</h4>
                             {support.map((ele,idx)=>(<Link to={ele.link} key={`Support_${ele.name}_${idx}`}>

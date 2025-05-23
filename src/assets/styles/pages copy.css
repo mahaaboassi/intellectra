@@ -19,33 +19,29 @@
 }
 .card{
     width: 50%;
+    animation: upDiv 1s forwards linear;
 
 }
 .content-card{
     position: relative;
     z-index: 2;
     overflow: hidden;
-    background:  linear-gradient(
-        rgba(159, 158, 158, 0.089),
-        rgba(255, 255, 255, 0.749),
-        rgba(159, 158, 158, 0.089)
-    );
-    border-radius: 20px;
 }
 .content-card::after{
     content: "";
     border-radius: 20px;
     transition: 0.5s;
-    position: absolute;
+    
 }
 
 .content-card:hover::after{
+    position: absolute;
     inset: 0;
     background:  linear-gradient(
         rgba(255, 255, 255, 0.749),
         rgba(159, 158, 158, 0.089)
     );
-    transform: scale(0.92);
+    transform: scale(0.9);
     z-index: -5;
 }
 .card h2{
@@ -229,7 +225,7 @@
 }
 /* Layout */
 .layout{
-   margin-top: -170px;
+   margin-top: -150px;
 }
 .layout h1{
     color: var(--blue_1);
@@ -255,14 +251,6 @@
 .layout p{
     font-size: var(--font-size-xs);
 }
-.first-image-container{
-    width: 50%;
-}
-.layout img{
-    height: 300px ;
-    width: 500px ;
-}
-
 
 
 
@@ -272,6 +260,8 @@
     display: flex;
 }
 .container-about img{
+   height: 350px;
+   width: 100%;
    object-fit: cover;
 }
 /* @ Media */
@@ -293,9 +283,6 @@
     .container-about{
         flex-direction: column;
     }
-    .first-image-container,.first-image-container img{
-        width: 100%;
-    }
 }
 @media (max-width: 900px) {
     .container-cards{
@@ -312,7 +299,7 @@
         width: 100% !important;
     }
     .layout{
-        margin-top: -220px;
+        margin-top: -200px;
     }
 
 }
@@ -346,13 +333,6 @@
         font-size: 2rem;
         line-height: 2.5rem;
     }
-    .first-image-container img{
-        width: 100% !important;
-    }
-    .layout img{
-        height: 250px;
-        width: 400px;
-    }
 }
 @media (max-width: 510px) {
     .container-image-abs{
@@ -374,9 +354,6 @@
     .pages h1{
         font-size: 1.7rem !important;
         line-height: 2rem;
-    }
-     .layout img{
-        height: 200px;
     }
 }
 @media (max-width: 340px) {

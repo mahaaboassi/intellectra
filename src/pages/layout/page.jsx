@@ -1,13 +1,19 @@
 import { useEffect } from "react"
-import Hero from "../../components/hero"
 import LottieHero from "../../components/heroAnimation"
+import { Helmet } from "react-helmet-async"
+import { hostCanonical } from "../../data/data"
 import Card from "../../components/card"
+import { motion } from "framer-motion";
 // Images
 import img_1 from "../../assets/images/1.webp"
 import img_2 from "../../assets/images/2.webp"
 import img_3 from "../../assets/images/3.webp"
 
-const About = ()=>{
+const wordAnim = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },  
+};
+const LayoutTemplate = ()=>{
     const data = [{
         title : "Innovation at Core",
         subTitle : "Constant Reinvention and Agility",
@@ -71,38 +77,54 @@ const About = ()=>{
     }]
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div>
+        <Helmet>
+            <title>About | Intellectra</title>
+            <link rel="canonical" href={`${hostCanonical}/about`} />
+        </Helmet>
         <LottieHero/>
-        <div style={{background:"white"}}>
-            <Hero data={[{
-                    words : "Transforming Complexity into Clarity",
-                    des : "Driving Innovation, Resilience, and Long-term Success"
-            }]} />
-            <div className="layout pt-32 px-5 sm:px-16 md:px-32">
-                <p>
-                    We empower forward-thinking organizations with transformative ICT solutions that blend deep human expertise with the exponential power of innovation. From Artificial Intelligence and Augmented Reality to Intelligent Automation, Cloud & Hybrid IT, Cybersecurity, IoT, and Modern Workplace solutions, our approach is rooted in delivering measurable outcomes that enhance agility, operational efficiency, and competitive advantage.
-                </p>
-                <div className="container-about gap-10 py-10">
-                    <div className="w-full flex justify-end"><img className="radius-border !h-full !w-full" src={img_1} alt="image" /></div>
-                    <div className="flex flex-col justify-center gap-14 w-full">
-                        <p>With a presence across diverse industries and global markets, we offer scalable and sustainable digital solutions that are designed with foresight and delivered with precision. Our strength lies in combining global best practices with localized insights, ensuring each solution is contextually relevant, future-ready, and aligned with your business goals.</p>
-                        <p>As trusted advisors and strategic partners, we leverage a global network of experts and cutting-edge alliances to design, implement, and manage intelligent digital ecosystems. Whether it’s building secure cloud architectures, enabling data-driven decision-making through AI, or modernizing infrastructure for the workplace of tomorrow, we bring clarity to complexity and innovation to execution.</p>
+        <div className="layout pt-32 px-5 sm:px-16 md:px-32">
+            <div className=" radius-border blur-bg p-4 sm:p-6 md:p-10 lg:p-16 flex flex-col gap-3">
+                    <motion.h1
+                        variants={wordAnim}
+                        initial="hidden"
+                        animate="visible"
+                        className="flex justify-center"
+                        transition={{ duration: 0.5 }}
+                    >
+                    Transforming Complexity into Clarity 
+                    </motion.h1>
+                    <motion.h2
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            className="flex justify-center mb-3"
+                            transition={{ delay: 0.5, duration: 1 }}
+                        >
+                        Driving Innovation, Resilience, and Long-term Success
+                    </motion.h2>
+                    <p>
+                        We empower forward-thinking organizations with transformative ICT solutions that blend deep human expertise with the exponential power of innovation. From Artificial Intelligence and Augmented Reality to Intelligent Automation, Cloud & Hybrid IT, Cybersecurity, IoT, and Modern Workplace solutions, our approach is rooted in delivering measurable outcomes that enhance agility, operational efficiency, and competitive advantage.
+                    </p>
+                    <div className="container-about gap-10 py-10">
+                        <div className="w-full "><img className="radius-border" src={img_1} alt="image" /></div>
+                        <div className="flex flex-col justify-between w-full">
+                            <p>With a presence across diverse industries and global markets, we offer scalable and sustainable digital solutions that are designed with foresight and delivered with precision. Our strength lies in combining global best practices with localized insights, ensuring each solution is contextually relevant, future-ready, and aligned with your business goals.</p>
+                            <p>As trusted advisors and strategic partners, we leverage a global network of experts and cutting-edge alliances to design, implement, and manage intelligent digital ecosystems. Whether it’s building secure cloud architectures, enabling data-driven decision-making through AI, or modernizing infrastructure for the workplace of tomorrow, we bring clarity to complexity and innovation to execution.</p>
+                        </div>
+
                     </div>
+                    <p>Our reputation for excellence is built on trust, transparency, and a relentless commitment to innovation. The enduring confidence of our clients reflects our ability to not only deliver, but to lead, driving business transformation that is resilient, adaptive, and visionary.</p>
+                    <div className="container-about gap-10 py-10">
+                        <div className="w-full"><img  className="layout-one" src={img_2} alt="image" /></div>
+                        <div className="w-full"><img className="layout-two" src={img_3} alt="image" /></div>
 
-                </div>
-                <p className="pb-2">Our reputation for excellence is built on trust, transparency, and a relentless commitment to innovation. The enduring confidence of our clients reflects our ability to not only deliver, but to lead, driving business transformation that is resilient, adaptive, and visionary.</p>
-                <p>By embedding ourselves in local markets and aligning closely with client objectives, we create meaningful partnerships that drive value beyond implementation, delivering intelligent, secure, and agile digital solutions that empower organizations to lead in a rapidly evolving world.</p>
-                <div className="container-about gap-10 py-10">
-                    <div className="w-full flex justify-end"><img  className="layout-one" src={img_2} alt="image" /></div>
-                    <div className="w-full"><img className="layout-two" src={img_3} alt="image" /></div>
-
-                </div>
-                
+                    </div>
+                    <p>By embedding ourselves in local markets and aligning closely with client objectives, we create meaningful partnerships that drive value beyond implementation, delivering intelligent, secure, and agile digital solutions that empower organizations to lead in a rapidly evolving world.</p>
             </div>
-            <div style={{background:"white"}} className="px-3 sm:px-14 md:px-30 container-cards flex-wrap py-10    justify-between">
-                {data.map((ele,idx)=>(<Card img={ele.image} key={`Services_Card_${ele.title}_${idx}`} link={ele.link} description={ele.description}  subTitle={ele.subTitle} title={ele.title} />))}
-            </div>
+        </div>
+        <div className="px-5 sm:px-16 md:px-32 container-cards flex-wrap py-10   justify-between">
+            {data.map((ele,idx)=>(<Card img={ele.image} key={`Services_Card_${ele.title}_${idx}`} link={ele.link} description={ele.description}  subTitle={ele.subTitle} title={ele.title} />))}
         </div>
     </div>)
 }
 
-export default About
+export default LayoutTemplate

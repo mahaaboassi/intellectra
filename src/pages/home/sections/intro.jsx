@@ -3,44 +3,9 @@ import img_2 from "../../../assets/images/digital.webp"
 import img_3 from "../../../assets/images/sec.webp"
 import img_4 from "../../../assets/images/sec-1.webp"
 import { Link } from "react-router-dom"
-import React, { useEffect, useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-// import required modules
-import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 
 const Intro = ()=>{
-    const targetRef = useRef(null)
-    const [ isTrigger, setIsTrigger ] = useState(false)
-       useEffect(() => {
-         const handleIntersection = (entries) => {
-           entries.forEach(entry => {
-             if (entry.isIntersecting) {
-               setIsTrigger(true); // Set state to true when the div is in view
-             }
-           });
-         };
-         const observer = new IntersectionObserver(handleIntersection, {
-           root: null, // Observe with respect to the viewport
-           rootMargin: '0px',
-           threshold: 0.5, // Trigger when 50% of the div is visible
-         });
-         // Start observing the target div
-         if (targetRef.current) {
-           observer.observe(targetRef.current);
-         }
-         // Cleanup observer on component unmount
-         return () => {
-           if (targetRef.current) observer.unobserve(targetRef.current);
-         };
-    }, []);
+
     const data = [{
         title : "Driving Digital Transformation with Innovation & Expertise",
         description : "We enable businesses to evolve, scale, and lead by delivering intelligent, future-ready ICT solutions. As a trusted technology partner, we craft tailored strategies that fuse technical excellence with business insight, ensuring seamless integration of complex systems and mission-critical architectures. Our solutions are designed to accelerate performance, enhance agility, and unlock new growth opportunities in an increasingly digital world.",
@@ -59,7 +24,7 @@ const Intro = ()=>{
     }]
     return( <div className="px-5  sm:px-16 md:px-32 py-5 md:py-10 lg:py-20 flex flex-col gap-5 md:gap-10 lg:gap-20">
         <div style={{background:"white"}} className="intro gap-10 ">
-            <div ref={targetRef}  style={{position:"relative"}} className="w-full content-intro flex flex-col gap-2 ">
+            <div  style={{position:"relative"}} className="w-full content-intro flex flex-col gap-2 ">
                 <div className="flex gap-2">
                     <div><img  className="one" src={data[0].images[0]} alt="intelligent" /></div>
                     <div><img  className="two"  src={data[0].images[1]} alt="digital" /></div>
@@ -68,7 +33,7 @@ const Intro = ()=>{
                     <div><img className="three" src={data[0].images[2]} alt="intelligent" /></div>
                     <div><img className="four"  src={data[0].images[3]} alt="digital" /></div>
                 </div>
-                <Link to={data[0].link}><div  className={`icon-center ${isTrigger?"animate-icon":""} cursor-pointer`}>    
+                <Link to={data[0].link}><div  className={`icon-center cursor-pointer`}>    
                        <div className="content-icon">
                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 68 68" fill="none">
                             <g clipPath="url(#clip0_313_546)">
@@ -91,13 +56,13 @@ const Intro = ()=>{
                     <div><Link to={data[0].link}><span className="learn">Learn More</span></Link></div>
             </div>
         </div>
-        <div style={{background:"white"}} className="intro gap-10">
+        <div style={{background:"white"}} className="intro intro-second gap-10">
             <div  className="w-full justify-between flex flex-col gap-5 ">
                     <h2>{data[1].title}</h2>
                     <p>{data[1].description}</p>
                     <div><Link to={data[1].link}><span className="learn">Learn More</span></Link></div>
             </div>
-            <div ref={targetRef}  style={{position:"relative"}} className="w-full content-intro flex flex-col gap-2 ">
+            <div  style={{position:"relative"}} className="w-full content-intro flex flex-col gap-2 ">
                 <div className="flex gap-2">
                     <div><img  className="one" src={data[0].images[0]} alt="intelligent" /></div>
                     <div><img  className="two"  src={data[0].images[1]} alt="digital" /></div>
@@ -106,7 +71,7 @@ const Intro = ()=>{
                     <div><img className="three" src={data[0].images[2]} alt="intelligent" /></div>
                     <div><img className="four"  src={data[0].images[3]} alt="digital" /></div>
                 </div>
-                <Link to={data[0].link}><div  className={`icon-center ${isTrigger?"animate-icon":""} cursor-pointer`}>    
+                <Link to={data[0].link}><div  className={`icon-center  cursor-pointer`}>    
                        <div>
                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 68 68" fill="none">
                             <g clipPath="url(#clip0_313_546)">
@@ -126,7 +91,7 @@ const Intro = ()=>{
 
         </div>
         <div style={{background:"white"}} className="intro gap-10">
-            <div ref={targetRef}  style={{position:"relative"}} className="w-full content-intro flex flex-col gap-2 ">
+            <div style={{position:"relative"}} className="w-full content-intro flex flex-col gap-2 ">
                 <div className="flex gap-2">
                     <div><img  className="one" src={data[0].images[0]} alt="intelligent" /></div>
                     <div><img  className="two"  src={data[0].images[1]} alt="digital" /></div>
@@ -135,7 +100,7 @@ const Intro = ()=>{
                     <div><img className="three" src={data[0].images[2]} alt="intelligent" /></div>
                     <div><img className="four"  src={data[0].images[3]} alt="digital" /></div>
                 </div>
-                <Link to={data[0].link}><div  className={`icon-center ${isTrigger?"animate-icon":""} cursor-pointer`}>    
+                <Link to={data[0].link}><div  className={`icon-center cursor-pointer`}>    
                        <div>
                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 68 68" fill="none">
                             <g clipPath="url(#clip0_313_546)">
