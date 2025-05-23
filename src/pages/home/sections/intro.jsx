@@ -30,7 +30,7 @@ const Intro = ()=>{
         images : [img_9,img_10,img_6,img_3],
         link : "/solutions/artificial-intelligence-(ai)"
     }]
-    return( <div className="px-5  sm:px-16 md:px-32 py-5 md:py-10 lg:py-20 flex flex-col gap-5 md:gap-10 lg:gap-20">
+    return( <div className="px-5  sm:px-16 md:px-32 py-10 md:py-20 lg:py-32 flex flex-col gap-10 md:gap-20 lg:gap-32">
         <div style={{background:"white"}} className="intro gap-10 ">
             <div  style={{position:"relative"}} className="w-full content-intro flex flex-col gap-2 ">
                 <div className="flex gap-2">

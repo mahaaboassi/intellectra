@@ -14,7 +14,7 @@ const Latest = ()=>{
                 </svg>
     const nextSlider = ()=> document.querySelector(".swiper-button-next").click()
     const lastSlider = ()=> document.querySelector(".swiper-button-prev").click()
-    return(<div className='latest  py-5 md:py-10 lg:py-20'>
+    return(<div className='latest py-10 md:py-20 lg:py-32'>
         <div onClick={nextSlider} className="arrow-next">{arrow}</div>
         <div onClick={lastSlider} className="arrow-prev">{arrow}</div>
         <div className="px-5 sm:px-16 md:px-32">
