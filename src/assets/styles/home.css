@@ -278,7 +278,6 @@ button:hover{
 /* Video Container */
 .video-container{
     width: 100%; 
-    height: 600px;
     border-radius: 10px;
     /* box-shadow: var(--shadow-box); */
     position: relative;
@@ -307,8 +306,8 @@ button:hover{
 }
 .video-container video{
     width: 100%;
-    height: 100%;
     border-radius: 10px;
+    margin: auto;
 }
 .video-container .img img{
     object-fit: cover;
@@ -539,7 +538,7 @@ footer a::before{
     transition: 0.3s;
 }
 footer a:hover{
-    color: var(--grey_2);
+    color: var(--blue_1);
 }
 footer a:hover path{
     fill: var(--grey_2);
@@ -617,10 +616,6 @@ footer a:hover::before{
     .video-container h2{
         font-size: 1.8rem;
         line-height: 2rem;
-    }
-    .video-container{
-        background : unset;
-        box-shadow: none;
     }
     .img{
         width: 100% !important;

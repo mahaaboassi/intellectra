@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { hostCanonical } from "../../data/data"
 import Hero from "../../components/hero"
 import LottieHero from "../../components/heroAnimation"
 import Card from "../../components/card"
@@ -6,6 +7,8 @@ import Card from "../../components/card"
 import img_1 from "../../assets/images/1.webp"
 import img_2 from "../../assets/images/2.webp"
 import img_3 from "../../assets/images/3.webp"
+import { Helmet } from "react-helmet-async"
+
 
 const About = ()=>{
     const data = [{
@@ -72,6 +75,10 @@ const About = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div>
         <LottieHero/>
+        <Helmet>
+            <title>About Us | Intellectra</title>
+            <link rel="canonical" href={`${hostCanonical}/about`} />
+        </Helmet>
         <div style={{background:"white"}}>
             <Hero data={[{
                     words : "Transforming Complexity into Clarity",

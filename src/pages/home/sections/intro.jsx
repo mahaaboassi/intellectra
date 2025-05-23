@@ -2,6 +2,14 @@ import img_1 from "../../../assets/images/intelligent.webp"
 import img_2 from "../../../assets/images/digital.webp"
 import img_3 from "../../../assets/images/sec.webp"
 import img_4 from "../../../assets/images/sec-1.webp"
+
+import img_5 from "../../../assets/images/home_1.webp"
+import img_6 from "../../../assets/images/home_2.webp"
+import img_7 from "../../../assets/images/home_3.webp"
+import img_8 from "../../../assets/images/home_4.webp"
+import img_9 from "../../../assets/images/home_5.webp"
+import img_10 from "../../../assets/images/home_6.webp"
+
 import { Link } from "react-router-dom"
 
 const Intro = ()=>{
@@ -9,17 +17,17 @@ const Intro = ()=>{
     const data = [{
         title : "Driving Digital Transformation with Innovation & Expertise",
         description : "We enable businesses to evolve, scale, and lead by delivering intelligent, future-ready ICT solutions. As a trusted technology partner, we craft tailored strategies that fuse technical excellence with business insight, ensuring seamless integration of complex systems and mission-critical architectures. Our solutions are designed to accelerate performance, enhance agility, and unlock new growth opportunities in an increasingly digital world.",
-        images : [img_1,img_2,img_3,img_4],
+        images : [img_1,img_10,img_3,img_4],
         link : "/solutions/digital-transformation"
     },{
         title :  "Redefining Modern Workplaces with Blended Innovation & Functionality",
         description : "Our workplace modernization solutions empower organizations to create agile, collaborative, and secure environments that boost productivity and employee engagement. Through seamless integration of digital tools, smart infrastructure, and user-centric design, we transform traditional workspaces into intelligent ecosystems. From hybrid collaboration to space optimization, we deliver scalable solutions that align with your evolving business needs and future-proof your operations.",
-        images : [img_3,img_4,img_1,img_2],
+        images : [img_5,img_6,img_7,img_8],
         link : "/solutions/workplace-modernization"
     },{
         title : "Unlocking the Transformative Potential of AI to Elevate Performance",
         description : "AI isn’t just technology, it’s a trusted partner in shaping a smarter, more responsible future. Through Responsible AI, we blend ethical frameworks with advanced machine learning, intelligent automation, and predictive analytics to deliver measurable business impact. From strategy and roadmap development to scalable deployment, our AI solutions empower organizations to make smarter decisions, streamline operations, and stay ahead in a competitive digital landscape.",
-        images : [img_1,img_4,img_2,img_3],
+        images : [img_9,img_10,img_6,img_3],
         link : "/solutions/artificial-intelligence-(ai)"
     }]
     return( <div className="px-5  sm:px-16 md:px-32 py-5 md:py-10 lg:py-20 flex flex-col gap-5 md:gap-10 lg:gap-20">
@@ -64,12 +72,12 @@ const Intro = ()=>{
             </div>
             <div  style={{position:"relative"}} className="w-full content-intro flex flex-col gap-2 ">
                 <div className="flex gap-2">
-                    <div><img  className="one" src={data[0].images[0]} alt="intelligent" /></div>
-                    <div><img  className="two"  src={data[0].images[1]} alt="digital" /></div>
+                    <div><img  className="one" src={data[1].images[0]} alt="intelligent" /></div>
+                    <div><img  className="two"  src={data[1].images[1]} alt="digital" /></div>
                 </div>
                 <div className="flex gap-2">
-                    <div><img className="three" src={data[0].images[2]} alt="intelligent" /></div>
-                    <div><img className="four"  src={data[0].images[3]} alt="digital" /></div>
+                    <div><img className="three" src={data[1].images[2]} alt="intelligent" /></div>
+                    <div><img className="four"  src={data[1].images[3]} alt="digital" /></div>
                 </div>
                 <Link to={data[0].link}><div  className={`icon-center  cursor-pointer`}>    
                        <div>
@@ -93,12 +101,12 @@ const Intro = ()=>{
         <div style={{background:"white"}} className="intro gap-10">
             <div style={{position:"relative"}} className="w-full content-intro flex flex-col gap-2 ">
                 <div className="flex gap-2">
-                    <div><img  className="one" src={data[0].images[0]} alt="intelligent" /></div>
-                    <div><img  className="two"  src={data[0].images[1]} alt="digital" /></div>
+                    <div><img  className="one" src={data[2].images[0]} alt="intelligent" /></div>
+                    <div><img  className="two"  src={data[2].images[1]} alt="digital" /></div>
                 </div>
                 <div className="flex gap-2">
-                    <div><img className="three" src={data[0].images[2]} alt="intelligent" /></div>
-                    <div><img className="four"  src={data[0].images[3]} alt="digital" /></div>
+                    <div><img className="three" src={data[2].images[2]} alt="intelligent" /></div>
+                    <div><img className="four"  src={data[2].images[3]} alt="digital" /></div>
                 </div>
                 <Link to={data[0].link}><div  className={`icon-center cursor-pointer`}>    
                        <div>
