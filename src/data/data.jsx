@@ -544,67 +544,6 @@ export const termsAndConsitionData = {
   ]
 };  
 
-// export const termsAndConsitionData = {
-//     title : "TERMS AND CONDITIONS",
-//     lastUpdated : "03-March-2025",
-//     finalDes : "",
-//     children : [{
-//         title : "Introduction",
-//         description : "Welcome to INTELLECTRA. By accessing our website, you agree to be bound by these terms and conditions. If you do not agree, please do not use our services.",
-//         content : []
-//     },{
-//         title : "Intellectual Property",
-//         description : "All content on this website, including text, graphics, logos, and software, is the property of INTELLECTRA or its content suppliers and is protected by intellectual property laws.",
-//         content : []
-//     },{
-//         title : "Use of Services",
-//         description : "You agree to use our services only for lawful purposes and in accordance with these terms.",
-//         content : []
-//     },{
-//         title : "Limitation of Liability",
-//         description : "INTELLECTRA is not liable for any damages arising from the use or inability to use our website or services.",
-//         content : []
-//     },{
-//         title : "Changes to Terms",
-//         description : "We reserve the right to update these terms at any time without notice. Your continued use of the site will constitute acceptance of the new terms.",
-//         content : []
-//     },{
-//         title : "Governing Law",
-//         description : "These terms are governed by the laws of the United Arab Emirates.",
-//         content : []
-//     }]
-// }
-// export const privacyPolicy = {
-//     title : "Privacy Policy",
-//     lastUpdated : "03-March-2025",
-//     finalDes : "",
-//     children : [{
-//         title : "Introduction",
-//         description :  "INTELLECTRA is committed to protecting your privacy. This policy explains how we collect, use, and protect your personal information.",
-//         content : []
-//     },{
-//         title : "Information We Collect",
-//         description :  "We collect information you provide directly to us, such as your name, email address, and phone number. We may also collect data automatically through cookies and analytics tools.",
-//         content : []
-//     },{
-//         title : "How We Use Your Information",
-//         description :  "",
-//         content : ["To provide and improve our services.","To communicate with you.","To comply with legal obligations.","To enhance user experience and offer personalized content."]
-//     },{
-//         title : "Sharing Your Information ",
-//         description :  "We do not sell or rent your personal data to third parties. We may share information with trusted partners to provide our services.",
-//         content : []
-//     },{
-//         title : "Data Security",
-//         description : "We implement appropriate technical and organizational measures to protect your information.",
-//         content : []
-//     },{
-//         title : "Your Rights",
-//         description :  "You have the right to access, correct, or delete your personal information. Requests can be sent via email to info@kodeks.ae",
-//         content : []
-//     },
-// ]
-// }
 export const privacyPolicy = {
   title: "Privacy Policy",
   lastUpdated: "03 March 2025",
@@ -654,32 +593,7 @@ export const privacyPolicy = {
     }
   ]
 };
-// export const cookiesData = {
-//     title : "Cookies Management",
-//     lastUpdated : "03-March-2025",
-//     finalDes : "",
-//     children : [{
-//         title : "What are Cookies?",
-//         description : "Cookies are small text files stored on your device to enhance user experience and provide analytical data.",
-//         content : []
-//     },{
-//         title : "How We Use Cookies?",
-//         description : "",
-//         content : ["To improve website functionality","To analyze website traffic and usage patterns","To remember your preferences"]
-//     },{
-//         title : "Managing Cookies :",
-//         description : "You can manage cookies through your browser settings. However, disabling cookies may affect your experience on our website.",
-//         content : []
-//     },{
-//         title : "Third-Party Cookies :",
-//         description : "We may use third-party services such as Google Analytics that use cookies to provide insights into website performance.",
-//         content : []
-//     },{
-//         title : "Changes to this Policy :",
-//         description : "We may update this policy from time to time. Please review it periodically for any changes.",
-//         content : []
-//     },
-// ]}
+
 export const cookiesData = {
   title: "Cookies Management",
   lastUpdated: "03 March 2025",

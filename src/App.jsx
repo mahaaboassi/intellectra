@@ -14,9 +14,9 @@ import FAQs from './pages/FAQs/faqs'
 import PrivacyPolicy from './pages/privacyPolicy/privacy'
 import Cookies from './pages/cookies/cookies'
 import TermsAndConditions from './pages/terms&conditions/terms&conditions'
-import Blog from './pages/blog/blog'
 import Pulse from './pages/pulse/pulse'
 import LayoutTemplate from './pages/layout/page'
+import PulseDetails from './pages/pulse/details'
 
 function App() {
 
@@ -32,7 +32,7 @@ function App() {
           <Route path="innovation" element={<Innovation/>} />
           <Route path="industries/:name" element={<SubIndustry/>} />
           <Route path="solutions/:name" element={<SubSolution/>} />
-          <Route path="news/:title" element={<Blog/>} />
+          <Route path="pulse/:title" element={<PulseDetails/>} />
           <Route path="contact" element={<Contact/>} />
           <Route path="FAQs" element={<FAQs/>} />
           <Route path="privacy-policy" element={<PrivacyPolicy/>} />

@@ -1,27 +1,43 @@
 import { useEffect } from "react"
+import Hero from "../../components/hero"
 import LottieHero from "../../components/heroAnimation"
-import { hostCanonical } from "../../data/data"
-import Path from "../../components/path"
 import { Helmet } from "react-helmet-async"
+import { dataBlog, hostCanonical } from "../../data/data"
+import { Link } from "react-router-dom"
 
 
 const Pulse = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
-    return(<div className="industry pages">
+    return(<div>
+        <LottieHero/>
         <Helmet>
             <title>Pulse | Intellectra</title>
             <link rel="canonical" href={`${hostCanonical}/pulse`} />
         </Helmet>
-        <LottieHero/>
-        <div className="pt-32 px-5 sm:px-16 md:px-32 ">
-            <div className="blur-bg radius-border flex flex-col gap-3 content-about p-4 sm:p-6  md:p-10 lg:p-16">
-                <Path first={"Home"} link={"/"} second={"Pulse"} />
-                <h1>Pulse</h1>
-                {/* <h3 className="des-pages" >{solutionData.description}</h3> */}
+        <div className="pages" style={{background:"white"}}>
+            <Hero data={[{
+                    words : "Pulse",
+                    des : "Explore the latest trends, ideas, and news from our world"
+            }]} />
+            <div className="layout pt-32 px-5 sm:px-16 md:px-32 pb-16">
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    {dataBlog.map((ele,idx)=>(<div key={`News_Latest_Pulse_Page_${ele.title}_${idx}`} className="blog flex flex-col gap-3 ">
+                                <div className='container-img'>
+                                    <img src={ele.image} alt={ele.title}/>
+                                </div>
+                                <div className='flex gap-2'>
+                                    {ele.hashtag.map((hash,index)=>(<div className='hastag p-1' key={`Hashtag_${hash}_${index}_${idx}`}>
+                                        {hash}
+                                    </div>))}
+                                </div>
+                                <h3>{ele.title}</h3>
+                                {/* <p>{ele.description.substring(0,80)+"..."}</p> */}
+                                <Link to={`/pulse/${ele.link}`}><div><span className='learn'>Learn More</span></div></Link>
+                            </div>))}
+                </div>     
             </div>
-
         </div>
-
     </div>)
 }
+
 export default Pulse

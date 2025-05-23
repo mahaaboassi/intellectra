@@ -541,7 +541,7 @@ footer a:hover{
     color: var(--blue_1);
 }
 footer a:hover path{
-    fill: var(--grey_2);
+    fill: var(--blue_1);
 }
 footer a:hover::before{
     width: 10%;

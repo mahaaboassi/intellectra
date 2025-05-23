@@ -228,7 +228,7 @@
     color: var(--blue_1);
 }
 /* Layout */
-.layout{
+.layout,.layout-details {
    margin-top: -170px;
 }
 .layout h1{
@@ -311,7 +311,7 @@
     .blog-first, .blog-second{
         width: 100% !important;
     }
-    .layout{
+    .layout,.layout-details {
         margin-top: -220px;
     }
 
