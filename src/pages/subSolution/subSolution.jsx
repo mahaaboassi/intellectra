@@ -62,7 +62,7 @@ const SubSolution = ()=>{
                         <h2 className="path mb-5">Related Solutions</h2>
                         <div className="flex flex-col gap-5">{
                             randomData.length > 0 &&  randomData.map((e,idx)=>(<Link to={`${e.link}`}  key={`Solution_Details_${e.title}_${idx}`}>
-                            <div className="flex  card-sperate p-4">
+                            <div className="flex h-18 card-sperate p-4">
                                 <div className="content-first flex justify-center">{e.img}</div>
                                 <div className="content-second flex flex-col justify-center">
                                     <h2>{e.title}</h2>
