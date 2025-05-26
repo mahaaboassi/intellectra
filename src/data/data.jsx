@@ -681,7 +681,7 @@ export const dataBlog = [
             link: "how-AI-is-revolutionizing-business-operations",
             description: `Artificial Intelligence (AI) is no longer just a futuristic concept—it's a core part of today's business strategy. From automating repetitive processes to providing real-time data analysis, AI is helping companies across industries increase productivity, reduce costs, and enhance customer experiences. Businesses are using AI for chatbots, predictive analytics, fraud detection, and even personalized product recommendations. By leveraging machine learning models and natural language processing, AI enables organizations to make faster, smarter decisions and stay ahead of their competition. As technology continues to evolve, companies that embrace AI today are positioning themselves for long-term success and innovation.`,
             image: img_1,
-            date: "2025-02-25",
+            date: "2025-02-27",
             author: "INTELLECTRA admin",
             hashtag: ["#AI" ,"#Business"]
         },
@@ -711,7 +711,7 @@ export const dataBlog = [
             link : "cybersecurit-i-the-age-of-remote-work",
             description: `The shift to remote work has opened new doors for productivity—but it has also increased the risk of cyberattacks. With employees working from various locations and devices, organizations are facing growing challenges in securing their networks and sensitive data. Cybersecurity strategies must now include endpoint protection, secure VPNs, multi-factor authentication, and employee awareness training. Attackers are exploiting weak home networks and phishing campaigns to gain unauthorized access. As the remote work model continues, businesses need to implement strong cybersecurity frameworks, monitor threats proactively, and adapt to a constantly evolving threat landscape. A secure remote work environment is no longer optional—it's essential.`,
             image: img_4,
-            date: "2025-02-26",
+            date: "2025-01-26",
             author: "INTELLECTRA admin",
             hashtag: ["#Cybersecurity"]
         },
@@ -721,8 +721,53 @@ export const dataBlog = [
             link : "harnessing-big-data-for-business-insights",
             description: `Big Data refers to the massive volumes of structured and unstructured data generated every second by businesses and consumers alike. When properly analyzed, this data can reveal powerful insights into customer behavior, market trends, and operational efficiency. Companies are using Big Data analytics to improve product development, optimize supply chains, personalize marketing, and drive strategic decisions. With tools like machine learning, data lakes, and real-time dashboards, even small and mid-sized businesses can gain actionable intelligence from their data. The ability to turn raw information into meaningful insights gives organizations a major competitive advantage in today's data-driven world.`,
             image: img_5,
-            date: "2025-02-27",
+            date: "2025-01-10",
             author: "INTELLECTRA admin",
             hashtag: ["#BigData", "#Analytics"]
         }
     ];
+
+export const contactData = [
+  {
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 15 15" fill="none">
+      <g clipPath="url(#clip0_447_17)">
+      <path d="M7.5 7.5C6.8125 7.5 6.25 6.9375 6.25 6.25C6.25 5.5625 6.8125 5 7.5 5C8.1875 5 8.75 5.5625 8.75 6.25C8.75 6.9375 8.1875 7.5 7.5 7.5ZM11.25 6.375C11.25 4.10625 9.59375 2.5 7.5 2.5C5.40625 2.5 3.75 4.10625 3.75 6.375C3.75 7.8375 4.96875 9.775 7.5 12.0875C10.0313 9.775 11.25 7.8375 11.25 6.375ZM7.5 1.25C10.125 1.25 12.5 3.2625 12.5 6.375C12.5 8.45 10.8312 10.9062 7.5 13.75C4.16875 10.9062 2.5 8.45 2.5 6.375C2.5 3.2625 4.875 1.25 7.5 1.25Z" fill="#4D75F4"/>
+      </g>
+      <defs>
+      <clipPath id="clip0_447_17">
+      <rect width="15" height="15" fill="white"/>
+      </clipPath>
+      </defs>
+      </svg>,
+    link: "https://www.google.com/maps?q=609,+Bayan+Building,+Dubai+Investment+Park+1,+Dubai,+United+Arab+Emirates",
+    name: "location",
+    title: "Location",
+    value: "609, Bayan Building, Dubai Investment Park 1, Dubai, United Arab Emirates"
+  },
+  {
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 14 14" fill="none">
+          <g clip-path="url(#clip0_448_31)">
+          <path d="M1.0183 5.24782C0.6219 4.63328 0.4491 3.90097 0.529 3.17402C0.609 2.44708 0.9368 1.76983 1.4574 1.25617L1.8965 0.807104C2.0979 0.610232 2.3683 0.5 2.6499 0.5C2.9315 0.5 3.202 0.610232 3.4033 0.807105L5.28939 2.71312C5.48563 2.91281 5.59559 3.18158 5.59559 3.46156C5.59559 3.74153 5.48563 4.01031 5.28939 4.20999C5.09251 4.41136 4.98228 4.6818 4.98228 4.96342C4.98228 5.24504 5.09251 5.51547 5.28939 5.71684L8.28313 8.71058C8.38155 8.81045 8.49884 8.88976 8.62818 8.94389C8.75752 8.99802 8.89634 9.0259 9.03655 9.0259C9.17677 9.0259 9.31558 8.99802 9.44493 8.94389C9.57427 8.88976 9.69156 8.81045 9.78998 8.71058C9.98966 8.51434 10.2584 8.40438 10.5384 8.40438C10.8184 8.40438 11.0872 8.51434 11.2868 8.71058L13.1829 10.6066C13.3798 10.808 13.49 11.0784 13.49 11.36C13.49 11.6417 13.3798 11.9121 13.1829 12.1135L12.7338 12.5526C12.2202 13.0731 11.5429 13.4009 10.816 13.4809C10.089 13.5609 9.35671 13.3881 8.74217 12.9916C5.6978 10.9259 3.0762 8.29751 1.0183 5.24782Z" stroke="#4C77F1" strokeLinecap="round" strokeLinejoin="round"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_448_31">
+          <rect width="14" height="14" fill="white" transform="translate(14) rotate(90)"/>
+          </clipPath>
+          </defs>
+          </svg>, 
+    link: "tel:+97143235609",
+    name: "call",
+    title: "Call",
+    value: "+971 (4) 3235609"
+  },
+  {
+    icon: <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 14 14" fill="none">
+    <path d="M12.5 1.75H1.5C0.947715 1.75 0.5 2.19772 0.5 2.75V11.25C0.5 11.8023 0.947715 12.25 1.5 12.25H12.5C13.0523 12.25 13.5 11.8023 13.5 11.25V2.75C13.5 2.19772 13.0523 1.75 12.5 1.75Z" stroke="#4C77F1" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M0.5 3L6.36 6.52424C6.53969 6.62973 6.76615 6.6875 7 6.6875C7.23385 6.6875 7.46031 6.62973 7.64 6.52424L13.5 3" stroke="#4C77F1" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>,
+    link: "mailto:info@intellectra.ae",
+    name: "email",
+    title: "Email",
+    value: "info@intellectra.ae"
+  }
+];

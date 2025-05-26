@@ -1,14 +1,13 @@
-import { useEffect, useState } from "react"
+
+import { useEffect } from "react"
 import Hero from "../../components/hero"
 import LottieHero from "../../components/heroAnimation"
 import { Helmet } from "react-helmet-async"
-import {  contactData, hostCanonical } from "../../data/data"
-import { Link } from "react-router-dom"
+import { hostCanonical } from "../../data/data"
 
 
 const Contact = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
-
     return(<div>
         <LottieHero/>
         <Helmet>
@@ -20,10 +19,10 @@ const Contact = ()=>{
                     words : "Let's Connect",
                     des : "Start the conversation—our team is ready to assist you"
             }]} />
-            <div className="layout-details pt-32 px-5 sm:px-16 md:px-32 pb-16">
-              <div className="flex gap-10 blog-details w-full">
-                <div className="blog-first  blur-bg radius-border flex flex-col gap-3 ">
-                     <form  className="flex flex-col gap-4">
+            <div className="layout pt-32 px-5 sm:px-16 md:px-32 pb-16">
+                <div className="blur-bg radius-border flex flex-col gap-3">
+                 <div className="des" >
+                    <form  className="flex flex-col gap-4">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 ">
                             <div className="w-full">
                                 <input className="w-full" placeholder="Name"  />
@@ -56,27 +55,12 @@ const Contact = ()=>{
                         </div>
 
                     </form>
-                </div>
-                <div className="blur-bg blog-second radius-border flex flex-col gap-3  px-5 pb-4 ">
-                    <div className="content-sticky ">
-                        <h2 className="path mb-5">Contact Info</h2>
-                        <p className="mb-5"> Whether you have a question, need support, or are interested in learning more about our solutions, we're here to help. Reach out to us via phone, email, or visit our office in Dubai — our team will be glad to connect with you.</p>
-                        <div className="flex flex-col gap-5">{
-                            contactData.map((e,idx)=>(<Link to={`${e.link}`} target="_blank"  key={`contact_Info_${e.title}_${idx}`}>
-                            <div className="flex gap-2 p-4  contact-card side-blog">
-                                <div className="w-20    ">{e.icon}</div>
-                                <div className="w-full flex flex-col justify-center">
-                                    <h3>{e.value}</h3> 
-                                    
-                                </div>
 
-                            </div>
-                            </Link>))
-                        }</div>
-                    </div>
-                </div>
-            </div>  
+                </div>        
             </div>
+                
+            </div>
+
         </div>
     </div>)
 }

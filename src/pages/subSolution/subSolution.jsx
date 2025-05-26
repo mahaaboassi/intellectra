@@ -57,7 +57,7 @@ const SubSolution = ()=>{
                         </ul>
                     </div>
                 </div>
-                <div className="blur-bg blog-second radius-border flex flex-col gap-3  px-5 py-4 ">
+                <div className="blur-bg blog-second radius-border flex flex-col gap-3  px-5 pb-4 ">
                     <div className="content-sticky">
                         <h2 className="path mb-5">Related Solutions</h2>
                         <div className="flex flex-col gap-5">{
@@ -65,7 +65,7 @@ const SubSolution = ()=>{
                             <div className="flex h-18 card-sperate p-4">
                                 <div className="content-first flex justify-center">{e.img}</div>
                                 <div className="content-second flex flex-col justify-center">
-                                    <h2>{e.title}</h2>
+                                    <h3>{e.title}</h3>
                                     {/* <p>{e.subTitle}</p> */}
                                 </div>
                             </div>

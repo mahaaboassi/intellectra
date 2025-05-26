@@ -53,7 +53,7 @@ const PulseDetails = ()=>{
                         {data.description}
                     </div>
                 </div>
-                <div className="blur-bg blog-second radius-border flex flex-col gap-3  px-5 py-4 ">
+                <div className="blur-bg blog-second radius-border flex flex-col gap-3  px-5 pb-4 ">
                     <div className="content-sticky">
                         <h2 className="path mb-5">Latest News</h2>
                         <div className="flex flex-col gap-5">{
@@ -61,7 +61,7 @@ const PulseDetails = ()=>{
                             <div className="flex gap-3 side-blog">
                                 <div className="content-first "><img className="w-full h-20 object-cover" src={e.image} alt={e.title} /></div>
                                 <div className="content-second flex flex-col justify-center">
-                                    <h2>{e.title}</h2> 
+                                    <h3>{e.title}</h3> 
                                     <div  className="date flex ">
                                         {/* <div className="flex items-center ">{calendar}</div> */}
                                         <div className="flex items-center ">{e.date}</div>

@@ -119,17 +119,17 @@ const SubIndustry = ()=>{
                         {data.description}
                     </div>
                 </div>
-                <div className="blur-bg blog-second radius-border flex flex-col gap-3  px-5 py-4 ">
+                <div className="blur-bg blog-second radius-border flex flex-col gap-3  px-5 pb-4 ">
                     <div className="content-sticky">
                         <h2 className="path mb-5">Related Industries</h2>
                         <div className="flex flex-col gap-5">{
                             randomData.length > 0 &&  randomData.map((e,idx)=>{
                                 if( idx <   5 ){
-                                    return <Link to={`${e.link}`}  key={`Solution_Details_${e.title}_${idx}`}>
+                                    return <Link to={`${e.link}`}  key={`Industry_Details_${e.title}_${idx}`}>
                                     <div className="flex h-18 card-sperate p-4">
                                         <div className="content-first flex justify-center">{e.img}</div>
                                         <div className="content-second flex flex-col justify-center">
-                                            <h2>{e.title}</h2>
+                                            <h3>{e.title}</h3>
                                         
                                         </div>
                                     </div>
