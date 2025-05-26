@@ -609,11 +609,8 @@ footer a:hover::before{
         font-size: 3rem;
         line-height: 3.1rem;
     }
-    .intro h2{
-        font-size: 1.8rem;
-        line-height: 2rem;
-    }
-    .video-container h2{
+
+    .video-container h2,.intro h2,.latest h2{
         font-size: 1.8rem;
         line-height: 2rem;
     }

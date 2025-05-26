@@ -384,6 +384,9 @@
     .layout,.layout-details {
         margin-top: -220px;
     }
+    .blog-second{
+        padding:  0 !important;
+    }
 
 }
 @media (max-width: 820px) {
@@ -432,7 +435,7 @@
     .robot-card{
         height: fit-content;
     }
-    .robot-card .des{
+    .des{
         width: 100% ;
         font-size: var(--font-size-xs);
     }
