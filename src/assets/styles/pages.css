@@ -227,6 +227,56 @@
 .side-blog:hover h2{
     color: var(--blue_1);
 }
+
+.card-sperate{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    background:  linear-gradient(
+        rgba(159, 158, 158, 0.089),
+        rgba(255, 255, 255, 0.749),
+        rgba(159, 158, 158, 0.089)
+    );
+    border-radius: 20px;
+}
+.card-sperate::after{
+    content: "";
+    border-radius: 20px;
+    transition: 0.5s;
+    position: absolute;
+}
+.card-sperate svg{
+    width: 40px;
+}
+.card-sperate path{
+    fill: var(--blue_1);
+}
+.card-sperate:hover::after{
+    inset: 0;
+    background:  linear-gradient(
+        rgba(255, 255, 255, 0.749),
+        rgba(159, 158, 158, 0.089)
+    );
+    transform: scale(0.92);
+    z-index: -5;
+}
+.content-sperate ul li{
+    position: unset !important;
+    width: 180px;
+    height: 130px;
+    background : linear-gradient(
+        rgba(159, 158, 158, 0.296),
+        rgba(255, 255, 255, 0.749),
+        rgba(159, 158, 158, 0.296));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+.content-sperate ul li::before{
+    content: unset !important;
+}
 /* Layout */
 .layout,.layout-details {
    margin-top: -170px;

@@ -16,7 +16,7 @@ const Pulse = ()=>{
         </Helmet>
         <div className="pages" style={{background:"white"}}>
             <Hero data={[{
-                    words : "Pulse",
+                    words : "Pulse : Wired for Tomorrow",
                     des : "Explore the latest trends, ideas, and news from our world"
             }]} />
             <div className="layout pt-32 px-5 sm:px-16 md:px-32 pb-16">

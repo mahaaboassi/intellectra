@@ -19,8 +19,8 @@ const Latest = ()=>{
         <div onClick={lastSlider} className="arrow-prev">{arrow}</div>
         <div className="px-5 sm:px-16 md:px-32">
             <div className='flex flex-col gap-2 pb-10'>
-                <h2 className='text-center '> Pulse</h2>
-                <p className='text-center paragraph '>Wired for Tomorrow: What’s Shaping the Digital World Today</p>
+                <h2 className='text-center '> Pulse : Wired for Tomorrow</h2>
+                <p className='text-center paragraph '>What’s Shaping the Digital World Today</p>
             </div>
             <div >
                 <Swiper

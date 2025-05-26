@@ -5,8 +5,8 @@ import Card from "../../components/card"
 import { Helmet } from "react-helmet-async"
 import { hostCanonical, industryData } from "../../data/data"
 // Images
-import img_3 from "../../assets/images/industry_1.webp"
-import img_2 from "../../assets/images/2.webp"
+import img_3 from "../../assets/images/home_1.webp"
+import img_2 from "../../assets/images/image_8.webp"
 
 const Industry = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
