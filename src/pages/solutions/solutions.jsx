@@ -25,6 +25,15 @@ const Solutions = ()=>{
                 <p>
                     {solutionData.description}
                 </p>
+                <p className="py-5">
+                    {solutionData.desc_2}
+                </p>
+                <p>
+                    {solutionData.desc_3}
+                </p>
+                <p className="pt-5">
+                    {solutionData.desc_4}
+                </p>
                 <div className="container-about gap-10 py-10">
                     <div className="w-full flex justify-end"><img  className="layout-one" src={img_2} alt="image" /></div>
                     <div className="w-full"><img className="layout-two" src={img_3} alt="image" /></div>

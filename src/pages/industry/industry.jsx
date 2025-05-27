@@ -5,8 +5,8 @@ import Card from "../../components/card"
 import { Helmet } from "react-helmet-async"
 import { hostCanonical, industryData } from "../../data/data"
 // Images
-import img_3 from "../../assets/images/home_1.webp"
-import img_2 from "../../assets/images/image_8.webp"
+import img_3 from "../../assets/images/image_12.webp"
+import img_2 from "../../assets/images/image_11.webp"
 
 const Industry = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
@@ -23,7 +23,16 @@ const Industry = ()=>{
             }]} />
             <div className="layout pt-32 px-5 sm:px-16 md:px-32">
                 <p>
-                    At INTELLECTRA, we deliver future-ready, technology-driven solutions that empower organizations across industries to thrive in a rapidly evolving digital world. By aligning strategic innovation with intelligent IT investments, we help businesses unlock new growth opportunities, streamline operations, and stay ahead of the curve. Our expertise in cutting-edge digital technologies, spanning AI, cloud, cybersecurity, IoT, and automation, enables us to create scalable, resilient, and high-performing environments that drive long-term success.
+                   {industryData.description}
+                </p>
+                <p className="py-4">
+                   {industryData.desc_2}
+                </p>
+                <p>
+                   {industryData.desc_3}
+                </p>
+                <p className="pt-4">
+                   {industryData.desc_4}
                 </p>
                 <div className="container-about gap-10 py-10">
                     <div className="w-full flex justify-end"><img  className="layout-one" src={img_2} alt="image" /></div>
