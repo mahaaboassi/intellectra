@@ -18,7 +18,7 @@ const Industry = ()=>{
         </Helmet>
         <div className="pages" style={{background:"white"}}>
             <Hero data={[{
-                    words : "Empowering Intelligence through Technology",
+                    words : "EMPOWERING INDUSTRY WITH TECHNOLOGY",
                     des : "Enabling Agility, Operational Resilience, and Sustainable Impact"
             }]} />
             <div className="layout pt-32 px-5 sm:px-16 md:px-32">

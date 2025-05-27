@@ -297,7 +297,8 @@ export const esgData = {
 
 export const industryData = {
     title : "",
-    description : <div>We deliver globally recognized, technology-driven solutions that help businesses maximize their IT investments and business performance. Our expertise spans multiple industries, where we leverage cutting-edge digital solutions to drive innovation, optimize operations, and improve overall outcomes.</div>,
+    // description : <div>We deliver globally recognized, technology-driven solutions that help businesses maximize their IT investments and business performance. Our expertise spans multiple industries, where we leverage cutting-edge digital solutions to drive innovation, optimize operations, and improve overall outcomes.</div>,
+    description : <div>We deliver globally recognized, technology-driven solutions that help businesses maximize their IT investments and business performance. Our expertise spans multiple industries, where we leverage digital solutions to drive innovation, optimize operations, and improve overall outcomes.</div>,
     children :[    {
         title : "Agriculture",
         finalDescription : "",
