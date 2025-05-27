@@ -358,7 +358,7 @@ export const industryData = {
               </defs>
               </svg> ,
         subTitle : "Agility Through Integration",
-        link : "/industries/construction",
+        link : "/industries/defense",
         srcImg : "/transportation.webp",
         description : "The defense sector faces operational complexity and cybersecurity threats. We partner with defense organizations to drive digital transformation and enhance mission readiness through AI-powered threat detection, autonomous systems integration, secure communications infrastructure, real-time data analytics, and automation. By modernizing command and control, and enhancing situational awareness, we ensure defense forces remain agile.",
     },{
