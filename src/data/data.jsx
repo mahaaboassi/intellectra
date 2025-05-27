@@ -344,7 +344,7 @@ export const industryData = {
         srcImg : "/transportation.webp",
         description : "The construction industry is embracing a new era of digital transformation to enhance project delivery, safety, and sustainability. We empower construction firms, contractors, and developers with AI-driven project planning, cloud-based collaboration platforms, IoT-enabled site monitoring, and digital twin technologies towards modernizing their IT infrastructure and embedding intelligent automation across the construction lifecycle.",
     },{
-        title : "Defence",
+        title : "Defense",
         finalDescription : "",
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 32" fill="none">
@@ -357,10 +357,10 @@ export const industryData = {
               </clipPath>
               </defs>
               </svg> ,
-        subTitle : "Enabling the Future of Smart Construction",
+        subTitle : "Agility Through Integration",
         link : "/industries/construction",
         srcImg : "/transportation.webp",
-        description : "The construction industry is embracing a new era of digital transformation to enhance project delivery, safety, and sustainability. We empower construction firms, contractors, and developers with AI-driven project planning, cloud-based collaboration platforms, IoT-enabled site monitoring, and digital twin technologies towards modernizing their IT infrastructure and embedding intelligent automation across the construction lifecycle.",
+        description : "The defense sector faces operational complexity and cybersecurity threats. We partner with defense organizations to drive digital transformation and enhance mission readiness through AI-powered threat detection, autonomous systems integration, secure communications infrastructure, real-time data analytics, and automation. By modernizing command and control, and enhancing situational awareness, we ensure defense forces remain agile.",
     },{
         title : "Education",
         finalDescription : "",
