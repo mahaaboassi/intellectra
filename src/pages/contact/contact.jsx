@@ -66,8 +66,8 @@ const Contact = ()=>{
                         <p className="mb-5"> Whether you have a question, need support, or are interested in learning more about our solutions, we're here to help.</p>
                         <div className="flex flex-col gap-5">{
                             contactData.map((e,idx)=>(<Link to={`${e.link}`} target="_blank"  key={`contact_Info_${e.title}_${idx}`}>
-                            <div className="flex gap-2 p-4  contact-card side-blog">
-                                <div className="w-20    ">{e.icon}</div>
+                            <div className="flex gap-2 p-3.5  contact-card side-blog">
+                                <div className="w-20 flex items-center   ">{e.icon}</div>
                                 <div className="w-full flex flex-col justify-center">
                                     <h3>{e.value}</h3> 
                                     
