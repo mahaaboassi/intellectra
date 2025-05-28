@@ -728,7 +728,7 @@ export const contactData = [
     link: "https://www.google.com/maps?q=609,+Bayan+Building,+Dubai+Investment+Park+1,+Dubai,+United+Arab+Emirates",
     name: "location",
     title: "Location",
-    value: <div>609, Bayan Bldg, Dubai Investment Park 1
+    value: <div>609, Bayan Bldg., Dubai Investment Park 1
       <br/> PO Box 74700 Dubai, United Arab Emirates</div>
   },
   {
