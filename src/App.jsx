@@ -33,13 +33,13 @@ function App() {
           <Route path="industries/:name" element={<SubIndustry/>} />
           <Route path="solutions/:name" element={<SubSolution/>} />
           <Route path="pulse/:title" element={<PulseDetails/>} />
-          <Route path="contact" element={<Contact/>} />
           <Route path="FAQs" element={<FAQs/>} />
           <Route path="privacy-policy" element={<PrivacyPolicy/>} />
           <Route path="cookies-center" element={<Cookies/>} />
           <Route path="pulse" element={<Pulse/>} />
           <Route path="terms-&-conditions" element={<TermsAndConditions/>} />
        </Route>
+       <Route path="contact" element={<Contact/>} />
     </Routes>
   </BrowserRouter>
   )

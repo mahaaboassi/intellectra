@@ -4,12 +4,15 @@ import LottieHero from "../../components/heroAnimation"
 import { Helmet } from "react-helmet-async"
 import {  contactData, hostCanonical } from "../../data/data"
 import { Link } from "react-router-dom"
+import Navbar from "../../components/navbar"
+import Footer from "../../components/footer"
 
 
 const Contact = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
 
     return(<div>
+        <Navbar/>
         <LottieHero/>
         <Helmet>
             <title>Contact Us | Intellectra</title>
@@ -78,6 +81,7 @@ const Contact = ()=>{
             </div>  
             </div>
         </div>
+        <Footer/>
     </div>)
 }
 
