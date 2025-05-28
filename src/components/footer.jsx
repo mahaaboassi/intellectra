@@ -18,17 +18,19 @@ const Footer = ()=>{
         link : "/"
     }]
     
-    const support = [   {
-        name : "Contact Us",
-        link : "/contact"
-    },{
-        name : "Cookie Center",
-        link : "/cookies-center"
-    },
+    const support = [ 
+    // {
+    //     name : "Contact Us",
+    //     link : "/contact"
+    // },{
+    //     name : "Cookie Center",
+    //     link : "/cookies-center"
+    // },
+    // {
+    //     name : "Privacy Policy",
+    //     link : "/privacy-policy"
+    // },
     {
-        name : "Privacy Policy",
-        link : "/privacy-policy"
-    },{
         name : "Terms & Conditions",
         link : "/terms-&-conditions"
     }]
@@ -125,7 +127,7 @@ const Footer = ()=>{
                         </div>
                         
                         <div className="w-full flex flex-col gap-4 menu">
-                            <h4>Support</h4>
+                            <h4>Policy</h4>
                             {support.map((ele,idx)=>(<Link to={ele.link} key={`Support_${ele.name}_${idx}`}>
                             <div >
                                 {ele.name}
