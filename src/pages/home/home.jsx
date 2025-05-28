@@ -14,7 +14,7 @@ const Home = ()=>{
         des : "Harnessing Intellect and Electronic Advancements"
       },{
         words : "Intelligence Innovation Impact",
-        des : "We craft smart tech solutions that boost efficiency and fuel business growth"
+        des : "We Craft Smart Tech Solutions That Boost Efficiency and Fuel Business Growth"
       },{
         words : "INTELLECT AI INSIGHT",
         des : "Driven by AI and Defined by Intellect"

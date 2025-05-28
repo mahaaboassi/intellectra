@@ -209,6 +209,7 @@
 .blog-second h2{
     font-size: var(--font-size-s);
     font-weight: 500;
+    color: var(--blue_1);
 }
 .blog-second h3 {
     font-size: var(--font-size-xxs);

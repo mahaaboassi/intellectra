@@ -58,7 +58,6 @@
 .hero p{
     font-size: var(--font-size-l);
     font-weight: 600;
-    text-transform: capitalize;
     text-align: center;
 }
 button{

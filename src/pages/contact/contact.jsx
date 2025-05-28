@@ -21,7 +21,7 @@ const Contact = ()=>{
         <div className="pages" style={{background:"white"}}>
             <Hero data={[{
                     words : "Let's Connect",
-                    des : "Start the conversation—our team is ready to assist you"
+                    des : "Start the Conversation — Our Team Is Ready to Assist You"
             }]} />
             <div className="layout-details pt-32 px-5 sm:px-16 md:px-32 pb-16">
               <div className="flex gap-10 blog-details w-full">
@@ -64,7 +64,6 @@ const Contact = ()=>{
                     <div className="content-sticky ">
                         <h2 className="path mb-5">Contact Info</h2>
                         <p className="mb-5"> 
-                            {/* Have a question or need support ? We're here to help. */}
                             Whether you have a question, need support, or are interested in learning more about our solutions, we're here to help.
                             </p>
                         <div className="flex flex-col gap-5">{

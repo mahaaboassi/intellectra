@@ -36,7 +36,7 @@ const PulseDetails = ()=>{
         <div className="pages" style={{background:"white"}}>
             <Hero data={[{
                     words : "Pulse : Wired for Tomorrow",
-                    des : "Explore the latest trends, ideas, and news from our world"
+                    des : "What’s Shaping the Digital World Today"
             }]} />
             <div className="layout-details pt-32 px-5 sm:px-16 md:px-32 pb-16">
               <div className="flex gap-10 blog-details w-full">

@@ -60,7 +60,7 @@ const Latest = ()=>{
                                     </div>))}
                                 </div>
                                 <h3>{ele.title}</h3>
-                                <p>{ele.description.substring(0,80)+"..."}</p>
+                                <p>{ele.short_description}</p>
                                 <Link to={`/pulse/${ele.link}`}><div><span className='learn'>Learn More</span></div></Link>
                             </div>
                         </SwiperSlide>))}

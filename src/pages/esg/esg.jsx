@@ -5,8 +5,8 @@ import Card from "../../components/card"
 import { Helmet } from "react-helmet-async"
 import { esgData, hostCanonical, industryData } from "../../data/data"
 // Images
-import img_3 from "../../assets/images/industry_1.webp"
-import img_2 from "../../assets/images/2.webp"
+import img_3 from "../../assets/images/image_13.webp"
+import img_2 from "../../assets/images/image_14.webp"
 
 const ESG = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
@@ -18,12 +18,18 @@ const ESG = ()=>{
         </Helmet>
         <div className="pages" style={{background:"white"}}>
             <Hero data={[{
-                    words : "Empowering Intelligence through Technology",
-                    des : "Enabling Agility, Operational Resilience, and Sustainable Impact"
+                    words : "COMMITMENT TO ESG",
+                    des : "Driven by Purpose and Responsibility"
             }]} />
             <div className="layout pt-32 px-5 sm:px-16 md:px-32">
                 <p>
                     {esgData.description}
+                </p>
+                <p className="py-4">
+                   {esgData.desc_2}
+                </p>
+                <p>
+                   {esgData.desc_3}
                 </p>
                 <div className="container-about gap-10 py-10">
                     <div className="w-full flex justify-end"><img  className="layout-one" src={img_2} alt="image" /></div>
