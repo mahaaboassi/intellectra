@@ -693,7 +693,7 @@ export const dataBlog = [ {
             id: 3,
             title: "The Future of Cloud Computing: Trends to Watch",
             link : "the-future-of-cloud-computing-trends-to-Watch",
-            short_description : "Cloud computing has dramatically reshaped the way companies store data, build a...",
+            short_description : "Cloud computing has dramatically reshaped the way companies store da...",
             description: `Cloud computing has dramatically reshaped the way companies store data, build applications, and scale their operations. As we look to the future, several emerging trends are redefining the cloud landscape. Multi-cloud and hybrid strategies are becoming the norm, allowing businesses to choose the best services across providers. Serverless computing is gaining traction for its cost-efficiency and simplified infrastructure management. AI and machine learning are also being embedded into cloud platforms, offering intelligent tools that improve performance and automate decision-making. Furthermore, edge computing is bridging the gap between cloud and local data processing, especially for IoT. Understanding these trends will be crucial for businesses planning their digital transformation journey.`,
             image: img_3,
             date: "2025-02-25",
