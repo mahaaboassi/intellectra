@@ -18,8 +18,8 @@ const Solutions = ()=>{
         </Helmet>
         <div className="pages" style={{background:"white"}}>
             <Hero data={[{
-                    words : "Smart Solutions for Intelligent Transformation",
-                    des : "Enabling Agility, Operational Resilience, and a Lasting Sustainable Impact"
+                    words : "DISRUPTING THE DIGITAL FUTURE",
+                    des : "Driving Transformation with Efficient and Scalable ICT"
             }]} />
             <div className="layout pt-32 px-5 sm:px-16 md:px-32">
                 <p>
