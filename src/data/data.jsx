@@ -5,7 +5,17 @@ import img_3 from "../assets/images/cloud.jpg"
 import img_4 from "../assets/images/5x5c.png"
 import img_5 from "../assets/images/solutionSection.jpg"
 import img_6 from "../assets/images/blog_1.webp"
-
+// Indusries
+import ind_1 from "../assets/images/agriculture.webp"
+import ind_1_1 from "../assets/images/agriculture_2.webp"
+import ind_2 from "../assets/images/communication.webp"
+import ind_3 from "../assets/images/construction.webp"
+import ind_4 from "../assets/images/defense.webp"
+import ind_5 from "../assets/images/education.webp"
+import ind_6 from "../assets/images/energy_.webp"
+import ind_7 from "../assets/images/finance.webp"
+import ind_8 from "../assets/images/goverment_.webp"
+import ind_9 from "../assets/images/healthy.webp"
 
 export const hostCanonical = "https://intellectra-three.vercel.app"
 
@@ -291,7 +301,44 @@ export const industryData = {
     desc_4 : "At INTELLECTRA, we don’t just implement technology, we deliver strategic innovation that accelerates transformation, fuels efficiency, and positions businesses to lead in the digital economy.",
     children :[    {
         title : "Agriculture",
-        finalDescription : "",
+        finalDescription : <div>
+          <p>As global agriculture evolves under the weight of climate variability, resource constraints, and the need to feed over 9 billion people by 2050, technology becomes not just a catalyst, but a cornerstone for resilient and sustainable growth. </p>
+          <p className="py-4">At INTELLECTRA, we empower agricultural enterprises with a robust suite of next-generation digital solutions designed to transform traditional farming into a data-driven, intelligent ecosystem.</p>
+          <p>Our expertise lies in engineering end-to-end agricultural technology (AgriTech) solutions that span the entire value chain, from field to fork. By integrating IoT, Artificial Intelligence, Cloud, Blockchain, and Geospatial Analytics, we help agribusinesses maximize operational efficiency, elevate productivity, and reduce environmental impact. Our platforms are tailored to accommodate both large-scale agri-enterprises and community-level agri-initiatives, fostering inclusive innovation.</p>
+          <p className="py-4">Whether you’re cultivating thousands of hectares or managing an agricultural supply chain, INTELLECTRA delivers scalable, secure, and sustainable AgriTech solutions that respond to today’s challenges while preparing your enterprise for tomorrow’s demands. We don’t just digitize agriculture, we reengineer it for precision, performance, and planet-conscious progress.</p>
+        </div>,
+        capabilities :{
+          title : "Key Capabilities",
+          children : [{
+            title : "IoT-Powered Precision Farming",
+            description : "Real-time sensor networks for soil health, weather, and crop monitoring to enable precision irrigation, fertilization, and pest control, minimizing waste and maximizing output.",
+          },{
+            title : "AI-Driven Crop Analytics",
+            description : "Machine learning models for crop disease prediction, yield forecasting, image recognition, and plant health diagnostics using satellite and drone-based imagery."
+          },{
+            title : "Smart Farm Management Platforms",
+            description : "Cloud-based dashboards for managing multi-location farms, integrating data from machinery, labor, and inputs with actionable analytics and customizable reports."
+          },{
+            title : "Automated Agricultural Supply Chain Tracking",
+            description : "Blockchain-enabled traceability solutions for seed-to-shelf visibility, inventory management, and real-time logistics to ensure product authenticity and compliance."
+          },{
+            title : "Geospatial & Remote Sensing Applications",
+            description : "GIS mapping and satellite imagery integration for terrain analysis, crop zoning, land utilization, and environmental impact assessments."
+          },{
+            title : "Climate Resilience & Sustainability Monitoring",
+            description : "Decision-support systems that simulate climatic scenarios, carbon footprint tracking, and water usage analytics to help align with regenerative farming and ESG standards."
+          },{
+            title : "Digital Twin for Agri Operations",
+            description : "Create virtual models of farms or agribusiness processes for operational forecasting, optimization, and training purposes."
+          },{
+            title : "Farmer Empowerment through Mobile & Offline Apps",
+            description : "Intuitive, multilingual platforms for farmers to access best practices, market rates, advisory content, and agronomic support, even in low-connectivity zones."
+          }]
+        },
+        heading : {
+          title : "DIGITAL AGRICULTURE: FUTURE OF FARMING" ,
+          subTitle : "Sowing Technology and Reaping Sustainability"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 119 119" fill="none">
                 <g clipPath="url(#clip0_466_8)">
@@ -311,11 +358,19 @@ export const industryData = {
                 </svg>,
         subTitle : "Cultivating Smart Agro with Efficiency",
         link : "/industries/agriculture",
-        srcImg : "/transportation.webp",
+        srcImg : [ind_1,ind_1_1],
         description : "As agriculture faces the dual challenge of feeding a growing population and ensuring sustainability, we support agribusinesses with intelligent, technology-enabled solutions. From IoT-powered precision farming and AI-driven crop analytics to automated supply chain tracking and cloud-based farm management platforms, we help agricultural enterprises enhance yield, optimize resource usage, and make data-informed decisions. Our digital strategies empower farmers and agritech companies to drive productivity, improve climate resilience, and embrace sustainable innovation.",
     },{
         title : "Communications",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "NEXT-GEN COMMUNICATIONS: ACCELERATING NETWORK INTELLIGENCE" ,
+          subTitle : "Powering Connectivity and Enabling Possibility"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 111 128" fill="none">
               <g clipPath="url(#clip0_466_16)">
@@ -349,11 +404,19 @@ export const industryData = {
               </svg>,
         subTitle : "Redefining the Digital Experience",
         link : "/industries/communications",
-        srcImg : "/communications.webp",
+        srcImg : [ind_2,ind_3],
         description : "The communications industry is continuously challenged with modernizing legacy systems and managing exploding data volumes. We enable providers to overcome these challenges with agile, scalable, and intelligent solutions. From enabling seamless 5G rollouts and harnessing IoT data to integrating cloud-native architectures and automating complex workflows, we empower telecom businesses to transform their networks, unlock new revenue streams, and deliver exceptional customer experiences.",
     },{
         title : "Construction",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "SMART CONSTRUCTION: BUILDING THE FUTURE INTELLIGENTLY" ,
+          subTitle : "Safer Sites and Sustainable Progress"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 105" fill="none">
               <g clipPath="url(#clip0_467_38)">
@@ -378,11 +441,19 @@ export const industryData = {
               </svg> ,
         subTitle : "Enabling the Future of Smart Construction",
         link : "/industries/construction",
-        srcImg : "/transportation.webp",
+        srcImg : [ind_3,ind_1],
         description : "The construction industry is embracing a new era of digital transformation to enhance project delivery, safety, and sustainability. We empower construction firms, contractors, and developers with AI-driven project planning, cloud-based collaboration platforms, IoT-enabled site monitoring, and digital twin technologies towards modernizing their IT infrastructure and embedding intelligent automation across the construction lifecycle.",
     },{
         title : "Defense",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "NEXT-GEN DEFENSE: DIGITAL SUPERIORITY FOR MISSION SUCCESS" ,
+          subTitle : "Secure, Intelligent and Mission-Ready"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
               <g clipPath="url(#clip0_472_144)">
@@ -397,11 +468,19 @@ export const industryData = {
               </svg> ,
         subTitle : "Agility Through Integration",
         link : "/industries/defense",
-        srcImg : "/transportation.webp",
+        srcImg : ind_4,
         description : "The defense sector faces operational complexity and cybersecurity threats. We partner with defense organizations to drive digital transformation and enhance mission readiness through AI-powered threat detection, autonomous systems integration, secure communications infrastructure, real-time data analytics, and automation. By modernizing command and control, and enhancing situational awareness, we ensure defense forces remain agile.",
     },{
         title : "Education",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "SMART LEARNING FOR A SMARTER GENERATION" ,
+          subTitle : "Transforming Through Technology, Intelligence, and Access"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 115 115" fill="none">
                 <g clipPath="url(#clip0_468_51)">
@@ -434,11 +513,19 @@ export const industryData = {
                 </svg>,
         subTitle : "Empowerment with Digital Innovation",
         link : "/industries/education",
-        srcImg : "/transportation.webp",
+        srcImg : [ind_3,ind_1],
         description : "The education sector is rapidly evolving to meet the needs of a digital-native generation. We partner with academic institutions, training providers, and edtech platforms to drive digital transformation through AI-powered infrastructure, learning tools, cloud-based campus management, interactive virtual classrooms, and data-driven student insights. Our intelligent, scalable solutions enhance hybrid learning, streamline administration, and expand access through hybrid and remote models.",
     },{
         title : "Energy",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "POWERING PROGRESS THROUGH SMART UTILITIES" ,
+          subTitle : "Transforming Energy and Utility for a Greener Tomorrow"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 115 115" fill="none">
                   <g clipPath="url(#clip0_470_121)">
@@ -470,11 +557,19 @@ export const industryData = {
                   </svg> ,
         subTitle : "Powering a Sustainable Future",
         link : "/industries/energy",
-        srcImg : "/energy.webp",
+        srcImg : ind_6,
         description : "The energy and utilities sector is at the forefront of transformation driven by the urgent need for sustainability. We enable energy leaders harness the power of IoT, AI, and cloud platforms, and implement intelligent automation that enhances performance and reliability. Our solutions support smarter grid management, predictive maintenance, and optimized resource utilization towards meeting evolving regulatory demands while accelerating our journey toward a greener future.",
     },{
         title : "Finance",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "TRANSFORMING FINANCE FOR THE DIGITAL AGE" ,
+          subTitle : "Securing Growth, Enabling Innovation, and Redefining Experiences"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 115" fill="none">
                 <g clipPath="url(#clip0_470_117)">
@@ -490,31 +585,55 @@ export const industryData = {
                 </svg>,
         subTitle : "Future-Proofing Financial Services",
         link : "/industries/finance",
-        srcImg : "/bank.webp",
+        srcImg : [ind_7,ind_1],
         description : "As the financial world evolves with digitalization, we help institutions adapt, innovate, and outperform competitors by leveraging advanced AI, automation, cybersecurity, and cloud solutions. Our expertise in technology transformation ensures that financial services remain secure, customer-centric, and scalable. Through deep industry insights and strong local partnerships, we help financial institutions enhance operational efficiency, strengthen regulatory compliance, and drive sustainable growth.",
     },
     {
         title : "Government",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "EMPOWERING GOVERNMENTS THROUGH DIGITAL TRANSFORMATION" ,
+          subTitle : "Smart Governance, Secure Systems, and Connected Citizens"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="geometricPrecision" textRendering="geometricPrecision" imageRendering="optimizeQuality" fillRule="evenodd" clipRule="evenodd" viewBox="0 0 429 511.74"><path fillRule="nonzero" d="M375 294.87v140.09h12.99c4.63 0 8.86 1.91 11.93 4.97l.03.03c3.07 3.09 4.97 7.32 4.97 11.93v12.22h7.14c4.66 0 8.9 1.91 11.97 4.98 3.06 3.06 4.97 7.3 4.97 11.96v24.57c0 3.38-2.74 6.12-6.13 6.12H6.13C2.74 511.74 0 509 0 505.62v-24.57c0-4.67 1.9-8.9 4.97-11.97 3.07-3.06 7.3-4.97 11.97-4.97h7.13v-12.22c0-4.66 1.91-8.9 4.97-11.96 3.07-3.07 7.3-4.97 11.96-4.97h8.38V294.87h-24.6a6.13 6.13 0 0 1-6.13-6.13v-6.88c0-7.35 3-14.02 7.83-18.85 4.83-4.83 11.5-7.83 18.85-7.83h1.9v-10.5c0-7.35 3-14.02 7.83-18.85 4.83-4.83 11.5-7.84 18.85-7.84h276.57c7.33 0 14 3.02 18.83 7.85 4.84 4.84 7.85 11.53 7.85 18.84v10.5h1.89c7.32 0 13.99 3.01 18.81 7.83 4.87 4.84 7.87 11.52 7.87 18.85v6.88a6.13 6.13 0 0 1-6.13 6.13H375zm-73.08 0v140.09h60.83V294.87h-60.83zm-12.26 140.09V294.87H132.75v140.09h156.91zm-169.16 0V294.87H61.64v140.09h58.86zm229.98-204.71H73.91c-3.96 0-7.57 1.63-10.19 4.24-2.61 2.62-4.24 6.23-4.24 10.19v9.93H364.9v-9.93c0-3.94-1.63-7.55-4.26-10.18-2.61-2.61-6.22-4.25-10.16-4.25zm-29.59 83.07h21.35v20.09h-21.35v-20.09zm0 41.55h21.35v20.08h-21.35v-20.08zm0 41.55h21.35v20.08h-21.35v-20.08zm-238.75-83.1h21.35v20.09H82.14v-20.09zm0 41.55h21.35v20.08H82.14v-20.08zm0 41.55h21.35v20.08H82.14v-20.08zm317.91 79.95c-.41.08-.83.13-1.25.13H30.2c-.43 0-.85-.05-1.25-.13H16.94c-1.28 0-2.46.53-3.3 1.38-.85.85-1.38 2.02-1.38 3.3v18.44h404.48v-18.44c0-1.28-.53-2.45-1.38-3.3a4.666 4.666 0 0 0-3.3-1.38h-12.01zM36.33 464.11h356.34v-12.22c0-1.28-.53-2.46-1.36-3.29l-.03-.03c-.83-.83-2-1.35-3.29-1.35H41c-1.27 0-2.44.53-3.29 1.38-.85.84-1.38 2.02-1.38 3.29v12.22zm116.21-283.84c-1.53 2.53-4.82 3.35-7.34 1.82a5.34 5.34 0 0 1-1.82-7.34c4.75-7.87 10.55-14.58 17.27-20.04 6.76-5.48 14.43-9.68 22.89-12.53 2.79-.93 5.82.57 6.75 3.37.94 2.79-.57 5.82-3.36 6.75-7.23 2.43-13.78 6.02-19.54 10.69-5.74 4.66-10.73 10.45-14.85 17.28zm66.95-162.32c47.19-32.62 50.71 31.95 97.07-8.36v65.79c-44.21 39.75-53.75-24.48-97.07 8.16V17.95zM207.83 0a9 9 0 0 1 9 9c0 3.31-1.77 6.19-4.42 7.76h.43v80.79c31.04.16 59.48 11.37 81.58 29.9 22.61 18.96 38.58 45.6 43.9 75.89.58 3.33-1.65 6.5-4.98 7.08-3.33.58-6.51-1.65-7.08-4.98-4.81-27.38-19.25-51.47-39.69-68.61-20.11-16.87-46.06-27.02-74.38-27.02-28.32 0-54.26 10.15-74.38 27.02-20.44 17.14-34.87 41.23-39.68 68.61-.58 3.33-3.76 5.56-7.09 4.98a6.122 6.122 0 0 1-4.97-7.08c5.32-30.29 21.28-56.93 43.89-75.89 20.02-16.79 45.23-27.56 72.87-29.56V16.76h.42A9.003 9.003 0 0 1 198.82 9c0-4.97 4.03-9 9.01-9zM55.51 282.61h337.97v-.75c0-3.95-1.63-7.56-4.26-10.18-2.6-2.62-6.21-4.25-10.17-4.25H45.33c-3.96 0-7.57 1.63-10.18 4.25-2.62 2.61-4.25 6.22-4.25 10.18v.75h24.61z"/></svg>,
         subTitle : "Transforming Public Services with Digital Solutions",
         link : "/industries/government",
-        srcImg : "/government.webp",
+        srcImg : [ind_8,ind_1],
         description : "Governments worldwide are embracing digital transformation to improve citizen services and enhance efficiency. We specialize in secure, scalable solutions that empower public sector organizations to streamline operations, enhance data security, and build robust digital ecosystems. Our future-ready IT solutions including AI, edge computing, and cybersecurity innovations, helps governments modernize infrastructure, improve regulatory processes, and foster digital inclusion.",
     },
     {
         title : "Healthcare",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "REIMAGINING HEALTHCARE WITH DIGITAL INTELLIGENCE" ,
+          subTitle : "Smarter Systems, Safer Patients and Stronger Outcomes"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="geometricPrecision" textRendering="geometricPrecision" imageRendering="optimizeQuality" fillRule="evenodd" clipRule="evenodd" viewBox="0 0 512 435.32"><path d="M420.14.52c58.98-6.77 113.22 53.61 83.44 113.04-8.48 16.93-25.74 37.06-44.83 56.81-12.87 13.33-26.16 26.52-39.6 39.65 2.97-8.03 4.59-16.92 4.59-26.57 0-19.09-8.42-37.67-21.96-51.22-13.07-13.07-31-21.62-50.87-21.62-19.91 0-37.88 8.5-50.96 21.58-13.5 13.5-21.88 32.03-21.88 51.26 0 8.14 1.19 15.79 3.4 22.85-41.75-40.4-80.61-86.18-82.18-130.08-1.65-46.33 34.9-76 76.94-75.47 37.57.51 53.38 19.19 77.84 42.99C374.4 22.55 388.79 4.11 420.14.52zM57.53 99.56c14.56-5.38 29.46 9 22.76 23.85-3.04 6.72-9.73 11.63-16.94 11.44-6.75-.19-12.04-4.6-15.89-9.79l-.24-.46c-8.9-.36-16.13.18-21.26 1.77-3.1.96-4.99 2.09-5.43 3.41-4.01 12.06 7.24 45.17 23.57 77.11.67 1.31 1.34 2.61 2.02 3.9a14.49 14.49 0 0 1 7.43 6.32c7.62 13.14 15.97 25.36 24.2 34.91 12.95 15.04 12.54 15.8 25.85 1.2 8.68-9.53 17.54-22.12 25.57-35.7 1.75-2.95 4.37-5.07 7.34-6.2 17.07-31.58 29.39-65.33 26.87-78.64-.57-3.03-3.28-5.01-7.17-6.32-5-1.68-11.52-2.35-18.6-2.52-.2.41-.4.81-.62 1.22-3.85 5.19-9.14 9.6-15.89 9.79-7.21.19-13.9-4.72-16.94-11.44-6.7-14.85 8.2-29.23 22.76-23.85 1.53.57 3.06 1.32 4.57 2.27.96.6 1.83 1.21 2.62 1.85 10.32.03 20.31.83 28.49 3.58 10.73 3.62 18.42 10.22 20.59 21.71 3.27 17.3-9.6 55.58-28.03 90.24 1.76 4.13 1.6 9-.85 13.16-9 15.2-19.06 29.46-29.12 40.49-6.04 6.64-12.25 12.23-18.44 16.38 13.85 102.91 209.11 193.49 230.64 27.81 2.9-22.37 2.18-44.68 1.52-67.15-.1-3.51-.2-6.94-.28-10.2-25.9-5.63-45.29-26.56-45.29-56.25s25.78-57.57 57.57-57.57 57.57 28.23 57.57 57.57-18.44 49.47-43.35 55.8c.08 3.32.17 6.58.27 9.92.68 23.52 1.34 45.61-1.42 69.11-23.74 202.09-266.34 108.36-283.62-25.46-8.18-4.74-16.56-12.32-24.66-21.72-9.51-11.04-18.95-24.8-27.39-39.37a14.58 14.58 0 0 1-.78-13.07l-1.34-2.61C7.76 179.99-4.29 140.63 1.43 123.47c2.7-8.08 9.11-13.41 18.61-16.36 7.65-2.37 17.59-3.15 29.3-2.59 1.04-.93 2.24-1.83 3.61-2.69 1.52-.95 3.05-1.7 4.58-2.27zm293.38 53.5c16.78 0 30.39 13.6 30.39 30.39 0 16.78-13.61 30.39-30.39 30.39-16.79 0-30.39-13.61-30.39-30.39 0-16.79 13.6-30.39 30.39-30.39z"/></svg>,
         subTitle : "Enhancing Patient Care with Smart Technology",
         link : "/industries/healthcare",
-        srcImg : "/healthycare.webp",
+        srcImg : ind_9,
         description : "The healthcare industry faces rising demands for efficiency, accessibility, and patient-centered outcomes. We empower establishments embrace future-ready digital ecosystems. Through AI-driven diagnostics, cloud-enabled interoperability, intelligent automation, and secure telehealth platforms, we streamline clinical workflows, modernize health data management, and enhance care delivery. Our technology solutions not only improve patient outcomes but also ensure compliance, scalability, and resilience.",
     },{
         title : "Hospitality",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "HOSPITALITY REDEFINED WITH INTELLIGENT TECHNOLOGY" ,
+          subTitle : "Personalized Journeys, Seamless Experiences and Smart Operations"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 154 163" fill="none">
                 <g clipPath="url(#clip0_474_161)">
@@ -544,15 +663,31 @@ export const industryData = {
     },{
         title : "Logistics",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "SMART LOGISTICS FOR A SMARTER WORLD" ,
+          subTitle : "Connected Operations, Predictive Intelligence and Sustainable Growth"
+        },
         content :[],
         img :  <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 122.88 78.78"><defs></defs><title>on-time-delivery</title><path className="cls-1" d="M90.53,24.33,82,24.27V12.8a6.21,6.21,0,0,0-6.19-6.19H50.72a30.05,30.05,0,0,1,2,3.36H75.85a2.86,2.86,0,0,1,2,.83,2.83,2.83,0,0,1,.83,2V65.34H69.22a1.68,1.68,0,1,0,0,3.35H80.36A1.67,1.67,0,0,0,82,67V65.11h6.78c.77-17.46,25.84-19.87,28.4,0h5.5c1.42-17-7-23.65-19.77-25.14a45.78,45.78,0,0,0-4.66-11.38c-2.36-4.36-2.91-4.18-7.76-4.26ZM16.27,20.05,20.74,20l.33.08a17.34,17.34,0,0,1,2.54,1.79,16.26,16.26,0,0,1,1.64,1.58,104.87,104.87,0,0,1,6.52-9,116,116,0,0,1,8.32-9.14l.44-.16H45.4l-1,1.09a162.08,162.08,0,0,0-10.29,13A141.12,141.12,0,0,0,26.06,32.2l-.61,1.18-.56-1.21a29.27,29.27,0,0,0-3.77-6.1,24.5,24.5,0,0,0-5.21-4.83l.36-1.19ZM35,39.26a1.6,1.6,0,1,1-2.77,1.6l-.87-1.5a1.6,1.6,0,1,1,2.77-1.6l.87,1.5ZM14.42,10.11a1.6,1.6,0,1,1,2.77-1.6l.87,1.5a1.6,1.6,0,1,1-2.77,1.6l-.87-1.5ZM40.86,32.18A1.6,1.6,0,1,1,39.26,35l-1.5-.87a1.6,1.6,0,1,1,1.6-2.77l1.5.87ZM8.51,17.2a1.6,1.6,0,0,1,1.6-2.78l1.5.87A1.6,1.6,0,1,1,10,18.06l-1.5-.86Zm33.93,5.88a1.61,1.61,0,1,1,0,3.21H40.7a1.61,1.61,0,0,1,0-3.21ZM6.93,26.29a1.61,1.61,0,1,1,0-3.21H8.66a1.61,1.61,0,1,1,0,3.21ZM10.11,35a1.6,1.6,0,1,1-1.6-2.77l1.5-.87a1.6,1.6,0,1,1,1.6,2.77l-1.5.87Zm7.08,5.91a1.6,1.6,0,1,1-2.77-1.6l.87-1.5a1.6,1.6,0,1,1,2.77,1.6l-.87,1.5ZM23.08,6.93a1.61,1.61,0,1,1,3.21,0V8.67a1.61,1.61,0,0,1-3.21,0V6.93Zm3.21,35.51a1.61,1.61,0,1,1-3.21,0V40.71a1.61,1.61,0,1,1,3.21,0v1.73ZM24.68,0A24.64,24.64,0,0,1,35.79,2.63c-.65.64-1.34,1.36-2,2.11A21.91,21.91,0,1,0,44,14.37c.63-.79,1.27-1.56,1.9-2.3A24.69,24.69,0,1,1,24.68,0Zm10,65.33a1.68,1.68,0,0,1,0,3.36H16.82a6.07,6.07,0,0,1-4.37-1.91,6.48,6.48,0,0,1-1.82-4.45V53.1A32.11,32.11,0,0,0,14,54.53v7.8a3.11,3.11,0,0,0,.88,2.14,2.72,2.72,0,0,0,1.95.87H34.65ZM51.72,56A11.37,11.37,0,1,0,63.08,67.41,11.37,11.37,0,0,0,51.72,56Zm0,7a4.37,4.37,0,1,0,4.37,4.37A4.38,4.38,0,0,0,51.72,63ZM103,54.37a11.37,11.37,0,1,0,11.37,11.37A11.37,11.37,0,0,0,103,54.37ZM98.61,65.74A4.37,4.37,0,1,0,103,61.37a4.37,4.37,0,0,0-4.37,4.37ZM91.35,29.18l-5.12-.09V40H97.08a42.13,42.13,0,0,0-5.73-10.8Z"/></svg>,
         subTitle : "Enabling Smart, Sustainable Mobility",
         link : "/industries/logistics",
-        srcImg : "/transportation.webp",
+        srcImg : [ind_1, ind_1],
         description : "In a fast-moving world where supply chains are under constant pressure, logistics providers must embrace innovation to stay competitive. We enable digital transformation across the industry, empowering logistics firms, airlines, and transportation networks with AI-powered analytics, IoT-enabled visibility, and cloud-native fleet and warehouse management systems. Our future-ready solutions streamline route optimization, enhance real-time tracking, ensure compliance, and reduce environmental impact.  ",
     },{
         title : "Manufacturing",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "FUTURE-READY MANUFACTURING" ,
+          subTitle : "Intelligent Automation, Scalable Innovation and Sustainable Production"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 115 115" fill="none">
                 <g clipPath="url(#clip0_469_72)">
@@ -580,11 +715,19 @@ export const industryData = {
                 </svg> ,
         subTitle : "Driving Innovation and Operational Efficiency",
         link : "/industries/manufacturing",
-        srcImg : "/manufacturing.webp",
+        srcImg : [ind_1,ind_2],
         description : "Manufacturers must balance innovation, cost reduction, and supply chain agility to remain competitive. We help manufacturers digitize operations, integrate AI-powered insights, and optimize workflows for improved efficiency. With Industry 4.0 solutions, IoT-driven automation, and smart supply chain technologies, we enable businesses to maximize productivity, reduce costs, and accelerate growth while maintaining quality and sustainability.",
     },{
         title : "Media",
         finalDescription : "",
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "DIGITIZING MEDIA AND ENTERTAINMENT" ,
+          subTitle : "Smart Experiences, Seamless Delivery and Scalable Creativity"
+        },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 94" fill="none">
                 <g clipPath="url(#clip0_470_141)">
@@ -599,13 +742,21 @@ export const industryData = {
                 </svg>,
         subTitle : "Empowering the Future of Content",
         link : "/industries/media",
-        srcImg : "/transportation.webp",
+        srcImg : [ind_3,ind_4],
         description : "The media and entertainment industry is being reshaped by digital disruption, demanding real-time innovation. We help broadcasters and content creators leverage cloud-based production workflows, AI-driven content personalization, advanced analytics, and secure content delivery networks to meet evolving audience expectations. From streamlining media asset management to enabling immersive experiences and optimizing monetization strategies, our future-ready IT solutions empower media companies to enhance engagement and stay ahead in a content-driven world.",
     },
     {
         title : "Retail",
         finalDescription : "",
         content :[],
+        capabilities :{
+          title : "",
+          children :[]
+        },
+        heading : {
+          title : "REIMAGINING RETAIL AND ECOMMERCE INNOVATION" ,
+          subTitle : "Where Data Meets Experience Towards Powering Digital Retail"
+        },
         img : <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 284 186" fill="none">
               <g clipPath="url(#clip0_474_154)">
               <path d="M121.468 3.8125H55.0702C53.6237 3.8125 52.4512 4.98288 52.4512 6.42662V99.0427C52.4512 100.486 53.6237 101.657 55.0702 101.657H121.468C122.914 101.657 124.087 100.486 124.087 99.0427V6.42662C124.087 4.98288 122.914 3.8125 121.468 3.8125Z" stroke="#4D75F4" stroke-width="14" stroke-miterlimit="10"/>
@@ -621,7 +772,7 @@ export const industryData = {
               </svg>,
         subTitle : "Delivering Next-Generation Customer Experiences",
         link : "/industries/retail",
-        srcImg : "/rentail.webp",
+        srcImg : [ind_4,ind_5],
         description : "Retailers today must leverage data-driven decision-making and digital technologies to stay ahead. We help retail businesses embrace AI, cloud computing, and omnichannel solutions to improve customer engagement, enhance supply chain agility, and optimize costs. Our tailored digital strategies ensure frictionless shopping experiences, intelligent demand forecasting, logistic automation, and advanced personalization, helping businesses drive revenue and customer loyalty.",
     },
         

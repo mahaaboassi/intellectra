@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 
-const Card = ({title, type,content=[], subTitle, description, img, link=""})=>{
+const Card = ({title, type,content=[], subTitle, description, img="", link=""})=>{
     return(<div className="card p-2" >
                 <div className="p-3  blur-bg content-card  radius-border h-full sm:p-4  md:p-5 lg:p-10 flex flex-col gap-4">
                     <div className="flex items-center gap-5">
-                        <div>{img}</div>
+                        {img != "" && <div>{img}</div>}
                         <div>
                             <h2>{title}</h2>
                             <p className="sub-title">{subTitle}</p>
