@@ -54,8 +54,39 @@ export const solutionData = {
             "AI Infrastructure & Scalable Deployment"
         ],
         link : "/solutions/artificial-intelligence-(ai)",
-        srcImg : "/ai.webp",
-        finalDescription : ""
+        finalDescription : <div>
+          <p>Artificial Intelligence is no longer a futuristic concept, it is the engine of modern enterprise transformation. </p>
+          <p className="py-4">At INTELLECTRA, we deliver robust, secure, and responsible AI solutions that enable businesses to make smarter decisions, automate intelligently, and generate predictive insights with precision. We bring together cutting-edge machine learning models, ethical governance frameworks, and scalable AI infrastructure to support enterprises across industries in their journey toward AI maturity.</p>
+          <p>Our AI engagements begin with strategic ideation and extend all the way to full-scale deployment and governance. We combine domain expertise with deep technical know-how to deliver intelligent automation, AI-powered analytics, and context-aware applications, ensuring every solution is aligned with both operational goals and ethical best practices.</p>
+          <p className="py-4">Whether you’re piloting your first AI initiative or looking to scale your existing capabilities, INTELLECTRA provides the expertise and infrastructure to help you build and deploy enterprise-grade, future-ready AI solutions.</p>
+        </div>,
+        capabilities :{
+          title : "Key Capabilities",
+          children : [{
+            title : "AI Strategy & Transformation Roadmap",
+            description : "Customized strategies that align AI adoption with business goals, including capability mapping, digital readiness assessments, and long-term transformation plans.",
+          },{
+            title : "Responsible AI Governance & Ethical AI Frameworks",
+            description : "Implementation of transparency-driven, bias-mitigated, and regulation-compliant AI practices to ensure fairness, accountability, and security in AI deployments."
+          },{
+            title : "AI Maturity Assessment & Use Case Ideation",
+            description : "Diagnostic assessments to determine your organization’s AI readiness, paired with innovative ideation workshops to identify high-impact, industry-specific AI use cases."
+          },{
+            title : "AI-Powered Process Automation & Business Intelligence",
+            description : "Intelligent automation solutions for workflows, decision-making, and operational tasks using NLP, computer vision, and advanced AI agents integrated with enterprise systems."
+          },{
+            title : "Machine Learning & Predictive Analytics",
+            description : "Deployment of supervised, unsupervised, and reinforcement learning models for forecasting, anomaly detection, customer behavior prediction, and more."
+          },{
+            title : "AI Infrastructure & Scalable Model Deployment",
+            description : "End-to-end AI lifecycle support, including data pipeline orchestration, model training and tuning, containerized deployments, MLOps integration, and ongoing performance monitoring."
+          },]
+        },
+        heading : {
+          title : "ARTIFICIAL INTELLIGENCE (AI) AT SCALE" ,
+          subTitle : "Empowering Enterprises Through Responsible, Scalable, and Insight-Driven AI"
+        },
+        srcImg : [],
     },
     {
         title: "Augmented Reality (AR)",
@@ -69,8 +100,33 @@ export const solutionData = {
             "Immersive Digital Twins for Business Optimization"
         ],
         link : "/solutions/augmented-reality-(ar)",
-        srcImg : "/ar.webp",
-        finalDescription : ""
+        finalDescription : <div>
+          <p>In an era of accelerated digital transformation, Augmented Reality (AR) is redefining how businesses visualize data, interact with systems, and empower their workforce.  </p>
+          <p className="py-4">At INTELLECTRA, we design and deliver cutting-edge AR solutions that merge the physical and digital realms, creating immersive environments that drive efficiency, safety, and collaboration across industries.</p>
+          <p>By integrating AR with technologies like Artificial Intelligence (AI), Internet of Things (IoT), and digital twins, we enable real-time operational visibility, smarter training methods, and interactive simulations that elevate decision-making and productivity. Our AR frameworks are not standalone, they are deeply embedded into enterprise workflows, IoT ecosystems, and AI analytics platforms, ensuring your teams experience augmented environments that are intelligent, scalable, and context-aware.</p>
+          <p className="py-4">At INTELLECTRA, our AR solutions are built for scalability, interoperability, and measurable ROI. Whether you’re piloting immersive training programs or deploying AR-powered factory floors, we help you navigate the future of spatial computing, securely, intelligently, and efficiently.</p>
+        </div>,
+        capabilities :{
+          title : "Key Capabilities",
+          children : [{
+            title : "AR for Remote Collaboration & Training",
+            description : "Empower field technicians, engineers, and frontline teams with real-time AR assistance, guided workflows, and interactive simulations. Our solutions support remote expert consultation, hands-free task execution, and just-in-time learning via wearable devices and mobile AR apps.",
+          },{
+            title : "Enhanced Operational Efficiency & Safety",
+            description : "Use AR overlays and spatial visualizations to guide users through complex environments. From assembly lines to hazardous zones, our AR modules improve situational awareness, minimize downtime, and increase compliance through contextual data delivery and step-by-step visual guidance."
+          },{
+            title : "AI-Powered AR Visualization for Industrial Applications",
+            description : "Fuse real-time sensor data and AI-driven insights with AR interfaces to monitor machine performance, predict maintenance issues, and optimize operations. Our AI-integrated AR dashboards deliver instant feedback and alerts in visually intuitive formats."
+          },{
+            title : "Immersive Digital Twins for Business Optimization",
+            description : "Extend your digital twin models with AR-based visualization, allowing stakeholders to interact with real-time 3D replicas of assets, systems, or environments. Perfect for predictive maintenance, asset tracking, and scenario simulations in manufacturing, energy, and urban infrastructure."
+          }]
+        },
+        heading : {
+          title : "INTELLIGENT AUGMENTED REALITY EXPERIENCES" ,
+          subTitle : "Bridging the Physical and Digital Worlds"
+        },
+        srcImg : [],
     },
     {
         title: "Cloud & Hybrid IT",
@@ -85,8 +141,33 @@ export const solutionData = {
             "Cloud-Native Development & DevSecOps Integration"
         ],
         link : "/solutions/cloud-&-hybrid-it",
-        srcImg : "/it.webp",
-        finalDescription : ""
+        finalDescription : <div>
+          <p>In today’s digitally driven economy, the ability to scale, adapt, and innovate quickly is powered by the cloud. </p>
+          <p className="py-4">At INTELLECTRA, we deliver comprehensive Cloud and Hybrid IT solutions that empower businesses to transition from legacy infrastructure to modern, dynamic ecosystems built on flexibility, performance, and resilience.</p>
+          <p>Our cloud-first approach is designed to meet the diverse needs of modern enterprises, enabling seamless integration across public, private, and hybrid cloud environments. We align cloud infrastructure with business strategy, balancing speed, compliance, and cost-efficiency through tailored architecture and intelligent operations.</p>
+          <p className="py-4">Whether you’re modernizing core systems, enabling remote workforces, or driving continuous innovation through cloud-native services, INTELLECTRA ensures your transformation is secure, scalable, and strategically aligned.</p>
+        </div>,
+        capabilities :{
+          title : "Key Capabilities",
+          children : [{
+            title : "Cloud Strategy & Migration Planning",
+            description : "We assess your existing infrastructure and business goals to define a clear, executable cloud roadmap. From legacy workload assessment to phased migration blueprints, we ensure zero disruption and maximum value.",
+          },{
+            title : "Multi-Cloud & Hybrid IT Architecture",
+            description : "Architect resilient systems across AWS, Azure, GCP, and private clouds with workload portability, redundancy, and unified governance. We design hybrid models that connect on-premise assets with the agility of public clouds for seamless operations."
+          },{
+            title : "AI-Driven Cloud Optimization & Cost Management",
+            description : "Leverage AI to continuously monitor cloud usage, detect inefficiencies, and automate cost control. We help clients implement FinOps best practices, enabling smarter budgeting and dynamic resource allocation."
+          },{
+            title : "Cloud-Native Development & DevSecOps Integration",
+            description : "Accelerate application delivery with microservices, containers, Kubernetes orchestration, and CI/CD pipelines. Our DevSecOps approach integrates security into every layer of the development lifecycle."
+          }]
+        },
+        heading : {
+          title : "FUTURE-READY CLOUD & HYBRID IT INFRASTRUCTURE" ,
+          subTitle : "Scaling with Resilient and Adaptive Solutions"
+        },
+        srcImg : [],
     },
     {
         title: "Cybersecurity",
@@ -101,8 +182,36 @@ export const solutionData = {
             "Cloud & Network Security Solutions"
         ],
         link : "/solutions/cybersecurity",
-        srcImg : "/cybersecurity.webp",
-        finalDescription : ""
+        finalDescription : <div>
+          <p>In a landscape where digital transformation is accelerating and cyber threats are increasingly sophisticated, cybersecurity is no longer optional, it’s foundational. </p>
+          <p className="py-4">At INTELLECTRA, we deliver end-to-end cybersecurity solutions that not only protect your digital assets but also enable business agility, regulatory compliance, and operational resilience.</p>
+          <p>We partner with enterprises to build adaptive security frameworks that proactively prevent breaches, mitigate risks, and respond to incidents with speed and intelligence. Our approach integrates cutting-edge technologies with robust governance models to create a secure-by-design environment for digital innovation.</p>
+          <p className="py-4">INTELLECTRA views cybersecurity as a dynamic, evolving capability that must keep pace with the digital enterprise. Our mission is to empower organizations to innovate with confidence, operate securely, and remain resilient in the face of ever-changing threats.</p>
+        </div>,
+        capabilities :{
+          title : "Key Capabilities",
+          children : [{
+            title : "Risk Assessment & Governance Compliance",
+            description : "We evaluate your IT landscape to uncover vulnerabilities and align security practices with global compliance standards such as ISO 27001, NIST, GDPR, and HIPAA. Our governance frameworks ensure accountability and control across your security lifecycle.",
+          },{
+            title : "Threat Intelligence & Incident Response",
+            description : "Leverage real-time threat intelligence and behavioral analytics to detect and respond to anomalies before they escalate. Our Security Operations Center (SOC) provides 24/7 monitoring, rapid incident triage, and forensics-driven response strategies."
+          },{
+            title : "Zero Trust Security Architecture",
+            description : "Embrace a Zero Trust model where verification is required at every access point. We design and implement identity-centric security policies that reduce the attack surface and limit lateral movement across your networks."
+          },{
+            title : "Security Automation & Identity Management",
+            description : "Improve detection and response times with SOAR (Security Orchestration, Automation, and Response) tools. We integrate AI-powered automation into your security stack while ensuring robust identity and access management (IAM) to enforce least-privilege policies."
+          },{
+            title : "Cloud & Network Security Solutions",
+            description : "Secure your hybrid infrastructure with firewalls, intrusion detection systems (IDS), and cloud-native security tools. Our expertise in securing multi-cloud environments ensures consistent protection across all digital assets, on-premise or in the cloud."
+          }]
+        },
+        heading : {
+          title : "PROACTIVE CYBERSECURITY DEFENSES" ,
+          subTitle : "Safeguarding Digital Assets in a Digital-First World"
+        },
+        srcImg : [],
     },
     {
         title: "Data Center",
@@ -118,8 +227,39 @@ export const solutionData = {
             "Disaster Resilient & Fault-Tolerant Infrastructure – Built for reliability and business continuity."
         ],
         link : "/solutions/data-center",
-        srcImg : "/data-center.webp",
-        finalDescription : ""
+        finalDescription : <div>
+          <p>In today’s data-driven economy, the data center is the nerve center of business operations, digital services, and innovation. </p>
+          <p className="py-4">At INTELLECTRA, we specialize in delivering high-performance, resilient, and energy-efficient data center solutions that serve as the foundation for enterprise agility, cloud adoption, and digital transformation.</p>
+          <p>Our team of architects, engineers, and technology experts take a 360° approach to data center development, from initial site evaluation and design to deployment, optimization, and ongoing management. Every solution we deliver is aligned with your unique operational goals, security standards, and scalability requirements.</p>
+          <p className="py-4">At INTELLECTRA, we don’t just build data centers, we build future-ready digital fortresses that combine intelligence, sustainability, and operational excellence. Whether you are expanding globally or consolidating workloads, our solutions are designed to meet the evolving needs of high-density, high-availability computing.</p>
+        </div>,
+        capabilities :{
+          title : "Key Capabilities",
+          children : [{
+            title : "Turnkey Data Center Solutions",
+            description : "We offer end-to-end services including site selection, design, engineering, construction, and commissioning. Our turnkey approach ensures faster time-to-value and seamless integration with existing IT infrastructure.",
+          },{
+            title : "Scalable Modular Data Centers",
+            description : "From on-premise enterprise needs to cloud-scale environments, our modular data center architectures are built for flexibility, rapid deployment, and easy scalability as your compute demands evolve."
+          },{
+            title : "Energy-Efficient & Sustainable Designs",
+            description : "Our infrastructure designs prioritize low PUE (Power Usage Effectiveness), advanced airflow management, and renewable energy integration to reduce operational costs and carbon footprint—supporting your ESG goals."
+          },{
+            title : "Tiered Redundancy & Uptime Guarantees",
+            description : "We design and build data centers to meet Tier I to Tier IV standards, ensuring mission-critical performance with 99.999% uptime, N+1/N+N redundancy, and fault tolerance."
+          },{
+            title : "Advanced Cooling & Power Management",
+            description : "Leverage intelligent cooling systems, high-efficiency HVAC, and renewable-compatible power setups. Our solutions are optimized for thermal performance, real-time monitoring, and low energy wastage."
+          },{
+            title : "Disaster Resilient & Fault-Tolerant Infrastructure",
+            description : "Ensure business continuity with seismic-safe construction, dual-power feeds, and real-time backup systems. We engineer resilience into the very fabric of your digital infrastructure."
+          }]
+        },
+        heading : {
+          title : "POWERING THE DIGITAL BACKBONE : DATA CENTERS" ,
+          subTitle : "Scaling with Secure and Sustainable Infrastructure"
+        },
+        srcImg : [],
     },
     {
         title: "Digital Transformation",
@@ -133,8 +273,33 @@ export const solutionData = {
             "Sustainability Reporting & Regulatory Compliance"
         ],
         link : "/solutions/digital-transformation",
-        srcImg : "/digital.webp",
-        finalDescription : ""
+        finalDescription : <div>
+          <p>In an era where disruption is the norm, Digital Transformation is not a choice, it’s a business imperative. </p>
+          <p className="py-4">At INTELLECTRA, we partner with enterprises to accelerate their transformation journey through intelligent technologies, adaptive strategies, and data-centric innovation. We go beyond surface-level digitization, reengineering core business models and operations to unlock long-term value, resilience, and competitiveness.</p>
+          <p>Our holistic transformation framework combines strategic consulting, cutting-edge technology implementation, and human-centric change management to help businesses evolve into agile, future-ready enterprises.</p>
+          <p className="py-4">Through our proven transformation methodology, INTELLECTRA enables clients to embrace new ways of working, compete in digital ecosystems, and create intelligent, adaptive enterprises that thrive in complexity. Whether you’re a traditional business modernizing legacy systems or a digitally native company scaling for growth, we are your transformation ally.</p>
+        </div>,
+        capabilities :{
+          title : "Key Capabilities",
+          children : [{
+            title : "Enterprise-Wide Digital Transformation Strategy",
+            description : "We co-create tailored transformation blueprints aligned with your long-term vision, market dynamics, and operational needs, spanning IT modernization, digital services, and customer-centric architecture.",
+          },{
+            title : "Business Model Innovation & Change Management",
+            description : "Redesign value chains and revenue models through digital-native thinking. We manage organizational change with structured frameworks that enable cultural alignment, stakeholder buy-in, and continuous innovation adoption."
+          },{
+            title : "AI-Enabled Process Automation & Workforce Optimization",
+            description : "Streamline workflows, reduce human error, and empower talent by embedding AI, machine learning, and intelligent automation across critical functions, from finance and HR to customer experience and supply chain."
+          },{
+            title : "Sustainability Reporting & Regulatory Compliance",
+            description : "Integrate digital ESG reporting, real-time tracking, and intelligent analytics to meet growing sustainability mandates and regulatory standards. Our solutions ensure transparency, accountability, and compliance across jurisdictions."
+          }]
+        },
+        heading : {
+          title : "REIMAGINING BUSINESS WITH DIGITAL TRANSFORMATION" ,
+          subTitle : "Accelerating Enterprises with Data Powered by Innovation"
+        },
+        srcImg : [],
     },
     {
         title: "Internet of Things (IoT)",
@@ -148,8 +313,33 @@ export const solutionData = {
             "AI-Powered IoT Insights & Data Processing"
         ],
         link : "/solutions/internet-of-things-(iot)",
-        srcImg : "/iot.webp",
-        finalDescription : ""
+        finalDescription : <div>
+          <p>In a hyper-connected world, the Internet of Things (IoT) is transforming how businesses operate, analyze, and innovate. </p>
+          <p className="py-4">At INTELLECTRA, we architect and implement IoT ecosystems that bridge the physical and digital worlds, delivering intelligent, autonomous, and real-time decision-making across industries.</p>
+          <p>Our solutions go beyond connectivity, we integrate IoT with Artificial Intelligence, Cloud, and Edge Computing to unlock actionable insights, automate operations, and create self-optimizing environments. From sensor-enabled infrastructure to predictive intelligence at the edge, we empower enterprises to lead with smart technology</p>
+          <p className="py-4">By deploying resilient, interoperable IoT architectures, INTELLECTRA transforms operations into adaptive digital ecosystems. Whether you’re monitoring high-value assets, optimizing environmental control, or enabling intelligent supply networks, our solutions are designed for scalability, security, and impact.</p>
+        </div>,
+        capabilities :{
+          title : "Key Capabilities",
+          children : [{
+            title : "Smart Asset Management & Predictive Maintenance",
+            description : "Gain complete visibility into equipment and infrastructure health with real-time IoT telemetry and AI-driven analytics. We enable predictive maintenance to reduce downtime, extend asset lifespan, and lower operational costs.",
+          },{
+            title : "IoT-Enabled Industrial & Supply Chain Optimization",
+            description : "Digitize and automate operations across the factory floor and logistics chain with smart sensors, RFID integration, and edge computing. Our IoT frameworks deliver just-in-time insights and adaptive resource allocation to improve throughput and agility."
+          },{
+            title : "Smart Cities, Energy & Infrastructure Solutions",
+            description : "From intelligent lighting and traffic management to water and energy metering, we support municipalities and utility providers in building sustainable, data-driven urban infrastructure. Our scalable platforms enable real-time governance and environmental monitoring."
+          },{
+            title : "AI-Powered IoT Insights & Data Processing",
+            description : "Leverage machine learning models embedded in IoT workflows for anomaly detection, demand forecasting, and behavior analytics. We process data at the edge for low-latency decisioning while maintaining centralized oversight through cloud-native orchestration."
+          }]
+        },
+        heading : {
+          title : "CONNECTING INTELLIGENCE WITH INTERNET OF THINGS (IOT)" ,
+          subTitle : "Transforming how Businesses Operate, Analyze, and Innovate"
+        },
+        srcImg : [],
     },
     {
         title: "Infrastructure",
@@ -163,8 +353,33 @@ export const solutionData = {
             "IT Governance & Compliance Standards"
         ],
         link : "/solutions/infrastructure",
-        srcImg : "/inf.webp",
-        finalDescription : ""
+        finalDescription : <div>
+          <p>In a world where digital agility drives competitive advantage, robust and scalable infrastructure is the foundation of business transformation. </p>
+          <p className="py-4">At INTELLECTRA, we deliver end-to-end digital infrastructure solutions that seamlessly connect people, systems, and processes, empowering enterprises to thrive in an always-on, data-driven world.</p>
+          <p>From modernizing legacy environments to orchestrating cloud-integrated networks and fortifying cybersecurity frameworks, our infrastructure services are engineered to support high performance, availability, and compliance across all business layers. Our solutions align IT architecture with business goals to reduce complexity, enhance agility, and ensure operational excellence.</p>
+          <p className="py-4">INTELLECTRA doesn’t just build infrastructure, we architect digital ecosystems that are resilient, scalable, secure, and built for the future. Whether you’re transforming internal IT, scaling operations globally, or integrating emerging technologies, our infrastructure solutions lay the digital foundation for sustainable growth.</p>
+        </div>,
+        capabilities :{
+          title : "Key Capabilities",
+          children : [{
+            title : "IT Infrastructure Modernization & Cloud Integration",
+            description : "We transform legacy environments with agile, hybrid-ready infrastructure that blends on-premise reliability with cloud-native scalability. Our modernization strategies focus on software-defined infrastructure (SDI), hyper-converged systems, and seamless multi-cloud orchestration.",
+          },{
+            title : "Network Security & Data Protection",
+            description : "Protect your digital core with robust security architectures. We implement secure access service edge (SASE), micro-segmentation, intrusion detection systems (IDS), and end-to-end encryption to secure network layers and sensitive data against evolving cyber threats."
+          },{
+            title : "Legacy System Optimization & Virtualization",
+            description : "Unlock new value from aging systems through containerization, virtualization, and API-based integrations. Our team helps clients extend the functionality of core platforms while optimizing performance and reducing technical debt."
+          },{
+            title : "IT Governance & Compliance Standards",
+            description : "Establish resilient IT operations with governance models aligned to global standards (ISO, NIST, GDPR, HIPAA). We ensure traceability, regulatory compliance, and streamlined IT service management across distributed environments."
+          }]
+        },
+        heading : {
+          title : "MODERNIZED DIGITAL INFRASTRUCTURE" ,
+          subTitle : "Seamlessly Connecting the Digital Enterprise"
+        },
+        srcImg : [],
     },
     {
         title: "Intelligent Automation",
@@ -178,8 +393,32 @@ export const solutionData = {
             "Automated Compliance & Risk Management"
         ],
         link : "/solutions/intelligent-automation",
-        srcImg : "/intelligent.webp",
-        finalDescription : ""
+        finalDescription : <div>
+          <p>In today’s fast-paced digital economy, operational efficiency and scalability are not just strategic goals, they are imperatives. </p>
+          <p className="py-4">At INTELLECTRA, we empower enterprises to achieve end-to-end process transformation with Intelligent Automation, a convergence of Robotic Process Automation (RPA), Artificial Intelligence (AI), and advanced workflow orchestration.</p>
+          <p className="pb-4">FOur solutions reduce manual intervention, eliminate process bottlenecks, and enable data-driven, autonomous decision-making across complex enterprise environments. With a focus on adaptability, accuracy, and compliance, we deliver intelligent systems that evolve with your business.</p>
+        </div>,
+        capabilities :{
+          title : "Key Capabilities",
+          children : [{
+            title : "Process Automation & Optimization",
+            description : "We implement scalable RPA frameworks that automate repetitive tasks, accelerate back-office functions, and streamline front-end operations. From finance and HR to procurement and customer service, our automation blueprints increase throughput while maintaining high fidelity.",
+          },{
+            title : "AI-Driven Decision Support Systems",
+            description : "Our AI-enhanced automation integrates natural language processing (NLP), computer vision, and machine learning (ML) to support cognitive decision-making in real-time. These systems provide actionable insights, detect anomalies, and proactively resolve issues."
+          },{
+            title : "Cognitive Automation & Smart Analytics",
+            description : "We embed intelligence into workflows using AI/ML models that adapt and learn from data patterns. This enables hyperautomation, where predictive analytics and adaptive algorithms improve the accuracy and agility of business processes continuously."
+          },{
+            title : "Automated Compliance & Risk Management",
+            description : "Ensure consistent governance and adherence to regulatory frameworks. We implement audit-ready automation protocols for risk scoring, policy enforcement, and real-time exception handling across finance, healthcare, and public sector domains."
+          }]
+        },
+        heading : {
+          title : "STREAMLINED INTELLIGENT AUTOMATION" ,
+          subTitle : "Accelerating and Transforming Business Processes"
+        },
+        srcImg : [],
     },
     {
         title: "Workplace Modernization",
@@ -193,8 +432,33 @@ export const solutionData = {
             "Employee Experience & Digital Workplace Transformation"
         ],
         link : "/solutions/workplace-modernization",
-        srcImg : "/workplace.webp",
-        finalDescription : ""
+        finalDescription : <div>
+          <p>The modern workplace is no longer bound by physical walls, it is digital-first, cloud-enabled, and driven by intelligent systems that prioritize agility, collaboration, and user-centric design. </p>
+          <p className="py-4">At INTELLECTRA, we help organizations reimagine work by modernizing digital workplace ecosystems with cutting-edge technologies that enable seamless operations, enhance employee engagement, and drive business performance.</p>
+          <p >Our approach integrates collaboration platforms, AI-powered workforce tools, secure mobility solutions, and enterprise-wide digital transformation strategies tailored to dynamic workforce needs.</p>
+          <p className="py-4">At INTELLECTRA, we don’t just modernize workplaces, we build adaptive, intelligent, and human-centered digital ecosystems where innovation thrives.</p>
+        </div>,
+        capabilities :{
+          title : "Key Capabilities",
+          children : [{
+            title : "Workplace Digitalization & Cloud-Based Collaboration Tools",
+            description : "We implement scalable digital workplace solutions that integrate platforms like Microsoft 365, Google Workspace, and Zoom with enterprise-grade ITSM and identity systems. These tools enhance productivity, streamline workflows, and enable real-time collaboration across global teams.",
+          },{
+            title : "AI-Powered HR & Workforce Analytics",
+            description : "Transform human resource management with intelligent systems that provide deep analytics on employee engagement, productivity, retention, and skills mapping. We leverage AI for predictive workforce planning, talent acquisition optimization, and sentiment analysis."
+          },{
+            title : "Enterprise Mobility & Secure Access Management",
+            description : "Support hybrid and remote workforces with secure, device-agnostic access to corporate resources. We implement MDM (Mobile Device Management), IAM (Identity and Access Management), and Zero Trust architectures to ensure secure and compliant access from anywhere."
+          },{
+            title : "Employee Experience & Digital Workplace Transformation",
+            description : "We enhance the employee digital experience with user-centric design, personalized portals, self-service knowledge bases, and intelligent automation. Our solutions prioritize inclusivity, accessibility, and well-being while aligning with enterprise productivity goals."
+          }]
+        },
+        heading : {
+          title : "FUTURE-READY DIGITAL WORKPLACE ECOSYSTEM" ,
+          subTitle : "Enabling the Future of Work: Secure, Agile, Intelligent"
+        },
+        srcImg : [],
     }
 ]
 }
@@ -415,8 +679,8 @@ export const industryData = {
           }]
         },
         heading : {
-          title : "NEXT-GEN COMMUNICATIONS: ACCELERATING NETWORK INTELLIGENCE" ,
-          subTitle : "Powering Connectivity and Enabling Possibility"
+          title : "NEXT-GEN COMMUNICATIONS" ,
+          subTitle : "Accelerating Network Intelligence, Powering Connectivity and Enabling Possibility"
         },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 111 128" fill="none">
@@ -490,8 +754,8 @@ export const industryData = {
           },]
         },
         heading : {
-          title : "SMART CONSTRUCTION: BUILDING THE FUTURE INTELLIGENTLY" ,
-          subTitle : "Safer Sites and Sustainable Progress"
+          title : "SMART CONSTRUCTION" ,
+          subTitle : "Building an Intelligent Future with Safer Sites and Sustainable Progress"
         },
         content :[],
         img : <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 119 105" fill="none">
@@ -556,7 +820,7 @@ export const industryData = {
           },]
         },
         heading : {
-          title : "NEXT-GEN DEFENSE: DIGITAL SUPERIORITY FOR MISSION SUCCESS" ,
+          title : "DIGITALLY SUPERIOR DEFENSE" ,
           subTitle : "Secure, Intelligent and Mission-Ready"
         },
         content :[],
@@ -595,7 +859,7 @@ export const industryData = {
             title : "Data-Driven Student Insights & Analytics",
             description : "Leverage predictive analytics to monitor student progress, improve retention, and enable early intervention for academic success."
           },{
-            title : "Cloud-Based Campus & Learning Management Systems (LMS)",
+            title : "Cloud-Based Campus & LMS",
             description : "Modernize campus operations with scalable, secure platforms for student enrollment, scheduling, grading, and digital content delivery."
           },{
             title : "EdTech Integration & Platform Engineering",
@@ -612,7 +876,7 @@ export const industryData = {
           }]
         },
         heading : {
-          title : "SMART LEARNING FOR A SMARTER GENERATION" ,
+          title : "NEXT-GEN SMART LEARNING" ,
           subTitle : "Transforming Through Technology, Intelligence, and Access"
         },
         content :[],
@@ -648,7 +912,7 @@ export const industryData = {
         subTitle : "Empowerment with Digital Innovation",
         link : "/industries/education",
         srcImg : [ind_5,ind_5_1],
-        description : "The education sector is rapidly evolving to meet the needs of a digital-native generation. We partner with academic institutions, training providers, and edtech platforms to drive digital transformation through AI-powered infrastructure, learning tools, cloud-based campus management, interactive virtual classrooms, and data-driven student insights. Our intelligent, scalable solutions enhance hybrid learning, streamline administration, and expand access through hybrid and remote models.",
+        description : "The education sector is rapidly evolving to meet the needs of a digital-native generation. We partner with academic institutions, training providers, and edtech platforms to drive digital transformation through AI-powered infrastructure, learning, cloud-based campus management, interactive virtual classrooms, and data-driven student insights. Our intelligent, scalable solutions enhance hybrid learning, streamline administration, and expand access through hybrid and remote models.",
     },{
         title : "Energy",
         finalDescription : <div>
@@ -681,12 +945,12 @@ export const industryData = {
             title : "Digital Twin Technology for Utility Networks",
             description : "Create digital replicas of energy infrastructure for simulation, testing, and optimization without physical disruptions."
           },{
-            title : "Customer-Centric Billing & Engagement Platforms",
+            title : "Customer-Centric Engagement Platforms",
             description : "Implement AI-enabled billing systems, usage tracking, and self-service portals for enhanced customer experience and transparency."
           },]
         },
         heading : {
-          title : "POWERING PROGRESS THROUGH SMART UTILITIES" ,
+          title : "PROGRESS THROUGH SMART UTILITIES" ,
           subTitle : "Transforming Energy and Utility for a Greener Tomorrow"
         },
         content :[],
@@ -734,7 +998,7 @@ export const industryData = {
           title : "Core Capabilities",
           children :[{
             title : "AI-Powered Fraud Detection & Risk Analytics",
-            description : "Leverage machine learning algorithms to proactively detect anomalies, prevent financial fraud, and assess credit risk with real-time intelligence."
+            description : "Leverage machine learning to proactively detect anomalies, prevent financial fraud, and assess credit risk with real-time intelligence."
           },{
             title : "Cloud-Native Banking Infrastructure",
             description : "Enable rapid scalability, operational flexibility, and secure access through cloud-based platforms tailored to the needs of digital banking."
@@ -759,7 +1023,7 @@ export const industryData = {
           }]
         },
         heading : {
-          title : "TRANSFORMING FINANCE FOR THE DIGITAL AGE" ,
+          title : "FINANCE FOR THE DIGITAL AGE" ,
           subTitle : "Securing Growth, Enabling Innovation, and Redefining Experiences"
         },
         content :[],
@@ -792,19 +1056,19 @@ export const industryData = {
           title : "Core Capabilities",
           children :[{
             title : "Citizen-Centric Digital Platforms",
-            description : "Develop unified service portals and mobile applications that provide seamless access to public services with personalized, multilingual interfaces."
+            description : "Develop unified service portals and applications, providing seamless access to public services with personalized, multilingual interfaces."
           },{
-            title : "AI for Public Administration & Decision-Making",
+            title : "AI for Public Administration ",
             description : "Use predictive analytics and AI-driven insights to enhance resource planning, fraud detection, policy evaluation, and emergency response."
           },{
             title : "Secure & Compliant Cloud Migration",
             description : "Modernize legacy IT infrastructure with secure, government-grade cloud solutions that improve scalability, reduce costs, and enhance resilience."
           },{
-            title : "Cybersecurity & Data Sovereignty Frameworks",
+            title : "Cybersecurity & Data Sovereignty",
             description : "Protect sensitive government and citizen data with advanced encryption, threat detection, and compliance with global and local data protection standards."
           },{
             title : "Smart Cities & IoT Integration",
-            description : "Deploy sensor-based smart infrastructure to manage traffic, utilities, waste, and public safety in real time—enhancing urban living and sustainability."
+            description : "Deploy sensor-based smart infrastructure to manage traffic, utilities, waste, and public safety to enhance urban living and sustainability."
           },{
             title : "Blockchain for Transparency & e-Governance",
             description : "Implement distributed ledger technologies to streamline land records, identity verification, procurement, and regulatory compliance."
@@ -813,11 +1077,11 @@ export const industryData = {
             description : "Deliver latency-sensitive applications such as surveillance, emergency response, and health diagnostics closer to the point of need."
           },{
             title : "Digital Inclusion & Accessibility Solutions",
-            description : "Ensure equitable access to digital public services through inclusive design, rural connectivity programs, and assistive technology platforms."
+            description : "Ensure equitable access to digital public services through inclusive design, rural connectivity programs, and assistive technology."
           },]
         },
         heading : {
-          title : "EMPOWERING GOVERNMENTS THROUGH DIGITAL TRANSFORMATION" ,
+          title : "EMPOWERING DIGITAL GOVERNMENTS" ,
           subTitle : "Smart Governance, Secure Systems, and Connected Citizens"
         },
         content :[],
@@ -841,7 +1105,7 @@ export const industryData = {
             title : "AI-Driven Diagnostics & Predictive Analytics",
             description : "Leverage machine learning to improve diagnosis accuracy, predict disease progression, and support clinical decision-making in real time."
           },{
-            title : "Cloud-Based Health Information Systems (HIS)",
+            title : "Cloud-Based Health Information Systems",
             description : "Enable secure, scalable access to patient records, clinical applications, and analytics dashboards across distributed care networks."
           },{
             title : "Interoperable EHR & EMR Platforms",
@@ -859,12 +1123,12 @@ export const industryData = {
             title : "Cybersecurity & Compliance Solutions",
             description : "Protect sensitive health data with multi-layered security, threat monitoring, and regulatory adherence to HIPAA, GDPR, and other global standards."
           },{
-            title : "Scalable Infrastructure for Public Health & Research",
+            title : "Scalable Infrastructure for Public Health ",
             description : "Support large-scale vaccine distribution, epidemiological tracking, and real-world evidence generation through data-driven platforms and analytics."
           },]
         },
         heading : {
-          title : "REIMAGINING HEALTHCARE WITH DIGITAL INTELLIGENCE" ,
+          title : "HEALTHCARE WITH DIGITAL INTELLIGENCE" ,
           subTitle : "Smarter Systems, Safer Patients and Stronger Outcomes"
         },
         content :[],
@@ -890,8 +1154,8 @@ export const industryData = {
             title : "Smart Room & IoT Integration",
             description : "Enable guests to control lighting, temperature, entertainment, and room service via mobile apps and in-room tablets—creating a personalized, tech-savvy stay."
           },{
-            title : "Cloud-Based Property Management Systems (PMS)",
-            description : "Centralize booking, housekeeping, billing, and maintenance operations through scalable, cloud-native platforms that reduce overhead and increase agility."
+            title : "Cloud-Based Property Management Systems ",
+            description : "Centralize booking, billing, and maintenance operations through scalable, platforms that reduce overhead and increase agility."
           },{
             title : "Contactless Check-In & Mobile Access",
             description : "Improve efficiency and health safety with digital ID verification, self-service kiosks, and mobile keyless entry systems."
@@ -899,7 +1163,7 @@ export const industryData = {
             title : "Real-Time Analytics & Guest Insights",
             description : "Monitor occupancy trends, guest behavior, and service feedback to inform marketing, staffing, and experience design decisions."
           },{
-            title : "Loyalty Program Integration & CRM Automation",
+            title : "CRM & Loyalty Programs",
             description : "Drive repeat bookings with AI-enabled loyalty programs and personalized offers based on guest history and preferences."
           },{
             title : "Intelligent Inventory & Staff Scheduling",
@@ -910,7 +1174,7 @@ export const industryData = {
           }]
         },
         heading : {
-          title : "HOSPITALITY REDEFINED WITH INTELLIGENT TECHNOLOGY" ,
+          title : "HOSPITALITY REDEFINED WITH INTELLIGENCE" ,
           subTitle : "Personalized Journeys, Seamless Experiences and Smart Operations"
         },
         content :[],
@@ -950,16 +1214,16 @@ export const industryData = {
         capabilities :{
           title : "",
           children :[{
-            title : "AI-Powered Route Optimization & Demand Forecasting",
+            title : "AI-Driven Forecasting & Optimization",
             description : "Leverage machine learning to analyze traffic, weather, and order patterns, reducing delivery times and minimizing costs."
           },{
             title : "IoT-Enabled Real-Time Shipment Visibility",
             description : "Monitor assets, inventory, and vehicle conditions in real time across geographies to enhance supply chain transparency and responsiveness."
           },{
-            title : "Cloud-Native Fleet & Warehouse Management Systems",
+            title : "Fleet & Warehouse Management ",
             description : "Manage dispatch, vehicle health, inventory levels, and order fulfillment through centralized, scalable platforms accessible from anywhere."
           },{
-            title : "Autonomous & Automated Logistics Operations",
+            title : "Autonomous Logistics Operations",
             description : "Integrate robotics, drones, and automation to streamline warehousing tasks, cargo loading, and sorting operations."
           },{
             title : "Digital Twin for Supply Chain Modeling",
@@ -968,10 +1232,10 @@ export const industryData = {
             title : "Compliance & Risk Management Automation",
             description : "Stay aligned with international trade regulations, safety protocols, and environmental standards using intelligent rule engines."
           },{
-            title : "Data-Driven Customer Experience Management",
+            title : "Data-Driven Customer Experiences",
             description : "Use real-time updates, shipment status alerts, and personalized dashboards to improve transparency and strengthen customer trust."
           },{
-            title : "Sustainability Monitoring & Carbon Tracking",
+            title : "Sustainability Monitoring ",
             description : "Optimize routes, vehicle loads, and fuel consumption while tracking emissions to support green logistics goals and ESG reporting."
           },]
         },
@@ -997,13 +1261,13 @@ export const industryData = {
           title : "",
           children :[{
             title : "Smart Factory Enablement",
-            description : "Digitize plant operations using IoT sensors, real-time data streams, and edge computing to enable predictive maintenance and reduce downtime."
+            description : "Digitize plant operations using IoT sensors and real-time data streams to enable predictive maintenance and reduce downtime."
           },{
             title : "AI-Powered Production Analytics",
             description : "Use advanced analytics and machine learning to detect anomalies, forecast demand, and optimize production schedules dynamically."
           },{
             title : "Digital Twin & Simulation Models",
-            description : "Create virtual replicas of assets or entire production systems to simulate performance, enhance quality control, and streamline engineering decisions."
+            description : "Create virtual replicas of assets and systems to simulate performance, enhance quality control, and streamline engineering decisions."
           },{
             title : "Supply Chain Digitalization & Visibility",
             description : "Enable end-to-end supply chain transparency with real-time tracking, demand sensing, and inventory optimization tools."
@@ -1014,10 +1278,10 @@ export const industryData = {
             title : "Automated Quality Management",
             description : "Deploy AI-powered visual inspection systems and compliance management platforms to ensure consistency, traceability, and regulatory alignment."
           },{
-            title : "Energy Optimization & Sustainable Manufacturing",
+            title : "Energy Optimization & Sustainability",
             description : "Monitor and manage energy usage across production lines using smart meters and AI-based analytics to meet ESG goals and reduce operational costs."
           },{
-            title : "Workforce Augmentation & Robotics Integration",
+            title : "Workforce Augmentation & Robotics",
             description : "Empower human-machine collaboration using cobots, AR/VR-assisted training, and automation frameworks to boost workforce productivity and safety."
           },]
         },
@@ -1065,22 +1329,22 @@ export const industryData = {
         capabilities :{
           title : "",
           children :[{
-            title : "Cloud-Based Content Production & Collaboration",
+            title : "Content Production & Collaboration",
             description : "Enable distributed teams to co-create and edit in real-time with scalable, secure cloud workflows for video editing, rendering, and post-production."
           },{
             title : "AI-Driven Content Personalization",
             description : "Leverage machine learning to analyze viewer behavior and dynamically serve hyper-targeted content that maximizes engagement and loyalty."
           },{
-            title : "Media Asset Management & Workflow Automation",
-            description : "Automate ingestion, cataloging, and retrieval of media assets with metadata tagging, smart indexing, and workflow orchestration platforms."
+            title : "Media Asset Management & Workflow",
+            description : "Automate ingestion, cataloging, and retrieval of media assets with metadata tagging, smart indexing, and workflow orchestration."
           },{
             title : "Immersive & Interactive Experiences",
             description : "Implement AR/VR content, gamification, and real-time streaming tools that enrich user engagement across platforms and devices."
           },{
-            title : "Advanced Content Analytics & Audience Insights",
-            description : "Track audience preferences and consumption patterns using AI-powered analytics to optimize programming and advertising strategies."
+            title : "Advanced Analytics & Insights",
+            description : "Track audience preferences and consumption patterns using AI-powered analytics to optimize content advertising strategies."
           },{
-            title : "Secure & Scalable Content Delivery Networks (CDN)",
+            title : "Secure & Scalable Content Delivery Networks",
             description : "Deliver high-resolution content globally with low latency and strong digital rights management (DRM) for piracy protection."
           },{
             title : "OTT & Streaming Platform Enablement",
@@ -1127,7 +1391,7 @@ export const industryData = {
             description : "Integrate physical and digital retail journeys with unified CRM, POS, and eCommerce systems for consistent experiences across channels."
           },{
             title : "AI-Powered Personalization Engines",
-            description : "Deliver real-time product recommendations, dynamic pricing, and targeted promotions using customer behavior analytics and machine learning."
+            description : "Deliver real-time product recommendations, dynamic pricing, and targeting using customer behavior analytics and machine learning."
           },{
             title : "Cloud-Native eCommerce Platforms",
             description : "Build scalable, resilient online shopping platforms that support peak loads, fast deployment, and global expansion strategies."
@@ -1149,7 +1413,7 @@ export const industryData = {
           },]
         },
         heading : {
-          title : "REIMAGINING RETAIL AND ECOMMERCE INNOVATION" ,
+          title : "REIMAGINING RETAIL AND ECOMMERCE" ,
           subTitle : "Where Data Meets Experience Towards Powering Digital Retail"
         },
         img : <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 284 186" fill="none">
