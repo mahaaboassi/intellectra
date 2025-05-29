@@ -14,7 +14,7 @@ const container = {
 
 
 
-const Hero = ({data, isHome}) => {
+const Hero = ({data, label, link}) => {
   const [ indexData, setIndexData ] = useState(0)
   useEffect(()=>{
     const idInterval = setInterval(()=>{
@@ -54,13 +54,13 @@ const Hero = ({data, isHome}) => {
         {data[indexData].des}
       </motion.p>
 
-      {isHome && <Link to={"/about"}><motion.button
+      {link && <Link to={link}><motion.button
         key={`button-${indexData}`}
         className="mt-5"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        LEARN MORE
+        {label}
       </motion.button></Link>}
     </div>
   );

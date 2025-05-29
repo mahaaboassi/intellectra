@@ -27,7 +27,7 @@ const Home = ()=>{
         </Helmet>
         <LottieHero/>
         <div style={{background:"white"}}>
-            <Hero data={data} isHome={true} />
+            <Hero label={" LEARN MORE "} link={"/about"} data={data}  />
             <Services/>
             <Intro/>
             <Video/>

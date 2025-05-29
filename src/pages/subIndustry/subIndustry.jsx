@@ -26,7 +26,7 @@ const SubIndustry = ()=>{
             <link rel="canonical" href={`${hostCanonical}/${"link" in data && data.link}`} />
         </Helmet>
         <div className="pages" style={{background:"white"}}>
-            <Hero data={[{
+            <Hero label={" EXPLORE MORE INDESTRIES "} link={"/industries"} data={[{
                     words : data.heading && data.heading.title,
                     des :  data.heading && data.heading.subTitle
             }]} />
@@ -40,9 +40,6 @@ const SubIndustry = ()=>{
                             return(<div className="w-full"><img className="layout-two" src={e} alt="image" /></div>)
                         }
                     })}
-                    
-                    
-
                 </div>
                 
             </div>

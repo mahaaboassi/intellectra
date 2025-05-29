@@ -319,20 +319,20 @@ export const industryData = {
             title : "Smart Farm Management Platforms",
             description : "Cloud-based dashboards for managing multi-location farms, integrating data from machinery, labor, and inputs with actionable analytics and customizable reports."
           },{
-            title : "Automated Agricultural Supply Chain Tracking",
+            title : "Automated Supply Chain Tracking",
             description : "Blockchain-enabled traceability solutions for seed-to-shelf visibility, inventory management, and real-time logistics to ensure product authenticity and compliance."
           },{
             title : "Geospatial & Remote Sensing Applications",
             description : "GIS mapping and satellite imagery integration for terrain analysis, crop zoning, land utilization, and environmental impact assessments."
           },{
             title : "Climate Resilience & Sustainability Monitoring",
-            description : "Decision-support systems that simulate climatic scenarios, carbon footprint tracking, and water usage analytics to help align with regenerative farming and ESG standards."
+            description : "Decision-support systems stimulating climatic scenarios, carbon footprint tracking for analytics to help align with ESG standards."
           },{
             title : "Digital Twin for Agri Operations",
             description : "Create virtual models of farms or agribusiness processes for operational forecasting, optimization, and training purposes."
           },{
-            title : "Farmer Empowerment through Mobile & Offline Apps",
-            description : "Intuitive, multilingual platforms for farmers to access best practices, market rates, advisory content, and agronomic support, even in low-connectivity zones."
+            title : "Farmer Empowerment through Apps",
+            description : "Intuitive, multilingual platforms for farmers to access best practices, market rates, advisory content, and agronomic support."
           }]
         },
         heading : {
