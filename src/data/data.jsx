@@ -180,6 +180,9 @@ export const solutionData = {
             title : "Multi-Cloud & Hybrid IT Architecture",
             description : "Architect resilient systems across AWS, Azure, GCP, and private clouds with workload portability, redundancy, and unified governance. We design hybrid models that connect on-premise assets with the agility of public clouds for seamless operations."
           },{
+            title : "Secure & Compliant Cloud Operations",
+            description : "With built-in identity management, encryption, and zero-trust frameworks, we protect your cloud environments from evolving threats. Our expertise includes industry-specific compliance such as GDPR, HIPAA, ISO 27001, and more."
+          },{
             title : "AI-Driven Cloud Optimization & Cost Management",
             description : "Leverage AI to continuously monitor cloud usage, detect inefficiencies, and automate cost control. We help clients implement FinOps best practices, enabling smarter budgeting and dynamic resource allocation."
           },{
@@ -420,7 +423,7 @@ export const solutionData = {
         finalDescription : <div>
           <p>In today’s fast-paced digital economy, operational efficiency and scalability are not just strategic goals, they are imperatives. </p>
           <p className="py-4">At INTELLECTRA, we empower enterprises to achieve end-to-end process transformation with Intelligent Automation, a convergence of Robotic Process Automation (RPA), Artificial Intelligence (AI), and advanced workflow orchestration.</p>
-          <p className="pb-4">FOur solutions reduce manual intervention, eliminate process bottlenecks, and enable data-driven, autonomous decision-making across complex enterprise environments. With a focus on adaptability, accuracy, and compliance, we deliver intelligent systems that evolve with your business.</p>
+          <p className="pb-4">Our solutions reduce manual intervention, eliminate process bottlenecks, and enable data-driven, autonomous decision-making across complex enterprise environments. With a focus on adaptability, accuracy, and compliance, we deliver intelligent systems that evolve with your business.</p>
         </div>,
         capabilities :{
           title : "Key Capabilities",
@@ -877,7 +880,7 @@ export const industryData = {
             title : "AI-Powered Learning Platforms",
             description : "Enable personalized learning journeys with adaptive content, intelligent tutoring systems, and automated feedback mechanisms driven by machine learning."
           },{
-            title : "Virtual Classrooms & Immersive Learning Tools",
+            title : "Virtual Classrooms & Immersive Learning ",
             description : "Deliver high-quality, real-time instruction through interactive video, AR/VR-enhanced simulations, and collaboration tools for hybrid and remote learners."
           },{
             title : "Data-Driven Student Insights & Analytics",
@@ -954,13 +957,13 @@ export const industryData = {
             title : "IoT-Enabled Asset Management & Predictive Maintenance",
             description : "Deploy sensors and machine learning to anticipate failures, reduce downtime, and extend the lifespan of critical infrastructure."
           },{
-            title : "AI-Driven Load Forecasting & Demand Optimization",
+            title : "AI-Driven Forecasting & Optimization",
             description : "Enhance energy distribution strategies through data analytics that optimize consumption patterns and load balancing."
           },{
             title : "Cloud-Based Utility Management Platforms",
             description : "Leverage scalable, secure platforms for data storage, analytics, and remote asset control across geographically dispersed networks."
           },{
-            title : "Sustainable Energy Integration & Carbon Reduction",
+            title : "Sustainable Energy Integration",
             description : "Enable seamless integration of renewables like solar and wind while tracking and reducing carbon emissions through smart analytics."
           },{
             title : "Regulatory Compliance & ESG Reporting",
