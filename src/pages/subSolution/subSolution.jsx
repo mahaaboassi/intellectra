@@ -23,7 +23,7 @@ const SubSolution = ()=>{
             <link rel="canonical" href={`${hostCanonical}/${"link" in data && data.link}`} />
         </Helmet>
         <div className="pages" style={{background:"white"}}>
-            <Hero label={" OTHER SLOUTIONS "} link={"/solutions"} data={[{
+            <Hero label={" OTHER SOLUTIONS "} link={"/solutions"} data={[{
                     words : data.heading && data.heading.title,
                     des :  data.heading && data.heading.subTitle
             }]} />

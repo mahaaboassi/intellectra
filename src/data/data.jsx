@@ -35,6 +35,30 @@ import ind_13_1 from "../assets/images/logistic_2.webp"
 import ind_14 from "../assets/images/hospitality_2.webp"
 import ind_14_1 from "../assets/images/hospitality.webp"
 
+
+// Solution images
+import sol_1 from "../assets/images/sol_1.webp"
+import sol_2 from "../assets/images/sol_2.webp"
+import sol_3 from "../assets/images/sol_3.webp"
+import sol_4 from "../assets/images/sol_4.webp"
+import sol_5 from "../assets/images/sol_5.webp"
+import sol_6 from "../assets/images/sol_6.webp"
+import sol_7 from "../assets/images/sol_7.webp"
+import sol_8 from "../assets/images/sol_8.webp"
+import sol_9 from "../assets/images/sol_9.webp"
+import sol_10 from "../assets/images/sol_10.webp"
+import sol_1_1 from "../assets/images/sol_1_1.webp"
+import sol_2_1 from "../assets/images/sol_2_1.webp"
+import sol_3_1 from "../assets/images/sol_3_1.webp"
+import sol_4_1 from "../assets/images/sol_4_1.webp"
+import sol_5_1 from "../assets/images/sol_5_1.webp"
+import sol_6_1 from "../assets/images/sol_6_1.webp"
+import sol_7_1 from "../assets/images/sol_7_1.webp"
+import sol_8_1 from "../assets/images/sol_8_1.webp"
+import sol_9_1 from "../assets/images/sol_9_1.webp"
+import sol_10_1 from "../assets/images/sol_10_1.webp"
+
+
 export const hostCanonical = "https://intellectra-three.vercel.app"
 
 
@@ -86,7 +110,7 @@ export const solutionData = {
           title : "ARTIFICIAL INTELLIGENCE (AI) AT SCALE" ,
           subTitle : "Empowering Enterprises Through Responsible, Scalable, and Insight-Driven AI"
         },
-        srcImg : [],
+        srcImg : [sol_1, sol_1_1],
     },
     {
         title: "Augmented Reality (AR)",
@@ -126,7 +150,7 @@ export const solutionData = {
           title : "INTELLIGENT AUGMENTED REALITY EXPERIENCES" ,
           subTitle : "Bridging the Physical and Digital Worlds"
         },
-        srcImg : [],
+        srcImg : [sol_2, sol_2_1],
     },
     {
         title: "Cloud & Hybrid IT",
@@ -167,7 +191,7 @@ export const solutionData = {
           title : "FUTURE-READY CLOUD & HYBRID IT INFRASTRUCTURE" ,
           subTitle : "Scaling with Resilient and Adaptive Solutions"
         },
-        srcImg : [],
+        srcImg : [sol_3, sol_3_1],
     },
     {
         title: "Cybersecurity",
@@ -211,7 +235,7 @@ export const solutionData = {
           title : "PROACTIVE CYBERSECURITY DEFENSES" ,
           subTitle : "Safeguarding Digital Assets in a Digital-First World"
         },
-        srcImg : [],
+        srcImg : [sol_4, sol_4_1],
     },
     {
         title: "Data Center",
@@ -259,7 +283,7 @@ export const solutionData = {
           title : "POWERING THE DIGITAL BACKBONE : DATA CENTERS" ,
           subTitle : "Scaling with Secure and Sustainable Infrastructure"
         },
-        srcImg : [],
+        srcImg : [sol_5, sol_5_1],
     },
     {
         title: "Digital Transformation",
@@ -299,7 +323,7 @@ export const solutionData = {
           title : "REIMAGINING BUSINESS WITH DIGITAL TRANSFORMATION" ,
           subTitle : "Accelerating Enterprises with Data Powered by Innovation"
         },
-        srcImg : [],
+        srcImg : [sol_6, sol_6_1],
     },
     {
         title: "Internet of Things (IoT)",
@@ -339,7 +363,7 @@ export const solutionData = {
           title : "CONNECTING INTELLIGENCE WITH INTERNET OF THINGS (IOT)" ,
           subTitle : "Transforming how Businesses Operate, Analyze, and Innovate"
         },
-        srcImg : [],
+        srcImg : [sol_7, sol_7_1],
     },
     {
         title: "Infrastructure",
@@ -379,7 +403,7 @@ export const solutionData = {
           title : "MODERNIZED DIGITAL INFRASTRUCTURE" ,
           subTitle : "Seamlessly Connecting the Digital Enterprise"
         },
-        srcImg : [],
+        srcImg : [ sol_8, sol_8_1],
     },
     {
         title: "Intelligent Automation",
@@ -418,7 +442,7 @@ export const solutionData = {
           title : "STREAMLINED INTELLIGENT AUTOMATION" ,
           subTitle : "Accelerating and Transforming Business Processes"
         },
-        srcImg : [],
+        srcImg : [sol_9, sol_9_1],
     },
     {
         title: "Workplace Modernization",
@@ -458,7 +482,7 @@ export const solutionData = {
           title : "FUTURE-READY DIGITAL WORKPLACE ECOSYSTEM" ,
           subTitle : "Enabling the Future of Work: Secure, Agile, Intelligent"
         },
-        srcImg : [],
+        srcImg : [sol_10, sol_10_1],
     }
 ]
 }
