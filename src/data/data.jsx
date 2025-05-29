@@ -1241,7 +1241,7 @@ export const industryData = {
         capabilities :{
           title : "",
           children :[{
-            title : "AI-Powered Route Optimization & Demand Forecasting",
+            title : "AI-Powered Forecasting & Route Optimization ",
             description : "Leverage machine learning to analyze traffic, weather, and order patterns, reducing delivery times and minimizing costs."
           },{
             title : "IoT-Enabled Real-Time Shipment Visibility",
