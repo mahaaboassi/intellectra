@@ -90,19 +90,19 @@ export const solutionData = {
             title : "AI Strategy & Transformation Roadmap",
             description : "Customized strategies that align AI adoption with business goals, including capability mapping, digital readiness assessments, and long-term transformation plans.",
           },{
-            title : "Responsible AI Governance & Ethical AI Frameworks",
+            title : "Responsible AI Governance & Ethical AI",
             description : "Implementation of transparency-driven, bias-mitigated, and regulation-compliant AI practices to ensure fairness, accountability, and security in AI deployments."
           },{
             title : "AI Maturity Assessment & Use Case Ideation",
             description : "Diagnostic assessments to determine your organization’s AI readiness, paired with innovative ideation workshops to identify high-impact, industry-specific AI use cases."
           },{
-            title : "AI-Powered Process Automation & Business Intelligence",
+            title : "AI-Powered Automation & Intelligence",
             description : "Intelligent automation solutions for workflows, decision-making, and operational tasks using NLP, computer vision, and advanced AI agents integrated with enterprise systems."
           },{
             title : "Machine Learning & Predictive Analytics",
             description : "Deployment of supervised, unsupervised, and reinforcement learning models for forecasting, anomaly detection, customer behavior prediction, and more."
           },{
-            title : "AI Infrastructure & Scalable Model Deployment",
+            title : "AI Infrastructure & Model Deployment",
             description : "End-to-end AI lifecycle support, including data pipeline orchestration, model training and tuning, containerized deployments, MLOps integration, and ongoing performance monitoring."
           },]
         },
@@ -139,10 +139,10 @@ export const solutionData = {
             title : "Enhanced Operational Efficiency & Safety",
             description : "Use AR overlays and spatial visualizations to guide users through complex environments. From assembly lines to hazardous zones, our AR modules improve situational awareness, minimize downtime, and increase compliance through contextual data delivery and step-by-step visual guidance."
           },{
-            title : "AI-Powered AR Visualization for Industrial Applications",
+            title : "AR Visualization for Industrial Applications",
             description : "Fuse real-time sensor data and AI-driven insights with AR interfaces to monitor machine performance, predict maintenance issues, and optimize operations. Our AI-integrated AR dashboards deliver instant feedback and alerts in visually intuitive formats."
           },{
-            title : "Immersive Digital Twins for Business Optimization",
+            title : "Digital Twins for Business Optimization",
             description : "Extend your digital twin models with AR-based visualization, allowing stakeholders to interact with real-time 3D replicas of assets, systems, or environments. Perfect for predictive maintenance, asset tracking, and scenario simulations in manufacturing, energy, and urban infrastructure."
           }]
         },
@@ -183,12 +183,14 @@ export const solutionData = {
             title : "Secure & Compliant Cloud Operations",
             description : "With built-in identity management, encryption, and zero-trust frameworks, we protect your cloud environments from evolving threats. Our expertise includes industry-specific compliance such as GDPR, HIPAA, ISO 27001, and more."
           },{
-            title : "AI-Driven Cloud Optimization & Cost Management",
+            title : "Cloud Optimization & Cost Management",
             description : "Leverage AI to continuously monitor cloud usage, detect inefficiencies, and automate cost control. We help clients implement FinOps best practices, enabling smarter budgeting and dynamic resource allocation."
-          },{
-            title : "Cloud-Native Development & DevSecOps Integration",
-            description : "Accelerate application delivery with microservices, containers, Kubernetes orchestration, and CI/CD pipelines. Our DevSecOps approach integrates security into every layer of the development lifecycle."
-          }]
+          },
+          // {
+          //   title : "Cloud-Native Development & DevSecOps Integration",
+          //   description : "Accelerate application delivery with microservices, containers, Kubernetes orchestration, and CI/CD pipelines. Our DevSecOps approach integrates security into every layer of the development lifecycle."
+          // }
+        ]
         },
         heading : {
           title : "FUTURE-READY CLOUD & HYBRID IT INFRASTRUCTURE" ,
@@ -226,10 +228,12 @@ export const solutionData = {
           },{
             title : "Zero Trust Security Architecture",
             description : "Embrace a Zero Trust model where verification is required at every access point. We design and implement identity-centric security policies that reduce the attack surface and limit lateral movement across your networks."
-          },{
-            title : "Security Automation & Identity Management",
-            description : "Improve detection and response times with SOAR (Security Orchestration, Automation, and Response) tools. We integrate AI-powered automation into your security stack while ensuring robust identity and access management (IAM) to enforce least-privilege policies."
-          },{
+          },
+          // {
+          //   title : "Security Automation & Identity Management",
+          //   description : "Improve detection and response times with SOAR (Security Orchestration, Automation, and Response) tools. We integrate AI-powered automation into your security stack while ensuring robust identity and access management (IAM) to enforce least-privilege policies."
+          // },
+          {
             title : "Cloud & Network Security Solutions",
             description : "Secure your hybrid infrastructure with firewalls, intrusion detection systems (IDS), and cloud-native security tools. Our expertise in securing multi-cloud environments ensures consistent protection across all digital assets, on-premise or in the cloud."
           }]
@@ -264,13 +268,13 @@ export const solutionData = {
           title : "Key Capabilities",
           children : [{
             title : "Turnkey Data Center Solutions",
-            description : "We offer end-to-end services including site selection, design, engineering, construction, and commissioning. Our turnkey approach ensures faster time-to-value and seamless integration with existing IT infrastructure.",
+            description : "We offer end-to-end services including site selection, design, engineering, construction, and commissioning. Our turnkey approach ensures faster time-to-value and seamless integration.",
           },{
             title : "Scalable Modular Data Centers",
             description : "From on-premise enterprise needs to cloud-scale environments, our modular data center architectures are built for flexibility, rapid deployment, and easy scalability as your compute demands evolve."
           },{
             title : "Energy-Efficient & Sustainable Designs",
-            description : "Our infrastructure designs prioritize low PUE (Power Usage Effectiveness), advanced airflow management, and renewable energy integration to reduce operational costs and carbon footprint—supporting your ESG goals."
+            description : "Our infrastructure designs prioritize low PUE (Power Usage Effectiveness), advanced airflow management, and renewable energy integration to reduce operational costs and carbon footprint  ."
           },{
             title : "Tiered Redundancy & Uptime Guarantees",
             description : "We design and build data centers to meet Tier I to Tier IV standards, ensuring mission-critical performance with 99.999% uptime, N+1/N+N redundancy, and fault tolerance."
@@ -278,12 +282,12 @@ export const solutionData = {
             title : "Advanced Cooling & Power Management",
             description : "Leverage intelligent cooling systems, high-efficiency HVAC, and renewable-compatible power setups. Our solutions are optimized for thermal performance, real-time monitoring, and low energy wastage."
           },{
-            title : "Disaster Resilient & Fault-Tolerant Infrastructure",
+            title : "Resilient & Fault-Tolerant Infrastructure",
             description : "Ensure business continuity with seismic-safe construction, dual-power feeds, and real-time backup systems. We engineer resilience into the very fabric of your digital infrastructure."
           }]
         },
         heading : {
-          title : "POWERING THE DIGITAL BACKBONE : DATA CENTERS" ,
+          title : "THE DIGITAL BACKBONE : DATA CENTERS" ,
           subTitle : "Scaling with Secure and Sustainable Infrastructure"
         },
         srcImg : [sol_5, sol_5_1],
@@ -309,21 +313,21 @@ export const solutionData = {
         capabilities :{
           title : "Key Capabilities",
           children : [{
-            title : "Enterprise-Wide Digital Transformation Strategy",
+            title : "Digital Transformation Strategy",
             description : "We co-create tailored transformation blueprints aligned with your long-term vision, market dynamics, and operational needs, spanning IT modernization, digital services, and customer-centric architecture.",
           },{
-            title : "Business Model Innovation & Change Management",
-            description : "Redesign value chains and revenue models through digital-native thinking. We manage organizational change with structured frameworks that enable cultural alignment, stakeholder buy-in, and continuous innovation adoption."
+            title : "Innovation & Change Management",
+            description : "Redesign value chains and revenue models through digital-native thinking and with structured frameworks that enable cultural alignment, stakeholder buy-in, and continuous innovation adoption."
           },{
-            title : "AI-Enabled Process Automation & Workforce Optimization",
+            title : "Process Automation & Workforce Optimization",
             description : "Streamline workflows, reduce human error, and empower talent by embedding AI, machine learning, and intelligent automation across critical functions, from finance and HR to customer experience and supply chain."
           },{
-            title : "Sustainability Reporting & Regulatory Compliance",
+            title : "Sustainability & Regulatory Compliance",
             description : "Integrate digital ESG reporting, real-time tracking, and intelligent analytics to meet growing sustainability mandates and regulatory standards. Our solutions ensure transparency, accountability, and compliance across jurisdictions."
           }]
         },
         heading : {
-          title : "REIMAGINING BUSINESS WITH DIGITAL TRANSFORMATION" ,
+          title : "REIMAGINING DIGITAL TRANSFORMATION" ,
           subTitle : "Accelerating Enterprises with Data Powered by Innovation"
         },
         srcImg : [sol_6, sol_6_1],
@@ -349,10 +353,10 @@ export const solutionData = {
         capabilities :{
           title : "Key Capabilities",
           children : [{
-            title : "Smart Asset Management & Predictive Maintenance",
+            title : "Smart Asset Management",
             description : "Gain complete visibility into equipment and infrastructure health with real-time IoT telemetry and AI-driven analytics. We enable predictive maintenance to reduce downtime, extend asset lifespan, and lower operational costs.",
           },{
-            title : "IoT-Enabled Industrial & Supply Chain Optimization",
+            title : "Industrial & Supply Chain Optimization",
             description : "Digitize and automate operations across the factory floor and logistics chain with smart sensors, RFID integration, and edge computing. Our IoT frameworks deliver just-in-time insights and adaptive resource allocation to improve throughput and agility."
           },{
             title : "Smart Cities, Energy & Infrastructure Solutions",
@@ -363,7 +367,7 @@ export const solutionData = {
           }]
         },
         heading : {
-          title : "CONNECTING INTELLIGENCE WITH INTERNET OF THINGS (IOT)" ,
+          title : "CONNECTING INTELLIGENCE WITH IoT" ,
           subTitle : "Transforming how Businesses Operate, Analyze, and Innovate"
         },
         srcImg : [sol_7, sol_7_1],
@@ -389,7 +393,7 @@ export const solutionData = {
         capabilities :{
           title : "Key Capabilities",
           children : [{
-            title : "IT Infrastructure Modernization & Cloud Integration",
+            title : "Modernization & Cloud Integration",
             description : "We transform legacy environments with agile, hybrid-ready infrastructure that blends on-premise reliability with cloud-native scalability. Our modernization strategies focus on software-defined infrastructure (SDI), hyper-converged systems, and seamless multi-cloud orchestration.",
           },{
             title : "Network Security & Data Protection",
@@ -429,7 +433,7 @@ export const solutionData = {
           title : "Key Capabilities",
           children : [{
             title : "Process Automation & Optimization",
-            description : "We implement scalable RPA frameworks that automate repetitive tasks, accelerate back-office functions, and streamline front-end operations. From finance and HR to procurement and customer service, our automation blueprints increase throughput while maintaining high fidelity.",
+            description : "We implement scalable RPA frameworks that automate repetitive tasks, accelerate back-office functions, and streamline front-end operations. From finance and HR to procurement and customer service, our automation blueprints increase throughput.",
           },{
             title : "AI-Driven Decision Support Systems",
             description : "Our AI-enhanced automation integrates natural language processing (NLP), computer vision, and machine learning (ML) to support cognitive decision-making in real-time. These systems provide actionable insights, detect anomalies, and proactively resolve issues."
@@ -468,21 +472,21 @@ export const solutionData = {
         capabilities :{
           title : "Key Capabilities",
           children : [{
-            title : "Workplace Digitalization & Cloud-Based Collaboration Tools",
-            description : "We implement scalable digital workplace solutions that integrate platforms like Microsoft 365, Google Workspace, and Zoom with enterprise-grade ITSM and identity systems. These tools enhance productivity, streamline workflows, and enable real-time collaboration across global teams.",
+            title : "Digitalization & Collaboration Tools",
+            description : "We implement scalable digital workplace solutions that integrate collaboration platforms with enterprise-grade ITSM and identity systems to enhance productivity, streamline workflows, and enable real-time collaboration across global teams.",
           },{
             title : "AI-Powered HR & Workforce Analytics",
             description : "Transform human resource management with intelligent systems that provide deep analytics on employee engagement, productivity, retention, and skills mapping. We leverage AI for predictive workforce planning, talent acquisition optimization, and sentiment analysis."
           },{
-            title : "Enterprise Mobility & Secure Access Management",
+            title : "Mobility & Secure Access Management",
             description : "Support hybrid and remote workforces with secure, device-agnostic access to corporate resources. We implement MDM (Mobile Device Management), IAM (Identity and Access Management), and Zero Trust architectures to ensure secure and compliant access from anywhere."
           },{
-            title : "Employee Experience & Digital Workplace Transformation",
+            title : "Employee Experience & Transformation",
             description : "We enhance the employee digital experience with user-centric design, personalized portals, self-service knowledge bases, and intelligent automation. Our solutions prioritize inclusivity, accessibility, and well-being while aligning with enterprise productivity goals."
           }]
         },
         heading : {
-          title : "FUTURE-READY DIGITAL WORKPLACE ECOSYSTEM" ,
+          title : "DIGITAL WORKPLACE ECOSYSTEM" ,
           subTitle : "Enabling the Future of Work: Secure, Agile, Intelligent"
         },
         srcImg : [sol_10, sol_10_1],
@@ -695,7 +699,7 @@ export const industryData = {
             title : "IoT Integration & Smart Connectivity",
             description : "End-to-end platforms to manage massive IoT deployments, from sensor-to-core data flow, device authentication, and edge processing for telcos entering Industry 4.0 ecosystems."
           },{
-            title : "Customer Experience Management (CXM)",
+            title : "Customer Experience Management",
             description : "AI/ML-driven insights to personalize customer journeys, predict churn, optimize service delivery, and automate support channels through intelligent virtual assistants."
           },{
             title : "Network Security & Compliance",
@@ -827,7 +831,7 @@ export const industryData = {
             title : "Autonomous Systems & Robotics Integration",
             description : "Support for unmanned aerial, ground, and marine systems through edge computing, AI navigation, and mission planning software, enhancing force protection and reach."
           },{
-            title : "Secure Communications & Cyber Infrastructure",
+            title : "Secure Coms & Cyber Infrastructure",
             description : "Deploy hardened, encrypted networks and communications systems that ensure mission-critical connectivity and data integrity in contested environments."
           },{
             title : "Real-Time Command & Control Dashboards",
@@ -951,10 +955,10 @@ export const industryData = {
         capabilities :{
           title : "Core Capabilities",
           children :[{
-            title : "Smart Grid Modernization & Real-Time Monitoring",
+            title : "Smart Grid Modernization",
             description : "Transform traditional grid systems into intelligent, self-regulating networks that respond dynamically to demand and supply changes."
           },{
-            title : "IoT-Enabled Asset Management & Predictive Maintenance",
+            title : "IoT-Enabled Asset Management",
             description : "Deploy sensors and machine learning to anticipate failures, reduce downtime, and extend the lifespan of critical infrastructure."
           },{
             title : "AI-Driven Forecasting & Optimization",
@@ -1245,7 +1249,7 @@ export const industryData = {
             description : "Leverage machine learning to analyze traffic, weather, and order patterns, reducing delivery times and minimizing costs."
           },{
             title : "IoT-Enabled Real-Time Shipment Visibility",
-            description : "Monitor assets, inventory, and vehicle conditions in real time across geographies to enhance supply chain transparency and responsiveness."
+            description : "Monitor assets, inventory, and vehicle conditions in real time across geographies to enhance supply chain responsiveness."
           },{
             title : "Fleet & Warehouse Management ",
             description : "Manage dispatch, vehicle health, inventory levels, and order fulfillment through centralized, scalable platforms accessible from anywhere."
