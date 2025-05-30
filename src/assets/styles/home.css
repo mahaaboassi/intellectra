@@ -38,7 +38,7 @@
 }
 /* Hero Section */
 .hero{
-    background : url("../images/banner.png");
+    background : url("../images/banner.webp");
     background-repeat : no-repeat;
     height: 600px;
     background-position: center;
@@ -412,7 +412,7 @@ button:hover{
 
 
 .hastag{
-    background-color: var(--blue_4);
+    background-color: var(--blue_3);
     color: var(--light);
     font-size: var(--font-size-xs);
     border-radius: 10px;
@@ -469,7 +469,7 @@ button:hover{
 }
 /* Footer */
 footer{
-    background : url("../images/cubes.png"),white;
+    background : url("../images/cubes.webp"),white;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

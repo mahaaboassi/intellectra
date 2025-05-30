@@ -1,9 +1,9 @@
 // Images
 import img_1 from "../assets/images/ai.webp"
-import img_2 from "../assets/images/700x600.png"
-import img_3 from "../assets/images/cloud.jpg"
-import img_4 from "../assets/images/5x5c.png"
-import img_5 from "../assets/images/solutionSection.jpg"
+import img_2 from "../assets/images/700x600.webp"
+import img_3 from "../assets/images/cloud.webp"
+import img_4 from "../assets/images/5x5c.webp"
+import img_5 from "../assets/images/solutionSection.webp"
 import img_6 from "../assets/images/blog_1.webp"
 // Indusries
 import ind_1 from "../assets/images/agriculture.webp"
@@ -1475,69 +1475,22 @@ export const termsAndConsitionData = {
   finalDes: "By using INTELLECTRA’s digital products, services, or platform, you agree to comply with the terms outlined below. These Terms and Conditions are intended to protect both our users and our intellectual assets. Please read them carefully.",
   children: [
     {
-      title: "1. Introduction",
+      title: "A Legal Disclaimer",
       description:
-        "Welcome to INTELLECTRA. These Terms and Conditions govern your use of our website, services, and products. By accessing this site, you acknowledge that you have read, understood, and agreed to be legally bound by them. If you disagree with any part, please refrain from using our services.",
+        "The information on this website is provided for general informational purposes only and is not guaranteed to be accurate, complete, or current. Use of this site is at your sole discretion and risk. We disclaim all liability for any loss or damage arising from reliance on the content herein. We are not responsible for third-party websites linked from this site. By using this website, you agree to our Terms, Privacy Policy, and Accessibility Policy. If you do not accept these terms, please refrain from using the site.",
       content: []
     },
     {
-      title: "2. Eligibility",
+      title: "Terms & Conditions",
       description:
-        "You must be at least 18 years old or accessing the site under the supervision of a legal guardian to use our services. By using the site, you represent and warrant that you meet this requirement.",
+        "By accessing and using this website, you agree to comply with and be bound by these Terms and Conditions. All content on this site, including text, graphics, and logos, is protected by applicable intellectual property laws and may not be copied, distributed, or used without our prior written consent. The information provided is for general purposes only; we make no warranties regarding its accuracy, completeness, or reliability, and your use of any content is at your own risk. We are not liable for any loss or damage resulting from the use of this website. This site may contain links to third-party websites, which are provided for convenience only, we do not control or endorse them and disclaim all responsibility for their content. Your use of this website is also subject to our Privacy Policy. We reserve the right to modify these terms at any time without notice, and continued use constitutes acceptance of any changes.",
       content: []
     },
     {
-      title: "3. Intellectual Property",
+      title: "Privacy Policy",
       description:
-        "All materials on this website—including but not limited to text, logos, design elements, images, code, and digital assets—are the intellectual property of INTELLECTRA or its content providers. Unauthorized reproduction, copying, or redistribution for commercial purposes is strictly prohibited.",
-      content: []
-    },
-    {
-      title: "4. User Conduct",
-      description:
-        "You agree to use the website only for lawful purposes. You must not engage in any activity that could harm the platform, its users, or its operations. This includes, but is not limited to, unauthorized access, data mining, transmitting malicious code, or attempting to interfere with our servers or services.",
-      content: []
-    },
-    {
-      title: "5. Account Responsibility",
-      description:
-        "If you create an account on our website, you are responsible for maintaining the confidentiality of your login credentials and for all activities that occur under your account.",
-      content: []
-    },
-    {
-      title: "6. Third-Party Links",
-      description:
-        "Our website may contain links to third-party websites or services. We are not responsible for the content or practices of any third party and encourage you to read their terms before interacting with them.",
-      content: []
-    },
-    {
-      title: "7. Limitation of Liability",
-      description:
-        "INTELLECTRA and its affiliates are not liable for any indirect, incidental, or consequential damages arising from your use of the website, including data loss, service interruption, or system failure.",
-      content: []
-    },
-    {
-      title: "8. Indemnification",
-      description:
-        "You agree to indemnify and hold harmless INTELLECTRA, its employees, and affiliates from any claims, damages, or expenses arising from your use of the platform or violation of these terms.",
-      content: []
-    },
-    {
-      title: "9. Changes to Terms",
-      description:
-        "INTELLECTRA reserves the right to revise or update these terms at any time without notice. It is your responsibility to review this page periodically. Continued use of the platform implies your acceptance of the revised terms.",
-      content: []
-    },
-    {
-      title: "10. Governing Law",
-      description:
-        "These terms shall be governed and interpreted according to the laws of the United Arab Emirates. Any disputes arising from or related to these terms shall be subject to the exclusive jurisdiction of the courts in the UAE.",
-      content: []
-    },
-    {
-      title: "11. Contact Information",
-      description:
-        "For any inquiries regarding these Terms and Conditions, please contact us at info@intellectra.ae.",
+        `This Privacy Policy outlines how we collect, use, and protect your personal information when you access our website or engage our services. We may collect personal data you voluntarily provide (e.g., name, email, contact details), as well as technical data (e.g., IP address, browser type). This information is used to respond to inquiries, provide services, improve user experience, and send communications, where permitted by law. We implement appropriate security measures; however, no internet transmission or electronic storage is entirely secure, and we disclaim liability for any unauthorized access. Cookies and tracking technologies may be used to analyze website usage. You may disable cookies via browser settings, though functionality may be affected.
+        We may share data with trusted third-party service providers solely for operational purposes and in compliance with applicable data protection laws. We may disclose information to comply with legal obligations or protect our rights and users. We do not sell your data. By using this site, you consent to this policy. We reserve the right to update it at any time without notice. Continued use constitutes acceptance of any such changes `,
       content: []
     }
   ]
@@ -1744,7 +1697,7 @@ export const contactData = [
     link: "https://www.google.com/maps?q=609,+Bayan+Building,+Dubai+Investment+Park+1,+Dubai,+United+Arab+Emirates",
     name: "location",
     title: "Location",
-    value: <div>609, Bayan Bldg., Dubai Investment Park 1, PO Box 74700 Dubai, United Arab Emirates</div>
+    value: <div>609, Bayan Bldg., Dubai Investment Park, PO Box 74700 Dubai, United Arab Emirates</div>
   },
   {
     icon: <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 14 14" fill="none">

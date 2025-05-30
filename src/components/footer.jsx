@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/logo.webp"
 import { useEffect, useState } from "react"
 import { industryData, solutionData } from "../data/data"
 

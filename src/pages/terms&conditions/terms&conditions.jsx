@@ -22,7 +22,7 @@ const TermsAndConditions = ()=>{
                 <div className="blur-bg radius-border flex flex-col gap-3">
                 <div className="des" >
                     {termsAndConsitionData.children.map((ele, idx)=>(<div className="mb-4" key={`Terms_${ele.title}_${idx}`}>
-                            <h3>{ele.title}</h3>
+                            <h3 className="pb-2">{ele.title}</h3>
                             <p>{ele.description}</p>
                     </div>))}
 

@@ -83,11 +83,31 @@ form button:hover{
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+.text-error{
+  color: var(--error-color);
+  font-size: var(--font-size-xs);
+}
+
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
 @media (prefers-color-scheme: dark) {
-  /* :root {
-    --background: #0a0a0a;
-    --foreground: #202020;
-  } */
+  :root {
+    color: var(--dark);
+    background: var(--light);
+  }
 }
 
 @media (prefers-color-scheme: light) {
