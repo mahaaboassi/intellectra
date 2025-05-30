@@ -10,7 +10,7 @@ const PrivacyPolicy = ()=>{
     return(<div>
         <LottieHero/>
         <Helmet>
-            <title>Privacy Policy | Intellectra</title>
+            <title>Privacy Policy | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/privacy-policy`} />
         </Helmet>
         <div className="pages" style={{background:"white"}}>

@@ -13,7 +13,7 @@ const Innovation = ()=>{
     return(<div>
         <LottieHero/>
         <Helmet>
-            <title>Innovation | Intellectra</title>
+            <title>Innovation | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/innovation`} />
         </Helmet>
         <div className="pages" style={{background:"white"}}>

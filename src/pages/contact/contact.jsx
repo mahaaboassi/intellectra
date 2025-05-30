@@ -15,7 +15,7 @@ const Contact = ()=>{
         <Navbar/>
         <LottieHero/>
         <Helmet>
-            <title>Contact Us | Intellectra</title>
+            <title>Contact Us | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/contact`} />
         </Helmet>
         <div className="pages" style={{background:"white"}}>

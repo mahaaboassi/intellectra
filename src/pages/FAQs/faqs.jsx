@@ -8,7 +8,7 @@ const FAQs = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div className="contact pages">
         <Helmet>
-            <title>FAQs | Intellectra</title>
+            <title>FAQs | INTELLECTRA</title>
             {/* <link rel="canonical" href={`${hostCanonical}/esg`} /> */}
         </Helmet>
         <LottieHero/>

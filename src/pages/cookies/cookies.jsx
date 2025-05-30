@@ -10,7 +10,7 @@ const Cookies = ()=>{
     return(<div>
         <LottieHero/>
         <Helmet>
-            <title>Cookies Center | Intellectra</title>
+            <title>Cookies Center | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/cookies-center`} />
         </Helmet>
         <div className="pages" style={{background:"white"}}>

@@ -76,7 +76,7 @@ const About = ()=>{
     return(<div>
         <LottieHero/>
         <Helmet>
-            <title>About Us | Intellectra</title>
+            <title>About Us | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/about`} />
         </Helmet>
         <div style={{background:"white"}}>

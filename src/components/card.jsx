@@ -14,7 +14,7 @@ const Card = ({title, type,content=[], subTitle, description, img="", link=""})=
                     {content.length > 0 &&  <ul className="flex flex-col gap-1 ">
                             {content.map((e,idx)=>(<li key={`Content_${title}_${e}_${idx}`}>{e}</li>))}
                         </ul>}
-                    {link && <div><Link to={link}><span className="learn">See More</span> </Link></div>}
+                    {link && <div><Link aria-label={`See more details about ${title}`} to={link}><span className="learn">See More</span> </Link></div>}
                     
                 </div>
             </div>)

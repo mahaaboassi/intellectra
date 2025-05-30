@@ -13,7 +13,7 @@ const ESG = ()=>{
     return(<div>
         <LottieHero/>
         <Helmet>
-            <title>ESG | Intellectra</title>
+            <title>ESG | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/esg`} />
         </Helmet>
         <div className="pages" style={{background:"white"}}>

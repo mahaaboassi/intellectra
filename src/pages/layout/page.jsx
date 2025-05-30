@@ -78,7 +78,7 @@ const LayoutTemplate = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div>
         <Helmet>
-            <title>About | Intellectra</title>
+            <title>About | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/about`} />
         </Helmet>
         <LottieHero/>

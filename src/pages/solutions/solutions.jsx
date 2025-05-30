@@ -13,7 +13,7 @@ const Solutions = ()=>{
     return(<div>
         <LottieHero/>
         <Helmet>
-            <title>Solutions | Intellectra</title>
+            <title>Solutions | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/solutions`} />
         </Helmet>
         <div className="pages" style={{background:"white"}}>

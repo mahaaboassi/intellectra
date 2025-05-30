@@ -30,7 +30,7 @@ const PulseDetails = ()=>{
     return(<div>
         <LottieHero/>
         <Helmet>
-            <title> Pulse | Intellectra</title>
+            <title> Pulse | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/news/${"link" in data && data.link}`} />
         </Helmet>
         <div className="pages" style={{background:"white"}}>

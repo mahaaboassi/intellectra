@@ -29,7 +29,7 @@ const SubIndustry = ()=>{
     return(<div>
         <LottieHero/>
         <Helmet>
-            <title>{"title" in data? data.title:""} | Intellectra</title>
+            <title>{"title" in data? data.title:""} | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/${"link" in data && data.link}`} />
         </Helmet>
         <div className="pages" style={{background:"white"}}>
