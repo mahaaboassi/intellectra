@@ -22,7 +22,7 @@ const Home = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
     return(<div>
         <Helmet>
-            <title>Intellectra | IT and business consulting services </title>
+            <title>INTELLECTRA | ICT Systems Integration</title>
             <link rel="canonical" href={`${hostCanonical}`} />
         </Helmet>
         <LottieHero/>
