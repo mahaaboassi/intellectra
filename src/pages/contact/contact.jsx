@@ -16,11 +16,11 @@ const validationSchema = Yup.object({
     email: Yup.string().email('Invalid email format') // Ensures the email is valid
     .required('Email is required'),
     name: Yup.string().min(2,"Name must be at least 2 characters long").required('Name is required'),
-    company: Yup.string().min(2,"Name must be at least 2 characters long"),
+    company: Yup.string().min(2,"Company must be at least 2 characters long"),
     job_title: Yup.string(), 
     country : Yup.string(), 
     phone : Yup.string().matches(/^[0-9+\-() ]*$/, 'Phone number is not valid'),   
-    message : Yup.string().min(2,"Name must be at least 2 characters long").required('Message is required'),   
+    message : Yup.string().min(2,"Message must be at least 2 characters long").required('Message is required'),   
   });
 
 const Contact = ()=>{
