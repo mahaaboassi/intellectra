@@ -94,7 +94,7 @@ const Footer = ()=>{
                                     {ele.title}
                                 </div>
                                 </Link>))}
-                            <Link to={"/industries"}>
+                            <Link aria-label={`See more details about Industries`}  to={"/industries"}>
                                 <div className="menu flex gap-2 items-center">
                                     <div  className="flex items-center">See More</div>
                                     <div  className="flex items-center md:pt-0.5">
@@ -114,7 +114,7 @@ const Footer = ()=>{
                                     {ele.title}
                                 </div>
                                 </Link>))}
-                            <Link to={"/solutions"}>
+                            <Link  aria-label={`See more details about Solutions`}  to={"/solutions"}>
                                 <div  className="menu flex gap-2 items-center">
                                     <div  className="flex items-center">See More</div>
                                     <div  className="flex items-center md:pt-0.5">

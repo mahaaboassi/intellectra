@@ -71,7 +71,7 @@ const SubIndustry = ()=>{
                                 }
                             })
                         }</div>
-                        <div className="pt-5"><Link to={"/industries"}><span className="learn">See More</span> </Link></div>
+                        <div className="pt-5"><Link aria-label={`See more details about Industries`}  to={"/industries"}><span className="learn">See More</span> </Link></div>
                     </div>
                 </div>
             </div>  

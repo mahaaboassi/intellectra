@@ -54,7 +54,7 @@ const Hero = ({data, label, link}) => {
         {data[indexData].des}
       </motion.p>
 
-      {link && <Link to={link}><motion.button
+      {link && <Link aria-label={`See more details about ${label =="LEARN MORE"? "INTELLECTRA":label}`}  to={link}><motion.button
         key={`button-${indexData}`}
         className="mt-5"
         initial={{ opacity: 0 }}

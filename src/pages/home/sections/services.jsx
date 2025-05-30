@@ -51,7 +51,7 @@ const Services = ()=>{
                     </div>
                     </Link>))}
                 </div>
-                <div className="see-animation"><Link to={ele.link}><span className="learn" >See More</span></Link></div>
+                <div className="see-animation"><Link aria-label={`See more details about ${ele.title}`}  to={ele.link}><span className="learn" >See More</span></Link></div>
             </div>))}
         </div>
         

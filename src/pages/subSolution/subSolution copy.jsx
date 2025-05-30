@@ -71,7 +71,7 @@ const SubSolution = ()=>{
                             </div>
                             </Link>))
                         }</div>
-                        <div className="pt-5"><Link to={"/industries"}><span className="learn">See More</span> </Link></div>
+                        <div className="pt-5"><Link aria-label={`See more details about Indestries`}  to={"/industries"}><span className="learn">See More</span> </Link></div>
                     </div>
                 </div>
             </div>  
