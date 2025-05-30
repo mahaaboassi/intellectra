@@ -16,7 +16,7 @@ const Industry = ()=>{
              <title>Industries | INTELLECTRA</title>
              <link rel="canonical" href={`${hostCanonical}/industries`} />
         </Helmet>
-        <div className="pages" style={{background:"white"}}>
+        <div className="pages relative" style={{background:"white"}}>
             <Hero data={[{
                     words : "EMPOWERING INDUSTRY WITH TECHNOLOGY",
                     des : "Enabling Agility, Operational Resilience, and Sustainable Impact"

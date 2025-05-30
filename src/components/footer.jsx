@@ -15,7 +15,7 @@ const Footer = ()=>{
         link : "/innovation"
     },{
         name : "Pluse",
-        link : "/"
+        link : "/pulse"
     }]
     
     const support = [ 

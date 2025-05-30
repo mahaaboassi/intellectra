@@ -35,8 +35,7 @@ const Contact = ()=>{
         message : <></>
     })
     const onSubmit = async(value)=>{
-        console.log(value);
-        return
+
         
         setLoading(true)
         const temp = {}
@@ -78,10 +77,9 @@ const Contact = ()=>{
                         <p style="font-size: 13px; color: #888; text-align: center;">This message was submitted from the website contact form.</p>
                     </div>`
 
-        temp.subject = "New Contact Form Submission from Intellectra Website"
-        temp.to = "eng.mahaab96@gmail.com"
+        temp.to = value.email || '-'
 
-        const res = await fetch("http://localhost:5000/api/sendMail", {
+        const res = await fetch("https://intellectra.ordersmm.com/api/sendMail", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(temp),
@@ -96,8 +94,18 @@ const Contact = ()=>{
                         <p>Our team will get back to you as soon as possible.</p>
                     </>
                 })
-                setLoading(false)
+            setLoading(false)
         } else {
+            if(data.status == 422 ){
+                setOpenPopup({
+                    isOpen : true,
+                    message : <>
+                        <p><strong>Oops!</strong></p>
+                        <p className="py-2">{data.message}</p>
+                        <p>Please try again.</p>
+                    </>
+                })
+            }else{
                 setOpenPopup({
                     isOpen : true,
                     message : <>
@@ -106,6 +114,8 @@ const Contact = ()=>{
                         <p>Please try again in a moment.</p>
                     </>
                 })
+            }
+                
                  setLoading(false)
         }
     }
@@ -131,7 +141,7 @@ const Contact = ()=>{
             <title>Contact Us | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/contact`} />
         </Helmet>
-        <div className="pages" style={{background:"white"}}>
+        <div className="pages relative" style={{background:"white"}}>
             <Hero data={[{
                     words : "Let's Connect",
                     des : "Start the Conversation — Our Team Is Ready to Assist You"

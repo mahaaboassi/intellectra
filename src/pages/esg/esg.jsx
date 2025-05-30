@@ -16,7 +16,7 @@ const ESG = ()=>{
             <title>ESG | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/esg`} />
         </Helmet>
-        <div className="pages" style={{background:"white"}}>
+        <div className="pages relative" style={{background:"white"}}>
             <Hero data={[{
                     words : "COMMITMENT TO ESG",
                     des : "Driven by Purpose and Responsibility"

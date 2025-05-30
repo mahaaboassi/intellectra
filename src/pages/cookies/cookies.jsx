@@ -13,7 +13,7 @@ const Cookies = ()=>{
             <title>Cookies Center | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/cookies-center`} />
         </Helmet>
-        <div className="pages" style={{background:"white"}}>
+        <div className="pages relative" style={{background:"white"}}>
             <Hero data={[{
                     words : "Cookies Center",
                     des : "Learn how we use cookies to enhance your experience"

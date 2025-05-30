@@ -26,7 +26,7 @@ const Home = ()=>{
             <link rel="canonical" href={`${hostCanonical}`} />
         </Helmet>
         <LottieHero/>
-        <div style={{background:"white"}}>
+        <div className="relative" style={{background:"white"}}>
             <Hero  label={"LEARN MORE"} link={"/about"} data={data}  />
             <Services/>
             <Intro/>

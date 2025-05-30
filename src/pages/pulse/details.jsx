@@ -33,7 +33,7 @@ const PulseDetails = ()=>{
             <title> Pulse | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/news/${"link" in data && data.link}`} />
         </Helmet>
-        <div className="pages" style={{background:"white"}}>
+        <div className="pages relative" style={{background:"white"}}>
             <Hero data={[{
                     words : "Pulse : Wired for Tomorrow",
                     des : "What’s Shaping the Digital World Today"

@@ -16,7 +16,7 @@ const Innovation = ()=>{
             <title>Innovation | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/innovation`} />
         </Helmet>
-        <div className="pages" style={{background:"white"}}>
+        <div className="pages relative" style={{background:"white"}}>
             <Hero data={[{
                     words : "INNOVATION AT CORE",
                     des : "Constant Reinvention and Agility"

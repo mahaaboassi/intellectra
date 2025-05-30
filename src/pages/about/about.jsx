@@ -79,7 +79,7 @@ const About = ()=>{
             <title>About Us | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/about`} />
         </Helmet>
-        <div style={{background:"white"}}>
+        <div className="relative" style={{background:"white"}}>
             <Hero data={[{
                     words : "Transforming Complexity into Clarity",
                     des : "Driving Innovation, Resilience, and Long-term Success"

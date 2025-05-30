@@ -13,7 +13,7 @@ const PrivacyPolicy = ()=>{
             <title>Privacy Policy | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/privacy-policy`} />
         </Helmet>
-        <div className="pages" style={{background:"white"}}>
+        <div className="pages relative" style={{background:"white"}}>
             <Hero data={[{
                     words : "Privacy Policy",
                     des : "See how we protect your data. Read our policy"

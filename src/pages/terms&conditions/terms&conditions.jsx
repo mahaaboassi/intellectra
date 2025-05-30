@@ -13,7 +13,7 @@ const TermsAndConditions = ()=>{
             <title>Terms And Conditions | INTELLECTRA </title>
             <link rel="canonical" href={`${hostCanonical}/terms-&-conditions`} />
         </Helmet>
-        <div className="pages" style={{background:"white"}}>
+        <div className="pages relative" style={{background:"white"}}>
             <Hero data={[{
                     words : "Terms And Conditions",
                     des : "Know your rights and responsibilities. Read our terms"

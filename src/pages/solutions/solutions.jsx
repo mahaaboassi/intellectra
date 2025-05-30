@@ -16,7 +16,7 @@ const Solutions = ()=>{
             <title>Solutions | INTELLECTRA</title>
             <link rel="canonical" href={`${hostCanonical}/solutions`} />
         </Helmet>
-        <div className="pages" style={{background:"white"}}>
+        <div className="pages relative" style={{background:"white"}}>
             <Hero data={[{
                     words : "DISRUPTING THE DIGITAL FUTURE",
                     des : "Driving Transformation with Efficient and Scalable ICT"
