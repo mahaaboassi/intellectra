@@ -32,9 +32,9 @@ const SubIndustry = ()=>{
                 <div className="container-about gap-10 py-10">
                     {data && data.srcImg && data.srcImg.length > 0 && data.srcImg.map((e,i)=>{
                         if(i==0){
-                            return(<div className="w-full flex justify-end"><img  className="layout-one" src={e} alt={"title" in data? data.title:"image"} /></div>)
+                            return(<div key={`Sub_industry_Image_${i}_${"title" in data? data.title:""}`} className="w-full flex justify-end"><img  className="layout-one" src={e} alt={"title" in data? data.title:"image"} /></div>)
                         }else{
-                            return(<div className="w-full"><img className="layout-two" src={e} alt={"title" in data? data.title+"_":"image"} /></div>)
+                            return(<div key={`Sub_industry_Image_${i}_${"title" in data? data.title:""}`} className="w-full"><img className="layout-two" src={e} alt={"title" in data? data.title+"_":"image"} /></div>)
                         }
                     })}
                 </div>

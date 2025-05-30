@@ -32,16 +32,16 @@ const SubSolution = ()=>{
                 <div className="container-about gap-10 py-10">
                     {data && data.srcImg && data.srcImg.length > 0 && data.srcImg.map((e,i)=>{
                         if(i==0){
-                            return(<div className="w-full flex justify-end"><img  className="layout-one" src={e} alt={"title" in data? data.title:"image"} /></div>)
+                            return(<div key={`Sub_Solutions_Image_${i}_${"title" in data? data.title:""}`} className="w-full flex justify-end"><img  className="layout-one" src={e} alt={"title" in data? data.title:"image"} /></div>)
                         }else{
-                            return(<div className="w-full"><img className="layout-two" src={e} alt={"title" in data? data.title+"_":"image"} /></div>)
+                            return(<div key={`Sub_Solutions_Image_${i}_${"title" in data? data.title:""}`} className="w-full"><img className="layout-two" src={e} alt={"title" in data? data.title+"_":"image"} /></div>)
                         }
                     })}
                 </div>
                 
             </div>
             <div style={{background:"white"}} className="px-3 sm:px-14 md:px-30 container-cards flex-wrap py-10  justify-between">
-                {data && data.capabilities && data.capabilities.children.length > 0 && data.capabilities.children.map((ele,idx)=>(<Card key={`Sub_industry_Card_${ele.title}_${idx}`} 
+                {data && data.capabilities && data.capabilities.children.length > 0 && data.capabilities.children.map((ele,idx)=>(<Card key={`Sub_Solutions_Card_${ele.title}_${idx}`} 
                                                               description={ele.description}
                                                               title={ele.title}
                                                               type="industry"
