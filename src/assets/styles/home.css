@@ -722,7 +722,9 @@ footer a:hover::before{
 
     .view-banner{
         width: 120px;
+        top: -35px;
     }
+
     .second-content-col-1{
         flex-direction: column;
         gap: 10px;
@@ -741,9 +743,7 @@ footer a:hover::before{
 
 }
 @media (max-width: 450px) {
-    .view-banner{
-        top: -60px;
-    }
+   
 
     .contact-banner{
         border-top-left-radius: 20%;

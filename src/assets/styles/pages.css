@@ -45,7 +45,7 @@
         rgba(255, 255, 255, 0.749),
         rgba(159, 158, 158, 0.089)
     );
-    transform: scale(0.92);
+    transform: scale(0.95);
     z-index: -5;
 }
 .card h2{
@@ -442,6 +442,9 @@
     }
     .robot-card ul{
         width: 100%;
+    }
+    .content-card:hover::after{
+        transform: scale(0.98);
     }
 }
 @media (max-width: 450px) {

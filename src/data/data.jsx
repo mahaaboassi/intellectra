@@ -1537,7 +1537,7 @@ export const termsAndConsitionData = {
     {
       title: "11. Contact Information",
       description:
-        "For any inquiries regarding these Terms and Conditions, please contact us at support@intellectra.com.",
+        "For any inquiries regarding these Terms and Conditions, please contact us at info@intellectra.ae.",
       content: []
     }
   ]
