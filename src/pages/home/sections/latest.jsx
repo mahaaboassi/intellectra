@@ -61,7 +61,10 @@ const Latest = ()=>{
                                 </div>
                                 <h3>{ele.title}</h3>
                                 <p>{ele.short_description}</p>
-                                <Link aria-label={`See more details about ${ele.title}`}  to={`/pulse/${ele.link}`}><div><span className='learn'>Learn More</span></div></Link>
+                                <Link aria-label={`See more details about ${ele.title}`}  to={`/pulse/${ele.link}`}><div>
+                                    <span className="sr-only">See more details about {ele.title}</span>
+                                    <span className='learn'>Learn More</span>
+                                </div></Link>
                             </div>
                         </SwiperSlide>))}
 

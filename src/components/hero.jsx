@@ -60,6 +60,7 @@ const Hero = ({data, label, link}) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
+        <span className="sr-only">See more details about {label =="LEARN MORE"? "INTELLECTRA":label}</span>
         {label}
       </motion.button></Link>}
     </div>

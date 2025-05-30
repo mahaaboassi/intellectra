@@ -32,7 +32,10 @@ const Pulse = ()=>{
                                 </div>
                                 <h3>{ele.title}</h3>
                                 {/* <p>{ele.description.substring(0,80)+"..."}</p> */}
-                                <Link aria-label={`See more details about ${ele.title}`}  to={`/pulse/${ele.link}`}><div><span className='learn'>Learn More</span></div></Link>
+                                <Link aria-label={`See more details about ${ele.title}`}  to={`/pulse/${ele.link}`}><div>
+                                    <span className="sr-only">See more details about {ele.title}</span>
+                                    <span className='learn'>Learn More</span>
+                                </div></Link>
                             </div>))}
                 </div>     
             </div>

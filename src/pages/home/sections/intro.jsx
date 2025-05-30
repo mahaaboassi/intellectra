@@ -64,14 +64,20 @@ const Intro = ()=>{
             <div  className="w-full justify-between flex flex-col gap-5 ">
                     <h2>{data[0].title}</h2>
                     <p>{data[0].description}</p>
-                    <div><Link aria-label={`See more details about ${data[0].title}`}  to={data[0].link}><span className="learn">Learn More</span></Link></div>
+                    <div><Link aria-label={`See more details about ${data[0].title}`}  to={data[0].link}>
+                        <span className="sr-only">See more details about {data[0].title}</span>
+                        <span className="learn">Learn More</span>
+                    </Link></div>
             </div>
         </div>
         <div style={{background:"white"}} className="intro intro-second gap-10">
             <div  className="w-full justify-between flex flex-col gap-5 ">
                     <h2>{data[1].title}</h2>
                     <p>{data[1].description}</p>
-                    <div><Link aria-label={`See more details about ${data[1].title}`}  to={data[1].link}><span className="learn">Learn More</span></Link></div>
+                    <div><Link aria-label={`See more details about ${data[1].title}`}  to={data[1].link}>
+                        <span className="sr-only">See more details about {data[1].title}</span>
+                        <span className="learn">Learn More</span>
+                    </Link></div>
             </div>
             <div  style={{position:"relative"}} className="w-full content-intro flex flex-col gap-2 ">
                 <div className="flex gap-2">
@@ -131,7 +137,10 @@ const Intro = ()=>{
             <div  className="w-full justify-between flex flex-col gap-5 ">
                     <h2>{data[2].title}</h2>
                     <p>{data[2].description}</p>
-                    <div><Link aria-label={`See more details about ${data[2].title}`}  to={data[2].link}><span className="learn">Learn More</span></Link></div>
+                    <div><Link aria-label={`See more details about ${data[2].title}`}  to={data[2].link}>
+                        <span className="sr-only">See more details about {data[2].title}</span>
+                        <span className="learn">Learn More</span>
+                    </Link></div>
             </div>
         </div>
     </div>)
