@@ -14,7 +14,7 @@ const Footer = ()=>{
         name : "Innovation",
         link : "/innovation"
     },{
-        name : "Pluse",
+        name : "Pulse",
         link : "/pulse"
     }]
     
