@@ -35,6 +35,9 @@
   --shadow-box : 0 4px 4px 0 rgba(0,0,0,0.25);
   --box-universe :0 0 10px rgba(223, 220, 215, 0.3)
 }
+meta[name="color-scheme"]{
+  color-scheme: light;
+}
 body {
   color: var(--dark);
   background: var(--light);
