@@ -59,7 +59,7 @@ import sol_9_1 from "../assets/images/sol_9_1.webp"
 import sol_10_1 from "../assets/images/sol_10_1.webp"
 
 
-export const hostCanonical = "https://intellectra-three.vercel.app"
+export const hostCanonical = "https://intellectra.ae"
 
 
 export const solutionData = {
