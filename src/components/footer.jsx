@@ -31,6 +31,10 @@ const Footer = ()=>{
     //     link : "/privacy-policy"
     // },
     {
+        name : "Standards",
+        link : "/standards"
+    },
+    {
         name : "Terms & Conditions",
         link : "/terms-&-conditions"
     }]

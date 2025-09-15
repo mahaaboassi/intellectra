@@ -17,6 +17,7 @@ import TermsAndConditions from './pages/terms&conditions/terms&conditions'
 import Pulse from './pages/pulse/pulse'
 import LayoutTemplate from './pages/layout/page'
 import PulseDetails from './pages/pulse/details'
+import Standards from './pages/standards/standards'
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="cookies-center" element={<Cookies/>} />
           <Route path="pulse" element={<Pulse/>} />
           <Route path="terms-&-conditions" element={<TermsAndConditions/>} />
+          <Route path="standards" element={<Standards/>} />
        </Route>
        <Route path="contact" element={<Contact/>} />
     </Routes>

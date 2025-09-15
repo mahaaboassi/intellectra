@@ -233,6 +233,12 @@
     <priority>0.6</priority>
   </url>
   <!-- Policy Pages -->
+   <url>
+    <loc>https://www.intellectra.ae/standards</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://www.intellectra.ae/terms-&amp;-conditions</loc>
     <lastmod>2025-05-20</lastmod>
