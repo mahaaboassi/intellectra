@@ -53,6 +53,7 @@
     font-weight: 600;
     /* text-transform: capitalize; */
     color: var(--blue_1);
+    
 }
 .card p{
     font-size: var(--font-size-xs);
@@ -479,6 +480,9 @@
     }
     .pop-up{
         width: 400px;
+    }
+    .card h2{
+        line-height: 1.3rem;
     }
 }
 @media (max-width: 450px) {
