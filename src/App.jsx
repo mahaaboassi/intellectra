@@ -18,6 +18,7 @@ import Pulse from './pages/pulse/pulse'
 import LayoutTemplate from './pages/layout/page'
 import PulseDetails from './pages/pulse/details'
 import Standards from './pages/standards/standards'
+import Validation from './pages/validation/validation'
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
           <Route path="pulse" element={<Pulse/>} />
           <Route path="terms-&-conditions" element={<TermsAndConditions/>} />
           <Route path="standards" element={<Standards/>} />
+          <Route path="validation" element={<Validation/>} />
        </Route>
        <Route path="contact" element={<Contact/>} />
     </Routes>

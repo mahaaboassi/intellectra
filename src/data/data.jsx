@@ -1550,6 +1550,79 @@ export const industryData = {
     
 ]
 }
+export const vsalidationData = {
+    title : "",
+    description : "At Intellectra, we believe that true innovation goes beyond technology, it is built on a foundation of uncompromising quality, environmental responsibility, and a deep commitment to people.",
+    desc_2 : "Our policies reflect this philosophy by ensuring every solution we deliver is precise, reliable, and transformative; every decision we make is guided by sustainability and care for the planet; and every workplace we create is safe, inclusive, and empowering.",
+    desc_3 : "Together, these principles shape the way we partner with organizations worldwide, delivering digital ecosystems that are not only intelligent and secure, but also ethical, resilient, and future-ready.",
+    children :[ {
+        title: "Quality Management",
+        subTitle : "ISO 9001:2015 Certified",
+        img: iso_1,
+        description: `This policy establishes our commitment to consistently delivering innovative, reliable, and value-driven ICT solutions.`,
+        finalDescription: (
+            <div>
+                This policy establishes our commitment to consistently delivering innovative, reliable, and value-driven ICT solutions.
+            </div>
+        ),
+        content: [
+                    "Place customer satisfaction at the core of our operations.",
+                    "Embed risk-based thinking to anticipate challenges and leverage opportunities.",
+                    "Continuously improve processes, services, and employee competencies.",
+                    "Apply data-driven decision-making for measurable quality outcomes."
+        ]
+    },{
+        title: "Environmental Management",
+        subTitle : "ISO 14001:2015 Certified",
+        img: iso_2,
+        description: `This policy sets out our commitment to responsible environmental management, minimizing ecological impacts, and promoting sustainable digital transformation.`,
+        finalDescription: (
+            <div>
+                This policy sets out our commitment to responsible environmental management, minimizing ecological impacts, and promoting sustainable digital transformation.
+            </div>
+        ),
+        content: [
+                  "Promote sustainable ICT design, energy efficiency, and resource optimization.",
+                  "Minimize carbon footprint through green technologies.",
+                  "Encourage sustainable procurement and waste reduction practices.",
+                  "Partner with clients to deliver eco-conscious, future-ready solutions."
+        ]
+    },{
+        title: "Occupational Health & Safety",
+        subTitle : "ISO 45001:2018 Certified",
+        img: iso_3,
+        description: `This policy reflects our commitment to safeguarding the health, safety, and well-being of all employees, contractors, and stakeholders.`,
+        finalDescription: (
+            <div>
+                This policy reflects our commitment to safeguarding the health, safety, and well-being of all employees, contractors, and stakeholders.
+            </div>
+        ),
+        content: [
+                  "Identify hazards, assess risks, and implement effective controls.",
+                  "Comply with all legal and regulatory occupational health and safety requirements.",
+                  "Foster a culture of safety, responsibility, and prevention.",
+                  "Support employee wellbeing, mental health, and inclusive workplaces."
+        ]
+    },{
+        title: "Sustainable Development Goals",
+        subTitle : "Aligned with UNDP SDGs",
+        img: undp,
+        description: `This policy reflects our commitment to advancing global sustainability, driving equitable growth, and leveraging technology to build a more inclusive and resilient future.`,
+        finalDescription: (
+            <div>
+                This policy reflects our commitment to advancing global sustainability, driving equitable growth, and leveraging technology to build a more inclusive and resilient future.
+            </div>
+        ),
+        content: [
+                  "Promote health, education, and gender equality through digital empowerment.",
+                  "Enable innovation, infrastructure, and decent work opportunities.",
+                  "Champion reduced inequalities and sustainable communities.",
+                  "Drive climate action, responsible consumption, and global partnerships."
+        ]
+    }]
+}
+
+
 export const termsAndConsitionData = {
   title: "TERMS AND CONDITIONS",
   lastUpdated: "03-March-2025",

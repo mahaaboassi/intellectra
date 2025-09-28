@@ -37,7 +37,12 @@ const Footer = ()=>{
     {
         name : "Terms & Conditions",
         link : "/terms-&-conditions"
-    }]
+    },
+    // {
+    //     name : "Validation",
+    //     link : "/validation"
+    // },
+    ]
     const  icons = [{
         name : "linkedin",
         icon : <svg xmlns="http://www.w3.org/2000/svg" width="20" height="" viewBox="0 0 151 149" fill="none">
