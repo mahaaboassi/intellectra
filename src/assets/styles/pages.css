@@ -14,6 +14,19 @@
     font-weight: 600;
     text-transform: capitalize;
 }
+.card h4{
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.card a{
+    color: var(--grey_2);
+    transition: 0.3s;
+    text-decoration: underline;
+}
+.card a:hover{
+    color: var(--blue_1);
+}
 .container-cards{
     display: flex;
 }
@@ -373,6 +386,10 @@
     }to{
          transform: translate(-50%,-50%) scale(1);
     }
+}
+/* Validation */
+.validation .card{
+    width: 100%;
 }
 /* @ Media */
 

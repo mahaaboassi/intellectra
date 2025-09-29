@@ -68,6 +68,8 @@ import undp from "../assets/images/undp.webp"
 
 
 
+
+
 export const hostCanonical = "https://intellectra.ae"
 
 
@@ -1550,74 +1552,61 @@ export const industryData = {
     
 ]
 }
-export const vsalidationData = {
+export const validationData = {
     title : "",
-    description : "At Intellectra, we believe that true innovation goes beyond technology, it is built on a foundation of uncompromising quality, environmental responsibility, and a deep commitment to people.",
-    desc_2 : "Our policies reflect this philosophy by ensuring every solution we deliver is precise, reliable, and transformative; every decision we make is guided by sustainability and care for the planet; and every workplace we create is safe, inclusive, and empowering.",
-    desc_3 : "Together, these principles shape the way we partner with organizations worldwide, delivering digital ecosystems that are not only intelligent and secure, but also ethical, resilient, and future-ready.",
+    description : "At Intellectra, we recognize the importance of trust, authenticity, and compliance in every business transaction. To safeguard the interests of our clients, suppliers, and partners, we have implemented a document validation system.",
+    desc_2 : "Every Letter/Notice, Sales Proposal, Purchase Order, Contract, and other official documents issued by Intellectra carries a unique QR code that redirects to this official validation page. By scanning the QR code, recipients can confirm the authenticity of the document and be assured that it is recognized and approved by Intellectra, provided that it validates against the below mentioned guidelines.",
+    desc_3 : "This system is part of our ongoing commitment to transparency, integrity, and operational excellence.",
     children :[ {
-        title: "Quality Management",
-        subTitle : "ISO 9001:2015 Certified",
-        img: iso_1,
-        description: `This policy establishes our commitment to consistently delivering innovative, reliable, and value-driven ICT solutions.`,
+        title: "Letters & Notices Validation",
+        subTitle : "",
+        title_2: "Authenticity Guidelines",
+        img: "",
+        description: `Intellectra issues official letters and notices for various business, contractual, operational, and legal purposes. To prevent misuse, fraud, or misrepresentation; and to ensure that every letter and notice is legitimate and issued under proper authorization, we have established the following framework:`,
         finalDescription: (
-            <div>
-                This policy establishes our commitment to consistently delivering innovative, reliable, and value-driven ICT solutions.
-            </div>
+            <p>
+                If you receive a letter or notice claiming to be from Intellectra but does not comply to these authenticity guidelines, please notify us immediately at <a href="mailto:control@intellectra.ae">control@intellectra.ae</a>.
+            </p>
         ),
         content: [
-                    "Place customer satisfaction at the core of our operations.",
-                    "Embed risk-based thinking to anticipate challenges and leverage opportunities.",
-                    "Continuously improve processes, services, and employee competencies.",
-                    "Apply data-driven decision-making for measurable quality outcomes."
+                    "All official letters and notices are issued on Intellectra letterhead and carry a unique reference number.",
+                    "Letters and notices are only valid if signed by the authorized signatory (as vested in Intellectra Commercial License) and stamped with the official seal.",
+                    "Each valid letter/notice contains a QR code linking to this validation page.",
+                    "Any electronic document that is shared from outside our official communication channels (intellectra.ae email domain) must be treated as invalid."
         ]
     },{
-        title: "Environmental Management",
-        subTitle : "ISO 14001:2015 Certified",
-        img: iso_2,
-        description: `This policy sets out our commitment to responsible environmental management, minimizing ecological impacts, and promoting sustainable digital transformation.`,
+        title: "Proposals & Quotations Validation",
+        subTitle : "",
+        title_2: "Authenticity Guidelines",
+        img: "",
+        description: `Our technical & commercial proposals, and sales quotations reflect the professionalism and dedication of Intellectra to deliver tailored solutions to our clients. To prevent misuse, fraud, or misrepresentation; and to ensure that every proposal and quotation is legitimate and issued under proper authorization, we have established the following framework:`,
         finalDescription: (
-            <div>
-                This policy sets out our commitment to responsible environmental management, minimizing ecological impacts, and promoting sustainable digital transformation.
-            </div>
+            <p>
+                If you receive a proposal or quotation claiming to be from Intellectra but does not comply to these authenticity guidelines, please notify us immediately at <a href="mailto:control@intellectra.ae">control@intellectra.ae</a>.
+            </p>
         ),
         content: [
-                  "Promote sustainable ICT design, energy efficiency, and resource optimization.",
-                  "Minimize carbon footprint through green technologies.",
-                  "Encourage sustainable procurement and waste reduction practices.",
-                  "Partner with clients to deliver eco-conscious, future-ready solutions."
+                    "Every valid proposal or quotation is generated and issued directly by our Commercial Services Department and carry a unique reference number.",
+                    "Proposals and quotations are only valid if signed by the authorized signatory (as vested in Intellectra Commercial License) and stamped with the official seal.",
+                    "Each valid proposal or quotation contains a QR code linking to this validation page.",
+                    "Any electronic document that is shared from outside our official communication channels (intellectra.ae email domain) must be treated as invalid."
         ]
     },{
-        title: "Occupational Health & Safety",
-        subTitle : "ISO 45001:2018 Certified",
-        img: iso_3,
-        description: `This policy reflects our commitment to safeguarding the health, safety, and well-being of all employees, contractors, and stakeholders.`,
+        title: "Purchase Orders & Contracts Validation",
+        subTitle : "",
+        title_2: "Authenticity Guidelines",
+        img: "",
+        description: `Purchase Orders and Contracts issued by Intellectra are formal commitments to procure goods or services. To prevent misuse, fraud, or misrepresentation; and to ensure that every purchase order or contract is legitimate and issued under proper authorization, we have established the following framework:`,
         finalDescription: (
-            <div>
-                This policy reflects our commitment to safeguarding the health, safety, and well-being of all employees, contractors, and stakeholders.
-            </div>
+            <p>
+                If you receive a purchase order or contract claiming to be from Intellectra but does not comply to these authenticity guidelines, please notify us immediately at <a href="mailto:control@intellectra.ae">control@intellectra.ae</a>.
+            </p>
         ),
         content: [
-                  "Identify hazards, assess risks, and implement effective controls.",
-                  "Comply with all legal and regulatory occupational health and safety requirements.",
-                  "Foster a culture of safety, responsibility, and prevention.",
-                  "Support employee wellbeing, mental health, and inclusive workplaces."
-        ]
-    },{
-        title: "Sustainable Development Goals",
-        subTitle : "Aligned with UNDP SDGs",
-        img: undp,
-        description: `This policy reflects our commitment to advancing global sustainability, driving equitable growth, and leveraging technology to build a more inclusive and resilient future.`,
-        finalDescription: (
-            <div>
-                This policy reflects our commitment to advancing global sustainability, driving equitable growth, and leveraging technology to build a more inclusive and resilient future.
-            </div>
-        ),
-        content: [
-                  "Promote health, education, and gender equality through digital empowerment.",
-                  "Enable innovation, infrastructure, and decent work opportunities.",
-                  "Champion reduced inequalities and sustainable communities.",
-                  "Drive climate action, responsible consumption, and global partnerships."
+                    "Every valid purchase order or contract is generated and issued directly by our Procurement Department and carry a unique reference number.",
+                    "Purchase orders or contracts are only valid if signed by the authorized signatory (as vested in Intellectra Commercial License) and stamped with the official seal.",
+                    "Each valid purchase order or contract contains a QR code linking to this validation page.",
+                    "Any electronic document that is shared from outside our official communication channels (intellectra.ae email domain) must be treated as invalid."
         ]
     }]
 }

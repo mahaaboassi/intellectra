@@ -38,10 +38,10 @@ const Footer = ()=>{
         name : "Terms & Conditions",
         link : "/terms-&-conditions"
     },
-    // {
-    //     name : "Validation",
-    //     link : "/validation"
-    // },
+    {
+        name : "Validation",
+        link : "/validation"
+    },
     ]
     const  icons = [{
         name : "linkedin",

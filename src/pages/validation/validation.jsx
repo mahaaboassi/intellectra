@@ -3,14 +3,14 @@ import Hero from "../../components/hero"
 import LottieHero from "../../components/heroAnimation"
 import Card from "../../components/card"
 import { Helmet } from "react-helmet-async"
-import {  hostCanonical, standredData } from "../../data/data"
+import {  hostCanonical, validationData } from "../../data/data"
 // Images
-import img_2 from "../../assets/images/image_17.webp"
-import img_3 from "../../assets/images/image_18.webp"
+import img_2 from "../../assets/images/validation_1.webp"
+import img_3 from "../../assets/images/validation_2.webp"
 
 const Validation = ()=>{
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
-    return(<div>
+    return(<div className="validation">
         <LottieHero/>
         <Helmet>
             <title>Validation | INTELLECTRA</title>
@@ -23,13 +23,13 @@ const Validation = ()=>{
             }]} />
             <div className="layout pt-32 px-5 sm:px-16 md:px-32">
                 <p>
-                    {standredData.description}
+                    {validationData.description}
                 </p>
                 <p className="py-4">
-                   {standredData.desc_2}
+                   {validationData.desc_2}
                 </p>
                 <p>
-                   {standredData.desc_3}
+                   {validationData.desc_3}
                 </p>
                 <div className="container-about gap-10 py-10">
                     <div className="w-full flex justify-end"><img  className="layout-one" src={img_2} alt="image" /></div>
@@ -38,13 +38,16 @@ const Validation = ()=>{
                 </div>
                 
             </div>
-            <div style={{background:"white"}} className="px-3 sm:px-14 md:px-30 container-cards flex-wrap py-10    justify-between">
-                {standredData.children.map((ele,idx)=>(<Card key={`Standards_Card_${ele.title}_${idx}`} 
+            
+            <div style={{background:"white"}} className="px-3 sm:px-14 md:px-30 py-10">
+                {validationData.children.map((ele,idx)=>(<Card key={`Validation_Card_${ele.title}_${idx}`} 
                                                              img={ele.img}
                                                              isImage={true}
+                                                             title_2={ele.title_2}
                                                              description={ele.description}
                                                              title={ele.title}
-                                                             type="esg"
+                                                             type="validation"
+                                                             note= {ele.finalDescription}
                                                              content={ele.content}
                                                              subTitle={ele.subTitle}  />))}
             </div>
