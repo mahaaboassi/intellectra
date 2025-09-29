@@ -75,7 +75,7 @@ export const hostCanonical = "https://intellectra.ae"
 
 export const solutionData = {
     title : "",
-    description : "At INTELLECTRA, we empower organizations to navigate digital disruption, accelerate innovation, and achieve strategic goals through future-ready ICT solutions. As a trusted technology partner, we specialize in delivering tailored digital transformation strategies that align with each industry’s unique needs, whether it’s modernizing legacy systems, enabling cloud-first architectures, implementing robust cybersecurity frameworks, or deploying intelligent automation and IoT integrations.",
+    description : "At Intellectra, we empower organizations to navigate digital disruption, accelerate innovation, and achieve strategic goals through future-ready ICT solutions. As a trusted technology partner, we specialize in delivering tailored digital transformation strategies that align with each industry’s unique needs, whether it’s modernizing legacy systems, enabling cloud-first architectures, implementing robust cybersecurity frameworks, or deploying intelligent automation and IoT integrations.",
     desc_2 : "Our deep technical expertise spans enterprise software development, infrastructure optimization, data analytics, AI, and end-to-end system integration, ensuring that every solution is secure, scalable, and performance driven.",
     desc_3 : "We understand that mission-critical transformations require more than just technology, they demand precision, agility, and foresight. That’s why our collaborative approach focuses on seamlessly integrating complex IT ecosystems, enhancing operational resilience, and unlocking new efficiencies across every function.",
     desc_4 : "From strategic advisory to hands-on implementation and long-term support, INTELLECTRA delivers the digital backbone that industries, from manufacturing and healthcare to finance, logistics, and government, need to thrive in a connected, competitive world.",
@@ -91,7 +91,7 @@ export const solutionData = {
         link : "/solutions/artificial-intelligence-(ai)",
         finalDescription : <div>
           <p>Artificial Intelligence is no longer a futuristic concept, it is the engine of modern enterprise transformation. </p>
-          <p className="py-4">At INTELLECTRA, we deliver robust, secure, and responsible AI solutions that enable businesses to make smarter decisions, automate intelligently, and generate predictive insights with precision. We bring together cutting-edge machine learning models, ethical governance frameworks, and scalable AI infrastructure to support enterprises across industries in their journey toward AI maturity.</p>
+          <p className="py-4">At Intellectra, we deliver robust, secure, and responsible AI solutions that enable businesses to make smarter decisions, automate intelligently, and generate predictive insights with precision. We bring together cutting-edge machine learning models, ethical governance frameworks, and scalable AI infrastructure to support enterprises across industries in their journey toward AI maturity.</p>
           <p>Our AI engagements begin with strategic ideation and extend all the way to full-scale deployment and governance. We combine domain expertise with deep technical know-how to deliver intelligent automation, AI-powered analytics, and context-aware applications, ensuring every solution is aligned with both operational goals and ethical best practices.</p>
           <p className="py-4">Whether you’re piloting your first AI initiative or looking to scale your existing capabilities, INTELLECTRA provides the expertise and infrastructure to help you build and deploy enterprise-grade, future-ready AI solutions.</p>
         </div>,
@@ -137,9 +137,9 @@ export const solutionData = {
         link : "/solutions/augmented-reality-(ar)",
         finalDescription : <div>
           <p>In an era of accelerated digital transformation, Augmented Reality (AR) is redefining how businesses visualize data, interact with systems, and empower their workforce.  </p>
-          <p className="py-4">At INTELLECTRA, we design and deliver cutting-edge AR solutions that merge the physical and digital realms, creating immersive environments that drive efficiency, safety, and collaboration across industries.</p>
+          <p className="py-4">At Intellectra, we design and deliver cutting-edge AR solutions that merge the physical and digital realms, creating immersive environments that drive efficiency, safety, and collaboration across industries.</p>
           <p>By integrating AR with technologies like Artificial Intelligence (AI), Internet of Things (IoT), and digital twins, we enable real-time operational visibility, smarter training methods, and interactive simulations that elevate decision-making and productivity. Our AR frameworks are not standalone, they are deeply embedded into enterprise workflows, IoT ecosystems, and AI analytics platforms, ensuring your teams experience augmented environments that are intelligent, scalable, and context-aware.</p>
-          <p className="py-4">At INTELLECTRA, our AR solutions are built for scalability, interoperability, and measurable ROI. Whether you’re piloting immersive training programs or deploying AR-powered factory floors, we help you navigate the future of spatial computing, securely, intelligently, and efficiently.</p>
+          <p className="py-4">At Intellectra, our AR solutions are built for scalability, interoperability, and measurable ROI. Whether you’re piloting immersive training programs or deploying AR-powered factory floors, we help you navigate the future of spatial computing, securely, intelligently, and efficiently.</p>
         </div>,
         capabilities :{
           title : "Key Capabilities",
@@ -178,7 +178,7 @@ export const solutionData = {
         link : "/solutions/cloud-&-hybrid-it",
         finalDescription : <div>
           <p>In today’s digitally driven economy, the ability to scale, adapt, and innovate quickly is powered by the cloud. </p>
-          <p className="py-4">At INTELLECTRA, we deliver comprehensive Cloud and Hybrid IT solutions that empower businesses to transition from legacy infrastructure to modern, dynamic ecosystems built on flexibility, performance, and resilience.</p>
+          <p className="py-4">At Intellectra, we deliver comprehensive Cloud and Hybrid IT solutions that empower businesses to transition from legacy infrastructure to modern, dynamic ecosystems built on flexibility, performance, and resilience.</p>
           <p>Our cloud-first approach is designed to meet the diverse needs of modern enterprises, enabling seamless integration across public, private, and hybrid cloud environments. We align cloud infrastructure with business strategy, balancing speed, compliance, and cost-efficiency through tailored architecture and intelligent operations.</p>
           <p className="py-4">Whether you’re modernizing core systems, enabling remote workforces, or driving continuous innovation through cloud-native services, INTELLECTRA ensures your transformation is secure, scalable, and strategically aligned.</p>
         </div>,
@@ -224,7 +224,7 @@ export const solutionData = {
         link : "/solutions/cybersecurity",
         finalDescription : <div>
           <p>In a landscape where digital transformation is accelerating and cyber threats are increasingly sophisticated, cybersecurity is no longer optional, it’s foundational. </p>
-          <p className="py-4">At INTELLECTRA, we deliver end-to-end cybersecurity solutions that not only protect your digital assets but also enable business agility, regulatory compliance, and operational resilience.</p>
+          <p className="py-4">At Intellectra, we deliver end-to-end cybersecurity solutions that not only protect your digital assets but also enable business agility, regulatory compliance, and operational resilience.</p>
           <p>We partner with enterprises to build adaptive security frameworks that proactively prevent breaches, mitigate risks, and respond to incidents with speed and intelligence. Our approach integrates cutting-edge technologies with robust governance models to create a secure-by-design environment for digital innovation.</p>
           <p className="py-4">INTELLECTRA views cybersecurity as a dynamic, evolving capability that must keep pace with the digital enterprise. Our mission is to empower organizations to innovate with confidence, operate securely, and remain resilient in the face of ever-changing threats.</p>
         </div>,
@@ -271,9 +271,9 @@ export const solutionData = {
         link : "/solutions/data-center",
         finalDescription : <div>
           <p>In today’s data-driven economy, the data center is the nerve center of business operations, digital services, and innovation. </p>
-          <p className="py-4">At INTELLECTRA, we specialize in delivering high-performance, resilient, and energy-efficient data center solutions that serve as the foundation for enterprise agility, cloud adoption, and digital transformation.</p>
+          <p className="py-4">At Intellectra, we specialize in delivering high-performance, resilient, and energy-efficient data center solutions that serve as the foundation for enterprise agility, cloud adoption, and digital transformation.</p>
           <p>Our team of architects, engineers, and technology experts take a 360° approach to data center development, from initial site evaluation and design to deployment, optimization, and ongoing management. Every solution we deliver is aligned with your unique operational goals, security standards, and scalability requirements.</p>
-          <p className="py-4">At INTELLECTRA, we don’t just build data centers, we build future-ready digital fortresses that combine intelligence, sustainability, and operational excellence. Whether you are expanding globally or consolidating workloads, our solutions are designed to meet the evolving needs of high-density, high-availability computing.</p>
+          <p className="py-4">At Intellectra, we don’t just build data centers, we build future-ready digital fortresses that combine intelligence, sustainability, and operational excellence. Whether you are expanding globally or consolidating workloads, our solutions are designed to meet the evolving needs of high-density, high-availability computing.</p>
         </div>,
         capabilities :{
           title : "Key Capabilities",
@@ -317,7 +317,7 @@ export const solutionData = {
         link : "/solutions/digital-transformation",
         finalDescription : <div>
           <p>In an era where disruption is the norm, Digital Transformation is not a choice, it’s a business imperative. </p>
-          <p className="py-4">At INTELLECTRA, we partner with enterprises to accelerate their transformation journey through intelligent technologies, adaptive strategies, and data-centric innovation. We go beyond surface-level digitization, reengineering core business models and operations to unlock long-term value, resilience, and competitiveness.</p>
+          <p className="py-4">At Intellectra, we partner with enterprises to accelerate their transformation journey through intelligent technologies, adaptive strategies, and data-centric innovation. We go beyond surface-level digitization, reengineering core business models and operations to unlock long-term value, resilience, and competitiveness.</p>
           <p>Our holistic transformation framework combines strategic consulting, cutting-edge technology implementation, and human-centric change management to help businesses evolve into agile, future-ready enterprises.</p>
           <p className="py-4">Through our proven transformation methodology, INTELLECTRA enables clients to embrace new ways of working, compete in digital ecosystems, and create intelligent, adaptive enterprises that thrive in complexity. Whether you’re a traditional business modernizing legacy systems or a digitally native company scaling for growth, we are your transformation ally.</p>
         </div>,
@@ -357,7 +357,7 @@ export const solutionData = {
         link : "/solutions/internet-of-things-(iot)",
         finalDescription : <div>
           <p>In a hyper-connected world, the Internet of Things (IoT) is transforming how businesses operate, analyze, and innovate. </p>
-          <p className="py-4">At INTELLECTRA, we architect and implement IoT ecosystems that bridge the physical and digital worlds, delivering intelligent, autonomous, and real-time decision-making across industries.</p>
+          <p className="py-4">At Intellectra, we architect and implement IoT ecosystems that bridge the physical and digital worlds, delivering intelligent, autonomous, and real-time decision-making across industries.</p>
           <p>Our solutions go beyond connectivity, we integrate IoT with Artificial Intelligence, Cloud, and Edge Computing to unlock actionable insights, automate operations, and create self-optimizing environments. From sensor-enabled infrastructure to predictive intelligence at the edge, we empower enterprises to lead with smart technology</p>
           <p className="py-4">By deploying resilient, interoperable IoT architectures, INTELLECTRA transforms operations into adaptive digital ecosystems. Whether you’re monitoring high-value assets, optimizing environmental control, or enabling intelligent supply networks, our solutions are designed for scalability, security, and impact.</p>
         </div>,
@@ -397,7 +397,7 @@ export const solutionData = {
         link : "/solutions/infrastructure",
         finalDescription : <div>
           <p>In a world where digital agility drives competitive advantage, robust and scalable infrastructure is the foundation of business transformation. </p>
-          <p className="py-4">At INTELLECTRA, we deliver end-to-end digital infrastructure solutions that seamlessly connect people, systems, and processes, empowering enterprises to thrive in an always-on, data-driven world.</p>
+          <p className="py-4">At Intellectra, we deliver end-to-end digital infrastructure solutions that seamlessly connect people, systems, and processes, empowering enterprises to thrive in an always-on, data-driven world.</p>
           <p>From modernizing legacy environments to orchestrating cloud-integrated networks and fortifying cybersecurity frameworks, our infrastructure services are engineered to support high performance, availability, and compliance across all business layers. Our solutions align IT architecture with business goals to reduce complexity, enhance agility, and ensure operational excellence.</p>
           <p className="py-4">INTELLECTRA doesn’t just build infrastructure, we architect digital ecosystems that are resilient, scalable, secure, and built for the future. Whether you’re transforming internal IT, scaling operations globally, or integrating emerging technologies, our infrastructure solutions lay the digital foundation for sustainable growth.</p>
         </div>,
@@ -437,7 +437,7 @@ export const solutionData = {
         link : "/solutions/intelligent-automation",
         finalDescription : <div>
           <p>In today’s fast-paced digital economy, operational efficiency and scalability are not just strategic goals, they are imperatives. </p>
-          <p className="py-4">At INTELLECTRA, we empower enterprises to achieve end-to-end process transformation with Intelligent Automation, a convergence of Robotic Process Automation (RPA), Artificial Intelligence (AI), and advanced workflow orchestration.</p>
+          <p className="py-4">At Intellectra, we empower enterprises to achieve end-to-end process transformation with Intelligent Automation, a convergence of Robotic Process Automation (RPA), Artificial Intelligence (AI), and advanced workflow orchestration.</p>
           <p className="pb-4">Our solutions reduce manual intervention, eliminate process bottlenecks, and enable data-driven, autonomous decision-making across complex enterprise environments. With a focus on adaptability, accuracy, and compliance, we deliver intelligent systems that evolve with your business.</p>
         </div>,
         capabilities :{
@@ -476,9 +476,9 @@ export const solutionData = {
         link : "/solutions/workplace-modernization",
         finalDescription : <div>
           <p>The modern workplace is no longer bound by physical walls, it is digital-first, cloud-enabled, and driven by intelligent systems that prioritize agility, collaboration, and user-centric design. </p>
-          <p className="py-4">At INTELLECTRA, we help organizations reimagine work by modernizing digital workplace ecosystems with cutting-edge technologies that enable seamless operations, enhance employee engagement, and drive business performance.</p>
+          <p className="py-4">At Intellectra, we help organizations reimagine work by modernizing digital workplace ecosystems with cutting-edge technologies that enable seamless operations, enhance employee engagement, and drive business performance.</p>
           <p >Our approach integrates collaboration platforms, AI-powered workforce tools, secure mobility solutions, and enterprise-wide digital transformation strategies tailored to dynamic workforce needs.</p>
-          <p className="py-4">At INTELLECTRA, we don’t just modernize workplaces, we build adaptive, intelligent, and human-centered digital ecosystems where innovation thrives.</p>
+          <p className="py-4">At Intellectra, we don’t just modernize workplaces, we build adaptive, intelligent, and human-centered digital ecosystems where innovation thrives.</p>
         </div>,
         capabilities :{
           title : "Key Capabilities",
@@ -507,7 +507,7 @@ export const solutionData = {
 
 export const innovationData =  {
     title : "",
-    description : "At INTELLECTRA, innovation is more than a buzzword, it’s our driving force and strategic foundation. We are committed to transforming visionary ideas into intelligent, scalable solutions that fuel sustainable growth and future readiness. Our Idea-to-Solution framework bridges the gap between ambition and execution, guiding businesses through every stage of digital evolution, from concept development to full-scale deployment. ",
+    description : "At Intellectra, innovation is more than a buzzword, it’s our driving force and strategic foundation. We are committed to transforming visionary ideas into intelligent, scalable solutions that fuel sustainable growth and future readiness. Our Idea-to-Solution framework bridges the gap between ambition and execution, guiding businesses through every stage of digital evolution, from concept development to full-scale deployment. ",
     desc_2 : "By combining deep industry insight with advanced technologies such as AI, automation, cybersecurity, and cloud computing, we architect tailored, future-proof solutions that not only solve immediate challenges but also unlock new opportunities.",
     desc_3 : "This agile, outcome-focused approach empowers organizations across industries to modernize operations, optimize performance, and lead confidently in an increasingly complex digital world.",
     desc_4 : "With INTELLECTRA, innovation becomes actionable, impactful, and measurable.",
@@ -547,7 +547,7 @@ export const innovationData =  {
 }
 export const esgData = {
     title : "",
-    description : "At INTELLECTRA, Environmental, Social, and Governance (ESG) principles are not an add-on, they are embedded at the heart of our values, strategies, and solutions. ESG is integral to our mission, guiding how we innovate, operate, and partner.",
+    description : "At Intellectra, Environmental, Social, and Governance (ESG) principles are not an add-on, they are embedded at the heart of our values, strategies, and solutions. ESG is integral to our mission, guiding how we innovate, operate, and partner.",
     desc_2 : "We champion environmental sustainability by reducing our carbon footprint, promoting green technologies, and designing energy-efficient digital solutions. Socially, we foster diversity, equity, and inclusion while supporting employee well-being and community development through ethical, human-centered practices. Our governance framework ensures transparency, integrity, and compliance across all operations, with a strong focus on responsible AI and technology use. We believe innovation must serve both people and the planet, so we embed ethical considerations into every solution. ",
     desc_3 : "Through our ESG-driven approach, we empower businesses to grow sustainably, create positive societal impact, and build a resilient, future-ready world.",
     children :[ {
@@ -689,15 +689,15 @@ export const standredData = {
 }
 export const industryData = {
     title : "",
-    description : "At INTELLECTRA, we are at the forefront of digital transformation, delivering future-ready, technology-driven solutions that empower organizations to adapt, innovate, and lead in an increasingly dynamic and competitive world. Our deep industry expertise spans sectors such as real estate, manufacturing, education, healthcare, defense, retail, and beyond, enabling us to tailor intelligent IT strategies that solve complex business challenges with precision and agility.",
+    description : "At Intellectra, we are at the forefront of digital transformation, delivering future-ready, technology-driven solutions that empower organizations to adapt, innovate, and lead in an increasingly dynamic and competitive world. Our deep industry expertise spans sectors such as real estate, manufacturing, education, healthcare, defense, retail, and beyond, enabling us to tailor intelligent IT strategies that solve complex business challenges with precision and agility.",
     desc_2 : "We leverage the full potential of next-generation technologies, including artificial intelligence, cloud computing, cybersecurity, IoT, automation, and data analytics, to architect scalable, secure, and high-performance digital ecosystems. ",
     desc_3 : "From streamlining operations and enhancing customer experiences to driving sustainable growth and operational resilience, our end-to-end services are designed to unlock new value at every stage of your digital journey. ",
-    desc_4 : "At INTELLECTRA, we don’t just implement technology, we deliver strategic innovation that accelerates transformation, fuels efficiency, and positions businesses to lead in the digital economy.",
+    desc_4 : "At Intellectra, we don’t just implement technology, we deliver strategic innovation that accelerates transformation, fuels efficiency, and positions businesses to lead in the digital economy.",
     children :[    {
         title : "Agriculture",
         finalDescription : <div>
           <p>As global agriculture evolves under the weight of climate variability, resource constraints, and the need to feed over 9 billion people by 2050, technology becomes not just a catalyst, but a cornerstone for resilient and sustainable growth. </p>
-          <p className="py-4">At INTELLECTRA, we empower agricultural enterprises with a robust suite of next-generation digital solutions designed to transform traditional farming into a data-driven, intelligent ecosystem.</p>
+          <p className="py-4">At Intellectra, we empower agricultural enterprises with a robust suite of next-generation digital solutions designed to transform traditional farming into a data-driven, intelligent ecosystem.</p>
           <p>Our expertise lies in engineering end-to-end agricultural technology (AgriTech) solutions that span the entire value chain, from field to fork. By integrating IoT, Artificial Intelligence, Cloud, Blockchain, and Geospatial Analytics, we help agribusinesses maximize operational efficiency, elevate productivity, and reduce environmental impact. Our platforms are tailored to accommodate both large-scale agri-enterprises and community-level agri-initiatives, fostering inclusive innovation.</p>
           <p className="py-4">Whether you’re cultivating thousands of hectares or managing an agricultural supply chain, INTELLECTRA delivers scalable, secure, and sustainable AgriTech solutions that respond to today’s challenges while preparing your enterprise for tomorrow’s demands. We don’t just digitize agriculture, we reengineer it for precision, performance, and planet-conscious progress.</p>
         </div>,
@@ -758,7 +758,7 @@ export const industryData = {
         title : "Communications",
         finalDescription : <div>
           <p>The communications industry is at the epicenter of the digital revolution, driven by the exponential rise in data consumption, the transition to 5G, and the convergence of cloud, IoT, and AI technologies. </p>
-          <p className="py-4">At INTELLECTRA, we architect intelligent, agile, and scalable telecom solutions that enable providers to modernize legacy infrastructure, optimize operations, and capture value in a hyper-connected world.</p>
+          <p className="py-4">At Intellectra, we architect intelligent, agile, and scalable telecom solutions that enable providers to modernize legacy infrastructure, optimize operations, and capture value in a hyper-connected world.</p>
           <p>Our deep domain knowledge and technology integration capabilities position us as a strategic partner for telecom operators, infrastructure providers, and digital service enablers. From core-to-edge network transformation and virtualization to OSS/BSS modernization and customer experience platforms, we deliver future-ready solutions that reduce complexity and drive performance.</p>
           <p className="py-4">With INTELLECTRA, businesses are empowered to shift from infrastructure-focused operators to experience-centric digital service providers. We equip you to manage complexity, accelerate innovation, and unlock new revenue streams, while consistently delivering exceptional user experiences. We don’t just upgrade networks, we redefine the fabric of digital communication.</p>
         </div>,
@@ -833,9 +833,9 @@ export const industryData = {
         title : "Construction",
         finalDescription : <div>
           <p>The construction industry is undergoing a significant shift, driven by the need for faster project delivery, enhanced safety standards, and environmentally sustainable practices. </p>
-          <p className="py-4">At INTELLECTRA, we lead this transformation by providing end-to-end digital solutions that empower contractors, developers, and EPC firms to modernize their infrastructure and operations.</p>
+          <p className="py-4">At Intellectra, we lead this transformation by providing end-to-end digital solutions that empower contractors, developers, and EPC firms to modernize their infrastructure and operations.</p>
           <p>Our intelligent construction ecosystem leverages the power of AI, IoT, cloud collaboration, and digital twins to reimagine how physical environments are designed, built, and maintained. From pre-construction to project handover, we help clients integrate technology that enhances visibility, productivity, and compliance at every stage of the build lifecycle.</p>
-          <p className="py-4">We enable the construction sector to move beyond traditional methods and embrace a connected, data-driven future that maximizes ROI and minimizes risk. At INTELLECTRA, we help construction leaders lay the groundwork for smarter, safer, and more sustainable building practices. Our solutions don’t just support project delivery, they elevate industry standards through connected innovation and intelligent automation.</p>
+          <p className="py-4">We enable the construction sector to move beyond traditional methods and embrace a connected, data-driven future that maximizes ROI and minimizes risk. At Intellectra, we help construction leaders lay the groundwork for smarter, safer, and more sustainable building practices. Our solutions don’t just support project delivery, they elevate industry standards through connected innovation and intelligent automation.</p>
         </div>,
         capabilities :{
           title : "Core Capabilities",
@@ -900,7 +900,7 @@ export const industryData = {
         title : "Defense",
         finalDescription : <div>
           <p>In today’s rapidly evolving threat landscape, defense organizations must operate with precision, speed, and resilience. </p>
-          <p className="py-4">At INTELLECTRA, we partner with defense forces and contractors to lead their digital modernization journey, transforming legacy systems into agile, intelligent, and secure ecosystems. Our mission: to empower defense agencies with technology solutions that enhance operational readiness, situational awareness, and cyber resilience.</p>
+          <p className="py-4">At Intellectra, we partner with defense forces and contractors to lead their digital modernization journey, transforming legacy systems into agile, intelligent, and secure ecosystems. Our mission: to empower defense agencies with technology solutions that enhance operational readiness, situational awareness, and cyber resilience.</p>
           <p>Through a strategic blend of AI, automation, real-time data analytics, secure communication infrastructure, and autonomous systems, we ensure that decision-makers on the front lines and in command centers have the tools they need to respond to threats with confidence and accuracy.</p>
           <p className="py-4">We are your force multiplier, delivering scalable digital capabilities to help defense organizations adapt quickly, act decisively, and operate securely across all domains. With INTELLECTRA, defense organizations are equipped to outpace adversaries, protect critical assets, and respond to the unknown with confidence. Our tailored digital solutions fortify your missions, whether in peacetime operations, cyber warfare, or frontline engagement.</p>
         </div>,
@@ -957,7 +957,7 @@ export const industryData = {
         title : "Education",
         finalDescription : <div>
           <p>In an era defined by digital-native learners and rapidly shifting academic demands, educational institutions must evolve to remain relevant, inclusive, and future-ready. </p>
-          <p className="py-4">At INTELLECTRA, we empower schools, universities, training providers, and edtech platforms to reimagine education through intelligent, scalable, and transformative technology solutions.</p>
+          <p className="py-4">At Intellectra, we empower schools, universities, training providers, and edtech platforms to reimagine education through intelligent, scalable, and transformative technology solutions.</p>
           <p>Our deep domain expertise helps institutions seamlessly integrate AI-powered learning platforms, cloud-based campus operations, interactive virtual classrooms, and data-driven decision-making. Whether it’s enhancing student engagement, streamlining administrative operations, or enabling immersive hybrid learning, our solutions are designed to meet the needs of both learners and educators in the digital age.</p>
           <p className="py-4">By aligning pedagogy with modern technology, we enable institutions to deliver personalized, flexible, and impactful learning experiences, anytime, anywhere. Whether you’re a K–12 school, higher education institution, vocational training center, or edtech innovator, INTELLECTRA is your digital education partner. We don’t just enable technology adoption; we drive educational excellence through innovation, insight, and impact.</p>
         </div>,
@@ -1031,7 +1031,7 @@ export const industryData = {
         title : "Energy",
         finalDescription : <div>
           <p>The energy and utilities sector is undergoing a seismic shift as global sustainability goals, regulatory pressures, and aging infrastructure demand new levels of efficiency and innovation. </p>
-          <p className="py-4">At INTELLECTRA, we empower utility providers and energy leaders to reimagine their operations through intelligent, interconnected, and future-ready technologies.</p>
+          <p className="py-4">At Intellectra, we empower utility providers and energy leaders to reimagine their operations through intelligent, interconnected, and future-ready technologies.</p>
           <p>Our end-to-end digital solutions integrate AI, IoT, cloud computing, and intelligent automation to modernize grid systems, streamline resource management, and enable real-time decision-making. Whether you’re managing a national grid or a localized energy network, our smart utility frameworks help reduce operational risk, meet compliance standards, and improve overall resilience, all while advancing environmental responsibility.</p>
           <p className="py-4">From smart metering to predictive maintenance and renewable energy integration, we ensure that energy ecosystems evolve into intelligent, adaptive infrastructures. From national utilities to private energy firms, INTELLECTRA delivers the digital backbone for a reliable, efficient, and low-carbon future. Our solutions don’t just power utility networks, they empower the world to move forward sustainably.</p>
         </div>,
@@ -1104,7 +1104,7 @@ export const industryData = {
         title : "Finance",
         finalDescription : <div>
           <p>The financial services industry is being redefined by rapid digitalization, shifting customer expectations, and an ever-evolving regulatory landscape. </p>
-          <p className="py-4">At INTELLECTRA, we empower banks, fintechs, and financial institutions to navigate this complex environment through agile, intelligent, and secure technology solutions. Our capabilities in AI, intelligent automation, cloud computing, cybersecurity, and data analytics are helping the financial sector reimagine operations, accelerate innovation, and deliver seamless, secure, and scalable customer experiences.</p>
+          <p className="py-4">At Intellectra, we empower banks, fintechs, and financial institutions to navigate this complex environment through agile, intelligent, and secure technology solutions. Our capabilities in AI, intelligent automation, cloud computing, cybersecurity, and data analytics are helping the financial sector reimagine operations, accelerate innovation, and deliver seamless, secure, and scalable customer experiences.</p>
           <p>With deep industry insight and a robust partner ecosystem, we enable digital transformation across the financial value chain, from front-end customer engagement to back-office process automation. Whether it’s building AI-enabled risk engines or ensuring compliance through automated governance frameworks, we are committed to driving sustainable financial growth and resilience in a connected world.</p>
           <p className="py-4">From traditional banking to digital-first fintechs, INTELLECTRA is enabling financial institutions to scale with agility, innovate with intelligence, and operate with trust. Our mission is to power a future where finance is inclusive, resilient, and digitally driven.</p>
         </div>,
@@ -1162,9 +1162,9 @@ export const industryData = {
         title : "Government",
         finalDescription : <div>
           <p>Around the globe, public sector organizations are under increasing pressure to deliver faster, more transparent, and citizen-centric services—while ensuring security, scalability, and compliance. </p>
-          <p className="py-4">At INTELLECTRA, we partner with governments and public agencies to reimagine digital governance through intelligent, secure, and scalable IT solutions. Our future-ready offerings in AI, edge computing, cybersecurity, and data platforms enable governments to modernize aging infrastructure, simplify service delivery, and foster inclusive digital growth.</p>
+          <p className="py-4">At Intellectra, we partner with governments and public agencies to reimagine digital governance through intelligent, secure, and scalable IT solutions. Our future-ready offerings in AI, edge computing, cybersecurity, and data platforms enable governments to modernize aging infrastructure, simplify service delivery, and foster inclusive digital growth.</p>
           <p>Our approach goes beyond technology, we co-create strategies that enhance citizen experiences, increase transparency, reduce administrative bottlenecks, and ensure data sovereignty. From smart city ecosystems to national cybersecurity frameworks, we bring deep domain expertise and innovation to the public sector, helping governments shape resilient, efficient, and responsive institutions.</p>
-          <p className="py-4">At INTELLECTRA, we believe that modern governance demands both innovation and integrity. Our solutions are designed to uphold public trust, accelerate service delivery, and build future-ready institutions capable of navigating complexity with confidence.</p>
+          <p className="py-4">At Intellectra, we believe that modern governance demands both innovation and integrity. Our solutions are designed to uphold public trust, accelerate service delivery, and build future-ready institutions capable of navigating complexity with confidence.</p>
         </div>,
         capabilities :{
           title : "Core Capabilities",
@@ -1209,9 +1209,9 @@ export const industryData = {
         title : "Healthcare",
         finalDescription : <div>
           <p>The healthcare sector is navigating an era of rapid transformation driven by rising patient expectations, regulatory shifts, and the need for efficient, accessible, and personalized care. </p>
-          <p className="py-4">At INTELLECTRA, we enable healthcare providers, hospitals, clinics, and health-tech innovators to build intelligent digital ecosystems that enhance both clinical and operational performance.</p>
+          <p className="py-4">At Intellectra, we enable healthcare providers, hospitals, clinics, and health-tech innovators to build intelligent digital ecosystems that enhance both clinical and operational performance.</p>
           <p>Our technology-first approach empowers organizations to modernize infrastructure, automate complex workflows, ensure seamless data interoperability, and support value-based care delivery. By integrating AI-powered diagnostics, cloud platforms, telemedicine solutions, and robust cybersecurity, we deliver scalable and compliant healthcare innovations that prioritize both provider efficiency and patient well-being.</p>
-          <p className="py-4">At INTELLECTRA, we believe technology is a catalyst for compassionate, connected, and resilient healthcare. Our solutions are designed to empower caregivers, optimize systems, and deliver better outcomes, one patient at a time.</p>
+          <p className="py-4">At Intellectra, we believe technology is a catalyst for compassionate, connected, and resilient healthcare. Our solutions are designed to empower caregivers, optimize systems, and deliver better outcomes, one patient at a time.</p>
         </div>,
         capabilities :{
           title : "",
@@ -1255,9 +1255,9 @@ export const industryData = {
         title : "Hospitality",
         finalDescription : <div>
           <p>In today’s fast-evolving travel and leisure landscape, guest expectations are higher than ever, driven by the demand for personalization, convenience, and innovation. </p>
-          <p className="py-4">At INTELLECTRA, we partner with hotels, resorts, and hospitality groups to deliver intelligent, future-ready digital solutions that transform both guest experience and operational efficiency.</p>
+          <p className="py-4">At Intellectra, we partner with hotels, resorts, and hospitality groups to deliver intelligent, future-ready digital solutions that transform both guest experience and operational efficiency.</p>
           <p>From AI-powered concierge services and smart-room automation to cloud-native property management and real-time analytics, our solutions are designed to optimize workflows, increase staff productivity, and create unforgettable guest experiences. By merging cutting-edge technologies with deep industry insights, we help hospitality brands build agility, strengthen customer loyalty, and outperform the competition.</p>
-          <p className="py-4">At INTELLECTRA, we understand that hospitality is more than service, it’s an experience. Our digital solutions help you stay ahead by creating environments that are connected, intuitive, and deeply personalized, while driving operational excellence and brand differentiation.</p>
+          <p className="py-4">At Intellectra, we understand that hospitality is more than service, it’s an experience. Our digital solutions help you stay ahead by creating environments that are connected, intuitive, and deeply personalized, while driving operational excellence and brand differentiation.</p>
         </div>,
         capabilities :{
           title : "",
@@ -1321,9 +1321,9 @@ export const industryData = {
         title : "Logistics",
         finalDescription : <div>
           <p>In an environment where agility and visibility define competitive advantage, logistics and transportation leaders must rapidly evolve to meet rising customer expectations and operational complexity. </p>
-          <p className="py-4">At INTELLECTRA, we empower logistics providers, freight carriers, airlines, and supply chain networks to embrace digital transformation through intelligent, scalable, and secure technology solutions.</p>
+          <p className="py-4">At Intellectra, we empower logistics providers, freight carriers, airlines, and supply chain networks to embrace digital transformation through intelligent, scalable, and secure technology solutions.</p>
           <p>Our capabilities span AI-powered analytics, IoT-enabled tracking systems, and cloud-based fleet and warehouse management platforms, designed to enhance efficiency, streamline operations, and reduce carbon footprints. From last-mile delivery optimization to automated compliance and real-time asset monitoring, our solutions help you stay resilient, cost-effective, and future-ready in an increasingly dynamic marketplace.</p>
-          <p className="py-4">At INTELLECTRA, we go beyond solving logistical challenges, we help redefine what’s possible with smart technology. By enabling end-to-end digital visibility, intelligent automation, and predictive insights, we ensure your logistics operations are faster, greener, and more resilient.</p>
+          <p className="py-4">At Intellectra, we go beyond solving logistical challenges, we help redefine what’s possible with smart technology. By enabling end-to-end digital visibility, intelligent automation, and predictive insights, we ensure your logistics operations are faster, greener, and more resilient.</p>
         </div>,
         capabilities :{
           title : "",
@@ -1367,9 +1367,9 @@ export const industryData = {
         title : "Manufacturing",
         finalDescription : <div>
           <p>As global manufacturing evolves under the pressure of rising costs, shifting demand, and supply chain disruptions, the need for digital reinvention has never been more urgent. </p>
-          <p className="py-4">At INTELLECTRA, we enable manufacturers to transition from traditional production models to intelligent, agile, and connected enterprises.</p>
+          <p className="py-4">At Intellectra, we enable manufacturers to transition from traditional production models to intelligent, agile, and connected enterprises.</p>
           <p>Our Industry 4.0 solutions harness the power of AI, IoT, cloud, and automation to optimize every stage of the manufacturing lifecycle, from production planning and shop floor automation to smart maintenance and real-time supply chain orchestration. Whether you’re a discrete or process manufacturer, we empower your operations to achieve greater speed, precision, and efficiency, without compromising quality or sustainability.</p>
-          <p className="py-4">At INTELLECTRA, we don’t just enable digital transformation, we reengineer manufacturing excellence. By blending deep domain knowledge with cutting-edge technologies, we help manufacturers achieve operational resilience, cost leadership, and competitive differentiation in the global market.</p>
+          <p className="py-4">At Intellectra, we don’t just enable digital transformation, we reengineer manufacturing excellence. By blending deep domain knowledge with cutting-edge technologies, we help manufacturers achieve operational resilience, cost leadership, and competitive differentiation in the global market.</p>
         </div>,
         capabilities :{
           title : "",
@@ -1436,9 +1436,9 @@ export const industryData = {
         title : "Media",
         finalDescription : <div>
           <p>The media and entertainment industry is undergoing a profound transformation fueled by rapid digital disruption and changing consumer behaviors. </p>
-          <p className="py-4">At INTELLECTRA, we enable media companies, broadcasters, and content creators to adapt with agility, delivering high-quality, personalized experiences through intelligent, cloud-native, and data-driven technologies.</p>
+          <p className="py-4">At Intellectra, we enable media companies, broadcasters, and content creators to adapt with agility, delivering high-quality, personalized experiences through intelligent, cloud-native, and data-driven technologies.</p>
           <p>Our future-ready solutions combine AI, cloud, analytics, and immersive platforms to reimagine how content is created, managed, distributed, and monetized. Whether you’re producing live broadcasts, managing OTT platforms, or scaling global content delivery, we help you unlock the full potential of digital innovation.</p>
-          <p className="py-4">At INTELLECTRA, we are more than technology partners, we are innovation enablers. With a deep understanding of digital storytelling and real-time content consumption, we empower media businesses to enhance operational efficiency, audience engagement, and long-term profitability.</p>
+          <p className="py-4">At Intellectra, we are more than technology partners, we are innovation enablers. With a deep understanding of digital storytelling and real-time content consumption, we empower media businesses to enhance operational efficiency, audience engagement, and long-term profitability.</p>
         </div>,
         capabilities :{
           title : "",
@@ -1493,9 +1493,9 @@ export const industryData = {
         title : "Retail",
         finalDescription : <div>
           <p>In an era of instant gratification and digital-first expectations, retailers must continuously innovate to retain customer attention and stay competitive. </p>
-          <p className="py-4">At INTELLECTRA, we partner with retail and eCommerce businesses to drive end-to-end digital transformation, enhancing everything from supply chain intelligence to personalized customer experiences.</p>
+          <p className="py-4">At Intellectra, we partner with retail and eCommerce businesses to drive end-to-end digital transformation, enhancing everything from supply chain intelligence to personalized customer experiences.</p>
           <p>Our solutions integrate AI, cloud platforms, data analytics, and omnichannel strategies to help businesses modernize operations, optimize cost structures, and increase customer lifetime value. Whether you’re managing online storefronts, brick-and-mortar operations, or hybrid commerce ecosystems, we enable you to deliver seamless, personalized, and scalable shopping experiences.</p>
-          <p className="py-4">At INTELLECTRA, we go beyond standard implementations, we craft intelligent commerce ecosystems designed for resilience, innovation, and growth. With deep industry insight and technical acumen, we empower retailers to deliver exceptional service, increase profitability, and future-proof their businesses in the age of digital retail.</p>
+          <p className="py-4">At Intellectra, we go beyond standard implementations, we craft intelligent commerce ecosystems designed for resilience, innovation, and growth. With deep industry insight and technical acumen, we empower retailers to deliver exceptional service, increase profitability, and future-proof their businesses in the age of digital retail.</p>
         </div>,
         content :[],
         capabilities :{
@@ -1554,7 +1554,7 @@ export const industryData = {
 }
 export const validationData = {
     title : "",
-    description : "At INTELLECTRA, we recognize the importance of trust, authenticity, and compliance in every business transaction. To safeguard the interests of our clients, suppliers, and partners, we have implemented a document validation system.",
+    description : "At Intellectra, we recognize the importance of trust, authenticity, and compliance in every business transaction. To safeguard the interests of our clients, suppliers, and partners, we have implemented a document validation system.",
     desc_2 : "Every Letter/Notice, Sales Proposal, Purchase Order, Contract, and other official documents issued by Intellectra carries a unique QR code that redirects to this official validation page. By scanning the QR code, recipients can confirm the authenticity of the document and be assured that it is recognized and approved by Intellectra, provided that it validates against the below mentioned guidelines.",
     desc_3 : "This system is part of our ongoing commitment to transparency, integrity, and operational excellence.",
     children :[ {
@@ -1673,7 +1673,7 @@ export const privacyPolicy = {
   title: "Privacy Policy",
   lastUpdated: "03 March 2025",
   finalDes:
-    "At INTELLECTRA, your privacy is our priority. This policy details how we collect, use, and protect your personal data when you visit our website or use our services. We are committed to transparency and your rights.",
+    "At Intellectra, your privacy is our priority. This policy details how we collect, use, and protect your personal data when you visit our website or use our services. We are committed to transparency and your rights.",
   children: [
     {
       title: "1. Introduction",

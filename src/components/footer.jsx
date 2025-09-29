@@ -81,7 +81,7 @@ const Footer = ()=>{
                     <p>
                         We empower businesses to thrive in the digital age by delivering inventive ICT solutions that fuse deep expertise with future-ready technology, driving efficiency, sparking innovation, and maximizing ROI.
                     </p>
-                    {/* <p>Learn more about <Link to="/about">At INTELLECTRA</Link></p> */}
+                    {/* <p>Learn more about <Link to="/about">At Intellectra</Link></p> */}
                     <div className="final-footer">
                         © 2025 INTELLECTRA
                     </div>

@@ -86,7 +86,7 @@ const About = ()=>{
             }]} />
             <div className="layout pt-32 px-5 sm:px-16 md:px-32">
                 <p>
-                    At INTELLECTRA, We empower forward-thinking organizations with transformative ICT solutions that blend deep human expertise with the exponential power of innovation. From Artificial Intelligence and Augmented Reality to Intelligent Automation, Cloud & Hybrid IT, Cybersecurity, IoT, and Modern Workplace solutions, our approach is rooted in delivering measurable outcomes that enhance agility, operational efficiency, and competitive advantage.
+                    At Intellectra, We empower forward-thinking organizations with transformative ICT solutions that blend deep human expertise with the exponential power of innovation. From Artificial Intelligence and Augmented Reality to Intelligent Automation, Cloud & Hybrid IT, Cybersecurity, IoT, and Modern Workplace solutions, our approach is rooted in delivering measurable outcomes that enhance agility, operational efficiency, and competitive advantage.
                 </p>
                 <div className="container-about gap-10 py-10">
                     <div className="w-full flex justify-end"><img className="radius-border !h-full !w-full" src={img_1} alt="image" /></div>
