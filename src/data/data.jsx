@@ -1554,7 +1554,7 @@ export const industryData = {
 }
 export const validationData = {
     title : "",
-    description : "At Intellectra, we recognize the importance of trust, authenticity, and compliance in every business transaction. To safeguard the interests of our clients, suppliers, and partners, we have implemented a document validation system.",
+    description : "At INTELLECTRA, we recognize the importance of trust, authenticity, and compliance in every business transaction. To safeguard the interests of our clients, suppliers, and partners, we have implemented a document validation system.",
     desc_2 : "Every Letter/Notice, Sales Proposal, Purchase Order, Contract, and other official documents issued by Intellectra carries a unique QR code that redirects to this official validation page. By scanning the QR code, recipients can confirm the authenticity of the document and be assured that it is recognized and approved by Intellectra, provided that it validates against the below mentioned guidelines.",
     desc_3 : "This system is part of our ongoing commitment to transparency, integrity, and operational excellence.",
     children :[ {
