@@ -42,7 +42,7 @@ const Validation = ()=>{
             <div style={{background:"white"}} className="px-3 sm:px-14 md:px-30 py-10">
                 {validationData.children.map((ele,idx)=>(<Card key={`Validation_Card_${ele.title}_${idx}`} 
                                                              img={ele.img}
-                                                             isImage={true}
+                                                             isImage={false}
                                                              title_2={ele.title_2}
                                                              description={ele.description}
                                                              title={ele.title}
