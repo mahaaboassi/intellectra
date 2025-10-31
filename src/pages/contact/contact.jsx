@@ -77,9 +77,11 @@ const Contact = ()=>{
                         <p style="font-size: 13px; color: #888; text-align: center;">This message was submitted from the website contact form.</p>
                     </div>`
 
-        temp.to = value.email || '-'
+        temp.userEmail = value.email || '-'
+        temp.adminEmail = "info@intellectra.ae"
+        temp.subject = "New Inquiry Received from Intellectra Website"
 
-        const res = await fetch("https://intellectra.ordersmm.com/api/sendMail", {
+        const res = await fetch("https://api.arizglobal.com/api/mail/trn", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(temp),
