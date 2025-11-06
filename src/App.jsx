@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import './App.css'
 import Home from './pages/home/home'
 import Layout from './pages/layout'
@@ -19,6 +19,7 @@ import LayoutTemplate from './pages/layout/page'
 import PulseDetails from './pages/pulse/details'
 import Standards from './pages/standards/standards'
 import Validation from './pages/validation/validation'
+import Page_404 from './pages/404/page'
 
 function App() {
 
@@ -42,8 +43,10 @@ function App() {
           <Route path="terms-&-conditions" element={<TermsAndConditions/>} />
           <Route path="standards" element={<Standards/>} />
           <Route path="validation" element={<Validation/>} />
+          <Route path="*" element={<Navigate to="/404" replace />} />
        </Route>
        <Route path="contact" element={<Contact/>} />
+       <Route path="/404" element={<Page_404/>} />
     </Routes>
   </BrowserRouter>
   )

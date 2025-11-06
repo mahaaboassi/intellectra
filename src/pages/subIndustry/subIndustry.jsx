@@ -5,16 +5,20 @@ import LottieHero from "../../components/heroAnimation"
 import Card from "../../components/card"
 import { Helmet } from "react-helmet-async"
 import { hostCanonical, industryData } from "../../data/data"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 
 
 const SubIndustry = ()=>{
+    const navigate = useNavigate();
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
         const { name } = useParams()
     const [ data , setData ] = useState({})
     useEffect(()=>{
         window.scrollTo({top:0,behavior: "smooth"})
-        setData(industryData.children.find((e) => e.link == `/industries/${name}`))
+        const value = industryData.children.find((e) => e.link == `/industries/${name}`)
+        if(!value) navigate("/404")
+        setData(value)
+
     },[name])
     return(<div>
         <LottieHero/>

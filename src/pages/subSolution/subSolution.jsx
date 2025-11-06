@@ -5,16 +5,21 @@ import LottieHero from "../../components/heroAnimation"
 import Card from "../../components/card"
 import { Helmet } from "react-helmet-async"
 import { hostCanonical, solutionData } from "../../data/data"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
+import { nav } from "framer-motion/client"
 
 
 const SubSolution = ()=>{
+    const navigate = useNavigate();
     useEffect(()=>{window.scrollTo({ top: 0, behavior: "smooth" })},[])
         const { name } = useParams()
     const [ data , setData ] = useState({})
     useEffect(()=>{
         window.scrollTo({top:0,behavior: "smooth"})
-        setData(solutionData.children.find((e) => e.link == `/solutions/${name}`))
+        const value = solutionData.children.find((e) => e.link == `/solutions/${name}`)
+        if(!value) navigate("/404")
+        setData(value)
+    
     },[name])
     return(<div>
         <LottieHero/>

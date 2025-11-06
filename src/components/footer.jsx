@@ -72,7 +72,7 @@ const Footer = ()=>{
         setSolutions(getThreeUniqueItems(temp));
         setIndustries(getThreeUniqueItems(tempIndustry));
     },[])
-    return(<footer >
+    return(<footer>
             <div className="footer gap-6 items-center px-5 sm:px-16 md:px-32">
                 <div className="first-col flex flex-col gap-3">
                     <div>
@@ -118,7 +118,7 @@ const Footer = ()=>{
                     </div>
                     <div className="second-content-col-2">
                         <div className="w-full flex flex-col gap-4">
-                            <h4 >Solutions</h4>
+                            <h4>Solutions</h4>
                             {solutions.length > 0 && solutions.map((ele,idx)=>(<Link key={`Solutions_${ele.title}_${idx}`}  to={ele.link}>
                                 <div className="menu">
                                     {ele.title}
