@@ -28,7 +28,7 @@ function App() {
        <Route path="/*" element={<Layout/>} >
           <Route path="" element={<Home/>} />
           <Route path="about" element={<About/>} />
-          <Route path="layout" element={<LayoutTemplate/>} />
+          {/* <Route path="layout" element={<LayoutTemplate/>} /> */}
           <Route path="industries" element={<Industry/>} />
           <Route path="solutions" element={<Solutions/>} />
           <Route path="esg" element={<ESG/>} />
@@ -36,9 +36,9 @@ function App() {
           <Route path="industries/:name" element={<SubIndustry/>} />
           <Route path="solutions/:name" element={<SubSolution/>} />
           <Route path="pulse/:title" element={<PulseDetails/>} />
-          <Route path="FAQs" element={<FAQs/>} />
-          <Route path="privacy-policy" element={<PrivacyPolicy/>} />
-          <Route path="cookies-center" element={<Cookies/>} />
+          {/* <Route path="FAQs" element={<FAQs/>} /> */}
+          {/* <Route path="privacy-policy" element={<PrivacyPolicy/>} /> */}
+          {/* <Route path="cookies-center" element={<Cookies/>} /> */}
           <Route path="pulse" element={<Pulse/>} />
           <Route path="terms-&-conditions" element={<TermsAndConditions/>} />
           <Route path="standards" element={<Standards/>} />
