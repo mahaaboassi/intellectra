@@ -13,7 +13,7 @@ const Card = ({title, isImage,content=[],type, subTitle,note, title_2, descripti
                     <p>{description}</p>
                     { type == "validation" && <h4>{title_2}</h4> }
                     {content.length > 0 &&  <ul className="flex flex-col gap-1 ">
-                            {content.map((e,idx)=>(<li aria-label={key?.title || "link"} key={`Content_${title}_${e}_${idx}`}>{e}</li>))}
+                            {content.map((e,idx)=>(<li aria-label={title || "link"} key={`Content_${title}_${e}_${idx}`}>{e}</li>))}
                         </ul>}
                     {link && <div><Link aria-label={`See more details about ${title || ""}`} to={link}>
                         <span className="sr-only">See more details about {title}</span>
