@@ -17,7 +17,7 @@ const ContactBanner = ()=>{
         </div>
         <div className="flex flex-col justify-center items-center gap-5">
             <h2>How can we help?</h2>
-            <Link to={"/contact"}><button>Contact us</button> </Link>
+            <Link aria-label="Contact us" to={"/contact"}><button>Contact us</button> </Link>
         </div>
     </div>)
 }

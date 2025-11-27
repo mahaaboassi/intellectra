@@ -45,13 +45,13 @@ const Services = ()=>{
                 </div>
                 <p>{ele.description}</p>
                 <div className="container-keywords gap-3">
-                    {ele.keywords.map((key,i)=>(<Link key={`keywords_${ele.title}__${i}`} to={key.link}>
+                    {ele.keywords.map((key,i)=>(<Link aria-label={key?.title || 'link'} key={`keywords_${ele.title}__${i}`} to={key.link}>
                     <div className="content p-2" >
                         {key.title}
                     </div>
                     </Link>))}
                 </div>
-                <div className="see-animation"><Link aria-label={`See more details about ${ele.title}`}  to={ele.link}>
+                <div className="see-animation"><Link aria-label={`See more details about ${ele?.title || ''}`}  to={ele.link}>
                 <span className="sr-only">See more details about {ele.title}</span>
                 <span className="learn" >See More</span>
                 </Link></div>

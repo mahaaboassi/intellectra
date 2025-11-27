@@ -22,7 +22,7 @@
 .card a{
     color: var(--grey_2);
     transition: 0.3s;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .card a:hover{
     color: var(--blue_1);

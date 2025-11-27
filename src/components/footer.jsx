@@ -90,7 +90,7 @@ const Footer = ()=>{
                     <div className="second-content-col-1">
                         <div className="w-full flex flex-col gap-4">
                             <h4>Company</h4>
-                            {pages.map((ele,idx)=>(<Link key={`Pages_${ele.name}_${idx}`} to={ele.link}>
+                            {pages.map((ele,idx)=>(<Link aria-label={ele?.name || "link"} key={`Pages_${ele.name}_${idx}`} to={ele.link}>
                                 <div className="menu">
                                     {ele.name}
                                 </div>
@@ -98,7 +98,7 @@ const Footer = ()=>{
                         </div>
                         <div className="w-full flex flex-col gap-4">
                             <h4>Industries</h4>
-                            {industries.length > 0 && industries.map((ele,idx)=>(<Link key={`Industries${ele.title}_${idx}`}  to={ele.link}>
+                            {industries.length > 0 && industries.map((ele,idx)=>(<Link aria-label={ele?.title || "link"}  key={`Industries${ele.title}_${idx}`}  to={ele.link}>
                                 <div className="menu">
                                     {ele.title}
                                 </div>
@@ -119,7 +119,7 @@ const Footer = ()=>{
                     <div className="second-content-col-2">
                         <div className="w-full flex flex-col gap-4">
                             <h4>Solutions</h4>
-                            {solutions.length > 0 && solutions.map((ele,idx)=>(<Link key={`Solutions_${ele.title}_${idx}`}  to={ele.link}>
+                            {solutions.length > 0 && solutions.map((ele,idx)=>(<Link aria-label={ele?.title || "link"} key={`Solutions_${ele.title}_${idx}`}  to={ele.link}>
                                 <div className="menu">
                                     {ele.title}
                                 </div>
@@ -139,7 +139,7 @@ const Footer = ()=>{
                         
                         <div className="w-full flex flex-col gap-4 menu">
                             <h4>Policy</h4>
-                            {support.map((ele,idx)=>(<Link to={ele.link} key={`Support_${ele.name}_${idx}`}>
+                            {support.map((ele,idx)=>(<Link aria-label={ele?.name || "link"}  to={ele.link} key={`Support_${ele.name}_${idx}`}>
                             <div >
                                 {ele.name}
                             </div>

@@ -88,7 +88,7 @@ const Intro = ()=>{
                     <div><img className="three" src={data[1].images[2]} alt="intelligent" /></div>
                     <div><img className="four"  src={data[1].images[3]} alt="digital" /></div>
                 </div>
-                <Link to={data[0].link}><div  className={`icon-center  cursor-pointer`}>    
+                <Link aria-label={`See more details about ${data[1].title}`} to={data[1].link}><div  className={`icon-center  cursor-pointer`}>    
                        <div>
                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 68 68" fill="none">
                             <g clipPath="url(#clip0_313_546)">
@@ -117,7 +117,7 @@ const Intro = ()=>{
                     <div><img className="three" src={data[2].images[2]} alt="intelligent" /></div>
                     <div><img className="four"  src={data[2].images[3]} alt="digital" /></div>
                 </div>
-                <Link to={data[0].link}><div  className={`icon-center cursor-pointer`}>    
+                <Link aria-label={`See more details about ${data[2].title}`} to={data[2].link}><div  className={`icon-center cursor-pointer`}>    
                        <div>
                          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 68 68" fill="none">
                             <g clipPath="url(#clip0_313_546)">
@@ -137,7 +137,7 @@ const Intro = ()=>{
             <div  className="w-full justify-between flex flex-col gap-5 ">
                     <h2>{data[2].title}</h2>
                     <p>{data[2].description}</p>
-                    <div><Link aria-label={`See more details about ${data[2].title}`}  to={data[2].link}>
+                    <div><Link  aria-label={`See more details about ${data[2].title}`}  to={data[2].link}>
                         <span className="sr-only">See more details about {data[2].title}</span>
                         <span className="learn">Learn More</span>
                     </Link></div>
