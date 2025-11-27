@@ -1,7 +1,9 @@
+<!-- There are 41 routes , full routes are optimized from google except (validation) 
+ final check date => 27/11/2025 -->
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
+  <url> 
     <loc>https://www.intellectra.ae/</loc>
     <lastmod>2025-05-30</lastmod>
     <changefreq>weekly</changefreq>
